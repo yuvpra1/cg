@@ -11,8 +11,9 @@ async function getJob(slug: string) {
   return data.job;
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const job = await getJob(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const job = await getJob(slug);
   if (!job) {
     return { title: 'Job Not Found - CGSSB' };
   }
@@ -22,8 +23,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function JobPage({ params }: { params: { slug: string } }) {
-  const job = await getJob(params.slug);
+export default async function JobPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const job = await getJob(slug);
 
   if (!job) {
     return (

@@ -4,9 +4,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getRequestContext } from '@cloudflare/next-on-pages';
 import { localJobs } from '../route';
 
-export async function GET(request: NextRequest, { params }: { params: { slug: string } }) {
+export async function GET(request: NextRequest, { params }: { params: Promise<{ slug: string }> }) {
   try {
-    const slug = params.slug;
+    const { slug } = await params;
     const ctx = getRequestContext();
     
     // Check if we are running in Cloudflare with D1 binding
