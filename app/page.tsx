@@ -1,65 +1,123 @@
-import Image from "next/image";
+async function getLatestJobs() {
+  const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
+  try {
+    const res = await fetch(`${baseUrl}/api/jobs`, { cache: 'no-store' });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.jobs?.slice(0, 3) || []; // only top 3
+  } catch (e) {
+    return [];
+  }
+}
 
-export default function Home() {
+export default async function Home() {
+  const latestJobs = await getLatestJobs();
+
+  const categories = [
+    { title: "CGSSB (Vyapam)", path: "/exams/cgssb", desc: "Latest updates, syllabus, and results" },
+    { title: "CGPSC", path: "/exams/cgpsc", desc: "State Services, Forest, AE exams" },
+    { title: "Departments", path: "/departments", desc: "Police, Forest, Health, Education" },
+    { title: "Chhattisgarh GK", path: "/gk", desc: "History, Geography, Culture, Tribes" },
+    { title: "Previous Papers", path: "/previous-paper", desc: "Download PDF of previous exams" },
+    { title: "Student Tools", path: "/tools", desc: "Age Calculator, typing test, etc." },
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="container" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+      
+      {/* Hero Section - Search First */}
+      <section style={{ textAlign: 'center', marginBottom: '60px' }}>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
+          Chhattisgarh Knowledge Portal
+        </h1>
+        <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '30px', maxWidth: '800px', margin: '0 auto 30px' }}>
+          Find every job notification, syllabus, cutoff, and study material for Chhattisgarh exams in one place.
+        </p>
+        
+        {/* Semantic Search Form */}
+        <form style={{ display: 'flex', justifyContent: 'center', maxWidth: '600px', margin: '0 auto' }}>
+          <input 
+            type="text" 
+            placeholder="Search for Patwari Syllabus, CG Police, Age Calculator..." 
+            aria-label="Search across the portal"
+            style={{
+              flex: 1,
+              padding: '16px 24px',
+              fontSize: '1rem',
+              border: '2px solid var(--color-primary)',
+              borderRadius: 'var(--border-radius) 0 0 var(--border-radius)',
+              outline: 'none'
+            }}
+          />
+          <button 
+            type="submit"
+            style={{
+              padding: '0 30px',
+              backgroundColor: 'var(--color-primary)',
+              color: 'var(--text-light)',
+              border: 'none',
+              borderRadius: '0 var(--border-radius) var(--border-radius) 0',
+              fontSize: '1rem',
+              fontWeight: '600',
+              cursor: 'pointer'
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Search
+          </button>
+        </form>
+      </section>
+
+      {/* News Flash Marquee */}
+      <div className="marquee-container" style={{ margin: '0 auto 50px', borderRadius: '4px', maxWidth: '800px' }}>
+        <div className="marquee-content">
+          🚀 NEW: CG Police Constable Physical Test Dates Announced! &nbsp; | &nbsp; 🎯 Vyapam Patwari Notification Expected Next Month &nbsp; | &nbsp; 📚 Download Previous Year Papers for CGPSC State Services
         </div>
-      </main>
+      </div>
+
+      {/* Latest Jobs Section */}
+      <section style={{ marginBottom: '60px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px', marginBottom: '24px' }}>
+          <h2 style={{ fontSize: '1.8rem', margin: 0 }}>Latest Govt Jobs</h2>
+          <a href="/jobs" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>View All →</a>
+        </div>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+          
+          {latestJobs.length > 0 ? latestJobs.map((job: any) => (
+            <div key={job.id} className="card" style={{ borderLeft: '4px solid var(--color-primary)', display: 'flex', flexDirection: 'column' }}>
+              <div>
+                <span style={{ fontSize: '0.8rem', backgroundColor: '#e0e7ff', color: 'var(--color-primary)', padding: '4px 8px', borderRadius: '4px', fontWeight: '600' }}>{job.department}</span>
+              </div>
+              <h3 style={{ marginTop: '10px', fontSize: '1.2rem', lineHeight: '1.4' }}>{job.title}</h3>
+              <p style={{ fontSize: '0.9rem', marginBottom: '15px' }}>Total Posts: {job.total_posts} | Last Date: {new Date(job.last_date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short' })}</p>
+              <a href={`/jobs/${job.slug}`} style={{ marginTop: 'auto', color: 'var(--color-primary)', fontWeight: '600', fontSize: '0.95rem' }}>Read Details & Apply</a>
+            </div>
+          )) : (
+            <p>No new jobs available right now.</p>
+          )}
+
+        </div>
+      </section>
+
+      {/* Grid Categories Section */}
+      <section>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '24px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px' }}>
+          Explore by Category
+        </h2>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+          gap: '24px' 
+        }}>
+          {categories.map((cat, idx) => (
+            <a href={cat.path} key={idx} className="card" style={{ display: 'block' }}>
+              <h3 style={{ fontSize: '1.25rem', color: 'var(--color-primary)' }}>{cat.title}</h3>
+              <p style={{ margin: 0 }}>{cat.desc}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }

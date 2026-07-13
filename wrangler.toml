@@ -1,0 +1,9 @@
+name = "cgssb"
+compatibility_date = "2024-03-20"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB" # How you will access the DB in your code (e.g. process.env.DB or ctx.env.DB)
+database_name = "cgssb-db"
+database_id = "local-db-id" # This is a dummy ID for local development
