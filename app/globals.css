@@ -86,6 +86,11 @@ p {
   box-shadow: var(--shadow-md);
 }
 
+.hover-primary:hover {
+  color: var(--color-primary) !important;
+  text-decoration: underline !important;
+}
+
 /* --- Mobile Menu & Responsive Utilities --- */
 .desktop-only {
   display: flex;
