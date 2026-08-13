@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CG Knowledge - Chhattisgarh Career & Education Portal",
+  title: "CGSSB - Chhattisgarh Career & Education Portal",
   description: "Your complete knowledge graph for CGSSB, CGPSC, Vyapam, Jobs, Syllabus, and Current Affairs in Chhattisgarh.",
 };
 

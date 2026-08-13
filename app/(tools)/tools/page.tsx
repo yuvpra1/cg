@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Student Tools & Calculators | CG Knowledge',
+  title: 'Student Tools & Calculators | CGSSB',
   description: 'Free online tools for Chhattisgarh students: Age Calculator, Percentage Calculator, Typing Test, and more.',
 };
 

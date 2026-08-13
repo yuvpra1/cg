@@ -1,7 +1,7 @@
 import AgeCalculator from '@/components/AgeCalculator';
 
 export const metadata = {
-  title: 'Age Calculator for Government Exams | CG Knowledge',
+  title: 'Age Calculator for Government Exams | CGSSB',
   description: 'Calculate your exact age (years, months, days) as of a specific date for CG Police, CGPSC, and Vyapam exam notifications.',
 };
 

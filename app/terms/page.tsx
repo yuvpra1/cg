@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Terms and Conditions | CG Knowledge',
-  description: 'Terms and Conditions for using the CG Knowledge portal.',
+  title: 'Terms and Conditions | CGSSB',
+  description: 'Terms and Conditions for using the CGSSB portal.',
 };
 
 export default function TermsAndConditions() {
@@ -10,7 +10,7 @@ export default function TermsAndConditions() {
         <h1 style={{ marginBottom: '20px' }}>Terms and Conditions</h1>
         <p>Last updated: January 2026</p>
         <p>
-          Welcome to CG Knowledge! By accessing this website we assume you accept these terms and conditions. Do not continue to use CG Knowledge if you do not agree to take all of the terms and conditions stated on this page.
+          Welcome to CGSSB! By accessing this website we assume you accept these terms and conditions. Do not continue to use CGSSB if you do not agree to take all of the terms and conditions stated on this page.
         </p>
         
         <h2 style={{ marginTop: '30px', marginBottom: '15px' }}>Information Accuracy</h2>
@@ -20,7 +20,7 @@ export default function TermsAndConditions() {
 
         <h2 style={{ marginTop: '30px', marginBottom: '15px' }}>License</h2>
         <p>
-          Unless otherwise stated, CG Knowledge and/or its licensors own the intellectual property rights for all material on CG Knowledge. All intellectual property rights are reserved. You may access this from CG Knowledge for your own personal use subjected to restrictions set in these terms and conditions.
+          Unless otherwise stated, CGSSB and/or its licensors own the intellectual property rights for all material on CGSSB. All intellectual property rights are reserved. You may access this from CGSSB for your own personal use subjected to restrictions set in these terms and conditions.
         </p>
       </div>
     </div>

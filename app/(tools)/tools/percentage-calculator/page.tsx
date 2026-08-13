@@ -1,7 +1,7 @@
 import PercentageCalculator from '@/components/PercentageCalculator';
 
 export const metadata = {
-  title: 'Marks Percentage Calculator for Govt Exams | CG Knowledge',
+  title: 'Marks Percentage Calculator for Govt Exams | CGSSB',
   description: 'Quickly calculate your 10th, 12th, or Graduation marks percentage for CGSSB, CGPSC, and other online application forms.',
 };
 

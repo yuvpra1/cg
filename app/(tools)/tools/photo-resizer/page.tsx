@@ -1,7 +1,7 @@
 import PhotoResizer from '@/components/PhotoResizer';
 
 export const metadata = {
-  title: 'Photo & Signature Resizer for Govt Exams (50KB) | CG Knowledge',
+  title: 'Photo & Signature Resizer for Govt Exams (50KB) | CGSSB',
   description: 'Easily resize and compress your passport size photo and signature under 50KB or 100KB for CGSSB, CGPSC, and Vyapam online application forms.',
 };
 

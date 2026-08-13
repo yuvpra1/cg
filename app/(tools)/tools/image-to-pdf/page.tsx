@@ -1,7 +1,7 @@
 import ImageToPdf from '@/components/ImageToPdf';
 
 export const metadata = {
-  title: 'Image to PDF Converter for Govt Jobs | CG Knowledge',
+  title: 'Image to PDF Converter for Govt Jobs | CGSSB',
   description: 'Convert your JPG/PNG marksheets and documents to PDF format directly in your browser. 100% free and secure tool for CGSSB and CGPSC forms.',
 };
 

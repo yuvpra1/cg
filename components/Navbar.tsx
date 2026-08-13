@@ -40,7 +40,7 @@ export default function Navbar() {
           color: 'var(--color-primary)',
           letterSpacing: '-0.5px'
         }}>
-          CG Knowledge
+          CGSSB
         </Link>
 
         {/* Desktop Nav */}

@@ -1,7 +1,7 @@
 import TypingTest from '@/components/TypingTest';
 
 export const metadata = {
-  title: 'Typing Speed Test (WPM & KPH) for Govt Exams | CG Knowledge',
+  title: 'Typing Speed Test (WPM & KPH) for Govt Exams | CGSSB',
   description: 'Practice your typing speed for CG Vyapam Assistant Grade 3 and Data Entry Operator (DEO) exams. Calculate WPM, Accuracy, and Key Depressions per Hour (KPH).',
 };
 

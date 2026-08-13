@@ -38,7 +38,8 @@ export default function Footer() {
         </div>
 
         <div style={{ marginTop: '20px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          © {new Date().getFullYear()} CG Knowledge Graph. Built for the students of Chhattisgarh.
+          © {new Date().getFullYear()} CGSSB Portal. Built for the students of Chhattisgarh. <br />
+          Email us at: <a href="mailto:contact@cgssb.com.in" style={{ color: 'var(--color-primary)' }}>contact@cgssb.com.in</a>
         </div>
       </div>
     </footer>

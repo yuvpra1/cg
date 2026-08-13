@@ -28,7 +28,7 @@ export default async function Home() {
       {/* Hero Section - Search First */}
       <section style={{ textAlign: 'center', marginBottom: '60px' }}>
         <h1 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
-          Chhattisgarh Knowledge Portal
+          Chhattisgarh Staff Selection Board Notification
         </h1>
         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '30px', maxWidth: '800px', margin: '0 auto 30px' }}>
           Find every job notification, syllabus, cutoff, and study material for Chhattisgarh exams in one place.
