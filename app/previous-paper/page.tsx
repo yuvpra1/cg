@@ -231,6 +231,84 @@ export default function PreviousPapersPage() {
           </li>
         </ul>
       </div>
+      <div className="card" style={{ marginBottom: '30px' }}>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '20px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px' }}>
+          Question Papers of Recruitment Exams 2021
+        </h2>
+        
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/eda06aa8-dbdc-4351-b298-3d7054ef5738.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 डाटा एंट्री ऑपरेटर एवं सहायक ग्रेड 3भर्ती परीक्षा (VDAG21)-2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/73079d19-3034-4d01-8227-f6ad51040fc4.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 आंतरिक अंकेक्षक भर्ती परीक्षा (VIAD21)- 2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/69ae1ac1-90fd-4ece-873a-76146c7cccac.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 पर्यवेक्षक परिसीमित सीधी भर्ती परीक्षा (MBS21)- 2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/b20164e8-c9f9-45cf-9380-389b8caa296b.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 पर्यवेक्षक खुली सीधी भर्ती परीक्षा (MBS21)- 2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <div style={{ fontWeight: '500', color: 'var(--text-main)', marginBottom: '8px' }}>
+              स्टेनो टायपिस्ट, स्टेनोग्राफर (हिन्दी) एवं स्टेनोग्राफर (अंग्रेजी) संयुक्त भर्ती परीक्षा (SGST21)- 2021
+            </div>
+            <div style={{ display: 'flex', gap: '15px', paddingLeft: '15px', flexWrap: 'wrap' }}>
+              <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/e75cf881-5952-49ac-8f27-2924a8e10b2c.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>📄 General Paper</a>
+              <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/6fc1a2a7-c73d-4e1e-a6d7-72538071111f.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>📄 Hindi</a>
+              <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/f12365d9-c0eb-4cbc-af17-ca317de17ee6.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>📄 English</a>
+            </div>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/430a0737-0a53-440e-b8cf-fecb046fbfd8.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 ज्येष्ठ संपरीक्षक एवं सहायक संपरीक्षक भर्ती परीक्षा (SAA21)- 2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/7b2df354-6f7c-4755-972c-a5bac58601ce.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 सहायक ग्रेड -3 एवं डाटा एंट्री ऑपरेटर संयुक्त भर्ती परीक्षा (AGDO21)-2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/d8f9c85d-5390-46bc-8daa-14e7c03c5b9f.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 सहायक परियोजना क्षेत्रपाल भर्ती परीक्षा (VAPR) - 2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/552ff070-9eb1-4515-8bf5-2d4fc3d17a30.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 परियोजना क्षेत्रपाल भर्ती परीक्षा (VPR21) - 2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/1b99b704-5b36-4d49-bd02-cd6f397383cd.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 क्षेत्ररक्षक भर्ती परीक्षा(VFM)-2021
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/87d0cb79-52f3-43af-85e1-aedf9c751948.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 मंडी निरीक्षक एवम् उप निरीक्षक भर्ती परीक्षा (MSI21)-2021
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
