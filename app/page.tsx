@@ -10,6 +10,8 @@ async function getLatestJobs() {
   }
 }
 
+import HomeSeoContent from "@/components/HomeSeoContent";
+
 export default async function Home() {
   const latestPostsList = [
     { title: "नगर सेना अग्निशमन एवं आपातकालीन सेवाएँ तथा एसडीआरएफ के अंतर्गत स्टोर कीपर, वाहन चालक, वाहन चालक कम ऑपरेटर, मैकेनिक एवं वॉचरूम ऑपरेटर पदों की द्वितीय स्तरीय लिखित भर्ती परीक्षा (NSSK26) के ऑनलाइन आवेदन के सम्बंध में विज्ञप्ति", url: "https://vyapamcg.cgstate.gov.in/uploads/pdfs/53c191d1-689c-49d0-bcd1-0a8a11c1820b_3434.pdf", date: "11/08/2026" },
@@ -165,6 +167,9 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
+      {/* SEO Content */}
+      <HomeSeoContent />
 
     </div>
   );
