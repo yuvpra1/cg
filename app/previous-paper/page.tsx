@@ -188,6 +188,49 @@ export default function PreviousPapersPage() {
 
         </ul>
       </div>
+      <div className="card" style={{ marginBottom: '30px' }}>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '20px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px' }}>
+          Question Papers of Recruitment Exams 2022
+        </h2>
+        
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/e19e3168-e220-459c-86e2-b37bba2bea25.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 छत्तीसगढ़ राज्य अंतर्गत सूबेदार/उपनिरीक्षक संवर्ग /प्लाटून कमांडर की भर्ती (PRPE22)-2022 प्रारम्भिक परीक्षा
+            </a>
+          </li>
+          
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=ESC22QUE" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 वैज्ञानिक भर्ती परीक्षा(ESC22) - 2022
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/a919372a-e6e9-4896-9d1a-24ed15f6a670.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 उप अभियंता(सिविल) भर्ती परीक्षा (WRSE22) - 2022
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/2197b57f-c169-4a03-973c-de8897980bf8.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 पटवारी प्रशिक्षण चयन परीक्षा (RDP22)- 2022
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/b0bc4b75-9744-4e84-8ca1-0c8ae5994dfd.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 खाद्य नागरिक आपूर्ति निरीक्षक भर्ती परीक्षा (FCFI22)- 2022
+            </a>
+          </li>
+
+          <li style={{ padding: '15px 0' }}>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/744446ca-e269-408e-8372-cc2d9ecd12c9.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '500', textDecoration: 'none' }}>
+              📄 लेखापाल एवं कनिष्ठ लेखापाल भर्ती परीक्षा(VAJ22)-2022
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
