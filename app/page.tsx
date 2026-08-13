@@ -90,8 +90,13 @@ export default async function Home() {
 
       {/* News Flash Marquee */}
       <div className="marquee-container" style={{ margin: '0 auto 50px', borderRadius: '4px', maxWidth: '800px' }}>
-        <div className="marquee-content">
-          🚀 NEW: CG Police Constable Physical Test Dates Announced! &nbsp; | &nbsp; 🎯 Vyapam Patwari Notification Expected Next Month &nbsp; | &nbsp; 📚 Download Previous Year Papers for CGPSC State Services
+        <div className="marquee-content" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+          <span>🔥 <a href="https://vyapamprofile.cgstate.gov.in/Online" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>Admit Card - जल संसाधन विभाग, अनुरेखक (सिविल) (WRDT26) के प्रवेश पत्र के सम्बंध में विज्ञप्ति</a></span>
+          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=RESULT" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>RESULT - प्री.बी.एड. (Pre. B.Ed.26) प्रवेश परीक्षा - 2026</a></span>
+          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=PSLA26ONLINE" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION - नमूना सहायक /लैब असिस्टेंट (औषधि) / लैब असिस्टेंट (खाद्य) पदों की भर्ती परीक्षा (FWLN26)</a></span>
+          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=WRDT26ONLINE" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION- सहायक शिक्षक पदों हेतु लिखित भर्ती परीक्षा (LSAT26)</a></span>
+          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=MLGI25APPLICATION" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION - छत्तीसगढ़ राज्य पात्रता परीक्षा (CG-SET26)</a></span>
+          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=RESULT" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>RESULT -B.Sc. Nursing (BSCN26) Entrance Examination-2026</a></span>
         </div>
       </div>
 
