@@ -111,10 +111,7 @@ export default async function Home() {
                 gap: '20px',
                 alignItems: 'center',
                 transition: 'background-color 0.2s',
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#f8fafc'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-              >
+              }}>
                 <span style={{ 
                   whiteSpace: 'nowrap', 
                   fontSize: '0.85rem', 
