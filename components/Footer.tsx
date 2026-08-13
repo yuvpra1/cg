@@ -29,11 +29,22 @@ export default function Footer() {
           paddingBottom: '25px',
           borderBottom: '1px solid var(--border-color)',
           width: '100%',
-          maxWidth: '500px'
+          maxWidth: '800px'
         }}>
           <Link href="/about-us" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>About Us</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
+          <Link href="/author" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Author</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
+          <Link href="/editorial-policy" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Editorial Policy</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
+          <Link href="/correction-policy" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Correction Policy</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
+          <Link href="/contact-us" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Contact Us</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
           <Link href="/privacy-policy" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Privacy Policy</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
           <Link href="/terms" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Terms & Conditions</Link>
+          <span style={{ color: 'var(--border-color)' }}>|</span>
           <Link href="/disclaimer" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Disclaimer</Link>
         </div>
 
