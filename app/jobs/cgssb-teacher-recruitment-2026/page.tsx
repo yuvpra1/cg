@@ -31,8 +31,8 @@ export default function TeacherRecruitmentArticlePage() {
         <div style={{ marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           <Image 
             src="/cgssb-teacher-recruitment-2026.webp" 
-            alt="CGSSB Teacher Recruitment 2026: 1654 Posts"
-            title="CGSSB Teacher Recruitment 2026"
+            alt="CGSSB Teacher Recruitment 2026: 1654 Posts for Hindi, English, Maths, Sanskrit, Social Science, and Agriculture"
+            title="CGSSB Teacher Recruitment 2026 Notification and Subject Wise Vacancy"
             width={900}
             height={500}
             style={{ width: '100%', height: 'auto', display: 'block' }}
@@ -586,7 +586,7 @@ export default function TeacherRecruitmentArticlePage() {
           <div style={{ backgroundColor: '#f8d7da', borderLeft: '4px solid #dc3545', padding: '15px', marginBottom: '40px', borderRadius: '4px' }}>
             <h3 style={{ marginTop: '0', color: '#842029', fontSize: '1.2rem', marginBottom: '10px' }}>Disclaimer</h3>
             <p style={{ margin: '0', color: '#842029', fontSize: '0.95rem' }}>
-              <strong>cgssb.org</strong> एक independent informational website है। यह CGSSB, लोक शिक्षण संचालनालय, छत्तीसगढ़ सरकार या किसी अन्य सरकारी विभाग की official website नहीं है। इस article में दी गई जानकारी उपलब्ध official recruitment documents और examination instructions के आधार पर समझाने के उद्देश्य से दी गई है। आवेदन करने या परीक्षा से संबंधित कोई महत्वपूर्ण निर्णय लेने से पहले संबंधित official notification जरूर verify करें।
+              <strong>cgssb.com.in</strong> एक independent informational website है। यह CGSSB, लोक शिक्षण संचालनालय, छत्तीसगढ़ सरकार या किसी अन्य सरकारी विभाग की official website नहीं है। इस article में दी गई जानकारी उपलब्ध official recruitment documents और examination instructions के आधार पर समझाने के उद्देश्य से दी गई है। आवेदन करने या परीक्षा से संबंधित कोई महत्वपूर्ण निर्णय लेने से पहले संबंधित official notification जरूर verify करें।
             </p>
           </div>
           
