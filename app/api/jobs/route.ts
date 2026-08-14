@@ -3,19 +3,8 @@ import { getAllJobs, getJobBySlug, insertJob } from '@/lib/db';
 
 export const runtime = 'edge';
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params?: { slug?: string } }
-) {
+export async function GET(request: NextRequest) {
   try {
-    if (params && params.slug) {
-      const job = await getJobBySlug(params.slug);
-      if (job) {
-        return NextResponse.json({ success: true, job });
-      }
-      return NextResponse.json({ success: false, error: 'Job not found' }, { status: 404 });
-    }
-
     const jobs = await getAllJobs();
     return NextResponse.json({ success: true, jobs });
     
