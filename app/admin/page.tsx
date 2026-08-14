@@ -6,6 +6,8 @@ export default function AdminPanel() {
   const [formData, setFormData] = useState({
     password: '',
     title: '',
+    meta_title: '',
+    meta_description: '',
     slug: '',
     department: 'CG Police',
     total_posts: '',
@@ -36,7 +38,7 @@ export default function AdminPanel() {
 
       if (response.ok && data.success) {
         setStatus({ type: 'success', message: 'Job Published Successfully!' });
-        setFormData({ ...formData, title: '', slug: '', total_posts: '', last_date: '', content: '' }); // reset fields except password
+        setFormData({ ...formData, title: '', meta_title: '', meta_description: '', slug: '', total_posts: '', last_date: '', content: '' }); // reset fields except password
       } else {
         setStatus({ type: 'error', message: data.error || 'Failed to publish job' });
       }
@@ -85,6 +87,26 @@ export default function AdminPanel() {
             type="text" name="title" required 
             value={formData.title} onChange={handleChange} 
             placeholder="e.g., CG Police Constable Recruitment 2026"
+            style={inputStyle} 
+          />
+        </div>
+
+        <div>
+          <label style={labelStyle}>SEO Meta Title (Optional)</label>
+          <input 
+            type="text" name="meta_title"
+            value={formData.meta_title} onChange={handleChange} 
+            placeholder="Custom title for Google Search (leave blank to use Job Title)"
+            style={inputStyle} 
+          />
+        </div>
+
+        <div>
+          <label style={labelStyle}>SEO Meta Description (Optional)</label>
+          <input 
+            type="text" name="meta_description"
+            value={formData.meta_description} onChange={handleChange} 
+            placeholder="Custom description for Google Search (150-160 characters)"
             style={inputStyle} 
           />
         </div>

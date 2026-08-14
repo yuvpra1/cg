@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
     if (env && env.DB) {
       const db = env.DB;
       const { results } = await db.prepare(
-        'SELECT id, slug, title, department, total_posts, last_date FROM jobs ORDER BY id DESC LIMIT 20'
+        'SELECT id, slug, title, meta_title, meta_description, department, total_posts, last_date FROM jobs ORDER BY id DESC LIMIT 20'
       ).all();
       return NextResponse.json({ success: true, jobs: results });
     } else {
@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { password, title, slug, department, total_posts, last_date, content } = body;
+    const { password, title, meta_title, meta_description, slug, department, total_posts, last_date, content } = body;
 
     if (password !== 'admin123') {
       return NextResponse.json({ success: false, error: 'Unauthorized Access! Wrong Password.' }, { status: 401 });
@@ -76,15 +76,15 @@ export async function POST(request: NextRequest) {
     if (env && env.DB) {
       const db = env.DB;
       await db.prepare(
-        `INSERT INTO jobs (title, slug, department, total_posts, last_date, content) 
-         VALUES (?, ?, ?, ?, ?, ?)`
-      ).bind(title, slug, department, total_posts, last_date, content).run();
+        `INSERT INTO jobs (title, meta_title, meta_description, slug, department, total_posts, last_date, content) 
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+      ).bind(title, meta_title || '', meta_description || '', slug, department, total_posts, last_date, content).run();
     } else {
       // Fallback for local 'npm run dev'
       localJobs.unshift({
         id: Date.now(),
-        slug, title, department, total_posts: Number(total_posts), last_date, content
-      });
+        slug, title, meta_title: meta_title || '', meta_description: meta_description || '', department, total_posts: Number(total_posts), last_date, content
+      } as any);
     }
 
     return NextResponse.json({ success: true, message: 'Job successfully published!' });
