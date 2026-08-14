@@ -1,7 +1,5 @@
 export const runtime = 'edge';
 import { Metadata } from 'next';
-import JobTabs from '@/components/JobTabs';
-
 
 
 import { getJobBySlug } from '@/lib/db';
@@ -67,8 +65,6 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
           </div>
         </header>
 
-        {/* Tabbed Navigation */}
-        <JobTabs slug={slug} />
 
         {/* Dynamic Content Rendering */}
         <div 

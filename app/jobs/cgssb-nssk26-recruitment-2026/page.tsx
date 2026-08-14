@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import JobTabs from '@/components/JobTabs';
 
 
 
@@ -43,8 +42,6 @@ export default function NSSK26ArticlePage() {
           </div>
         </header>
 
-        {/* Tabbed Navigation */}
-        <JobTabs slug="cgssb-nssk26-recruitment-2026" />
 
         {/* Article Content styled exactly like HomeSeoContent */}
         <section className="seo-content-section" style={{ lineHeight: '1.8', color: 'var(--text-main)', fontSize: '1.05rem', marginTop: '30px' }}>
