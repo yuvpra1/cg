@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card',
-  description: 'CGSSB NSSK26 Recruitment 2026 की exam date, application dates, syllabus, exam pattern, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें।',
+  title: 'CGSSB NSSK26 Recruitment 2026: Station Officer, Fireman सहित 295 पदों की भर्ती',
+  description: 'CGSSB NSSK26 Recruitment 2026 की exam date, syllabus, vacancy details, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें। कुल 295 पदों पर भर्ती।',
 };
 
 export default function NSSK26ArticlePage() {
@@ -26,9 +26,8 @@ export default function NSSK26ArticlePage() {
             नगर सेना एवं अग्निशमन सेवाएँ
           </span>
           <h1 style={{ fontSize: '2.4rem', marginTop: '10px', marginBottom: '15px', color: 'var(--text-main)', lineHeight: '1.3' }}>
-            CGSSB NSSK26 Recruitment 2026: Store Keeper, Vehicle Driver, Mechanic सहित 5 पदों की लिखित परीक्षा, Exam Date, Syllabus और जरूरी निर्देश
+            CGSSB NSSK26 Recruitment 2026: Station Officer, Fireman, Store Keeper सहित 295 पदों की लिखित परीक्षा, Exam Date, Syllabus और जरूरी निर्देश
           </h1>
-          
         </header>
 
         {/* SEO Optimized Featured Image */}
@@ -48,7 +47,7 @@ export default function NSSK26ArticlePage() {
         <section className="seo-content-section" style={{ lineHeight: '1.8', color: 'var(--text-main)', fontSize: '1.05rem', marginTop: '30px' }}>
           
           <p style={{ marginBottom: '15px', fontSize: '1.1rem' }}>
-            छत्तीसगढ़ में नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत अलग-अलग पदों पर भर्ती के लिए <strong>NSSK26</strong> लिखित परीक्षा आयोजित की जाएगी। इस परीक्षा में <strong>Store Keeper, Vehicle Driver, Vehicle Driver-cum-Operator, Mechanic</strong> और <strong>Watchroom Operator</strong> जैसे पद शामिल हैं।
+            छत्तीसगढ़ में नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत अलग-अलग पदों पर भर्ती के लिए <strong>NSSK26</strong> लिखित परीक्षा आयोजित की जाएगी। इस परीक्षा में <strong>स्टेशन ऑफिसर, फायर मैन, स्टोर कीपर, वाहन चालक, वाचरूम ऑपरेटर</strong> और अन्य पदों सहित कुल <strong>295 रिक्तियों</strong> पर भर्ती की जाएगी।
           </p>
           <p style={{ marginBottom: '15px' }}>
             CGSSB द्वारा जारी परीक्षा निर्देश के अनुसार इस भर्ती की लिखित परीक्षा <strong>22 नवंबर 2026</strong> को आयोजित की जाएगी। परीक्षा के लिए आवेदन प्रक्रिया 11 अगस्त 2026 से शुरू हुई है और उम्मीदवार 7 सितंबर 2026 शाम 5 बजे तक online application कर सकते हैं।
@@ -63,16 +62,6 @@ export default function NSSK26ArticlePage() {
           <p style={{ marginBottom: '15px' }}>
             NSSK26 नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत विभिन्न पदों की लिखित भर्ती परीक्षा का examination code है।
           </p>
-          <p style={{ marginBottom: '15px' }}>
-            इस परीक्षा के अंतर्गत निम्न पदों का उल्लेख किया गया है:
-          </p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '20px', listStyleType: 'disc' }}>
-            <li>Store Keeper</li>
-            <li>Vehicle Driver</li>
-            <li>Vehicle Driver-cum-Operator</li>
-            <li>Mechanic</li>
-            <li>Watchroom Operator</li>
-          </ul>
           <p style={{ marginBottom: '30px' }}>
             यह परीक्षा छत्तीसगढ़ कर्मचारी चयन मंडल (CGSSB) द्वारा आयोजित की जा रही है। परीक्षा निर्देश में CGSSB की website के साथ पुराने CG Vyapam portal का भी उल्लेख किया गया है।
           </p>
@@ -130,28 +119,98 @@ export default function NSSK26ArticlePage() {
           </div>
 
           <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
-            NSSK26 में कौन-कौन से पद हैं?
+            NSSK26 में कौन-कौन से पद हैं? (Vacancy Details)
           </h2>
-          <p style={{ marginBottom: '20px' }}>इस written recruitment examination में पांच अलग-अलग पदों का उल्लेख किया गया है:</p>
+          <p style={{ marginBottom: '20px' }}>
+            इस लिखित भर्ती परीक्षा (written recruitment examination) में कुल <strong>8 अलग-अलग पदों</strong> का उल्लेख किया गया है।
+          </p>
 
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>1. Store Keeper</h3>
-          <p style={{ marginBottom: '20px' }}>Store Keeper से संबंधित काम में विभागीय सामग्री और stock से जुड़े कार्य शामिल हो सकते हैं। हालांकि exact job responsibilities के लिए संबंधित recruitment notification को देखना चाहिए।</p>
+          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>पदवार रिक्तियों का विवरण</h3>
 
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>2. Vehicle Driver</h3>
-          <p style={{ marginBottom: '20px' }}>इस पद के लिए वाहन संचालन से संबंधित योग्यता और अन्य conditions recruitment notification में निर्धारित होती हैं।</p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>3. Vehicle Driver-cum-Operator</h3>
-          <p style={{ marginBottom: '20px' }}>इस पद में vehicle driving के साथ emergency services से संबंधित operational responsibilities हो सकती हैं। Exact requirements official recruitment notification से verify करनी चाहिए।</p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>4. Mechanic</h3>
-          <p style={{ marginBottom: '20px' }}>Mechanic पद technical work से संबंधित है और इसके लिए निर्धारित technical qualification/conditions संबंधित भर्ती notification में देखना जरूरी है।</p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>5. Watchroom Operator</h3>
-          <p style={{ marginBottom: '20px' }}>Watchroom Operator emergency services setup में watchroom/communication-related responsibilities से जुड़ा पद है।</p>
-
-          <div style={{ backgroundColor: '#e2e3e5', padding: '12px 15px', borderRadius: '4px', marginBottom: '30px' }}>
-            <strong>ध्यान दें:</strong> आपके दिए गए syllabus document में इन पांचों पदों के लिए लिखित परीक्षा का common syllabus दिया गया है।
+          <div style={{ overflowX: 'auto', marginBottom: '20px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid var(--border-color)', minWidth: '700px' }}>
+              <thead>
+                <tr style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
+                  <th style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>क्र.</th>
+                  <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>पदनाम</th>
+                  <th style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>वेतन मैट्रिक्स लेवल</th>
+                  <th style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>पद संख्या</th>
+                  <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>टिप्पणी</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>1</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>स्टेशन ऑफिसर (उप निरीक्षक)</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>7</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>21</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
+                </tr>
+                <tr style={{ backgroundColor: '#f8fafc' }}>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>2</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वाहन चालक</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>14</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>3</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वाहन चालक कम ऑपरेटर</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>86</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
+                </tr>
+                <tr style={{ backgroundColor: '#f8fafc' }}>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>फायर मैन</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>117</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>5</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>स्टोर कीपर</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>32</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
+                </tr>
+                <tr style={{ backgroundColor: '#f8fafc' }}>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>6</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>मैकेनिक</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>02</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>7</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वाचरूम ऑपरेटर</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>19</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>प्रशिक्षित नगर सैनिक से पदोन्नति</td>
+                </tr>
+                <tr style={{ backgroundColor: '#f8fafc' }}>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>8</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वायरलेस ऑपरेटर (संविदा)</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)', fontSize: '0.95rem' }}>एकमुश्त मासिक संविदा वेतन</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>04</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>प्रशिक्षित वायरलेस ऑपरेटर नगर सैनिक से पदोन्नति</td>
+                </tr>
+                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}>
+                  <td colSpan={3} style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>कुल</td>
+                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>295</td>
+                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
+          <p style={{ marginBottom: '20px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+            <strong>नोट:</strong> ऊपर की table आपके द्वारा दिए गए official document के image के अनुसार तैयार की गई है। इसमें <strong>कुल 295 पद</strong> दर्शाए गए हैं।
+          </p>
+
+          <p style={{ marginBottom: '30px', padding: '15px', backgroundColor: '#f8fafc', borderLeft: '4px solid var(--color-primary)', borderRadius: '4px' }}>
+            इस भर्ती में कुल <strong>295 पद</strong> दर्शाए गए हैं। इनमें फायरमैन के 117 पद और वाहन चालक कम ऑपरेटर के 86 पद सबसे अधिक हैं। इसके अलावा स्टोर कीपर, वाचरूम ऑपरेटर, वाहन चालक, स्टेशन ऑफिसर, मैकेनिक और वायरलेस ऑपरेटर के पद भी शामिल हैं।
+          </p>
 
           <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
             Educational Qualification
@@ -448,7 +507,7 @@ export default function NSSK26ArticlePage() {
           
           <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: NSSK26 क्या है?</h3>
-            <p style={{ margin: '0', fontSize: '1rem' }}>NSSK26 नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत Store Keeper, Vehicle Driver, Mechanic और Watchroom Operator पदों की लिखित भर्ती परीक्षा का code है।</p>
+            <p style={{ margin: '0', fontSize: '1rem' }}>NSSK26 नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत Station Officer, Fireman, Store Keeper सहित 8 अलग-अलग पदों की लिखित भर्ती परीक्षा का code है।</p>
           </div>
 
           <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
@@ -470,7 +529,7 @@ export default function NSSK26ArticlePage() {
             निष्कर्ष
           </h2>
           <p style={{ marginBottom: '15px' }}>
-            NSSK26 की written examination उन candidates के लिए important है जो नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत घोषित पदों की भर्ती प्रक्रिया में शामिल हो रहे हैं। इस परीक्षा में 100 questions, 100 marks और 2 घंटे का written paper होगा। General Knowledge और Fire & Fire Safety दोनों का weightage महत्वपूर्ण है।
+            NSSK26 की written examination उन candidates के लिए important है जो नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत घोषित 295 पदों की भर्ती प्रक्रिया में शामिल हो रहे हैं। इस परीक्षा में 100 questions, 100 marks और 2 घंटे का written paper होगा। General Knowledge और Fire & Fire Safety दोनों का weightage महत्वपूर्ण है।
           </p>
           <p style={{ marginBottom: '30px' }}>
             Application भरने वाले candidates को profile registration, personal information, photo/signature upload और payment के बाद final submission जैसी छोटी लेकिन important चीजों में सावधानी रखनी चाहिए।
