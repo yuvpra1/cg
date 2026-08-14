@@ -71,7 +71,7 @@ export async function POST(request: NextRequest) {
       // Fallback for local 'npm run dev'
       localJobs.unshift({
         id: Date.now(),
-        slug, title, department, total_posts: Number(total_posts), last_date
+        slug, title, department, total_posts: Number(total_posts), last_date, content
       });
     }
 
