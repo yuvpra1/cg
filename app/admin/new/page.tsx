@@ -1,5 +1,7 @@
 import JobForm from '../components/JobForm';
 
+export const runtime = 'edge';
+
 export default function NewJobPage() {
   return (
     <div>

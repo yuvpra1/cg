@@ -1,5 +1,7 @@
 import JobForm from '../../components/JobForm';
 import { getJobById } from '@/lib/db';
+
+export const runtime = 'edge';
 import { notFound } from 'next/navigation';
 
 export default async function EditJobPage({ params }: { params: { id: string } }) {
