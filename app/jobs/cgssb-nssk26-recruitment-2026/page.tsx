@@ -204,9 +204,6 @@ export default function NSSK26ArticlePage() {
             </table>
           </div>
 
-          <p style={{ marginBottom: '20px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-            <strong>नोट:</strong> ऊपर की table आपके द्वारा दिए गए official document के image के अनुसार तैयार की गई है। इसमें <strong>कुल 295 पद</strong> दर्शाए गए हैं।
-          </p>
 
           <p style={{ marginBottom: '30px', padding: '15px', backgroundColor: '#f8fafc', borderLeft: '4px solid var(--color-primary)', borderRadius: '4px' }}>
             इस भर्ती में कुल <strong>295 पद</strong> दर्शाए गए हैं। इनमें फायरमैन के 117 पद और वाहन चालक कम ऑपरेटर के 86 पद सबसे अधिक हैं। इसके अलावा स्टोर कीपर, वाचरूम ऑपरेटर, वाहन चालक, स्टेशन ऑफिसर, मैकेनिक और वायरलेस ऑपरेटर के पद भी शामिल हैं।
