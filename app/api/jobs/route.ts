@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllJobs, getJobBySlug, insertJob } from '@/lib/db';
 
-export const runtime = 'edge';
+
 
 export async function GET(request: NextRequest) {
   try {

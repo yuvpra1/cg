@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import JobTabs from '@/components/JobTabs';
 
-export const runtime = 'edge';
+
 
 export const metadata: Metadata = {
   title: 'CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card',

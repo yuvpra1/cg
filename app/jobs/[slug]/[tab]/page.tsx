@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import JobTabs from '@/components/JobTabs';
 
-export const runtime = 'edge';
+
 
 import { getJobBySlug } from '@/lib/db';
 

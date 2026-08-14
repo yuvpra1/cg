@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+
 
 import { getAllJobs } from '@/lib/db';
 
