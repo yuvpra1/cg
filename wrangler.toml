@@ -5,5 +5,5 @@ pages_build_output_dir = ".vercel/output/static"
 
 [[d1_databases]]
 binding = "DB" # How you will access the DB in your code (e.g. process.env.DB or ctx.env.DB)
-database_name = "DB"
+database_name = "db"
 database_id = "f989a29d-753a-453f-b207-d3910ced7018"

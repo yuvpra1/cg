@@ -1,95 +1,188 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
-export default function AdminJobsList() {
-  const [jobs, setJobs] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-  const router = useRouter();
+export default function AdminPanel() {
+  const [formData, setFormData] = useState({
+    password: '',
+    title: '',
+    meta_title: '',
+    meta_description: '',
+    slug: '',
+    department: 'CG Police',
+    total_posts: '',
+    last_date: '',
+    content: ''
+  });
 
-  useEffect(() => {
-    fetchJobs();
-  }, []);
+  const [status, setStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const fetchJobs = async () => {
-    try {
-      const res = await fetch('/api/admin/jobs');
-      const data = await res.json();
-      setJobs(Array.isArray(data) ? data : []);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      setLoading(false);
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleDelete = async (id: number) => {
-    if (!confirm('Are you sure you want to delete this job?')) return;
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: null, message: '' });
+
     try {
-      await fetch(`/api/admin/jobs/${id}`, { method: 'DELETE' });
-      fetchJobs();
-    } catch (e) {
-      console.error(e);
+      const response = await fetch('/api/jobs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setStatus({ type: 'success', message: 'Job Published Successfully!' });
+        setFormData({ ...formData, title: '', meta_title: '', meta_description: '', slug: '', total_posts: '', last_date: '', content: '' }); // reset fields except password
+      } else {
+        setStatus({ type: 'error', message: data.error || 'Failed to publish job' });
+      }
+    } catch (error) {
+      setStatus({ type: 'error', message: 'Network error. Try again.' });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ fontSize: '1.8rem', color: 'var(--color-primary)' }}>Manage Jobs</h2>
-        <Link 
-          href="/admin/new"
-          style={{
-            padding: '10px 20px',
-            backgroundColor: 'var(--color-primary)',
-            color: 'white',
-            textDecoration: 'none',
-            borderRadius: '4px',
-            fontWeight: '600'
-          }}
-        >
-          + Add New Job
-        </Link>
-      </div>
+    <div className="container" style={{ padding: '60px 20px', maxWidth: '800px' }}>
+      <h1 style={{ marginBottom: '10px' }}>Admin Panel - Post New Job</h1>
+      <p style={{ color: 'var(--text-muted)', marginBottom: '30px' }}>Securely publish new job vacancies to the portal. Enter the secret password to authorize.</p>
 
-      {loading ? (
-        <p>Loading jobs...</p>
-      ) : (
-        <div style={{ backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.05)', overflow: 'hidden' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-            <thead style={{ backgroundColor: '#f1f5f9', borderBottom: '2px solid #e2e8f0', textAlign: 'left' }}>
-              <tr>
-                <th style={{ padding: '15px' }}>ID</th>
-                <th style={{ padding: '15px' }}>Title</th>
-                <th style={{ padding: '15px' }}>Department</th>
-                <th style={{ padding: '15px' }}>Last Date</th>
-                <th style={{ padding: '15px', textAlign: 'right' }}>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {jobs.map((job) => (
-                <tr key={job.id} style={{ borderBottom: '1px solid #e2e8f0' }}>
-                  <td style={{ padding: '15px' }}>{job.id}</td>
-                  <td style={{ padding: '15px', fontWeight: '500' }}>{job.title}</td>
-                  <td style={{ padding: '15px' }}>{job.department}</td>
-                  <td style={{ padding: '15px' }}>{new Date(job.last_date).toLocaleDateString()}</td>
-                  <td style={{ padding: '15px', textAlign: 'right' }}>
-                    <Link href={`/admin/edit/${job.id}`} style={{ marginRight: '15px', color: '#3b82f6', textDecoration: 'none' }}>Edit</Link>
-                    <button onClick={() => handleDelete(job.id)} style={{ color: '#ef4444', background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem' }}>Delete</button>
-                  </td>
-                </tr>
-              ))}
-              {jobs.length === 0 && (
-                <tr>
-                  <td colSpan={5} style={{ padding: '20px', textAlign: 'center', color: '#64748b' }}>No jobs found.</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
+      {status.message && (
+        <div style={{ 
+          padding: '15px', 
+          marginBottom: '20px', 
+          borderRadius: '4px',
+          backgroundColor: status.type === 'success' ? '#dcfce7' : '#fee2e2',
+          color: status.type === 'success' ? '#166534' : '#991b1b',
+          border: `1px solid ${status.type === 'success' ? '#bbf7d0' : '#fecaca'}`
+        }}>
+          {status.message}
         </div>
       )}
+
+      <form onSubmit={handleSubmit} className="card" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        
+        {/* Security Password */}
+        <div>
+          <label style={labelStyle}>Admin Secret Password</label>
+          <input 
+            type="password" name="password" required 
+            value={formData.password} onChange={handleChange} 
+            placeholder="Enter secret to verify identity"
+            style={inputStyle} 
+          />
+        </div>
+
+        {/* Job Details */}
+        <div>
+          <label style={labelStyle}>Job Title</label>
+          <input 
+            type="text" name="title" required 
+            value={formData.title} onChange={handleChange} 
+            placeholder="e.g., CG Police Constable Recruitment 2026"
+            style={inputStyle} 
+          />
+        </div>
+
+        <div>
+          <label style={labelStyle}>SEO Meta Title (Optional)</label>
+          <input 
+            type="text" name="meta_title"
+            value={formData.meta_title} onChange={handleChange} 
+            placeholder="Custom title for Google Search (leave blank to use Job Title)"
+            style={inputStyle} 
+          />
+        </div>
+
+        <div>
+          <label style={labelStyle}>SEO Meta Description (Optional)</label>
+          <input 
+            type="text" name="meta_description"
+            value={formData.meta_description} onChange={handleChange} 
+            placeholder="Custom description for Google Search (150-160 characters)"
+            style={inputStyle} 
+          />
+        </div>
+
+        <div>
+          <label style={labelStyle}>URL Slug (SEO Friendly)</label>
+          <input 
+            type="text" name="slug" required 
+            value={formData.slug} onChange={handleChange} 
+            placeholder="e.g., cg-police-constable-2026"
+            style={inputStyle} 
+          />
+          <small style={{ color: 'var(--text-muted)' }}>No spaces, use hyphens.</small>
+        </div>
+
+        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          <div style={{ flex: 1 }}>
+            <label style={labelStyle}>Department</label>
+            <select name="department" value={formData.department} onChange={handleChange} style={inputStyle}>
+              <option value="CG Police">CG Police</option>
+              <option value="Vyapam">CGSSB (Vyapam)</option>
+              <option value="CGPSC">CGPSC</option>
+              <option value="Health Dept">Health Dept</option>
+              <option value="Education">Education</option>
+            </select>
+          </div>
+          
+          <div style={{ flex: 1 }}>
+            <label style={labelStyle}>Total Posts</label>
+            <input 
+              type="number" name="total_posts" required 
+              value={formData.total_posts} onChange={handleChange} 
+              style={inputStyle} 
+            />
+          </div>
+          
+          <div style={{ flex: 1 }}>
+            <label style={labelStyle}>Last Date</label>
+            <input 
+              type="date" name="last_date" required 
+              value={formData.last_date} onChange={handleChange} 
+              style={inputStyle} 
+            />
+          </div>
+        </div>
+
+        <div>
+          <label style={labelStyle}>Full Content / Description (HTML allowed)</label>
+          <textarea 
+            name="content" required rows={8}
+            value={formData.content} onChange={handleChange} 
+            placeholder="<h2>Eligibility</h2><p>12th Pass</p>"
+            style={{ ...inputStyle, resize: 'vertical' }} 
+          />
+        </div>
+
+        <button 
+          type="submit" 
+          disabled={isSubmitting}
+          style={{ 
+            padding: '14px', 
+            backgroundColor: 'var(--color-primary)', 
+            color: 'white', 
+            border: 'none', 
+            borderRadius: '4px',
+            fontSize: '1.1rem',
+            fontWeight: '600',
+            cursor: isSubmitting ? 'not-allowed' : 'pointer'
+          }}
+        >
+          {isSubmitting ? 'Publishing...' : 'Publish Job'}
+        </button>
+      </form>
     </div>
   );
 }
+
+const labelStyle = { display: 'block', fontWeight: '600', marginBottom: '8px' };
+const inputStyle = { width: '100%', padding: '12px', border: '1px solid var(--border-color)', borderRadius: '4px', fontSize: '1rem', outline: 'none' };

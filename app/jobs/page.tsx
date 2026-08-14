@@ -1,7 +1,6 @@
 
-import { getAllJobs } from '@/lib/db';
 
-export const runtime = 'edge';
+import { getAllJobs } from '@/lib/db';
 
 async function getJobs() {
   try {
