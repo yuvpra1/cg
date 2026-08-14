@@ -31,8 +31,9 @@ export async function GET(request: NextRequest) {
     const ctx = getRequestContext();
     
     // Check if we are running in Cloudflare with D1 binding
-    if (ctx.env && ctx.env.DB) {
-      const db = ctx.env.DB;
+    const env = ctx.env as any;
+    if (env && env.DB) {
+      const db = env.DB;
       const { results } = await db.prepare(
         'SELECT id, slug, title, department, total_posts, last_date FROM jobs ORDER BY id DESC LIMIT 20'
       ).all();
@@ -59,8 +60,9 @@ export async function POST(request: NextRequest) {
     const ctx = getRequestContext();
 
     // Check if we are running in Cloudflare with D1 binding
-    if (ctx.env && ctx.env.DB) {
-      const db = ctx.env.DB;
+    const env = ctx.env as any;
+    if (env && env.DB) {
+      const db = env.DB;
       await db.prepare(
         `INSERT INTO jobs (title, slug, department, total_posts, last_date, content) 
          VALUES (?, ?, ?, ?, ?, ?)`

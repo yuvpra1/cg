@@ -10,8 +10,9 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     const ctx = getRequestContext();
     
     // Check if we are running in Cloudflare with D1 binding
-    if (ctx.env && ctx.env.DB) {
-      const db = ctx.env.DB;
+    const env = ctx.env as any;
+    if (env && env.DB) {
+      const db = env.DB;
       const job = await db.prepare(
         'SELECT id, slug, title, department, total_posts, last_date, content FROM jobs WHERE slug = ?'
       ).bind(slug).first();
