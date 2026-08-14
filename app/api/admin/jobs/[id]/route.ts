@@ -1,9 +1,11 @@
 import { NextResponse } from 'next/server';
 import { getJobById, updateJob, deleteJob } from '@/lib/db';
+import { checkAuth } from '@/lib/auth';
 
 export const runtime = 'edge';
 
 export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  if (!(await checkAuth())) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const { id } = await params;
   try {
     const job = await getJobById(Number(id));
@@ -15,6 +17,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
 }
 
 export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  if (!(await checkAuth())) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const { id } = await params;
   try {
     const data = await request.json();
@@ -26,6 +29,7 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
 }
 
 export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  if (!(await checkAuth())) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const { id } = await params;
   try {
     await deleteJob(Number(id));
