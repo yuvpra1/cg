@@ -29,16 +29,6 @@ export default function NSSK26ArticlePage() {
             CGSSB NSSK26 Recruitment 2026: Store Keeper, Vehicle Driver, Mechanic सहित 5 पदों की लिखित परीक्षा, Exam Date, Syllabus और जरूरी निर्देश
           </h1>
           
-          <div style={{ display: 'flex', gap: '25px', color: 'var(--text-muted)', fontSize: '0.95rem', flexWrap: 'wrap', backgroundColor: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '1.2rem' }}>📝</span> 
-              <strong>Total Posts:</strong> 5
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '1.2rem' }}>⏳</span> 
-              <strong>Last Date:</strong> 07 Sep 2026
-            </div>
-          </div>
         </header>
 
         {/* SEO Optimized Featured Image */}
