@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'CGSSB NSSK26 Recruitment 2026: Station Officer, Fireman सहित 295 पदों की भर्ती',
-  description: 'CGSSB NSSK26 Recruitment 2026 की exam date, syllabus, vacancy details, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें। कुल 295 पदों पर भर्ती।',
+  description: 'CGSSB NSSK26 Recruitment 2026 की exam date, vacancy details, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें। कुल 295 पदों पर भर्ती।',
 };
 
 export default function NSSK26ArticlePage() {
@@ -26,7 +26,7 @@ export default function NSSK26ArticlePage() {
             नगर सेना एवं अग्निशमन सेवाएँ
           </span>
           <h1 style={{ fontSize: '2.4rem', marginTop: '10px', marginBottom: '15px', color: 'var(--text-main)', lineHeight: '1.3' }}>
-            CGSSB NSSK26 Recruitment 2026: Station Officer, Fireman, Store Keeper सहित 295 पदों की लिखित परीक्षा, Exam Date, Syllabus और जरूरी निर्देश
+            CGSSB NSSK26 Recruitment 2026: Station Officer, Fireman, Store Keeper सहित 295 पदों की लिखित परीक्षा, Exam Date और जरूरी निर्देश
           </h1>
         </header>
 
@@ -34,7 +34,7 @@ export default function NSSK26ArticlePage() {
         <div style={{ marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           <Image 
             src="/cgssb-nssk26-recruitment-2026.webp" 
-            alt="CGSSB NSSK26 Recruitment 2026 Notification, Exam Date and Syllabus"
+            alt="CGSSB NSSK26 Recruitment 2026 Notification and Exam Date"
             title="CGSSB NSSK26 Recruitment 2026"
             width={900}
             height={500}
@@ -53,7 +53,7 @@ export default function NSSK26ArticlePage() {
             CGSSB द्वारा जारी परीक्षा निर्देश के अनुसार इस भर्ती की लिखित परीक्षा <strong>22 नवंबर 2026</strong> को आयोजित की जाएगी। परीक्षा के लिए आवेदन प्रक्रिया 11 अगस्त 2026 से शुरू हुई है और उम्मीदवार 7 सितंबर 2026 शाम 5 बजे तक online application कर सकते हैं।
           </p>
           <p style={{ marginBottom: '30px' }}>
-            अगर आप इस भर्ती में आवेदन करने की तैयारी कर रहे हैं, तो नीचे हमने परीक्षा की date, application process, fee, syllabus, exam pattern और exam day instructions को आसान भाषा में समझाया है।
+            अगर आप इस भर्ती में आवेदन करने की तैयारी कर रहे हैं, तो नीचे हमने परीक्षा की date, application process, fee और exam day instructions को आसान भाषा में समझाया है।
           </p>
 
           <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
@@ -216,133 +216,10 @@ export default function NSSK26ArticlePage() {
             Educational Qualification
           </h2>
           <p style={{ marginBottom: '15px' }}>
-            दिए गए syllabus document में इन पदों के लिए <strong>12वीं पास</strong> educational qualification का उल्लेख किया गया है। हालांकि कुछ पदों, खासकर Driver या technical posts के लिए अतिरिक्त qualification या licence जैसी specific conditions हो सकती हैं।
+            इन पदों के लिए <strong>12वीं पास</strong> educational qualification का उल्लेख किया गया है। हालांकि कुछ पदों, खासकर Driver या technical posts के लिए अतिरिक्त qualification या licence जैसी specific conditions हो सकती हैं।
           </p>
           <p style={{ marginBottom: '30px' }}>
             इसलिए केवल 12वीं पास होने के आधार पर सभी posts के लिए eligibility assume नहीं करनी चाहिए। जिस पद के लिए apply करना है, उसकी official recruitment notification में दी गई complete eligibility conditions जरूर check करें।
-          </p>
-
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
-            CGSSB NSSK26 Exam Pattern
-          </h2>
-          <p style={{ marginBottom: '15px' }}>
-            NSSK26 की written examination का question paper <strong>100 questions</strong> का होगा। परीक्षा के लिए कुल <strong>100 marks</strong> निर्धारित हैं और समय <strong>2 घंटे</strong> का दिया गया है। Question paper objective type होगा।
-          </p>
-
-          <div style={{ overflowX: 'auto', marginBottom: '20px' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid var(--border-color)', marginBottom: '10px' }}>
-              <thead>
-                <tr style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
-                  <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>विषय</th>
-                  <th style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>प्रश्न</th>
-                  <th style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>अंक</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>सामान्य ज्ञान</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>35</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>35</td>
-                </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
-                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बुद्धि क्षमता एवं विश्लेषण क्षमता</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>25</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>25</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>अंकगणित</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>15</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>15</td>
-                </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
-                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>अग्निशमन एवं अग्नि से संबंधित विषय</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>25</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>25</td>
-                </tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}>
-                  <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>100</td>
-                  <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>100</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div style={{ backgroundColor: '#d1e7dd', borderLeft: '4px solid #198754', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
-            <p style={{ margin: '0', color: '#0f5132' }}>
-              <strong>Negative Marking:</strong> परीक्षा में negative marking नहीं होगी। प्रत्येक प्रश्न के लिए एक अंक निर्धारित है। यह बात preparation के लिए काफी important है क्योंकि उम्मीदवारों को गलत answer के लिए marks कटने की चिंता नहीं रहेगी।
-            </p>
-          </div>
-
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
-            NSSK26 Syllabus
-          </h2>
-          <p style={{ marginBottom: '20px' }}>अगर आप इस examination की तैयारी कर रहे हैं तो syllabus को चार हिस्सों में समझना सबसे आसान रहेगा।</p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>Part 1 – General Knowledge</h3>
-          <p style={{ marginBottom: '15px' }}>इस section के लिए कुल <strong>35 marks</strong> निर्धारित हैं। Syllabus में मुख्य रूप से शामिल हैं:</p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '15px', listStyleType: 'disc' }}>
-            <li>Chhattisgarh का इतिहास, भूगोल, राजनीतिक व्यवस्था और अर्थव्यवस्था</li>
-            <li>Chhattisgarh की लोक परंपराएँ, लोक संस्कृति, और महत्वपूर्ण व्यक्तित्व</li>
-            <li>Chhattisgarh की जनजातियाँ</li>
-            <li>सामाजिक एवं सांस्कृतिक घटनाएँ, खेल और राष्ट्रीय समसामयिक घटनाएँ</li>
-          </ul>
-          <p style={{ marginBottom: '25px', backgroundColor: '#f8fafc', padding: '10px', borderRadius: '4px', border: '1px solid #e2e8f0' }}>
-            <strong>तैयारी कैसे करें?</strong> इस section में सिर्फ national current affairs पढ़ना पर्याप्त नहीं होगा। Chhattisgarh-specific GK पर ज्यादा focus करना practical रहेगा।
-          </p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>Part 2 – बुद्धि क्षमता एवं विश्लेषण क्षमता</h3>
-          <p style={{ marginBottom: '15px' }}>इस section से <strong>25 questions</strong> और <strong>25 marks</strong> निर्धारित हैं। इसमें सामान्य reasoning और analytical ability से जुड़े topics हैं:</p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '15px', listStyleType: 'disc' }}>
-            <li>विचार प्रवाह, आकृति आधारित प्रश्न, वर्गीकरण, समानता, विषमता</li>
-            <li>दिशा-निर्देश, मानसिक अभिरुचि, अनुमान, निर्णय लेने की क्षमता</li>
-            <li>अंक एवं शब्दों से संबंधित reasoning, संबंध और रिश्ते समझना</li>
-          </ul>
-          <p style={{ marginBottom: '25px', backgroundColor: '#f8fafc', padding: '10px', borderRadius: '4px', border: '1px solid #e2e8f0' }}>
-            इस section में speed के साथ-साथ question को सही तरीके से समझना जरूरी है।
-          </p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>Part 3 – अंकगणित</h3>
-          <p style={{ marginBottom: '15px' }}>अंकगणित section में <strong>15 questions</strong> और <strong>15 marks</strong> होंगे। Topics शामिल हैं:</p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '15px', listStyleType: 'disc', columnCount: 2, columnGap: '20px' }}>
-            <li>संख्या प्रणाली</li>
-            <li>साधारण एवं लघुत्तम समापवर्तक</li>
-            <li>भिन्न और सरलीकरण</li>
-            <li>दशमलव और औसत</li>
-            <li>आयु से संबंधित प्रश्न</li>
-            <li>अनुपात एवं समानुपात</li>
-            <li>लाभ एवं हानि</li>
-            <li>साझेदारी</li>
-            <li>समय और कार्य, समय और दूरी</li>
-            <li>नाव और धारा</li>
-            <li>साधारण एवं चक्रवृद्धि ब्याज</li>
-          </ul>
-          <p style={{ marginBottom: '25px', backgroundColor: '#f8fafc', padding: '10px', borderRadius: '4px', border: '1px solid #e2e8f0' }}>
-            अगर Maths आपकी कमजोर है तो इस section को आखिरी समय के लिए न छोड़ें। 15 marks छोटा section जरूर है, लेकिन यहां basic calculation की practice से अच्छे marks हासिल किए जा सकते हैं।
-          </p>
-
-          <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)' }}>Part 4 – अग्निशमन एवं अग्नि से संबंधित विषय</h3>
-          <p style={{ marginBottom: '15px' }}>इस section से <strong>25 questions</strong> और <strong>25 marks</strong> निर्धारित हैं। Syllabus में fire और firefighting से जुड़े topics शामिल हैं:</p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '15px', listStyleType: 'disc' }}>
-            <li>आग क्या है? आग लगने के कारण, प्रकार, व्यवहार</li>
-            <li>अग्नि सुरक्षा उपकरण (Fire Extinguisher, Hydrant, Hose, Nozzle, Foam)</li>
-            <li>अग्निशमन यंत्रों का उपयोग, सामान्य सिद्धांत, नियंत्रण के उपाय</li>
-            <li>सुरक्षा एवं बचाव (Primary First Aid, Evacuation)</li>
-            <li>आग बुझाने के उपकरणों का सही उपयोग, Practical exercises</li>
-          </ul>
-          <p style={{ marginBottom: '30px', backgroundColor: '#f8fafc', padding: '10px', borderRadius: '4px', border: '1px solid #e2e8f0' }}>
-            इसलिए इस भर्ती की preparation करने वाले candidates को केवल सामान्य GK और reasoning पर निर्भर नहीं रहना चाहिए। Fire & Fire Safety वाला section भी preparation का महत्वपूर्ण हिस्सा है।
-          </p>
-
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
-            क्या NSSK26 Exam में Negative Marking है?
-          </h2>
-          <p style={{ marginBottom: '15px', fontWeight: 'bold', fontSize: '1.2rem', color: '#198754' }}>नहीं।</p>
-          <p style={{ marginBottom: '15px' }}>
-            जारी syllabus में स्पष्ट रूप से बताया गया है कि परीक्षा में ऋणात्मक मूल्यांकन (Negative Marking) नहीं होगा। इसका मतलब है कि गलत answer देने पर marks काटे नहीं जाएंगे।
-          </p>
-          <p style={{ marginBottom: '30px' }}>
-            फिर भी questions को ध्यान से पढ़कर answer करना बेहतर रहेगा क्योंकि exam में limited time में 100 questions attempt करने होंगे।
           </p>
 
           <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
@@ -461,17 +338,6 @@ export default function NSSK26ArticlePage() {
           </div>
 
           <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
-            NSSK26 परीक्षा की तैयारी कैसे करें?
-          </h2>
-          <p style={{ marginBottom: '15px' }}>इस exam की तैयारी करते समय चारों sections को उनकी marks weightage के हिसाब से time देना practical रहेगा:</p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '30px', listStyleType: 'disc' }}>
-            <li><strong>General Knowledge (35 Marks):</strong> यह सबसे बड़ा section है। Chhattisgarh GK को priority दें।</li>
-            <li><strong>Reasoning (25 Marks):</strong> Daily practice से speed improve करें।</li>
-            <li><strong>Fire & Fire Safety (25 Marks):</strong> इस section को बिल्कुल ignore न करें। Fire, safety equipment, firefighting principles और first aid जैसे topics को अच्छे से पढ़ें।</li>
-            <li><strong>Maths (15 Marks):</strong> Basic arithmetic topics पर command बनाएं।</li>
-          </ul>
-
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
             NSSK26 Exam Day Checklist
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा वाले दिन घर से निकलने से पहले एक बार यह checklist जरूर देख लें:</p>
@@ -515,11 +381,6 @@ export default function NSSK26ArticlePage() {
             <p style={{ margin: '0', fontSize: '1rem' }}>Written examination 22 नवंबर 2026 को आयोजित की जाएगी।</p>
           </div>
 
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
-            <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: क्या NSSK26 में Negative Marking है?</h3>
-            <p style={{ margin: '0', fontSize: '1rem' }}>नहीं। जारी syllabus में Negative Marking नहीं होने की बात स्पष्ट है।</p>
-          </div>
-
           <div style={{ marginBottom: '30px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: क्या payment करने के बाद application automatically submit हो जाता है?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>नहीं। Payment successful होने के बाद SUBMIT button दबाना जरूरी है।</p>
@@ -529,7 +390,7 @@ export default function NSSK26ArticlePage() {
             निष्कर्ष
           </h2>
           <p style={{ marginBottom: '15px' }}>
-            NSSK26 की written examination उन candidates के लिए important है जो नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत घोषित 295 पदों की भर्ती प्रक्रिया में शामिल हो रहे हैं। इस परीक्षा में 100 questions, 100 marks और 2 घंटे का written paper होगा। General Knowledge और Fire & Fire Safety दोनों का weightage महत्वपूर्ण है।
+            NSSK26 की written examination उन candidates के लिए important है जो नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत घोषित 295 पदों की भर्ती प्रक्रिया में शामिल हो रहे हैं।
           </p>
           <p style={{ marginBottom: '30px' }}>
             Application भरने वाले candidates को profile registration, personal information, photo/signature upload और payment के बाद final submission जैसी छोटी लेकिन important चीजों में सावधानी रखनी चाहिए।
