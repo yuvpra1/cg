@@ -2,29 +2,27 @@ import { getRequestContext } from '@cloudflare/next-on-pages';
 
 export const localJobs = [
   {
-    "id": 4,
-    "slug": "cgssb-nssk26-recruitment-2026",
-    "title": "CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card",
-    "meta_title": "CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card",
-    "meta_description": "CGSSB NSSK26 Recruitment 2026 की exam date, application dates, syllabus, exam pattern, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें।",
-    "department": "नगर सेना एवं अग्निशमन सेवाएँ",
-    "total_posts": 5,
-    "last_date": "2026-09-07",
-    "content": "Content available in DB"
+    id: 5,
+    slug: "cgssb-teacher-recruitment-2026",
+    title: "CGSSB TEACHER RECRUITMENT 2026",
+    meta_title: "CGSSB TEACHER RECRUITMENT 2026",
+    meta_description: "CGSSB TEACHER RECRUITMENT 2026",
+    department: "लोक शिक्षण संचालनालय",
+    total_posts: 1654,
+    last_date: "2026-09-02",
+    content: "Content available in DB"
   },
-  { 
-    id: 3, 
-    slug: 'cg-sample-assistant-2025', 
-    title: 'CG Sample Assistant Recruitment 2025', 
-    meta_title: 'CG Sample Assistant Recruitment 2025',
-    meta_description: 'CG Sample Assistant',
-    department: 'Food & Drug Admin', 
-    total_posts: 30, 
-    last_date: '2025-08-30',
-    content: 'Content available in DB'
-  },
-  { id: 1, slug: 'cg-police-constable-2026', title: 'CG Police Constable Recruitment 2026', meta_title: '', meta_description: '', department: 'CG Police', total_posts: 5967, last_date: '2026-08-15', content: 'Details coming soon.' },
-  { id: 2, slug: 'vyapam-patwari-2026', title: 'Chhattisgarh Patwari Exam 2026', meta_title: '', meta_description: '', department: 'Vyapam', total_posts: 301, last_date: '2026-08-22', content: 'Details coming soon.' }
+  {
+    id: 4,
+    slug: "cgssb-nssk26-recruitment-2026",
+    title: "CGSSB NSSK26 Recruitment 2026",
+    meta_title: "CGSSB NSSK26 Recruitment 2026",
+    meta_description: "CGSSB NSSK26 Recruitment 2026",
+    department: "नगर सेना एवं अग्निशमन सेवाएँ",
+    total_posts: 5,
+    last_date: "2026-09-07",
+    content: "Content available in DB"
+  }
 ];
 
 function getEnv() {
