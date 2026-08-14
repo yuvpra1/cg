@@ -1,6 +1,12 @@
+import { headers } from 'next/headers';
+
 async function getLatestJobs() {
-  const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
   try {
+    const headersList = await headers();
+    const host = headersList.get('host') || 'localhost:3000';
+    const protocol = host.includes('localhost') ? 'http' : 'https';
+    const baseUrl = `${protocol}://${host}`;
+    
     const res = await fetch(`${baseUrl}/api/jobs`, { cache: 'no-store' });
     if (!res.ok) return [];
     const data = await res.json();

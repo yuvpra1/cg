@@ -3,13 +3,23 @@ import JobTabs from '@/components/JobTabs';
 
 export const runtime = 'edge';
 
+import { headers } from 'next/headers';
+
 async function getJob(slug: string) {
-  // In production, this will hit Cloudflare Pages. In dev, it hits localhost.
-  const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
-  const res = await fetch(`${baseUrl}/api/jobs/${slug}`, { cache: 'no-store' });
-  if (!res.ok) return null;
-  const data = await res.json();
-  return data.job;
+  try {
+    const headersList = await headers();
+    const host = headersList.get('host') || 'localhost:3000';
+    const protocol = host.includes('localhost') ? 'http' : 'https';
+    const baseUrl = `${protocol}://${host}`;
+    
+    const res = await fetch(`${baseUrl}/api/jobs/${slug}`, { cache: 'no-store' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.job;
+  } catch (error) {
+    console.error("Error fetching job details:", error);
+    return null;
+  }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

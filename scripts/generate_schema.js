@@ -1,17 +1,16 @@
+const fs = require('fs');
 
-CREATE TABLE IF NOT EXISTS jobs (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    slug TEXT NOT NULL,
-    title TEXT NOT NULL,
-    meta_title TEXT,
-    meta_description TEXT,
-    department TEXT NOT NULL,
-    total_posts INTEGER,
-    last_date TEXT NOT NULL,
-    content TEXT NOT NULL
-);
-DELETE FROM jobs;
-INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, total_posts, last_date, content) VALUES (4, 'cgssb-nssk26-recruitment-2026', 'CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card', 'CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card', 'CGSSB NSSK26 Recruitment 2026 की exam date, application dates, syllabus, exam pattern, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें।', 'नगर सेना एवं अग्निशमन सेवाएँ', 5, '2026-09-07', '
+const localJobs = [
+  {
+    "id": 4,
+    "slug": "cgssb-nssk26-recruitment-2026",
+    "title": "CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card",
+    "meta_title": "CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card",
+    "meta_description": "CGSSB NSSK26 Recruitment 2026 की exam date, application dates, syllabus, exam pattern, fee, admit card और जरूरी परीक्षा निर्देश यहां देखें।",
+    "department": "नगर सेना एवं अग्निशमन सेवाएँ",
+    "total_posts": 5,
+    "last_date": "2026-09-07",
+    "content": `
 <p>छत्तीसगढ़ में नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत अलग-अलग पदों पर भर्ती के लिए NSSK26 लिखित परीक्षा आयोजित की जाएगी। इस परीक्षा में Store Keeper, Vehicle Driver, Vehicle Driver-cum-Operator, Mechanic और Watchroom Operator जैसे पद शामिल हैं।</p>
 <p>CGSSB द्वारा जारी परीक्षा निर्देश के अनुसार इस भर्ती की लिखित परीक्षा 22 नवंबर 2026 को आयोजित की जाएगी। परीक्षा के लिए आवेदन प्रक्रिया 11 अगस्त 2026 से शुरू हुई है और उम्मीदवार 7 सितंबर 2026 शाम 5 बजे तक online application कर सकते हैं।</p>
 <p>अगर आप इस भर्ती में आवेदन करने की तैयारी कर रहे हैं, तो नीचे हमने परीक्षा की date, application process, fee, syllabus, exam pattern और exam day instructions को आसान भाषा में समझाया है。</p>
@@ -153,8 +152,18 @@ INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, tot
 <p>नहीं। जारी syllabus में Negative Marking नहीं होने की बात स्पष्ट है。</p>
 <h3>NSSK26 application fee कितनी है?</h3>
 <p>General के लिए ₹350, OBC के लिए ₹250 और SC/ST/Divyang category के लिए ₹200 fee दी गई है。</p>
-');
-INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, total_posts, last_date, content) VALUES (3, 'cg-sample-assistant-2025', 'CG Sample Assistant Recruitment 2025', 'CG Sample Assistant Recruitment 2025', 'CG Sample Assistant', 'Food & Drug Admin', 30, '2025-08-30', '<h2>भर्ती का संक्षिप्त विवरण</h2><p>छत्तीसगढ़ में सरकारी नौकरी की तैयारी कर रहे विज्ञान वर्ग (Science Stream) के विद्यार्थियों के लिए अच्छी खबर है। कार्यालय नियंत्रक, खाद्य एवं औषधि प्रशासन, छत्तीसगढ़ ने नमूना सहायक (Sample Assistant) के 30 रिक्त पदों पर सीधी भर्ती की प्रक्रिया शुरू करने की स्वीकृति प्राप्त की है。</p>
+`
+  },
+  { 
+    id: 3, 
+    slug: 'cg-sample-assistant-2025', 
+    title: 'CG Sample Assistant Recruitment 2025', 
+    meta_title: 'CG Sample Assistant Recruitment 2025',
+    meta_description: 'CG Sample Assistant',
+    department: 'Food & Drug Admin', 
+    total_posts: 30, 
+    last_date: '2025-08-30',
+    content: `<h2>भर्ती का संक्षिप्त विवरण</h2><p>छत्तीसगढ़ में सरकारी नौकरी की तैयारी कर रहे विज्ञान वर्ग (Science Stream) के विद्यार्थियों के लिए अच्छी खबर है। कार्यालय नियंत्रक, खाद्य एवं औषधि प्रशासन, छत्तीसगढ़ ने नमूना सहायक (Sample Assistant) के 30 रिक्त पदों पर सीधी भर्ती की प्रक्रिया शुरू करने की स्वीकृति प्राप्त की है。</p>
     <ul>
       <li><strong>विभाग:</strong> खाद्य एवं औषधि प्रशासन</li>
       <li><strong>वेतन स्तर:</strong> लेवल-4 (₹5200–20200, GP: ₹1900)</li>
@@ -162,6 +171,30 @@ INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, tot
       <li><strong>आयु सीमा:</strong> 18 से 30 वर्ष (छूट नियमानुसार)</li>
     </ul>
     <h2>परीक्षा पैटर्न</h2>
-    <p>100 वस्तुनिष्ठ प्रश्न, 100 अंक, 2 घंटे की अवधि। नेगेटिव मार्किंग 1/4 अंक。</p>');
-INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, total_posts, last_date, content) VALUES (1, 'cg-police-constable-2026', 'CG Police Constable Recruitment 2026', '', '', 'CG Police', 5967, '2026-08-15', 'Details coming soon.');
-INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, total_posts, last_date, content) VALUES (2, 'vyapam-patwari-2026', 'Chhattisgarh Patwari Exam 2026', '', '', 'Vyapam', 301, '2026-08-22', 'Details coming soon.');
+    <p>100 वस्तुनिष्ठ प्रश्न, 100 अंक, 2 घंटे की अवधि। नेगेटिव मार्किंग 1/4 अंक。</p>`
+  },
+  { id: 1, slug: 'cg-police-constable-2026', title: 'CG Police Constable Recruitment 2026', meta_title: '', meta_description: '', department: 'CG Police', total_posts: 5967, last_date: '2026-08-15', content: 'Details coming soon.' },
+  { id: 2, slug: 'vyapam-patwari-2026', title: 'Chhattisgarh Patwari Exam 2026', meta_title: '', meta_description: '', department: 'Vyapam', total_posts: 301, last_date: '2026-08-22', content: 'Details coming soon.' }
+];
+
+let sql = `
+CREATE TABLE IF NOT EXISTS jobs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug TEXT NOT NULL,
+    title TEXT NOT NULL,
+    meta_title TEXT,
+    meta_description TEXT,
+    department TEXT NOT NULL,
+    total_posts INTEGER,
+    last_date TEXT NOT NULL,
+    content TEXT NOT NULL
+);
+DELETE FROM jobs;
+`;
+
+localJobs.forEach(job => {
+  sql += `INSERT INTO jobs (id, slug, title, meta_title, meta_description, department, total_posts, last_date, content) VALUES (${job.id}, '${job.slug}', '${job.title.replace(/'/g, "''")}', '${job.meta_title.replace(/'/g, "''")}', '${job.meta_description.replace(/'/g, "''")}', '${job.department}', ${job.total_posts}, '${job.last_date}', '${job.content.replace(/'/g, "''")}');\n`;
+});
+
+fs.writeFileSync('schema.sql', sql);
+console.log('schema.sql generated successfully.');
