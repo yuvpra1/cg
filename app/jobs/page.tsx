@@ -1,18 +1,10 @@
 export const runtime = 'edge';
 
-import { headers } from 'next/headers';
+import { getAllJobs } from '@/lib/db';
 
 async function getJobs() {
   try {
-    const headersList = await headers();
-    const host = headersList.get('host') || 'localhost:3000';
-    const protocol = host.includes('localhost') ? 'http' : 'https';
-    const baseUrl = `${protocol}://${host}`;
-    
-    const res = await fetch(`${baseUrl}/api/jobs`, { cache: 'no-store' });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return data.jobs || [];
+    return await getAllJobs();
   } catch (error) {
     console.error("Error fetching jobs:", error);
     return [];

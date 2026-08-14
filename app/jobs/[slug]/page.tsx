@@ -3,19 +3,11 @@ import JobTabs from '@/components/JobTabs';
 
 export const runtime = 'edge';
 
-import { headers } from 'next/headers';
+import { getJobBySlug } from '@/lib/db';
 
 async function getJob(slug: string) {
   try {
-    const headersList = await headers();
-    const host = headersList.get('host') || 'localhost:3000';
-    const protocol = host.includes('localhost') ? 'http' : 'https';
-    const baseUrl = `${protocol}://${host}`;
-    
-    const res = await fetch(`${baseUrl}/api/jobs/${slug}`, { cache: 'no-store' });
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data.job;
+    return await getJobBySlug(slug);
   } catch (error) {
     console.error("Error fetching job details:", error);
     return null;

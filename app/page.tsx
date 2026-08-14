@@ -1,16 +1,9 @@
-import { headers } from 'next/headers';
+import { getAllJobs } from '@/lib/db';
 
 async function getLatestJobs() {
   try {
-    const headersList = await headers();
-    const host = headersList.get('host') || 'localhost:3000';
-    const protocol = host.includes('localhost') ? 'http' : 'https';
-    const baseUrl = `${protocol}://${host}`;
-    
-    const res = await fetch(`${baseUrl}/api/jobs`, { cache: 'no-store' });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return data.jobs?.slice(0, 3) || []; // only top 3
+    const jobs = await getAllJobs();
+    return jobs.slice(0, 3);
   } catch (e) {
     return [];
   }
