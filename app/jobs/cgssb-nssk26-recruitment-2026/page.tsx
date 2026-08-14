@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
-
-
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'CGSSB NSSK26 Recruitment 2026: Exam Date, Syllabus, Admit Card',
@@ -42,6 +41,18 @@ export default function NSSK26ArticlePage() {
           </div>
         </header>
 
+        {/* SEO Optimized Featured Image */}
+        <div style={{ marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+          <Image 
+            src="/cgssb-nssk26-recruitment-2026.png" 
+            alt="CGSSB NSSK26 Recruitment 2026 Notification, Exam Date and Syllabus"
+            title="CGSSB NSSK26 Recruitment 2026"
+            width={900}
+            height={500}
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+            priority
+          />
+        </div>
 
         {/* Article Content styled exactly like HomeSeoContent */}
         <section className="seo-content-section" style={{ lineHeight: '1.8', color: 'var(--text-main)', fontSize: '1.05rem', marginTop: '30px' }}>

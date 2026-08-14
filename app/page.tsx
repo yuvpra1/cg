@@ -118,19 +118,7 @@ export default async function Home() {
                 alignItems: 'center',
                 transition: 'background-color 0.2s',
               }}>
-                <span style={{ 
-                  whiteSpace: 'nowrap', 
-                  fontSize: '0.85rem', 
-                  color: 'var(--text-light)', 
-                  backgroundColor: 'var(--color-primary)',
-                  padding: '6px 10px',
-                  borderRadius: '6px',
-                  fontWeight: '600',
-                  minWidth: '95px',
-                  textAlign: 'center'
-                }}>
-                  {post.date}
-                </span>
+
                 <a href={post.url} target="_blank" rel="noopener noreferrer" style={{ 
                   color: 'var(--text-main)', 
                   textDecoration: 'none',
