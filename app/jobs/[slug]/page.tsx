@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import JobTabs from '@/components/JobTabs';
 
 export const runtime = 'edge';
 
@@ -18,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: 'Job Not Found - CGSSB' };
   }
   return {
-    title: `${job.title} | Eligibility, Salary, Pattern`,
-    description: `Latest update on ${job.title} by ${job.department}. Check eligibility, age limit, syllabus and apply.`,
+    title: job.meta_title || `${job.title} | Eligibility, Salary, Pattern`,
+    description: job.meta_description || `Latest update on ${job.title} by ${job.department}. Check eligibility, age limit, syllabus and apply.`,
   };
 }
 
@@ -62,6 +63,9 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             <div><strong>Last Date:</strong> {new Date(job.last_date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric'})}</div>
           </div>
         </header>
+
+        {/* Tabbed Navigation */}
+        <JobTabs slug={slug} />
 
         {/* Dynamic Content Rendering */}
         <div 
