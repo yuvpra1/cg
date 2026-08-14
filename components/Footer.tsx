@@ -19,6 +19,20 @@ export default function Footer() {
           One-stop destination for CGSSB, CGPSC, Vyapam notifications, syllabus, results, and study materials.
         </p>
 
+        <div style={{ 
+          maxWidth: '800px', 
+          backgroundColor: '#fffbe8', 
+          border: '1px solid #fde68a',
+          padding: '12px 16px',
+          borderRadius: '6px',
+          marginTop: '20px',
+          fontSize: '0.85rem',
+          color: '#92400e',
+          textAlign: 'left'
+        }}>
+          <strong>Disclaimer:</strong> CGSSB is an independent informational website and is not affiliated with or operated by the Government of Chhattisgarh, CGSSB, CG Vyapam, CGPSC, or any other government department or examination authority. For official information, please verify details from the relevant official website or notification.
+        </div>
+
         {/* Legal & Info Links */}
         <div style={{ 
           display: 'flex', 
