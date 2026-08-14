@@ -12,10 +12,7 @@ async function getLatestJobs() {
 import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
-  const latestPostsList = [
-    { title: "CGSSB TEACHER RECRUITMENT 2026", url: "/jobs/cgssb-teacher-recruitment-2026" },
-    { title: "CGSSB NSSK26 Recruitment 2026", url: "/jobs/cgssb-nssk26-recruitment-2026" }
-  ];
+  const jobs = await getLatestJobs();
 
   return (
     <div className="container" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
@@ -82,17 +79,16 @@ export default async function Home() {
         
         <div className="card" style={{ padding: '0', overflow: 'hidden' }}>
           <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {latestPostsList.map((post, idx) => (
+            {jobs.map((job: any, idx: number) => (
               <li key={idx} style={{ 
-                borderBottom: idx !== latestPostsList.length - 1 ? '1px solid var(--border-color)' : 'none',
+                borderBottom: idx !== jobs.length - 1 ? '1px solid var(--border-color)' : 'none',
                 padding: '16px 24px',
                 display: 'flex',
                 gap: '20px',
                 alignItems: 'center',
                 transition: 'background-color 0.2s',
               }}>
-
-                <a href={post.url} target="_blank" rel="noopener noreferrer" style={{ 
+                <a href={`/jobs/${job.slug}`} style={{ 
                   color: 'var(--text-main)', 
                   textDecoration: 'none',
                   fontSize: '1rem',
@@ -101,7 +97,7 @@ export default async function Home() {
                   display: 'block',
                   flex: 1
                 }}>
-                  {post.title}
+                  {job.title}
                 </a>
               </li>
             ))}

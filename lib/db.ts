@@ -73,3 +73,42 @@ export async function insertJob(jobData: any) {
     } as any);
   }
 }
+
+export async function getJobById(id: number) {
+  const env = getEnv();
+  if (env && env.DB) {
+    const db = env.DB;
+    const job = await db.prepare(
+      'SELECT * FROM jobs WHERE id = ?'
+    ).bind(id).first();
+    return job || null;
+  }
+  return localJobs.find((j: any) => j.id === id) || null;
+}
+
+export async function updateJob(id: number, jobData: any) {
+  const env = getEnv();
+  const { title, meta_title, meta_description, slug, department, total_posts, last_date, content } = jobData;
+  if (env && env.DB) {
+    const db = env.DB;
+    await db.prepare(
+      `UPDATE jobs SET title = ?, meta_title = ?, meta_description = ?, slug = ?, department = ?, total_posts = ?, last_date = ?, content = ? WHERE id = ?`
+    ).bind(title, meta_title || '', meta_description || '', slug, department, total_posts, last_date, content, id).run();
+  } else {
+    const index = localJobs.findIndex((j: any) => j.id === id);
+    if (index !== -1) {
+      localJobs[index] = { ...localJobs[index], ...jobData, total_posts: Number(total_posts) };
+    }
+  }
+}
+
+export async function deleteJob(id: number) {
+  const env = getEnv();
+  if (env && env.DB) {
+    const db = env.DB;
+    await db.prepare('DELETE FROM jobs WHERE id = ?').bind(id).run();
+  } else {
+    const index = localJobs.findIndex((j: any) => j.id === id);
+    if (index !== -1) localJobs.splice(index, 1);
+  }
+}
