@@ -16,25 +16,18 @@ export default function CGSET2026Page() {
 
       <article className="premium-card" style={{ padding: '0', overflow: 'hidden' }}>
         
-        {/* Hero Section */}
-        <div className="hero-banner" style={{ margin: '0', borderBottomLeftRadius: '0', borderBottomRightRadius: '0' }}>
-          <img 
-            src="/images/cg-set-2026.webp" 
-            alt="CG SET 2026 Notification - Online Application, Syllabus, Exam Pattern and Eligibility" 
-            title="Chhattisgarh State Eligibility Test (CG SET) 2026 Complete Details"
-          />
-          <div className="hero-overlay">
-            <span style={{ 
-              backgroundColor: 'rgba(59, 130, 246, 0.2)', color: '#93c5fd', border: '1px solid #3b82f6',
-              padding: '6px 16px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '15px', backdropFilter: 'blur(4px)', width: 'fit-content'
-            }}>
-              उच्च शिक्षा विभाग, छत्तीसगढ़
-            </span>
-            <h1 className="hero-title">
-              CG SET 2026: छत्तीसगढ़ राज्य पात्रता परीक्षा (CG-SET26) आवेदन, पात्रता, परीक्षा तिथि, Syllabus और Exam Pattern
-            </h1>
-          </div>
-        </div>
+        {/* Clean Header Section */}
+        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', backgroundColor: '#ffffff', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
+          <span style={{ 
+            backgroundColor: '#eff6ff', color: 'var(--color-primary)', border: '1px solid #bfdbfe',
+            padding: '6px 16px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '15px'
+          }}>
+            उच्च शिक्षा विभाग, छत्तीसगढ़
+          </span>
+          <h1 style={{ color: 'var(--text-main)', fontSize: '2.4rem', fontWeight: '800', lineHeight: '1.3', marginBottom: '15px' }}>
+            CG SET 2026: छत्तीसगढ़ राज्य पात्रता परीक्षा (CG-SET26) आवेदन, पात्रता, परीक्षा तिथि, Syllabus और Exam Pattern
+          </h1>
+        </header>
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
