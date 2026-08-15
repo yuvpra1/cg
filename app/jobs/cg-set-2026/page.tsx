@@ -167,36 +167,36 @@ export default function CGSET2026Page() {
           <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--text-main)', fontWeight: '600' }}>CG SET Paper-II Subjects List 2026</h3>
           <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '30px' }}>
             <ul className="premium-list" style={{ columns: 'auto 300px', columnGap: '40px', margin: 0 }}>
-              <li>Hindi – हिन्दी</li>
-              <li>English – अंग्रेजी</li>
-              <li>Political Science – राजनीति विज्ञान</li>
-              <li>Economics – अर्थशास्त्र</li>
-              <li>Sociology – समाजशास्त्र</li>
-              <li>History – इतिहास</li>
-              <li>Geography – भूगोल</li>
-              <li>Physical Sciences – भौतिकी विज्ञान</li>
-              <li>Mathematical Sciences – गणितीय विज्ञान</li>
-              <li>Chemical Sciences – रसायन विज्ञान</li>
-              <li>Life Sciences – जीवन विज्ञान</li>
-              <li>Computer Science & Applications – कम्प्यूटर साइंस एवं एप्लीकेशन</li>
-              <li>Commerce – वाणिज्य</li>
-              <li>Law – विधि</li>
-              <li>Sanskrit – संस्कृत</li>
-              <li>Psychology – मनोविज्ञान</li>
-              <li>Library and Information Science – ग्रंथालय एवं सूचना विज्ञान</li>
-              <li>Physical Education – शारीरिक शिक्षा</li>
-              <li>Home Science – गृह विज्ञान</li>
-              <li>Earth, Atmospheric, Ocean and Planetary Sciences – पृथ्वी, वायुमंडलीय, महासागरीय और ग्रहीय विज्ञान</li>
-              <li>Anthropology – मानवशास्त्र</li>
-              <li>Music – संगीत</li>
-              <li>Performing Arts – Dance, Drama, Theatre – कला मंच</li>
-              <li>Fine Art & Sculpture (Visual Arts) – फाइन आर्ट एवं मूर्ति कला</li>
-              <li>Yoga – योग</li>
-              <li>Public Administration – लोक प्रशासन</li>
-              <li>Defence and Strategic Studies – रक्षा और स्ट्रेटेजिक अध्ययन</li>
-              <li>Philosophy – दर्शन शास्त्र</li>
-              <li>Management – प्रबंधन</li>
-              <li>Mass Communication & Journalism – जन संचार एवं पत्रकारिता</li>
+              <li><a href="/jobs/cg-set-hindi-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Hindi – हिन्दी</a></li>
+              <li><a href="/jobs/cg-set-english-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">English – अंग्रेजी</a></li>
+              <li><a href="/jobs/cg-set-political-science-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Political Science – राजनीति विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-economics-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Economics – अर्थशास्त्र</a></li>
+              <li><a href="/jobs/cg-set-sociology-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Sociology – समाजशास्त्र</a></li>
+              <li><a href="/jobs/cg-set-history-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">History – इतिहास</a></li>
+              <li><a href="/jobs/cg-set-geography-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Geography – भूगोल</a></li>
+              <li><a href="/jobs/cg-set-physical-sciences-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Physical Sciences – भौतिकी विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-mathematical-sciences-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Mathematical Sciences – गणितीय विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-chemical-sciences-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Chemical Sciences – रसायन विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-life-sciences-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Life Sciences – जीवन विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-computer-science-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Computer Science & Applications – कम्प्यूटर साइंस एवं एप्लीकेशन</a></li>
+              <li><a href="/jobs/cg-set-commerce-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Commerce – वाणिज्य</a></li>
+              <li><a href="/jobs/cg-set-law-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Law – विधि</a></li>
+              <li><a href="/jobs/cg-set-sanskrit-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Sanskrit – संस्कृत</a></li>
+              <li><a href="/jobs/cg-set-psychology-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Psychology – मनोविज्ञान</a></li>
+              <li><a href="/jobs/cg-set-library-science-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Library and Information Science – ग्रंथालय एवं सूचना विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-physical-education-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Physical Education – शारीरिक शिक्षा</a></li>
+              <li><a href="/jobs/cg-set-home-science-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Home Science – गृह विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-earth-sciences-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Earth, Atmospheric, Ocean and Planetary Sciences – पृथ्वी, वायुमंडलीय, महासागरीय और ग्रहीय विज्ञान</a></li>
+              <li><a href="/jobs/cg-set-anthropology-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Anthropology – मानवशास्त्र</a></li>
+              <li><a href="/jobs/cg-set-music-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Music – संगीत</a></li>
+              <li><a href="/jobs/cg-set-performing-arts-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Performing Arts – Dance, Drama, Theatre – कला मंच</a></li>
+              <li><a href="/jobs/cg-set-fine-arts-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Fine Art & Sculpture (Visual Arts) – फाइन आर्ट एवं मूर्ति कला</a></li>
+              <li><a href="/jobs/cg-set-yoga-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Yoga – योग</a></li>
+              <li><a href="/jobs/cg-set-public-administration-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Public Administration – लोक प्रशासन</a></li>
+              <li><a href="/jobs/cg-set-defence-studies-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Defence and Strategic Studies – रक्षा और स्ट्रेटेजिक अध्ययन</a></li>
+              <li><a href="/jobs/cg-set-philosophy-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Philosophy – दर्शन शास्त्र</a></li>
+              <li><a href="/jobs/cg-set-management-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Management – प्रबंधन</a></li>
+              <li><a href="/jobs/cg-set-mass-communication-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Mass Communication & Journalism – जन संचार एवं पत्रकारिता</a></li>
             </ul>
           </div>
           <p className="content-paragraph">

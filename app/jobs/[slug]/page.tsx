@@ -1,8 +1,8 @@
 export const runtime = 'edge';
 import { Metadata } from 'next';
-
-
 import { getJobBySlug } from '@/lib/db';
+import { getCGSetSubjectBySlug } from '@/lib/cgSetSubjects';
+import CGSetSyllabusTemplate from '@/components/CGSetSyllabusTemplate';
 
 async function getJob(slug: string) {
   try {
@@ -15,6 +15,16 @@ async function getJob(slug: string) {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
+  
+  // Programmatic SEO for CG SET Subjects
+  const cgSetSubject = getCGSetSubjectBySlug(slug);
+  if (cgSetSubject) {
+    return {
+      title: `CG SET ${cgSetSubject.nameEn} Syllabus 2026: ${cgSetSubject.nameHi} Exam Pattern & Details`,
+      description: `Download official CG SET ${cgSetSubject.nameEn} (${cgSetSubject.nameHi}) Syllabus PDF. Check Paper-I & Paper-II exam pattern, negative marking, and preparation tips for Assistant Professor.`,
+    };
+  }
+
   const job = await getJob(slug);
   if (!job) {
     return { title: 'Job Not Found - CGSSB' };
@@ -27,6 +37,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function JobPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  
+  // Programmatic SEO for CG SET Subjects
+  const cgSetSubject = getCGSetSubjectBySlug(slug);
+  if (cgSetSubject) {
+    return <CGSetSyllabusTemplate subject={cgSetSubject} />;
+  }
+
   const job = await getJob(slug);
 
   if (!job) {
@@ -64,7 +81,6 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
             <div><strong>Last Date:</strong> {new Date(job.last_date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric'})}</div>
           </div>
         </header>
-
 
         {/* Dynamic Content Rendering */}
         <div 
