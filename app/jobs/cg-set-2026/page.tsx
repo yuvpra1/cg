@@ -31,6 +31,16 @@ export default function CGSET2026Page() {
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
+          {/* Feature Image */}
+          <div style={{ marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+            <img 
+              src="/images/cg-set-2026.webp" 
+              alt="CG SET 2026 Notification - Online Application, Syllabus, Exam Pattern and Eligibility" 
+              title="Chhattisgarh State Eligibility Test (CG SET) 2026 Complete Details"
+              style={{ width: '100%', height: 'auto', maxHeight: '450px', objectFit: 'cover', display: 'block' }}
+            />
+          </div>
+
           <p className="content-paragraph">
             <strong>CG SET 2026</strong> यानी छत्तीसगढ़ राज्य पात्रता परीक्षा (Chhattisgarh State Eligibility Test) के लिए आवेदन प्रक्रिया शुरू हो चुकी है। यह परीक्षा छत्तीसगढ़ के उच्च शिक्षा विभाग के अंतर्गत आयोजित की जा रही है। CG-SET26 के माध्यम से निर्धारित विषयों में Assistant Professor के लिए पात्रता निर्धारित की जाएगी।
           </p>
