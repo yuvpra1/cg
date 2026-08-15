@@ -18,7 +18,11 @@ export default function CGSET2026Page() {
         
         {/* Hero Section */}
         <div className="hero-banner" style={{ margin: '0', borderBottomLeftRadius: '0', borderBottomRightRadius: '0' }}>
-          <img src="/images/cg-set-hero.jpg" alt="CG SET 2026 Exam" />
+          <img 
+            src="/images/cg-set-2026.webp" 
+            alt="CG SET 2026 Notification - Online Application, Syllabus, Exam Pattern and Eligibility" 
+            title="Chhattisgarh State Eligibility Test (CG SET) 2026 Complete Details"
+          />
           <div className="hero-overlay">
             <span style={{ 
               backgroundColor: 'rgba(59, 130, 246, 0.2)', color: '#93c5fd', border: '1px solid #3b82f6',
