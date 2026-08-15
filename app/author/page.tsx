@@ -36,7 +36,8 @@ export default function AuthorPage() {
         
         <div style={{ padding: '20px', backgroundColor: '#f8fafc', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
           <p style={{ margin: '0 0 10px 0' }}><strong>Role:</strong> Independent Web Developer & Publisher</p>
-          <p style={{ margin: '0' }}><strong>Website:</strong> CGSSB Portal</p>
+          <p style={{ margin: '0 0 10px 0' }}><strong>Website:</strong> CGSSB Portal</p>
+          <p style={{ margin: '0' }}><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yuvraj-pratap-rajwade-47b21019b" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: '500' }}>Yuvraj Pratap Rajwade</a></p>
         </div>
       </div>
     </div>
