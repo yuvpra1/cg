@@ -13,6 +13,7 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "CG SET 2026: Exam Date, Eligibility, Application Form, Syllabus", url: "/jobs/cg-set-2026" },
     { title: "CGSSB TEACHER RECRUITMENT 2026", url: "/jobs/cgssb-teacher-recruitment-2026" },
     { title: "CGSSB NSSK26 Recruitment 2026", url: "/jobs/cgssb-nssk26-recruitment-2026" }
   ];

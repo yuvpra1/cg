@@ -2,6 +2,17 @@ import { getRequestContext } from '@cloudflare/next-on-pages';
 
 export const localJobs = [
   {
+    id: 6,
+    slug: "cg-set-2026",
+    title: "CG SET 2026: Exam Date, Eligibility, Syllabus",
+    meta_title: "CG SET 2026: Exam Date, Eligibility, Application Form, Syllabus & Exam Pattern",
+    meta_description: "CG SET 2026 की पूरी जानकारी: आवेदन की अंतिम तिथि, eligibility, 30 subjects, Paper-I & Paper-II syllabus, exam pattern, qualifying marks, fee, admit card और परीक्षा तिथि जानें।",
+    department: "उच्च शिक्षा विभाग",
+    total_posts: "NA",
+    last_date: "2026-08-17",
+    content: "Content available in DB"
+  },
+  {
     id: 5,
     slug: "cgssb-teacher-recruitment-2026",
     title: "CGSSB TEACHER RECRUITMENT 2026",
