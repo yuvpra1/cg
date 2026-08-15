@@ -673,7 +673,7 @@ export default function CGSET2026Page() {
           <div style={{ backgroundColor: '#f8d7da', borderLeft: '4px solid #dc3545', padding: '15px', marginBottom: '40px', borderRadius: '4px' }}>
             <h3 style={{ marginTop: '0', color: '#842029', fontSize: '1.2rem', marginBottom: '10px' }}>महत्वपूर्ण Disclaimer</h3>
             <p style={{ margin: '0 0 10px 0', color: '#842029', fontSize: '0.95rem' }}>
-              यह article CG-SET26 2026 से संबंधित आपके द्वारा उपलब्ध कराए गए विस्तृत विज्ञापन, परीक्षा निर्देश, application instructions और प्रकाशित संशोधित सूचना के आधार पर तैयार किया गया है। यह कोई सरकारी website नहीं है।
+              यह article CG-SET26 2026 से संबंधित विभाग द्वारा जारी किए गए विस्तृत विज्ञापन, परीक्षा निर्देश, application instructions और प्रकाशित संशोधित सूचना के आधार पर छात्रों की सुविधा के लिए तैयार किया गया है। यह कोई सरकारी website नहीं है।
             </p>
             <p style={{ margin: '0 0 10px 0', color: '#842029', fontSize: '0.95rem' }}>
               Dates, eligibility, examination schedule, syllabus या अन्य conditions में official authority द्वारा परिवर्तन किया जा सकता है। इसलिए application करने से पहले latest official notification और CGSSB website पर उपलब्ध information को जरूर verify करें।
