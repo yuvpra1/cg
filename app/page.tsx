@@ -13,6 +13,7 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "CGSSB Food & Drug Administration Recruitment 2026: Lab Assistant & Sampling Assistant", url: "/jobs/cgssb-food-drug-administration-recruitment-2026" },
     { title: "CG SET 2026: Exam Date, Eligibility, Application Form, Syllabus", url: "/jobs/cg-set-2026" },
     { title: "CGSSB TEACHER RECRUITMENT 2026", url: "/jobs/cgssb-teacher-recruitment-2026" },
     { title: "CGSSB NSSK26 Recruitment 2026", url: "/jobs/cgssb-nssk26-recruitment-2026" }
@@ -68,10 +69,10 @@ export default async function Home() {
         <div className="marquee-content" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
           <span>🔥 <a href="https://vyapamprofile.cgstate.gov.in/Online" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>Admit Card - जल संसाधन विभाग, अनुरेखक (सिविल) (WRDT26) के प्रवेश पत्र के सम्बंध में विज्ञप्ति</a></span>
           <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=RESULT" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>RESULT - प्री.बी.एड. (Pre. B.Ed.26) प्रवेश परीक्षा - 2026</a></span>
+          <span>🔥 <a href="/jobs/cgssb-food-drug-administration-recruitment-2026" style={{ color: '#ffeb3b', textDecoration: 'none' }}>NEW - खाद्य एवं औषधि प्रशासन भर्ती (FWLN26) - सिलेबस और योग्यता</a></span>
           <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=PSLA26ONLINE" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION - नमूना सहायक /लैब असिस्टेंट (औषधि) / लैब असिस्टेंट (खाद्य) पदों की भर्ती परीक्षा (FWLN26)</a></span>
           <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=WRDT26ONLINE" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION- सहायक शिक्षक पदों हेतु लिखित भर्ती परीक्षा (LSAT26)</a></span>
-          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=MLGI25APPLICATION" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION - छत्तीसगढ़ राज्य पात्रता परीक्षा (CG-SET26)</a></span>
-          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=RESULT" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>RESULT -B.Sc. Nursing (BSCN26) Entrance Examination-2026</a></span>
+          <span>🔥 <a href="/jobs/cg-set-2026" style={{ color: '#ffeb3b', textDecoration: 'none' }}>NEW - छत्तीसगढ़ राज्य पात्रता परीक्षा (CG SET 2026) डिटेल सिलेबस</a></span>
         </div>
       </div>
 
@@ -93,7 +94,7 @@ export default async function Home() {
                 transition: 'background-color 0.2s',
               }}>
 
-                <a href={post.url} target="_blank" rel="noopener noreferrer" style={{ 
+                <a href={post.url} style={{ 
                   color: 'var(--text-main)', 
                   textDecoration: 'none',
                   fontSize: '1rem',
@@ -120,6 +121,12 @@ export default async function Home() {
         
         <div className="card" style={{ padding: '0', overflow: 'hidden' }}>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <li style={{ padding: '16px 24px', borderBottom: '1px solid var(--border-color)', display: 'flex', gap: '15px', alignItems: 'flex-start', background: '#f0f9ff' }}>
+              <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📖</span>
+              <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: '#0369a1', textDecoration: 'none', fontWeight: 'bold', lineHeight: '1.5', fontSize: '1.1rem' }} className="hover-primary">
+                CGSSB Recruitment Rules 2026: शैक्षणिक योग्यता Group 1-7 (विस्तृत जानकारी) - Latest
+              </a>
+            </li>
             <li style={{ padding: '16px 24px', borderBottom: '1px solid var(--border-color)', display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
               <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📜</span>
               <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600209_001.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', textDecoration: 'none', fontWeight: '500', lineHeight: '1.5' }} className="hover-primary">
