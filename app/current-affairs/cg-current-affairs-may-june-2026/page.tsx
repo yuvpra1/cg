@@ -179,7 +179,10 @@ export default function CurrentAffairsMayJune2026() {
 
       </div>
 
-      <ArticleFooter />
+      <ArticleFooter 
+        date="16 August 2026" 
+        sourceText="Various News & Government Sources"
+      />
 
     </article>
   );
