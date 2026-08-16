@@ -13,6 +13,7 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां", url: "/cg-gk/teejan-bai-biography-pandavani" },
     { title: "छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026", url: "/current-affairs/cg-current-affairs-may-june-2026" },
     { title: "छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026", url: "/current-affairs/cg-current-affairs-july-2026" },
     { title: "CGSSB Food & Drug Administration Recruitment 2026: Lab Assistant & Sampling Assistant", url: "/jobs/cgssb-food-drug-administration-recruitment-2026" },

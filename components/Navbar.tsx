@@ -17,6 +17,7 @@ export default function Navbar() {
     { name: 'Exams', path: '/exams' },
     { name: 'Syllabus', path: '/syllabus' },
     { name: 'Current Affairs', path: '/current-affairs' },
+    { name: 'CG GK', path: '/cg-gk' },
     { name: 'Tools', path: '/tools' },
   ];
 
