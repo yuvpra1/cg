@@ -12,7 +12,35 @@ async function getJobs() {
 }
 
 export default async function JobsList() {
-  const jobs = await getJobs();
+  const dbJobs = await getJobs();
+  
+  // Explicitly inject our premium static posts so they always appear in the category
+  const premiumJobs = [
+    {
+      id: 'fda-2026',
+      slug: 'cgssb-food-drug-administration-recruitment-2026',
+      title: 'CGSSB Food & Drug Administration Recruitment 2026: Lab Assistant & Sampling Assistant',
+      department: 'खाद्य एवं औषधि प्रशासन',
+      total_posts: 36,
+      last_date: '2026-07-31T00:00:00Z'
+    },
+    {
+      id: 'rules-2026',
+      slug: 'cgssb-recruitment-rules-2026',
+      title: 'CGSSB Recruitment Rules 2026: शैक्षणिक योग्यता Group 1-7',
+      department: 'सामान्य प्रशासन विभाग',
+      total_posts: 'N/A',
+      last_date: '2026-12-31T00:00:00Z'
+    }
+  ];
+
+  // Filter out from dbJobs in case they exist there to prevent duplicates
+  const filteredDbJobs = dbJobs.filter((job: any) => 
+    job.slug !== 'cgssb-food-drug-administration-recruitment-2026' && 
+    job.slug !== 'cgssb-recruitment-rules-2026'
+  );
+
+  const jobs = [...premiumJobs, ...filteredDbJobs];
 
   return (
     <div className="container" style={{ paddingTop: '40px', paddingBottom: '60px' }}>
