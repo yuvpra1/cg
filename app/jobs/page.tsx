@@ -47,7 +47,7 @@ export default async function JobsList() {
       <h1 style={{ fontSize: '2.2rem', marginBottom: '10px' }}>Latest Government Jobs</h1>
       <p style={{ color: 'var(--text-muted)', marginBottom: '40px' }}>Explore the latest recruitment notifications, syllabus, and admit cards in Chhattisgarh.</p>
       
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '25px' }}>
+      <div className="responsive-grid">
         {jobs.length === 0 ? (
           <p>No jobs found.</p>
         ) : (

@@ -28,7 +28,7 @@ export default function CGGKCategory() {
         </p>
       </header>
 
-      <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
+      <div className="responsive-grid">
         {articles.map((article, idx) => (
           <Link href={article.url} key={idx} style={{ textDecoration: 'none' }}>
             <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>

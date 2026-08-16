@@ -137,7 +137,7 @@ export default function CGSET2026Page() {
             CG SET 2026 में शामिल होने के लिए candidate के पास किसी मान्यता प्राप्त university से Post Graduation degree या equivalent examination होना चाहिए।
           </p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+          <div className="responsive-grid" style={{ marginBottom: '30px' }}>
             <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
               <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--color-primary)' }}>General Category</h3>
               <p className="content-paragraph" style={{ margin: 0 }}>
@@ -219,7 +219,7 @@ export default function CGSET2026Page() {
           <h2 className="article-section-title">CG SET Exam Pattern 2026</h2>
           <p className="content-paragraph">CG SET में दो Papers होंगे।</p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+          <div className="responsive-grid" style={{ marginBottom: '30px' }}>
             <div style={{ background: '#ffffff', padding: '20px', borderRadius: '12px', border: '1px solid var(--color-primary)', boxShadow: '0 4px 6px rgba(37, 99, 235, 0.1)' }}>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--color-primary)', textAlign: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>Paper-I</h3>
               <p className="content-paragraph" style={{ textAlign: 'center' }}>सभी candidates के लिए compulsory</p>
@@ -448,7 +448,7 @@ export default function CGSET2026Page() {
           <h2 className="article-section-title">CG SET 2026 की तैयारी कैसे करें?</h2>
           <p className="content-paragraph">अगर आप CG SET 2026 की तैयारी कर रहे हैं तो preparation को दो हिस्सों में divide करना सबसे practical रहेगा:</p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+          <div className="responsive-grid" style={{ marginBottom: '30px' }}>
             <div style={{ background: '#f8fafc', padding: '25px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--color-primary)' }}>Paper-I के लिए</h3>
               <p className="content-paragraph" style={{ fontSize: '1rem' }}>सबसे पहले official Paper-I syllabus पूरा करें और Teaching & Research Aptitude सहित सभी units को cover करें। इसके बाद:</p>

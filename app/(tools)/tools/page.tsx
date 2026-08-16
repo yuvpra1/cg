@@ -43,12 +43,7 @@ export default function ToolsDirectoryPage() {
         Free utilities designed specifically to help CGSSB and CGPSC aspirants in their application and preparation journey.
       </p>
 
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-        gap: '24px' 
-      }}>
-        {tools.map((tool, idx) => (
+      <div className="responsive-grid" style={{ marginBottom: '60px' }}>{tools.map((tool, idx) => (
           <Link href={tool.path} key={idx} className="card" style={{ display: 'block' }}>
             <h2 style={{ fontSize: '1.5rem', color: 'var(--color-primary)', marginBottom: '10px' }}>{tool.title}</h2>
             <p style={{ margin: 0 }}>{tool.desc}</p>
