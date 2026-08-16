@@ -14,8 +14,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Jobs', path: '/jobs' },
-    { name: 'Exams', path: '/exams' },
-    { name: 'Syllabus', path: '/syllabus' },
     { name: 'Current Affairs', path: '/current-affairs' },
     { name: 'CG GK', path: '/cg-gk' },
     { name: 'Tools', path: '/tools' },
