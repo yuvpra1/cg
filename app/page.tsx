@@ -121,28 +121,10 @@ export default async function Home() {
         
         <div className="card" style={{ padding: '0', overflow: 'hidden' }}>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            <li style={{ padding: '16px 24px', borderBottom: '1px solid var(--border-color)', display: 'flex', gap: '15px', alignItems: 'flex-start', background: '#f0f9ff' }}>
+            <li style={{ padding: '16px 24px', display: 'flex', gap: '15px', alignItems: 'flex-start', background: '#f0f9ff' }}>
               <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📖</span>
               <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: '#0369a1', textDecoration: 'none', fontWeight: 'bold', lineHeight: '1.5', fontSize: '1.1rem' }} className="hover-primary">
                 CGSSB Recruitment Rules 2026: शैक्षणिक योग्यता Group 1-7 (विस्तृत जानकारी) - Latest
-              </a>
-            </li>
-            <li style={{ padding: '16px 24px', borderBottom: '1px solid var(--border-color)', display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
-              <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📜</span>
-              <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600209_001.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', textDecoration: 'none', fontWeight: '500', lineHeight: '1.5' }} className="hover-primary">
-                अधिसूचना 19.06.2026 - सीधी भर्ती के माध्यम से भरे जाने वाले तृतीय एवं चतुर्थ श्रेणी के पदों की न्यूनतम शैक्षणिक योग्यता का निर्धारण ।
-              </a>
-            </li>
-            <li style={{ padding: '16px 24px', borderBottom: '1px solid var(--border-color)', display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
-              <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📜</span>
-              <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600291_001.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', textDecoration: 'none', fontWeight: '500', lineHeight: '1.5' }} className="hover-primary">
-                अधिसूचना 27.07.2026 - सीधी भर्ती के माध्यम से भरे जाने वाले तृतीय एवं चतुर्थ श्रेणी के पदों की न्यूनतम शैक्षणिक योग्यता निर्धारण हेतु जारी अधिसूचना दिनांक 19.06.2026 में संशोधन विषयक ।
-              </a>
-            </li>
-            <li style={{ padding: '16px 24px', display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
-              <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📜</span>
-              <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/146e4756-b636-4568-8aee-3d3dd6107c28.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', textDecoration: 'none', fontWeight: '500', lineHeight: '1.5' }} className="hover-primary">
-                अधिसूचना 25.02.2026 - समाज कल्याण विभाग, छत्तीसगढ़ शासन दिव्यांगजन अधिकार अधिनियम, 2016 के अंतर्गत बेंचमार्क दिव्यांगजनों हेतु पदों का चिन्हांकन
               </a>
             </li>
           </ul>

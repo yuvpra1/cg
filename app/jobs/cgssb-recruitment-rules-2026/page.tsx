@@ -35,6 +35,12 @@ export default function RecruitmentRules() {
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
+          <img 
+            src="/images/cgssb-recruitment-rules-2026.png" 
+            alt="CGSSB Recruitment Rules 2026 Group 1-7" 
+            style={{ width: '100%', height: 'auto', borderRadius: '12px', marginBottom: '30px', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }} 
+          />
+
           <p className="content-paragraph">
             छत्तीसगढ़ में सरकारी नौकरी की तैयारी कर रहे छात्रों के लिए एक जरूरी अपडेट सामने आया है। छत्तीसगढ़ शासन के सामान्य प्रशासन विभाग ने विभिन्न <strong>तृतीय और चतुर्थ श्रेणी के पदों पर सीधी भर्ती के लिए न्यूनतम शैक्षणिक योग्यता</strong> निर्धारित की है।
           </p>
