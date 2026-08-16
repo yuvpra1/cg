@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function TeejanBaiBiography() {
   return (
-    <article className="container" style={{ paddingTop: '40px', paddingBottom: '60px', maxWidth: '900px', margin: '0 auto' }}>
+    <article className="container" style={{ paddingTop: '40px', paddingBottom: '60px', margin: '0 auto' }}>
       
       <header style={{ marginBottom: '30px' }}>
         <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>

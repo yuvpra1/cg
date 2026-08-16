@@ -15,7 +15,7 @@ export default function NSSK26ArticlePage() {
         <a href="/">Home</a> &raquo; <a href="/jobs">Jobs</a> &raquo; <span style={{ color: 'var(--text-main)' }}>CGSSB NSSK26 Recruitment 2026</span>
       </div>
 
-      <article className="card" style={{ padding: '40px', maxWidth: '900px', margin: '0 auto', borderTop: '4px solid var(--color-primary)' }}>
+      <article className="card" style={{ padding: '40px', margin: '0 auto', borderTop: '4px solid var(--color-primary)' }}>
         
         {/* Header */}
         <header style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '20px', marginBottom: '30px' }}>

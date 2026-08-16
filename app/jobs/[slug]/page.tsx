@@ -66,7 +66,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
         <a href="/">Home</a> &raquo; <a href="/jobs">Jobs</a> &raquo; <span style={{ color: 'var(--text-main)' }}>{job.title}</span>
       </div>
 
-      <article className="card" style={{ padding: '40px', maxWidth: '900px', margin: '0 auto' }}>
+      <article className="card" style={{ padding: '40px', margin: '0 auto' }}>
         
         {/* Header */}
         <header style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '20px', marginBottom: '30px' }}>
