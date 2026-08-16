@@ -40,7 +40,7 @@ export default function RecruitmentRules() {
           <AuthorByline date="16 August 2026" />
 
           <img 
-            src="/images/cgssb-recruitment-rules-2026.png" 
+            src="/images/cgssb-recruitment-rules-2026.webp" 
             alt="CGSSB Recruitment Rules 2026 Group 1-7" 
             style={{ width: '100%', height: 'auto', borderRadius: '12px', marginBottom: '30px', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }} 
           />

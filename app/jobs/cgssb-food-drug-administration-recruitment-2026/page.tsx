@@ -37,7 +37,7 @@ export default function FDA_Recruitment() {
           <AuthorByline date="16 August 2026" />
 
           <img 
-            src="/images/cgssb-food-drug-administration.png" 
+            src="/images/cgssb-food-drug-administration.webp" 
             alt="CGSSB Food & Drug Administration Recruitment 2026" 
             style={{ width: '100%', height: 'auto', borderRadius: '12px', marginBottom: '30px', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }} 
           />
