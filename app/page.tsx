@@ -35,12 +35,14 @@ export default async function Home() {
         </p>
         
         {/* Semantic Search Form */}
-        <form className="search-form">
+        <form className="search-form" action="/search" method="GET">
           <input 
             type="text" 
+            name="q"
             className="search-input"
             placeholder="Search for Patwari Syllabus, CG Police, Age Calculator..." 
             aria-label="Search across the portal"
+            required
           />
           <button 
             type="submit"
