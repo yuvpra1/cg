@@ -34,10 +34,7 @@ export default function CurrentAffairsCategory() {
               padding: '25px', 
               transition: 'transform 0.2s',
               cursor: 'pointer'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'}
-            onMouseOut={(e) => e.currentTarget.style.transform = 'none'}
-            >
+            }}>
               <h2 style={{ fontSize: '1.4rem', color: 'var(--color-primary)', marginBottom: '10px' }}>
                 {article.title}
               </h2>
