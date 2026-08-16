@@ -135,6 +135,15 @@ export default function FDA_Recruitment() {
             इस भर्ती के लिए केवल <strong>छत्तीसगढ़ के स्थानीय निवासी</strong> उम्मीदवारों से आवेदन आमंत्रित किए गए हैं। दूसरे राज्यों के candidates को notification में दी गई eligibility conditions को ध्यान से देखना चाहिए।
           </div>
 
+          <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd', marginTop: '20px' }}>
+            <strong style={{ color: '#0369a1', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 शैक्षणिक योग्यता के नए नियम (2026 अपडेट)</strong>
+            क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी पदों के लिए न्यूनतम शैक्षणिक योग्यताओं (Group 1 से Group 7) में बड़े बदलाव किए हैं? 
+            <br/><br/>
+            <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: '#0284c7', fontWeight: 'bold', textDecoration: 'underline' }}>
+              CGSSB Recruitment Rules 2026: Group-1 से Group-7 तक की पूरी जानकारी यहाँ पढ़ें &rarr;
+            </a>
+          </div>
+
           <h2 className="article-section-title">Application Form & Important Documents</h2>
           <p className="content-paragraph">आवेदन online माध्यम से CGSSB पोर्टल पर profile registration के बाद भरा जाएगा।</p>
           <p className="content-paragraph"><strong>Documents:</strong> Online application के साथ caste, date of birth, domicile और educational certificates upload नहीं किए जा रहे हैं। इन documents का verification नियुक्तिकर्ता अधिकारी द्वारा किया जाएगा। Photograph और signature upload करने के लिए 50 KB से 100 KB की file size निर्धारित की गई है।</p>

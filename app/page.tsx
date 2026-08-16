@@ -111,25 +111,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Important Rules & Circulars */}
-      <section style={{ marginBottom: '60px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '1.8rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span style={{ color: 'var(--color-primary)' }}>📌</span> महत्वपूर्ण नियम व अधिसूचनाएँ (Important Rules)
-          </h2>
-        </div>
-        
-        <div className="card" style={{ padding: '0', overflow: 'hidden' }}>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            <li style={{ padding: '16px 24px', display: 'flex', gap: '15px', alignItems: 'flex-start', background: '#f0f9ff' }}>
-              <span style={{ fontSize: '1.2rem', marginTop: '2px' }}>📖</span>
-              <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: '#0369a1', textDecoration: 'none', fontWeight: 'bold', lineHeight: '1.5', fontSize: '1.1rem' }} className="hover-primary">
-                CGSSB Recruitment Rules 2026: शैक्षणिक योग्यता Group 1-7 (विस्तृत जानकारी) - Latest
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+
 
 
 

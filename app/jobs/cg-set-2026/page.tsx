@@ -87,6 +87,15 @@ export default function CGSET2026Page() {
             Official detailed notification में यह भी स्पष्ट किया गया है कि SET परीक्षा में आयु सीमा की कोई बाध्यता नहीं है।
           </p>
 
+          <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd', marginTop: '20px', marginBottom: '40px' }}>
+            <strong style={{ color: '#0369a1', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 अन्य पदों की शैक्षणिक योग्यता (2026 अपडेट)</strong>
+            क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी के अन्य पदों (Group 1 से Group 7) के लिए भी न्यूनतम शैक्षणिक योग्यताओं में बड़े बदलाव किए हैं? 
+            <br/><br/>
+            <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: '#0284c7', fontWeight: 'bold', textDecoration: 'underline' }}>
+              CGSSB Recruitment Rules 2026: Group-1 से Group-7 तक की पूरी जानकारी यहाँ पढ़ें &rarr;
+            </a>
+          </div>
+
           <h2 className="article-section-title">CG SET 2026 Important Dates</h2>
           <p className="content-paragraph">
             CG-SET26 की examination instructions के अनुसार महत्वपूर्ण dates इस प्रकार हैं:
