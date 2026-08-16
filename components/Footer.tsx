@@ -47,7 +47,7 @@ export default function Footer() {
         }}>
           <Link href="/about-us" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>About Us</Link>
           <span style={{ color: 'var(--border-color)' }}>|</span>
-          <Link href="/author" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Author</Link>
+          <Link href="/author/yuvraj-pratap-rajwade" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Author</Link>
           <span style={{ color: 'var(--border-color)' }}>|</span>
           <Link href="/editorial-policy" style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Editorial Policy</Link>
           <span style={{ color: 'var(--border-color)' }}>|</span>
