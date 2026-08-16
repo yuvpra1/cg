@@ -100,7 +100,7 @@ export default function CurrentAffairsMayJune2026() {
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>निकल, क्रॉपर, पैलेडियम खदान</td>
+              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>निकल, कॉपर (Copper), पैलेडियम खदान</td>
               <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>भालूकोना (महासमुंद)</td>
               <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>देश की पहली ऐसी खदान जहाँ ये तीनों खनिज एक साथ मिलेंगे। इलेक्ट्रॉनिक बैटरी निर्माण में उपयोगी।</td>
             </tr>
@@ -146,7 +146,7 @@ export default function CurrentAffairsMayJune2026() {
         </h2>
 
         <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginBottom: '30px' }}>
-          <li style={{ marginBottom: '10px' }}><strong>ज्ञानेश्वरी यादव:</strong> एशियन वेटलिफ्टिंग चैंपियनशिप 2026 (गुजरात) में 55 किग्रा वर्ग में <strong>रजत (Silver)</strong> और <strong>कांस्य (Bronze)</strong> पदक जीता। वह भारत के लिए एकमात्र रजत पदक विजेता रहीं।</li>
+          <li style={{ marginBottom: '10px' }}><strong>ज्ञानेश्वरी यादव:</strong> जुलाई 2026 में कॉमनवेल्थ गेम्स 2026 में महिलाओं की 53 किग्रा स्पर्धा में <strong>रजत पदक (Silver Medal)</strong> जीता है।</li>
           <li style={{ marginBottom: '10px' }}><strong>अमिता श्रीवास:</strong> जांजगीर-चांपा की निवासी, 22 मई 2026 को माउंट एवरेस्ट फतह करने वाली नवीनतम महिला पर्वतारोही बनीं। (ज्ञात हो कि राज्य की पहली महिला पर्वतारोही नैना सिंह धाकड़ हैं)।</li>
           <li style={{ marginBottom: '10px' }}><strong>छत्तीसगढ़ क्रिकेट प्रीमियर लीग (CCPL):</strong> बिलासपुर बुल्स ने रायगढ़ लायंस को हराकर सीसीपीएल-3 का खिताब जीता।</li>
           <li style={{ marginBottom: '10px' }}><strong>76वीं जूनियर नेशनल बास्केटबॉल:</strong> छत्तीसगढ़ बालिका टीम ने पुडुचेरी में स्वर्ण पदक जीता।</li>
