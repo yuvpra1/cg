@@ -54,12 +54,13 @@ export default async function Home() {
       {/* News Flash Marquee */}
       <div className="marquee-container" style={{ margin: '0 auto 50px', borderRadius: '4px', maxWidth: '800px' }}>
         <div className="marquee-content" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
-          <span>🔥 <a href="https://vyapamprofile.cgstate.gov.in/Online" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>Admit Card - जल संसाधन विभाग, अनुरेखक (सिविल) (WRDT26) के प्रवेश पत्र के सम्बंध में विज्ञप्ति</a></span>
-          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=RESULT" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>RESULT - प्री.बी.एड. (Pre. B.Ed.26) प्रवेश परीक्षा - 2026</a></span>
-          <span>🔥 <a href="/jobs/cgssb-food-drug-administration-recruitment-2026" style={{ color: '#ffeb3b', textDecoration: 'none' }}>NEW - खाद्य एवं औषधि प्रशासन भर्ती (FWLN26) - सिलेबस और योग्यता</a></span>
-          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=PSLA26ONLINE" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION - नमूना सहायक /लैब असिस्टेंट (औषधि) / लैब असिस्टेंट (खाद्य) पदों की भर्ती परीक्षा (FWLN26)</a></span>
-          <span>🔥 <a href="https://vyapamcg.cgstate.gov.in/Post?PostID=WRDT26ONLINE" target="_blank" rel="noopener noreferrer" style={{ color: '#ffeb3b', textDecoration: 'none' }}>ONLINE APPLICATION- सहायक शिक्षक पदों हेतु लिखित भर्ती परीक्षा (LSAT26)</a></span>
-          <span>🔥 <a href="/jobs/cg-set-2026" style={{ color: '#ffeb3b', textDecoration: 'none' }}>NEW - छत्तीसगढ़ राज्य पात्रता परीक्षा (CG SET 2026) डिटेल सिलेबस</a></span>
+          <span>🔥 <a href="/cg-gk/teejan-bai-biography-pandavani" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां</a></span>
+          <span>🔥 <a href="/current-affairs/cg-current-affairs-july-2026" style={{ color: 'inherit', textDecoration: 'none' }}>LATEST - छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026</a></span>
+          <span>🔥 <a href="/current-affairs/cg-current-affairs-may-june-2026" style={{ color: 'inherit', textDecoration: 'none' }}>UPDATE - छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026</a></span>
+          <span>🔥 <a href="/jobs/cgssb-food-drug-administration-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>JOB - CGSSB Food & Drug Administration Recruitment 2026</a></span>
+          <span>🔥 <a href="/jobs/cg-set-2026" style={{ color: 'inherit', textDecoration: 'none' }}>EXAM - CG SET 2026: Date, Eligibility, Application Form, Syllabus</a></span>
+          <span>🔥 <a href="/jobs/cgssb-teacher-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB TEACHER RECRUITMENT 2026</a></span>
+          <span>🔥 <a href="/jobs/cgssb-nssk26-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB NSSK26 Recruitment 2026</a></span>
         </div>
       </div>
 
