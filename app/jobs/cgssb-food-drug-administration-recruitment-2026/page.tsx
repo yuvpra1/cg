@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import React from 'react';
+import AuthorByline from '@/components/AuthorByline';
+import ArticleFooter from '@/components/ArticleFooter';
 
 export const metadata: Metadata = {
   title: 'CGSSB Food & Drug Administration Recruitment 2026: Lab Assistant & Sampling Assistant',
@@ -32,6 +34,8 @@ export default function FDA_Recruitment() {
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
+          <AuthorByline date="16 August 2026" />
+
           <img 
             src="/images/cgssb-food-drug-administration.png" 
             alt="CGSSB Food & Drug Administration Recruitment 2026" 
@@ -229,6 +233,12 @@ export default function FDA_Recruitment() {
             <strong style={{ color: '#b91c1c' }}>जरूरी सूचना:</strong> 
             यह article खाद्य एवं औषधि प्रशासन, छत्तीसगढ़ के विस्तृत विज्ञापनों और CGSSB के FWLN26 परीक्षा निर्देशों के आधार पर तैयार किया गया है। परीक्षा की तारीख 20 सितंबर 2026 "संभावित तिथि" है। कृपया नवीनतम अपडेट के लिए आधिकारिक वेबसाइट विजिट करें।
           </div>
+
+          <ArticleFooter 
+            date="16 August 2026" 
+            sourceText="Official CGSSB (FWLN26) & Food and Drug Administration Notification"
+            sourceLink="https://vyapamcg.cgstate.gov.in/"
+          />
 
         </section>
       </article>

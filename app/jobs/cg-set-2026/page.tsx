@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import AuthorByline from '@/components/AuthorByline';
+import ArticleFooter from '@/components/ArticleFooter';
 
 export const metadata: Metadata = {
   title: 'CG SET 2026: Exam Date, Eligibility, Application Form, Syllabus & Exam Pattern',
@@ -31,6 +33,8 @@ export default function CGSET2026Page() {
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
+          <AuthorByline date="16 August 2026" />
+
           {/* Feature Image */}
           <div style={{ marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
             <img 
@@ -526,6 +530,12 @@ export default function CGSET2026Page() {
               खास तौर पर 4 अक्टूबर 2026 की परीक्षा तिथि को official document में “संभावित” बताया गया है।
             </p>
           </div>
+
+          <ArticleFooter 
+            date="16 August 2026" 
+            sourceText="Official CG Vyapam Notification & Exam Instructions"
+            sourceLink="https://vyapamcg.cgstate.gov.in/"
+          />
 
         </section>
       </article>

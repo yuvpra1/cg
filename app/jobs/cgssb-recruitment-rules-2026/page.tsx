@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import React from 'react';
+import AuthorByline from '@/components/AuthorByline';
+import ArticleFooter from '@/components/ArticleFooter';
 
 export const metadata: Metadata = {
   title: 'CGSSB Recruitment Rules 2026: Educational Qualification (Group 1 to Group 7)',
@@ -35,6 +37,8 @@ export default function RecruitmentRules() {
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
+          <AuthorByline date="16 August 2026" />
+
           <img 
             src="/images/cgssb-recruitment-rules-2026.png" 
             alt="CGSSB Recruitment Rules 2026 Group 1-7" 
@@ -254,9 +258,11 @@ export default function RecruitmentRules() {
             <strong>महत्वपूर्ण:</strong> किसी भी जानकारी में हमारे article और official notification के बीच अंतर होने की स्थिति में official government notification को प्राथमिकता दें।
           </p>
 
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', margin: '40px 0 0 0', fontWeight: '500', textAlign: 'right' }}>
-            <em>Article reviewed/updated by: Yuvraj Pratap Rajwade</em>
-          </p>
+          <ArticleFooter 
+            date="16 August 2026" 
+            sourceText="Official GAD Circulars & Notifications"
+            sourceLink="https://gad.cg.gov.in/Rules_and_Circular.aspx?utm_source=cgssb.com.in"
+          />
 
         </section>
       </article>
