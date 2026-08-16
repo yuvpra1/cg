@@ -35,32 +35,16 @@ export default async function Home() {
         </p>
         
         {/* Semantic Search Form */}
-        <form style={{ display: 'flex', justifyContent: 'center', maxWidth: '600px', margin: '0 auto' }}>
+        <form className="search-form">
           <input 
             type="text" 
+            className="search-input"
             placeholder="Search for Patwari Syllabus, CG Police, Age Calculator..." 
             aria-label="Search across the portal"
-            style={{
-              flex: 1,
-              padding: '16px 24px',
-              fontSize: '1rem',
-              border: '2px solid var(--color-primary)',
-              borderRadius: 'var(--border-radius) 0 0 var(--border-radius)',
-              outline: 'none'
-            }}
           />
           <button 
             type="submit"
-            style={{
-              padding: '0 30px',
-              backgroundColor: 'var(--color-primary)',
-              color: 'var(--text-light)',
-              border: 'none',
-              borderRadius: '0 var(--border-radius) var(--border-radius) 0',
-              fontSize: '1rem',
-              fontWeight: '600',
-              cursor: 'pointer'
-            }}
+            className="search-btn"
           >
             Search
           </button>
