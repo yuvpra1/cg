@@ -39,7 +39,7 @@ export default function CurrentAffairsMayJune2026() {
         <h1 style={{ fontSize: '2.5rem', lineHeight: '1.2', marginBottom: '20px', color: 'var(--text-main)' }}>
           छत्तीसगढ़ करेंट अफेयर्स (मई - जून 2026): CGPSC और CGSSB परीक्षाओं के लिए महत्वपूर्ण प्रश्न
         </h1>
-        <AuthorByline />
+        <AuthorByline date="16 August 2026" />
       </header>
 
       <div className="content" style={{ lineHeight: '1.8', fontSize: '1.1rem', color: 'var(--text-main)' }}>
