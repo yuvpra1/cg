@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import AuthorByline from '@/components/AuthorByline';
 import ArticleFooter from '@/components/ArticleFooter';
@@ -41,6 +42,17 @@ export default function TeejanBaiBiography() {
         </h1>
         <AuthorByline date="16 August 2026" />
       </header>
+
+      <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }}>
+        <Image 
+          src="/images/teejan-bai-biography-pandavani.webp" 
+          alt="डॉ. तीजन बाई: पंडवानी की विश्व प्रसिद्ध कलाकार, जीवन परिचय और उपलब्धियां" 
+          width={900} 
+          height={500} 
+          style={{ width: '100%', height: 'auto' }}
+          priority
+        />
+      </div>
 
       <div className="content" style={{ lineHeight: '1.8', fontSize: '1.1rem', color: 'var(--text-main)' }}>
         
