@@ -28,6 +28,9 @@ export default function RecruitmentRules() {
           <h1 style={{ color: 'var(--text-main)', fontSize: '2.4rem', fontWeight: '800', lineHeight: '1.3', marginBottom: '15px' }}>
             CGSSB Recruitment Rules 2026: छत्तीसगढ़ में सरकारी भर्ती के लिए नई शैक्षणिक योग्यता, जानें Group-1 से Group-7 तक पूरी जानकारी
           </h1>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', margin: 0, fontWeight: '500' }}>
+            🕒 Last Updated: 16 August 2026
+          </p>
         </header>
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
@@ -203,6 +206,39 @@ export default function RecruitmentRules() {
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: मुख्य बदलावों में उप अभियंता (विद्युत/यांत्रिकी) का नया पद जोड़ना, सहायक पशु चिकित्सा क्षेत्र अधिकारी को Group-5 में जोड़ना और अनुरेखक की qualification में संशोधन शामिल हैं।</p>
             </div>
           </div>
+
+          <hr style={{ borderTop: '1px solid var(--border-color)', margin: '40px 0' }} />
+
+          <h2 className="article-section-title" style={{ fontSize: '1.6rem' }}>📌 स्रोत एवं महत्वपूर्ण सूचना</h2>
+          <p className="content-paragraph">
+            <strong>स्रोत:</strong> इस article में दी गई जानकारी छत्तीसगढ़ शासन के सामान्य प्रशासन विभाग द्वारा जारी आधिकारिक अधिसूचनाओं तथा संबंधित सरकारी दस्तावेजों के आधार पर तैयार की गई है। इसमें 19 जून 2026 की अधिसूचना, 27 जुलाई 2026 के संशोधन तथा संबंधित अन्य सरकारी दस्तावेजों की जानकारी को सरल भाषा में प्रस्तुत किया गया है। मूल अधिसूचना में विभिन्न तृतीय एवं चतुर्थ श्रेणी पदों की न्यूनतम शैक्षणिक योग्यता निर्धारित की गई है।
+          </p>
+          <div style={{ marginBottom: '30px' }}>
+            <a href="https://gad.cg.gov.in/Rules_and_Circular.aspx?utm_source=cgssb.com.in" target="_blank" rel="noopener noreferrer" 
+               style={{ background: 'var(--color-primary)', color: 'white', padding: '10px 20px', borderRadius: '8px', fontWeight: 'bold', display: 'inline-block', boxShadow: '0 4px 6px rgba(37,99,235,0.2)' }}>
+              🌐 Official Source: छत्तीसगढ़ सामान्य प्रशासन विभाग
+            </a>
+          </div>
+
+          <h2 className="article-section-title" style={{ fontSize: '1.6rem' }}>⚠️ Disclaimer</h2>
+          <div className="premium-alert" style={{ background: '#fef2f2', borderColor: '#fca5a5' }}>
+            यह article केवल शैक्षणिक एवं informational purpose के लिए तैयार किया गया है। हमारी website किसी भी सरकारी विभाग, छत्तीसगढ़ कर्मचारी चयन मंडल (CGSSB) या छत्तीसगढ़ शासन से संबद्ध, अधिकृत या संचालित website नहीं है।
+            <br/><br/>
+            हमने उपलब्ध आधिकारिक सरकारी दस्तावेजों के आधार पर जानकारी को सरल और student-friendly भाषा में प्रस्तुत करने का प्रयास किया है। किसी भर्ती के लिए अंतिम eligibility, vacancy, age limit, syllabus, परीक्षा तिथि, reservation, अनुभव, skill test या अन्य शर्तों के लिए संबंधित official recruitment notification को ही अंतिम और मान्य स्रोत माना जाना चाहिए।
+            <br/><br/>
+            सरकारी नियमों में समय-समय पर संशोधन हो सकता है। उदाहरण के लिए 27 जुलाई 2026 को पहले जारी अधिसूचना में संशोधन किया गया था।
+          </div>
+
+          <h2 className="article-section-title" style={{ fontSize: '1.6rem' }}>✏️ जानकारी में गलती मिले?</h2>
+          <p className="content-paragraph">
+            अगर आपको इस article में कोई factual error, outdated information या correction दिखाई देती है, तो कृपया हमें इसकी जानकारी दें। हम उपलब्ध official notification से जानकारी को दोबारा verify करके आवश्यक correction करेंगे।
+            <br/><br/>
+            <strong>महत्वपूर्ण:</strong> किसी भी जानकारी में हमारे article और official notification के बीच अंतर होने की स्थिति में official government notification को प्राथमिकता दें।
+          </p>
+
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', margin: '40px 0 0 0', fontWeight: '500', textAlign: 'right' }}>
+            <em>Article reviewed/updated by: Yuvraj Pratap Rajwade</em>
+          </p>
 
         </section>
       </article>
