@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: 'Jobs', path: '/jobs' },
     { name: 'Exams', path: '/exams' },
     { name: 'Syllabus', path: '/syllabus' },
+    { name: 'Current Affairs', path: '/current-affairs' },
     { name: 'Tools', path: '/tools' },
   ];
 
