@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import { getJobBySlug } from '@/lib/db';
 import { getCGSetSubjectBySlug } from '@/lib/cgSetSubjects';
 import CGSetSyllabusTemplate from '@/components/CGSetSyllabusTemplate';
+import AuthorByline from '@/components/AuthorByline';
+import ArticleFooter from '@/components/ArticleFooter';
 
 async function getJob(slug: string) {
   try {
@@ -83,10 +85,17 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
         </header>
 
         {/* Dynamic Content Rendering */}
+        <div style={{ paddingTop: '20px' }}>
+          <AuthorByline date="16 August 2026" />
+        </div>
         <div 
           className="job-content" 
           dangerouslySetInnerHTML={{ __html: job.content }} 
-          style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'var(--text-main)' }}
+          style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'var(--text-main)', marginTop: '20px' }}
+        />
+        <ArticleFooter 
+          date="16 August 2026" 
+          sourceText={`Official Notification by ${job.department}`}
         />
 
       </article>

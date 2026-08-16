@@ -1,5 +1,7 @@
 import React from 'react';
 import { CGSetSubject } from '@/lib/cgSetSubjects';
+import AuthorByline from '@/components/AuthorByline';
+import ArticleFooter from '@/components/ArticleFooter';
 
 interface Props {
   subject: CGSetSubject;
@@ -30,6 +32,8 @@ export default function CGSetSyllabusTemplate({ subject }: Props) {
 
         <section className="seo-content-section" style={{ padding: '40px' }}>
           
+          <AuthorByline date="16 August 2026" />
+
           <p className="content-paragraph">
             छत्तीसगढ़ राज्य पात्रता परीक्षा (CG SET) 2026 के लिए <strong>{subject.nameEn} ({subject.nameHi})</strong> विषय का विस्तृत Syllabus और Exam Pattern जारी कर दिया गया है। जो Candidates Assistant Professor (असिस्टेंट प्रोफेसर) पद के लिए <strong>{subject.nameEn}</strong> विषय से आवेदन कर रहे हैं, उनके लिए Paper-II की सटीक जानकारी होना बेहद जरूरी है।
           </p>
@@ -124,6 +128,12 @@ export default function CGSetSyllabusTemplate({ subject }: Props) {
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: सामान्य (General) वर्ग के लिए दोनों पेपर मिलाकर 40% और आरक्षित (Reserved) वर्ग के लिए 35% अंक आवश्यक हैं। साथ ही टॉप 6% में आना अनिवार्य है।</p>
             </div>
           </div>
+
+          <ArticleFooter 
+            date="16 August 2026" 
+            sourceText="Official CG Vyapam Notification & Exam Instructions"
+            sourceLink="https://vyapamcg.cgstate.gov.in/"
+          />
 
         </section>
       </article>
