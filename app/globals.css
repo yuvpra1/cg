@@ -166,13 +166,18 @@ p {
     color: var(--text-main);
   }
 
-  /* Responsive Typography for mobile */
+  /* Responsive Typography & Padding for mobile */
   h1 { font-size: 1.8rem !important; }
   h2 { font-size: 1.5rem !important; }
   h3 { font-size: 1.25rem !important; }
   .article-section-title { font-size: 1.4rem !important; margin-top: 30px !important; }
-  .container { padding: 0 15px; }
+  
+  .container { padding: 0 15px !important; }
   article.container { padding-top: 20px !important; padding-bottom: 30px !important; }
+  
+  /* Override inline 40px paddings on cards and headers */
+  .card { padding: 15px !important; }
+  [style*="padding: 40px"] { padding-left: 15px !important; padding-right: 15px !important; }
   
   /* Make inline flex layouts stack on mobile */
   .mobile-stack {

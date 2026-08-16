@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AuthorByline({ date }: { date: string }) {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px', padding: '15px', background: '#f8fafc', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '15px', marginBottom: '25px', padding: '15px', background: '#f8fafc', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
       <div style={{ width: '45px', height: '45px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '1.2rem', fontWeight: 'bold' }}>
         Y
       </div>
