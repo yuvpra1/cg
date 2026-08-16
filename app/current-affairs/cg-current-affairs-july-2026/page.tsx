@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import AuthorByline from '@/components/AuthorByline';
 import ArticleFooter from '@/components/ArticleFooter';
 
@@ -33,6 +34,17 @@ export default function CGCurrentAffairsJuly2026() {
 
         <div style={{ paddingTop: '10px', paddingBottom: '20px' }}>
           <AuthorByline date="16 August 2026" />
+        </div>
+
+        <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }}>
+          <Image 
+            src="/images/cg-current-affairs-july-2026.webp" 
+            alt="छत्तीसगढ़ करेंट अफेयर्स जुलाई 2026 - महत्वपूर्ण घटनाएं" 
+            width={900} 
+            height={500} 
+            style={{ width: '100%', height: 'auto' }}
+            priority
+          />
         </div>
 
         <div className="job-content" style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'var(--text-main)' }}>
