@@ -213,10 +213,22 @@ export default function RecruitmentRules() {
           <p className="content-paragraph">
             <strong>स्रोत:</strong> इस article में दी गई जानकारी छत्तीसगढ़ शासन के सामान्य प्रशासन विभाग द्वारा जारी आधिकारिक अधिसूचनाओं तथा संबंधित सरकारी दस्तावेजों के आधार पर तैयार की गई है। इसमें 19 जून 2026 की अधिसूचना, 27 जुलाई 2026 के संशोधन तथा संबंधित अन्य सरकारी दस्तावेजों की जानकारी को सरल भाषा में प्रस्तुत किया गया है। मूल अधिसूचना में विभिन्न तृतीय एवं चतुर्थ श्रेणी पदों की न्यूनतम शैक्षणिक योग्यता निर्धारित की गई है।
           </p>
-          <div style={{ marginBottom: '30px' }}>
+          <div style={{ marginBottom: '30px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+            <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600209_001.pdf" target="_blank" rel="noopener noreferrer" 
+               style={{ background: '#f8fafc', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
+              <span style={{ fontSize: '1.2rem' }}>📜</span> अधिसूचना 19.06.2026 - तृतीय एवं चतुर्थ श्रेणी पदों की न्यूनतम शैक्षणिक योग्यता निर्धारण
+            </a>
+            <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600291_001.pdf" target="_blank" rel="noopener noreferrer" 
+               style={{ background: '#f8fafc', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
+              <span style={{ fontSize: '1.2rem' }}>📜</span> अधिसूचना 27.07.2026 - 19.06.2026 अधिसूचना में संशोधन विषयक
+            </a>
+            <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/146e4756-b636-4568-8aee-3d3dd6107c28.pdf" target="_blank" rel="noopener noreferrer" 
+               style={{ background: '#f8fafc', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
+              <span style={{ fontSize: '1.2rem' }}>📜</span> अधिसूचना 25.02.2026 - बेंचमार्क दिव्यांगजनों हेतु पदों का चिन्हांकन
+            </a>
             <a href="https://gad.cg.gov.in/Rules_and_Circular.aspx?utm_source=cgssb.com.in" target="_blank" rel="noopener noreferrer" 
-               style={{ background: 'var(--color-primary)', color: 'white', padding: '10px 20px', borderRadius: '8px', fontWeight: 'bold', display: 'inline-block', boxShadow: '0 4px 6px rgba(37,99,235,0.2)' }}>
-              🌐 Official Source: छत्तीसगढ़ सामान्य प्रशासन विभाग
+               style={{ background: 'var(--color-primary)', color: 'white', padding: '10px 20px', borderRadius: '8px', fontWeight: 'bold', display: 'inline-block', boxShadow: '0 4px 6px rgba(37,99,235,0.2)', width: 'fit-content', marginTop: '10px' }}>
+              🌐 All Official GAD Circulars
             </a>
           </div>
 
