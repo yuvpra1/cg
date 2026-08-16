@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeSeoContent from '@/components/HomeSeoContent';
 
 export const metadata = {
   title: "Yuvraj Pratap Rajwade - Author & Publisher | CGSSB Portal",
@@ -70,7 +69,6 @@ export default function AuthorProfile() {
 
         </div>
       </div>
-      <HomeSeoContent />
     </>
   );
 }
