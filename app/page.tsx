@@ -53,14 +53,14 @@ export default async function Home() {
 
       {/* News Flash Marquee */}
       <div className="marquee-container" style={{ margin: '0 auto 50px', borderRadius: '4px', maxWidth: '800px' }}>
-        <div className="marquee-content" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
-          <span>🔥 <a href="/cg-gk/teejan-bai-biography-pandavani" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां</a></span>
-          <span>🔥 <a href="/current-affairs/cg-current-affairs-july-2026" style={{ color: 'inherit', textDecoration: 'none' }}>LATEST - छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026</a></span>
-          <span>🔥 <a href="/current-affairs/cg-current-affairs-may-june-2026" style={{ color: 'inherit', textDecoration: 'none' }}>UPDATE - छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026</a></span>
-          <span>🔥 <a href="/jobs/cgssb-food-drug-administration-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>JOB - CGSSB Food & Drug Administration Recruitment 2026</a></span>
-          <span>🔥 <a href="/jobs/cg-set-2026" style={{ color: 'inherit', textDecoration: 'none' }}>EXAM - CG SET 2026: Date, Eligibility, Application Form, Syllabus</a></span>
-          <span>🔥 <a href="/jobs/cgssb-teacher-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB TEACHER RECRUITMENT 2026</a></span>
-          <span>🔥 <a href="/jobs/cgssb-nssk26-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB NSSK26 Recruitment 2026</a></span>
+        <div className="marquee-content">
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/cg-gk/teejan-bai-biography-pandavani" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/cg-current-affairs-july-2026" style={{ color: 'inherit', textDecoration: 'none' }}>LATEST - छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/cg-current-affairs-may-june-2026" style={{ color: 'inherit', textDecoration: 'none' }}>UPDATE - छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cgssb-food-drug-administration-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>JOB - CGSSB Food & Drug Administration Recruitment 2026</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cg-set-2026" style={{ color: 'inherit', textDecoration: 'none' }}>EXAM - CG SET 2026: Date, Eligibility, Application Form, Syllabus</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cgssb-teacher-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB TEACHER RECRUITMENT 2026</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cgssb-nssk26-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB NSSK26 Recruitment 2026</a></span>
         </div>
       </div>
 
