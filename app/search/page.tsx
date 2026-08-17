@@ -12,7 +12,11 @@ export const runtime = 'edge';
 
 // Define static pages to include in the search
 const STATIC_PAGES = [
-  { title: "छत्तीसगढ़ का प्रागैतिहासिक काल: पाषाण काल, प्रमुख स्थल और शैलचित्र", url: "/cg-gk/chhattisgarh-prehistoric-period", type: "CG GK" },
+  { 
+    title: "छत्तीसगढ़ का प्राचीन इतिहास: प्रागैतिहासिक काल से महाभारत काल तक", 
+    url: "/cg-gk/chhattisgarh-prehistoric-period", 
+    type: "CG GK" 
+  },
   { title: "डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां", url: "/cg-gk/teejan-bai-biography-pandavani", type: "CG GK" },
   { title: "General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक, महत्वपूर्ण तथ्य", url: "/current-affairs/general-dhiraj-seth-nepal-visit-2026", type: "Current Affairs" },
   { title: "छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ", url: "/current-affairs/chhattisgarh-current-affairs-june-july-2026", type: "Current Affairs" },
