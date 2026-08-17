@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import AuthorByline from '@/components/AuthorByline';
 import ArticleFooter from '@/components/ArticleFooter';
 
@@ -24,6 +25,20 @@ export default function GeneralDhirajSethNepalVisit() {
         </h1>
         
         <AuthorByline date="17 August 2026" />
+
+        <div style={{ position: 'relative', margin: '30px 0', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
+          <Image 
+            src="/images/general-dhiraj-seth-nepal-visit-2026.webp" 
+            alt="General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक"
+            width={800} 
+            height={450} 
+            layout="responsive"
+            priority
+          />
+          <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+            This image is AI generated
+          </div>
+        </div>
 
         <div className="article-content" style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'var(--text-main)' }}>
           <p>

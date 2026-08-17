@@ -26,7 +26,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
         
         <AuthorByline date={currentDate} />
 
-        <div style={{ margin: '30px 0', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
+        <div style={{ position: 'relative', margin: '30px 0', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
           <Image 
             src="/images/cg-current-affairs-june-july-2026.webp" 
             alt="Chhattisgarh Current Affairs June July 2026 MCQ - CGSSB"
@@ -35,6 +35,9 @@ export default function CGCurrentAffairsJuneJuly2026() {
             layout="responsive"
             priority
           />
+          <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+            This image is AI generated
+          </div>
         </div>
 
         <div className="article-content" style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'var(--text-main)' }}>

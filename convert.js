@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function convert() {
   const images = [
-    { in: 'cg-current-affairs-june-july-2026.png', out: 'public/images/cg-current-affairs-june-july-2026.webp' }
+    { in: 'general-dhiraj-seth-nepal-visit-2026.png', out: 'public/images/general-dhiraj-seth-nepal-visit-2026.webp' }
   ];
 
   if (!fs.existsSync('public/images')) {
