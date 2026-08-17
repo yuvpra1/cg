@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 };
 
 export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 // Define static pages to include in the search
 const STATIC_PAGES = [
@@ -35,7 +36,7 @@ export default async function SearchPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const resolvedParams = await searchParams;
-  const query = typeof resolvedParams.q === 'string' ? resolvedParams.q.toLowerCase().trim() : '';
+  const query = typeof resolvedParams?.q === 'string' ? resolvedParams.q.toLowerCase().trim() : '';
 
   let results: { title: string, url: string, type: string }[] = [];
 
@@ -47,11 +48,14 @@ export default async function SearchPage({
     } catch (e) {
       console.error("Error fetching jobs for search:", e);
     }
+    
+    // Ensure dbJobs is always an array to prevent .map crashes
+    const safeDbJobs = Array.isArray(dbJobs) ? dbJobs : [];
 
     // Format DB Jobs
-    const formattedJobs = dbJobs.map((job: any) => ({
-      title: job.title,
-      url: `/jobs/${job.slug}`,
+    const formattedJobs = safeDbJobs.map((job: any) => ({
+      title: job?.title || '',
+      url: `/jobs/${job?.slug || ''}`,
       type: 'Job Notification'
     }));
 
