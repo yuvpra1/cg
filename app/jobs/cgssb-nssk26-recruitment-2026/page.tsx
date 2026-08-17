@@ -20,7 +20,7 @@ export default function NSSK26ArticlePage() {
         {/* Header */}
         <header style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '20px', marginBottom: '30px' }}>
           <span style={{ 
-            backgroundColor: '#e0e7ff', color: 'var(--color-primary)', 
+            background: 'var(--card-bg)', color: 'var(--color-primary)', 
             padding: '6px 14px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '10px'
           }}>
             नगर सेना एवं अग्निशमन सेवाएँ
@@ -59,7 +59,7 @@ export default function NSSK26ArticlePage() {
             अगर आप इस भर्ती में आवेदन करने की तैयारी कर रहे हैं, तो नीचे हमने परीक्षा की date, application process, fee और exam day instructions को आसान भाषा में समझाया है।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB NSSK26 क्या है?
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -69,7 +69,7 @@ export default function NSSK26ArticlePage() {
             यह परीक्षा छत्तीसगढ़ कर्मचारी चयन मंडल (CGSSB) द्वारा आयोजित की जा रही है। परीक्षा निर्देश में CGSSB की website के साथ पुराने CG Vyapam portal का भी उल्लेख किया गया है।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB NSSK26 Important Dates
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -114,14 +114,14 @@ export default function NSSK26ArticlePage() {
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>ये dates CGSSB द्वारा जारी परीक्षा निर्देश में दी गई हैं।</p>
           </div>
 
-          <div style={{ backgroundColor: '#fff3cd', borderLeft: '4px solid #ffc107', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
-            <h3 style={{ marginTop: '0', color: '#856404', fontSize: '1.2rem', marginBottom: '10px' }}>एक जरूरी बात</h3>
-            <p style={{ margin: '0', color: '#856404' }}>
+          <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
+            <h3 style={{ marginTop: '0', color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '10px' }}>एक जरूरी बात</h3>
+            <p style={{ margin: '0', color: 'var(--color-primary)' }}>
               अभ्यर्थियों को application की last date का इंतजार नहीं करना चाहिए। अगर form में कोई technical problem आती है या payment के दौरान परेशानी होती है, तो अंतिम दिन तक रुकने पर समस्या बढ़ सकती है।
             </p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             NSSK26 में कौन-कौन से पद हैं? (Vacancy Details)
           </h2>
           <p style={{ marginBottom: '20px' }}>
@@ -212,7 +212,7 @@ export default function NSSK26ArticlePage() {
             इस भर्ती में कुल <strong>295 पद</strong> दर्शाए गए हैं। इनमें फायरमैन के 117 पद और वाहन चालक कम ऑपरेटर के 86 पद सबसे अधिक हैं। इसके अलावा स्टोर कीपर, वाचरूम ऑपरेटर, वाहन चालक, स्टेशन ऑफिसर, मैकेनिक और वायरलेस ऑपरेटर के पद भी शामिल हैं।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Educational Qualification
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -222,7 +222,7 @@ export default function NSSK26ArticlePage() {
             इसलिए केवल 12वीं पास होने के आधार पर सभी posts के लिए eligibility assume नहीं करनी चाहिए। जिस पद के लिए apply करना है, उसकी official recruitment notification में दी गई complete eligibility conditions जरूर check करें।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             NSSK26 Admit Card
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -232,13 +232,13 @@ export default function NSSK26ArticlePage() {
             Admit Card को संभालकर रखना जरूरी है क्योंकि selection process या service joining के समय भी इसे मांगा जा सकता है।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Centre कहाँ होगा?
           </h2>
           <p style={{ marginBottom: '15px' }}>दिए गए परीक्षा निर्देश के अनुसार परीक्षा केंद्र <strong>रायपुर</strong> में रहेगा।</p>
           <p style={{ marginBottom: '30px' }}>अभ्यर्थियों को सलाह दी गई है कि exam date से पहले अपने exam centre तक पहुंचने की planning कर लें।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             परीक्षा केंद्र पर कितनी देर पहले पहुंचना होगा?
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -248,7 +248,7 @@ export default function NSSK26ArticlePage() {
             निर्देशों के अनुसार परीक्षा शुरू होने से लगभग 30 मिनट पहले मुख्य द्वार बंद कर दिया जाएगा। इस परीक्षा के लिए मुख्य द्वार <strong>सुबह 9:30 बजे</strong> बंद होने की बात कही गई है। इसलिए 9:30 बजे पहुंचने की planning करना सही strategy नहीं होगी। Traffic और अन्य delays को ध्यान में रखकर पहले निकलना बेहतर रहेगा।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Centre पर क्या लेकर जाना है?
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा निर्देश के अनुसार candidate को परीक्षा कक्ष में केवल आवश्यक चीजें ही ले जाने की अनुमति है।</p>
@@ -257,9 +257,9 @@ export default function NSSK26ArticlePage() {
             <li><strong>Black या Blue Ball Point Pen</strong></li>
             <li><strong>Original Photo ID</strong> (Voter ID, Driving Licence, PAN Card, Aadhaar Card आदि)</li>
           </ul>
-          <p style={{ marginBottom: '30px', color: '#dc3545', fontWeight: 'bold' }}>Original photo ID के बिना examination centre में entry नहीं दी जाएगी।</p>
+          <p style={{ marginBottom: '30px', color: '#ef4444', fontWeight: 'bold' }}>Original photo ID के बिना examination centre में entry नहीं दी जाएगी।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Centre पर क्या नहीं ले जाना है?
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा निर्देश में electronic और अन्य सामान को लेकर काफी स्पष्ट restrictions दी गई हैं। इनमें शामिल हैं:</p>
@@ -283,7 +283,7 @@ export default function NSSK26ArticlePage() {
             निर्देशों के अनुसार कान में किसी भी प्रकार के आभूषण की अनुमति नहीं है। इसलिए exam day पर unnecessary jewellery या accessories लेकर जाने से बचना बेहतर रहेगा।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             NSSK26 Online Application कैसे करें?
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -298,7 +298,7 @@ export default function NSSK26ArticlePage() {
             <li><strong>Photo और Signature:</strong> Candidate को अपना photo और signature (50 KB से 100 KB size range) upload करना होगा।</li>
           </ul>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             NSSK26 Application Fee
           </h2>
           <table style={{ width: '100%', maxWidth: '500px', borderCollapse: 'collapse', border: '1px solid var(--border-color)', marginBottom: '15px' }}>
@@ -327,17 +327,17 @@ export default function NSSK26ArticlePage() {
             निर्देश में यह भी बताया गया है कि Chhattisgarh के local residents द्वारा जमा की गई examination fee, लागू सरकारी निर्देशों के अनुसार परीक्षा में उपस्थित होने के बाद संबंधित bank account में वापस की जा सकती है।
           </p>
 
-          <div style={{ backgroundColor: '#fff3cd', borderLeft: '4px solid #ffc107', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
-            <h3 style={{ marginTop: '0', color: '#856404', fontSize: '1.2rem', marginBottom: '10px' }}>Payment करने के बाद एक जरूरी काम जरूर करें</h3>
-            <p style={{ margin: '0', color: '#856404' }}>
+          <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
+            <h3 style={{ marginTop: '0', color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '10px' }}>Payment करने के बाद एक जरूरी काम जरूर करें</h3>
+            <p style={{ margin: '0', color: 'var(--color-primary)' }}>
               Payment complete होने के बाद candidate को अपना application <strong>SUBMIT</strong> करना जरूरी है। Payment successful होने के बावजूद अगर candidate ने final SUBMIT button नहीं दबाया, तो application valid नहीं माना जा सकता।
             </p>
-            <p style={{ margin: '10px 0 0', fontWeight: 'bold', color: '#856404' }}>
+            <p style={{ margin: '10px 0 0', fontWeight: 'bold', color: 'var(--color-primary)' }}>
               Payment → Confirm Payment → Application Check → SUBMIT → Application Save/Print
             </p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             NSSK26 Exam Day Checklist
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा वाले दिन घर से निकलने से पहले एक बार यह checklist जरूर देख लें:</p>
@@ -351,7 +351,7 @@ export default function NSSK26ArticlePage() {
             <li>✅ Centre पर कम से कम 2 घंटे पहले पहुंचने की planning कर ली</li>
           </ul>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             NSSK26 Official Website
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -361,13 +361,13 @@ export default function NSSK26ArticlePage() {
             <strong>Official Website:</strong> <a href="https://cgssb.cgstate.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 'bold' }}>https://cgssb.cgstate.gov.in</a>
           </p>
 
-          <div style={{ backgroundColor: '#f8d7da', borderLeft: '4px solid #dc3545', padding: '15px', marginBottom: '40px', borderRadius: '4px' }}>
-            <p style={{ margin: '0', color: '#842029', fontSize: '0.9rem' }}>
+          <div style={{ background: 'var(--card-bg-hover)', border: '1px solid var(--border-color)', padding: '15px', marginBottom: '40px', borderRadius: '4px' }}>
+            <p style={{ margin: '0', color: '#ef4444', fontSize: '0.9rem' }}>
               <strong>Important:</strong> हमारी website एक independent informational platform है। किसी भी recruitment date, eligibility, application, admit card या अन्य महत्वपूर्ण जानकारी पर अंतिम निर्णय लेने से पहले संबंधित official notification/website से details verify जरूर करें।
             </p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '20px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '20px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Frequently Asked Questions (FAQs)
           </h2>
           
@@ -386,7 +386,7 @@ export default function NSSK26ArticlePage() {
             <p style={{ margin: '0', fontSize: '1rem' }}>नहीं। Payment successful होने के बाद SUBMIT button दबाना जरूरी है।</p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             निष्कर्ष
           </h2>
           <p style={{ marginBottom: '15px' }}>

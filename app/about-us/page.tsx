@@ -54,7 +54,7 @@ export default function AboutUsPage() {
           हमारा किसी government department या examination authority के साथ कोई official affiliation होने का दावा नहीं है। सरकारी भर्ती से संबंधित किसी भी महत्वपूर्ण जानकारी के लिए candidates को हमारी website पर दी गई जानकारी के साथ <strong>संबंधित official government notification और official website से भी details verify करनी चाहिए।</strong>
         </p>
         
-        <div style={{ backgroundColor: '#fffbe8', padding: '20px', borderLeft: '4px solid #f59e0b', marginBottom: '30px', fontSize: '0.95rem' }}>
+        <div style={{ background: 'var(--card-bg)', padding: '20px', border: '1px solid var(--border-color)', marginBottom: '30px', fontSize: '0.95rem' }}>
           <strong>Important Disclaimer:</strong> CGSSB is an independent informational website and is not affiliated with, endorsed by, or operated by the Government of Chhattisgarh, Chhattisgarh Staff Selection Board (CGSSB), Chhattisgarh Professional Examination Board (CG Vyapam), CGPSC, or any other government department or examination authority. Official information may change from time to time. Users should always verify important details from the relevant official government website or notification before taking any action.
         </div>
 
@@ -65,7 +65,7 @@ export default function AboutUsPage() {
         <p style={{ marginBottom: '15px' }}>
           हम चाहते हैं कि CGSSB पर आने वाला candidate सिर्फ यह न जाने कि <strong>"कौन-सी vacancy आई है"</strong>, बल्कि यह भी समझ सके कि:
         </p>
-        <p style={{ padding: '15px', backgroundColor: '#e0e7ff', color: 'var(--color-primary)', borderRadius: '8px', fontWeight: '600', marginBottom: '30px', textAlign: 'center' }}>
+        <p style={{ padding: '15px', background: 'var(--card-bg)', color: 'var(--color-primary)', borderRadius: '8px', fontWeight: '600', marginBottom: '30px', textAlign: 'center' }}>
           कौन apply कर सकता है → कैसे apply करना है → exam कब है → तैयारी कैसे करनी है → admit card कहाँ मिलेगा → result कैसे check करना है।
         </p>
       </div>

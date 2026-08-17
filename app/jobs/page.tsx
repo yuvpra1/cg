@@ -54,7 +54,7 @@ export default async function JobsList() {
           jobs.map((job: any) => (
             <div key={job.id} className="card" style={{ borderLeft: '4px solid var(--color-primary)', display: 'flex', flexDirection: 'column' }}>
               <div style={{ marginBottom: '10px' }}>
-                <span style={{ fontSize: '0.8rem', backgroundColor: '#e0e7ff', color: 'var(--color-primary)', padding: '4px 8px', borderRadius: '4px', fontWeight: '600' }}>
+                <span style={{ fontSize: '0.8rem', background: 'var(--card-bg)', color: 'var(--color-primary)', padding: '4px 8px', borderRadius: '4px', fontWeight: '600' }}>
                   {job.department}
                 </span>
               </div>

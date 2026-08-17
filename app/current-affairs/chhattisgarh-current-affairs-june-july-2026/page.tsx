@@ -445,7 +445,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
         />
 
         {/* Disclaimer Section */}
-        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
+        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid var(--border-color)', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>महत्वपूर्ण सूचना / Disclaimer</h4>
           <p style={{ margin: 0 }}>
             अस्वीकरण: इस लेख में दी गई जानकारी विद्यार्थियों की प्रतियोगी परीक्षा की तैयारी और सामान्य शैक्षणिक जानकारी के उद्देश्य से प्रकाशित की गई है। करेंट अफेयर्स से संबंधित जानकारी समय के साथ बदल सकती है तथा किसी तथ्य में अनजाने में त्रुटि रह जाने की संभावना से पूरी तरह इनकार नहीं किया जा सकता। इसलिए परीक्षा की तैयारी या किसी महत्वपूर्ण निर्णय के लिए संबंधित सरकारी विभाग, आधिकारिक अधिसूचना अथवा संबंधित official website से जानकारी एक बार अवश्य verify करें। छत्तीसगढ़ सरकार की official website पर विभिन्न विभागों की वेबसाइटों के links भी उपलब्ध हैं। <br/><br/>

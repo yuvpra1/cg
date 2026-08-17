@@ -88,7 +88,7 @@ export default function TeejanBaiBiography() {
         <p>
           उपलब्ध स्रोतों के अनुसार तीजन बाई का जन्म दुर्ग जिले के भिलाई के पास गनियारी गांव (या कुछ स्रोतों के अनुसार पाटन के अटारी गांव में जन्म और गनियारी में पालन-पोषण) में हुआ था। उनके पिता का नाम चुनुकलाल और माता का नाम सुखवती था।
         </p>
-        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)', margin: '20px 0' }}>
           <strong>महत्वपूर्ण तथ्य-जांच (Fact-Check) नोट:</strong> तीजन बाई की जन्मतिथि को लेकर उपलब्ध स्रोतों में अंतर मिलता है। Fukuoka Prize की official biography में <strong>8 अगस्त 1956</strong> दर्ज है, जबकि कुछ भारतीय शैक्षणिक/जीवनी स्रोत <strong>24 अप्रैल 1956</strong> बताते हैं।
         </div>
 
@@ -99,7 +99,7 @@ export default function TeejanBaiBiography() {
           पंडवानी छत्तीसगढ़ की प्रसिद्ध लोक प्रदर्शन कला है, जिसमें महाभारत की कथाओं को गायन, संगीत और अभिनय के माध्यम से प्रस्तुत किया जाता है। 'पंडवानी' शब्द को सामान्य तौर पर पांडवों की वाणी/कथा से जोड़ा जाता है।
         </p>
 
-        <h3 style={{ color: '#1e293b', fontSize: '1.4rem', marginTop: '20px' }}>पंडवानी की दो प्रमुख शैलियां</h3>
+        <h3 style={{ color: 'var(--text-main)', fontSize: '1.4rem', marginTop: '20px' }}>पंडवानी की दो प्रमुख शैलियां</h3>
         <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginBottom: '20px' }}>
           <li><strong>वेदमती शैली:</strong> इस शैली में कलाकार सामान्यतः बैठकर पंडवानी की प्रस्तुति करता है। गायन और चेहरे के भावों के माध्यम से कथा को आगे बढ़ाया जाता है।</li>
           <li><strong>कापालिक शैली:</strong> कापालिक शैली में कलाकार खड़े होकर और अधिक गतिशील अभिनय के साथ कथा प्रस्तुत करता है।</li>

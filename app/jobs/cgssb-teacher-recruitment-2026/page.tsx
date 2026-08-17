@@ -18,7 +18,7 @@ export default function TeacherRecruitmentArticlePage() {
         
         <header style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '20px', marginBottom: '30px' }}>
           <span style={{ 
-            backgroundColor: '#e0e7ff', color: 'var(--color-primary)', 
+            background: 'var(--card-bg)', color: 'var(--color-primary)', 
             padding: '6px 14px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '10px'
           }}>
             लोक शिक्षण संचालनालय, छत्तीसगढ़
@@ -55,7 +55,7 @@ export default function TeacherRecruitmentArticlePage() {
             अगर आप इस भर्ती में आवेदन करने वाले हैं, तो नीचे हमने एक ही जगह पर <strong>vacancy, important dates, eligibility, application fee, syllabus, exam pattern, admit card और exam centre से जुड़े जरूरी instructions</strong> को समझाया है।
           </p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 – Short Details
           </h2>
           <div style={{ overflowX: 'auto', marginBottom: '15px' }}>
@@ -119,13 +119,13 @@ export default function TeacherRecruitmentArticlePage() {
             </table>
           </div>
           <p style={{ marginBottom: '15px' }}>उपरोक्त application और examination schedule CGSSB के LST26 परीक्षा निर्देश में दिया गया है।</p>
-          <div style={{ backgroundColor: '#fff3cd', borderLeft: '4px solid #ffc107', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
-            <p style={{ margin: '0', color: '#856404' }}>
+          <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
+            <p style={{ margin: '0', color: 'var(--color-primary)' }}>
               <strong>Note:</strong> Exam date और अन्य dates में बाद में बदलाव हो सकता है। इसलिए final confirmation के लिए latest official notice जरूर देखें।
             </p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 में कितने पद हैं?
           </h2>
           <p style={{ marginBottom: '15px' }}>इस भर्ती में कुल <strong>1,654 शिक्षक पद</strong> हैं। Subject-wise vacancy इस प्रकार दी गई है:</p>
@@ -153,20 +153,20 @@ export default function TeacherRecruitmentArticlePage() {
           </p>
           <p style={{ marginBottom: '30px' }}>विज्ञापन में यह भी कहा गया है कि रिक्त पदों की संख्या में परिवर्तन किया जा सकता है। इसलिए candidates को application करने से पहले latest official information check करनी चाहिए।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 के लिए Form कब भरना है?
           </h2>
           <p style={{ marginBottom: '15px' }}>LST26 के लिए online application <strong>7 अगस्त 2026</strong> से शुरू होने की जानकारी दी गई है।</p>
           <p style={{ marginBottom: '15px' }}>Application की last date: <strong>2 सितंबर 2026, शाम 5:00 बजे</strong> तक है।</p>
           <p style={{ marginBottom: '30px' }}>अगर आप eligible हैं तो last day का इंतजार किए बिना form भरना बेहतर रहेगा। खासकर सरकारी recruitment forms में कभी-कभी payment या website से जुड़ी technical problem आ सकती है。</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Form में Correction कब कर सकते हैं?
           </h2>
           <p style={{ marginBottom: '15px' }}>अगर application submit करने के बाद कोई eligible correction window उपलब्ध है, तो इस भर्ती में उसके लिए <strong>3 सितंबर 2026 से 10 सितंबर 2026, शाम 5:00 बजे तक</strong> का समय दिया गया है।</p>
           <p style={{ marginBottom: '30px' }}>फिर भी form submit करने से पहले details अच्छी तरह check करना ज्यादा सुरक्षित रहेगा।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 Eligibility
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -179,9 +179,9 @@ export default function TeacherRecruitmentArticlePage() {
             <li><strong>जिस subject के लिए apply कर रहे हैं, उस subject की required educational qualification</strong></li>
           </ol>
           <p style={{ marginBottom: '15px' }}>उदाहरण के लिए Hindi के candidate को Hindi से संबंधित qualification, English candidate को English से संबंधित qualification और इसी तरह बाकी subjects की prescribed qualification देखनी होगी।</p>
-          <p style={{ marginBottom: '30px', color: '#dc3545', fontWeight: 'bold' }}>Important: Exact eligibility के लिए संबंधित विस्तृत official advertisement को अंतिम reference मानें।</p>
+          <p style={{ marginBottom: '30px', color: '#ef4444', fontWeight: 'bold' }}>Important: Exact eligibility के लिए संबंधित विस्तृत official advertisement को अंतिम reference मानें।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 Application Fee
           </h2>
           <p style={{ marginBottom: '15px' }}>LST26 examination instructions के अनुसार category-wise examination fee यह है:</p>
@@ -202,31 +202,31 @@ export default function TeacherRecruitmentArticlePage() {
           </div>
           <p style={{ marginBottom: '30px' }}>Instructions में Chhattisgarh के local residents द्वारा परीक्षा में उपस्थित होने के बाद लागू सरकारी निर्देशों के अनुसार examination fee वापस किए जाने की जानकारी भी दी गई है।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Online Form भरते समय सबसे जरूरी बात
           </h2>
           <p style={{ marginBottom: '15px' }}>Form भरने के बाद सिर्फ payment successful देखकर यह न मानें कि आपका application complete हो गया है।</p>
           <p style={{ marginBottom: '15px' }}>Instructions के अनुसार payment के बाद application को <strong>final SUBMIT</strong> करना जरूरी है। यदि payment करने के बाद candidate application submit नहीं करता है, तो application valid नहीं माना जा सकता।</p>
           <p style={{ marginBottom: '15px' }}>इसलिए पूरा process इस तरह समझें:</p>
-          <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-primary)', backgroundColor: '#e0e7ff', padding: '10px', borderRadius: '4px' }}>
+          <p style={{ marginBottom: '15px', fontWeight: 'bold', color: 'var(--color-primary)', background: 'var(--card-bg)', padding: '10px', borderRadius: '4px' }}>
             Profile → Application Form → Payment → Details Check → Final Submit → Application Save/Print
           </p>
           <p style={{ marginBottom: '30px' }}>Final submission के बाद application form का record अपने पास रखना अच्छा रहेगा।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Profile Registration
           </h2>
           <p style={{ marginBottom: '15px' }}>CGSSB examination system में profile registration की सुविधा है। Candidate को application process के दौरान अपनी profile और personal information को सही तरीके से maintain करना होता है।</p>
           <p style={{ marginBottom: '30px' }}>Profile में नाम, जन्मतिथि, category, domicile आदि information भरते समय documents के अनुसार details भरना बेहतर रहेगा।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Exam 2026 कब होगा?
           </h2>
           <p style={{ marginBottom: '15px' }}>LST26 written examination की <strong>संभावित तारीख 25 अक्टूबर 2026</strong> दी गई है।</p>
           <p style={{ marginBottom: '15px' }}>परीक्षा का समय: <strong>सुबह 10:00 बजे से दोपहर 12:15 बजे तक</strong> रहेगा।</p>
           <p style={{ marginBottom: '30px' }}>इस भर्ती के लिए <strong>16 जिला मुख्यालयों</strong> में examination centres रखे गए हैं। Candidate का exact centre Admit Card में पता चलेगा।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Admit Card 2026
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा निर्देश में Admit Card के लिए <strong>19 अक्टूबर 2026</strong> की संभावित तारीख दी गई है। Admit Card जारी होने के बाद candidate को उसमें:</p>
@@ -240,14 +240,14 @@ export default function TeacherRecruitmentArticlePage() {
           </ul>
           <p style={{ marginBottom: '30px' }}>जैसी details check करनी चाहिए। Admit Card में कोई महत्वपूर्ण discrepancy दिखाई देती है तो official authority से contact करना चाहिए।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Centre पर कितने बजे पहुंचना चाहिए?
           </h2>
           <p style={{ marginBottom: '15px' }}>यह instruction खास तौर पर ध्यान देने लायक है। CGSSB के instructions में candidates को examination शुरू होने के समय से <strong>कम से कम 2 घंटे पहले</strong> examination centre पहुंचने के लिए कहा गया है।</p>
           <p style={{ marginBottom: '15px' }}>साथ ही परीक्षा शुरू होने से लगभग <strong>30 मिनट पहले main gate बंद</strong> किए जाने की जानकारी दी गई है।</p>
           <p style={{ marginBottom: '30px' }}>इसलिए अगर exam 10 बजे शुरू हो रहा है तो last-minute पहुंचने का risk न लें।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Centre पर क्या लेकर जाना है?
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा के दिन candidate को जरूरी चीजें साथ रखनी चाहिए:</p>
@@ -257,9 +257,9 @@ export default function TeacherRecruitmentArticlePage() {
             <li>Original Photo ID</li>
           </ul>
           <p style={{ marginBottom: '15px' }}>Identity proof के लिए instructions में Voter ID, Driving Licence, PAN Card, Aadhaar Card आदि का उल्लेख है।</p>
-          <p style={{ marginBottom: '30px', color: '#dc3545', fontWeight: 'bold' }}>Original photo ID के बिना centre पर जाने से बचें।</p>
+          <p style={{ marginBottom: '30px', color: '#ef4444', fontWeight: 'bold' }}>Original photo ID के बिना centre पर जाने से बचें।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Centre पर क्या नहीं लेकर जाना है?
           </h2>
           <p style={{ marginBottom: '15px' }}>Instructions में exam centre पर electronic और अन्य सामानों को लेकर restrictions दी गई हैं। इनमें शामिल हैं:</p>
@@ -274,13 +274,13 @@ export default function TeacherRecruitmentArticlePage() {
           </ul>
           <p style={{ marginBottom: '30px' }}>इसलिए exam day पर जितना कम सामान लेकर जाएं, उतना बेहतर रहेगा।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Dress Code का भी ध्यान रखें
           </h2>
           <p style={{ marginBottom: '15px' }}>LST26 examination instructions में कपड़ों से संबंधित instructions भी दिए गए हैं।</p>
           <p style={{ marginBottom: '30px' }}>Candidates को सामान्य और हल्के रंग के कपड़े पहनकर आने की सलाह दी गई है तथा काले, गहरे नीले, गहरे हरे, जामुनी, मैरून आदि गहरे रंगों से बचने के लिए कहा गया है। ज्यादा pattern या फूलदार कपड़ों से भी बचने का निर्देश है। इसी तरह footwear के संबंध में भी examination instructions follow करना चाहिए।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 Exam Pattern
           </h2>
           <p style={{ marginBottom: '15px' }}>Teacher recruitment के subject-wise syllabus documents में प्रत्येक subject के लिए <strong>100 marks</strong> का syllabus दिया गया है।</p>
@@ -302,7 +302,7 @@ export default function TeacherRecruitmentArticlePage() {
           <div style={{ overflowX: 'auto', marginBottom: '15px' }}>
             <table style={{ width: '100%', maxWidth: '600px', borderCollapse: 'collapse', border: '1px solid var(--border-color)' }}>
               <thead>
-                <tr style={{ backgroundColor: 'var(--color-secondary)', color: '#1e293b' }}>
+                <tr style={{ backgroundColor: 'var(--color-secondary)', color: 'var(--text-main)' }}>
                   <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>Section</th>
                   <th style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>Marks</th>
                 </tr>
@@ -345,7 +345,7 @@ export default function TeacherRecruitmentArticlePage() {
           <div style={{ overflowX: 'auto', marginBottom: '15px' }}>
             <table style={{ width: '100%', maxWidth: '600px', borderCollapse: 'collapse', border: '1px solid var(--border-color)' }}>
               <thead>
-                <tr style={{ backgroundColor: 'var(--color-secondary)', color: '#1e293b' }}>
+                <tr style={{ backgroundColor: 'var(--color-secondary)', color: 'var(--text-main)' }}>
                   <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>Section</th>
                   <th style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>Marks</th>
                 </tr>
@@ -365,8 +365,8 @@ export default function TeacherRecruitmentArticlePage() {
           </div>
           <p style={{ marginBottom: '15px' }}>Mathematics syllabus में गणित का इतिहास, गणित की प्रकृति, गणित सीखना एवं आकलन से संबंधित topics भी दिए गए हैं।</p>
           <p style={{ marginBottom: '15px' }}>Arithmetic में संख्या पद्धति, भिन्न, दशमलव, प्रतिशत, लाभ-हानि, ब्याज, अनुपात-समानुपात, समय-कार्य और दूरी-गति जैसे topics शामिल हैं।</p>
-          <div style={{ backgroundColor: '#fff3cd', borderLeft: '4px solid #ffc107', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
-            <p style={{ margin: '0', color: '#856404', fontSize: '0.9rem' }}>
+          <div style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '15px', marginBottom: '30px', borderRadius: '4px' }}>
+            <p style={{ margin: '0', color: 'var(--color-primary)', fontSize: '0.9rem' }}>
               <strong>Note:</strong> Official syllabus की heading/marking structure को देखते हुए main article में subject-wise detailed syllabus को official PDF से cross-check करके ही final preparation करें। ऊपर marks केवल retrieved syllabus structure के अनुसार रखे गए हैं।
             </p>
           </div>
@@ -377,7 +377,7 @@ export default function TeacherRecruitmentArticlePage() {
           <div style={{ overflowX: 'auto', marginBottom: '15px' }}>
             <table style={{ width: '100%', maxWidth: '600px', borderCollapse: 'collapse', border: '1px solid var(--border-color)' }}>
               <thead>
-                <tr style={{ backgroundColor: 'var(--color-secondary)', color: '#1e293b' }}>
+                <tr style={{ backgroundColor: 'var(--color-secondary)', color: 'var(--text-main)' }}>
                   <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>Section</th>
                   <th style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>Marks</th>
                 </tr>
@@ -401,7 +401,7 @@ export default function TeacherRecruitmentArticlePage() {
           <div style={{ overflowX: 'auto', marginBottom: '15px' }}>
             <table style={{ width: '100%', maxWidth: '600px', borderCollapse: 'collapse', border: '1px solid var(--border-color)' }}>
               <thead>
-                <tr style={{ backgroundColor: 'var(--color-secondary)', color: '#1e293b' }}>
+                <tr style={{ backgroundColor: 'var(--color-secondary)', color: 'var(--text-main)' }}>
                   <th style={{ padding: '12px', textAlign: 'left', border: '1px solid var(--border-color)' }}>विषय</th>
                   <th style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>अंक</th>
                 </tr>
@@ -440,30 +440,30 @@ export default function TeacherRecruitmentArticlePage() {
           </ul>
           <p style={{ marginBottom: '30px' }}>का common portion दिया गया है। इसलिए Agriculture candidates को केवल technical agriculture पढ़कर preparation complete नहीं माननी चाहिए।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             बाल विकास एवं शिक्षा शास्त्र को ignore न करें
           </h2>
           <p style={{ marginBottom: '15px' }}>Teacher recruitment की तैयारी करते समय कई candidates अपने subject पर पूरा focus करते हैं और common sections को बाद के लिए छोड़ देते हैं। यह strategy ठीक नहीं होगी।</p>
           <p style={{ marginBottom: '30px' }}>Subject-wise syllabus में <strong>बाल विकास एवं शिक्षा शास्त्र</strong> के लिए 15 marks का हिस्सा दिया गया है। इस section में child development, learning, inclusive education और teaching-learning से संबंधित concepts को समझना जरूरी है।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             भाषा ज्ञान एवं सामान्य अध्ययन
           </h2>
           <p style={{ marginBottom: '15px' }}>यह भी preparation का बड़ा हिस्सा है। कई subject-wise syllabus में <strong>भाषा ज्ञान एवं सामान्य अध्ययन के 35 marks</strong> दिए गए हैं।</p>
           <p style={{ marginBottom: '30px' }}>35 marks को छोटा section समझना सही नहीं होगा। Preparation करते समय इसे daily study plan में जगह देना बेहतर रहेगा।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Exam में Negative Marking
           </h2>
           <p style={{ marginBottom: '15px' }}>हाँ, <strong>negative marking है।</strong></p>
           <p style={{ marginBottom: '15px' }}>CGSSB के examination instructions के अनुसार:</p>
           <ul style={{ paddingLeft: '20px', marginBottom: '15px', listStyleType: 'none', fontWeight: 'bold' }}>
-            <li style={{ color: '#198754' }}>✅ सही answer = 1 mark</li>
-            <li style={{ color: '#dc3545' }}>❌ गलत answer = 1/4 mark की कटौती</li>
+            <li style={{ color: 'var(--color-primary)' }}>✅ सही answer = 1 mark</li>
+            <li style={{ color: '#ef4444' }}>❌ गलत answer = 1/4 mark की कटौती</li>
           </ul>
           <p style={{ marginBottom: '30px' }}>इसलिए exam में बिना सोचे answers mark करने से बचें।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Teacher Recruitment की तैयारी कैसे करें?
           </h2>
           <p style={{ marginBottom: '15px' }}>अगर आप अभी तैयारी शुरू कर रहे हैं तो सबसे पहले पूरा syllabus देखकर यह तय करें कि आपके strong और weak topics कौन-से हैं। मेरी practical सलाह होगी:</p>
@@ -482,7 +482,7 @@ export default function TeacherRecruitmentArticlePage() {
             <p style={{ marginBottom: '15px' }}>जो topics पढ़ चुके हैं उन्हें बार-बार revise करें। Negative marking होने के कारण mock tests में सिर्फ score नहीं देखें। यह भी देखें कि आपके कितने answers गलत हो रहे हैं।</p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Exam Day के लिए जरूरी Checklist
           </h2>
           <p style={{ marginBottom: '15px' }}>परीक्षा वाले दिन इन चीजों को लेकर confusion न रहे, इसलिए पहले से तैयारी रखें:</p>
@@ -498,7 +498,7 @@ export default function TeacherRecruitmentArticlePage() {
           <p style={{ marginBottom: '15px' }}>Exam centre पर कम से कम <strong>2 घंटे पहले</strong> पहुंचने की planning करें।</p>
           <p style={{ marginBottom: '30px' }}>Mobile, calculator, electronic devices, books, notes और अन्य prohibited items साथ लेकर न जाएं।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 में Form भरने से पहले Checklist
           </h2>
           <p style={{ marginBottom: '15px' }}>Application submit करने से पहले एक बार यह list देख लें:</p>
@@ -516,7 +516,7 @@ export default function TeacherRecruitmentArticlePage() {
           </ul>
           <p style={{ marginBottom: '30px' }}>Photo और signature upload के लिए profile/application instructions में निर्धारित file-size requirements भी दी गई हैं।</p>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             CGSSB Teacher Recruitment 2026 Important Dates – फिर से एक नजर
           </h2>
           <div style={{ overflowX: 'auto', marginBottom: '30px' }}>
@@ -537,7 +537,7 @@ export default function TeacherRecruitmentArticlePage() {
             </table>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '20px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '20px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Frequently Asked Questions
           </h2>
           
@@ -571,7 +571,7 @@ export default function TeacherRecruitmentArticlePage() {
             <p style={{ margin: '0', fontSize: '1rem' }}>इस recruitment में Hindi, Sanskrit, English, Mathematics, Social Science और Agriculture subjects हैं। सभी के लिए अलग subject-specific syllabus है।</p>
           </div>
 
-          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', borderBottom: '2px solid #e2e8f0', paddingBottom: '8px' }}>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '15px', color: 'var(--color-primary)', border: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             Official Information
           </h2>
           <p style={{ marginBottom: '15px' }}>
@@ -586,9 +586,9 @@ export default function TeacherRecruitmentArticlePage() {
             <a href="https://vyapamcg.cgstate.gov.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 'bold' }}>https://vyapamcg.cgstate.gov.in</a>
           </p>
 
-          <div style={{ backgroundColor: '#f8d7da', borderLeft: '4px solid #dc3545', padding: '15px', marginBottom: '40px', borderRadius: '4px' }}>
-            <h3 style={{ marginTop: '0', color: '#842029', fontSize: '1.2rem', marginBottom: '10px' }}>Disclaimer</h3>
-            <p style={{ margin: '0', color: '#842029', fontSize: '0.95rem' }}>
+          <div style={{ background: 'var(--card-bg-hover)', border: '1px solid var(--border-color)', padding: '15px', marginBottom: '40px', borderRadius: '4px' }}>
+            <h3 style={{ marginTop: '0', color: '#ef4444', fontSize: '1.2rem', marginBottom: '10px' }}>Disclaimer</h3>
+            <p style={{ margin: '0', color: '#ef4444', fontSize: '0.95rem' }}>
               <strong>cgssb.com.in</strong> एक independent informational website है। यह CGSSB, लोक शिक्षण संचालनालय, छत्तीसगढ़ सरकार या किसी अन्य सरकारी विभाग की official website नहीं है। इस article में दी गई जानकारी उपलब्ध official recruitment documents और examination instructions के आधार पर समझाने के उद्देश्य से दी गई है। आवेदन करने या परीक्षा से संबंधित कोई महत्वपूर्ण निर्णय लेने से पहले संबंधित official notification जरूर verify करें।
             </p>
           </div>

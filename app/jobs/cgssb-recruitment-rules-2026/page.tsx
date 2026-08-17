@@ -20,9 +20,9 @@ export default function RecruitmentRules() {
       <article className="premium-card" style={{ padding: '0', overflow: 'hidden' }}>
         
         {/* Clean Header Section */}
-        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', backgroundColor: '#ffffff', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
+        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', background: 'var(--card-bg)', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
           <span style={{ 
-            backgroundColor: '#eff6ff', color: 'var(--color-primary)', border: '1px solid #bfdbfe',
+            background: 'var(--card-bg)', color: 'var(--color-primary)', border: '1px solid var(--border-color)',
             padding: '6px 16px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '15px'
           }}>
             सामान्य प्रशासन विभाग, छत्तीसगढ़ शासन
@@ -55,8 +55,8 @@ export default function RecruitmentRules() {
             19 जून 2026 को जारी अधिसूचना में अलग-अलग पदों को उनकी शैक्षणिक योग्यता के आधार पर कई समूहों में रखा गया है। बाद में <strong>27 जुलाई 2026 को इसी अधिसूचना में कुछ महत्वपूर्ण संशोधन भी किए गए।</strong>
           </p>
 
-          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#fcd34d' }}>
-            <strong style={{ color: '#b45309', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>⚠️ ध्यान दें:</strong> 
+          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: 'var(--border-color)' }}>
+            <strong style={{ color: 'var(--color-primary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>⚠️ ध्यान दें:</strong> 
             यह अधिसूचना अपने आप में किसी एक भर्ती की vacancy notification नहीं है। यह अलग-अलग सरकारी पदों के लिए निर्धारित <strong>न्यूनतम शैक्षणिक योग्यता और भर्ती परीक्षा की व्यवस्था</strong> को समझने वाला नियम है।
           </div>
 
@@ -187,7 +187,7 @@ export default function RecruitmentRules() {
             और अगर आप Engineering, Nursing, Pharmacy, Computer, ITI, Typing या किसी दूसरे technical field से हैं, तो अपनी qualification के अनुरूप specific post की eligibility जरूर check करें।
           </p>
           
-          <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg)', borderColor: 'var(--border-color)' }}>
             <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📌 सबसे जरूरी बात</strong> 
             <strong>19 जून 2026 की मूल अधिसूचना को अकेले पढ़कर eligibility तय न करें।</strong> 27 जुलाई 2026 का संशोधन भी साथ में देखें, क्योंकि इसमें कुछ पदों की स्थिति और qualification में बदलाव किया गया है। यह नियम छात्रों को यह समझने में मदद करते हैं कि आने वाली अलग-अलग सरकारी भर्तियों में उनकी पढ़ाई के आधार पर कौन-से अवसर हो सकते हैं। लेकिन जब किसी particular post की vacancy जारी हो, तब <strong>उस भर्ती का official advertisement और संबंधित विभागीय भर्ती नियम ही अंतिम आधार</strong> होना चाहिए।
           </div>
@@ -195,23 +195,23 @@ export default function RecruitmentRules() {
           <h2 className="article-section-title">Frequently Asked Questions (FAQs)</h2>
           
           <div className="faq-section" style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '40px' }}>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: CGSSB Recruitment Rules 2026 क्या है?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: यह छत्तीसगढ़ शासन द्वारा विभिन्न तृतीय और चतुर्थ श्रेणी पदों के लिए निर्धारित न्यूनतम शैक्षणिक योग्यता और परीक्षा व्यवस्था से संबंधित अधिसूचना है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: क्या यह कोई सीधी भर्ती notification है?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: नहीं। इसे किसी एक भर्ती की vacancy notification नहीं समझना चाहिए। यह अलग-अलग पदों की eligibility और परीक्षा व्यवस्था से संबंधित नियम है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: क्या 10वीं पास छात्र भी सरकारी नौकरी के लिए eligible हो सकते हैं?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: हां। Group-7 में कई पदों के लिए 10वीं पास qualification निर्धारित है। वाहन चालक के लिए इसके अलावा driving licence जैसी शर्तें भी हैं।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: क्या 12वीं पास छात्रों के लिए भी पद हैं?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: हां। Group-6 में कई पदों के लिए 10+2 qualification निर्धारित है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: 27 जुलाई 2026 के संशोधन में क्या बदला?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: मुख्य बदलावों में उप अभियंता (विद्युत/यांत्रिकी) का नया पद जोड़ना, सहायक पशु चिकित्सा क्षेत्र अधिकारी को Group-5 में जोड़ना और अनुरेखक की qualification में संशोधन शामिल हैं।</p>
             </div>
@@ -243,7 +243,7 @@ export default function RecruitmentRules() {
           </div>
 
           <h2 className="article-section-title" style={{ fontSize: '1.6rem' }}>⚠️ Disclaimer</h2>
-          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#ef4444' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: 'var(--border-color)' }}>
             यह article केवल शैक्षणिक एवं informational purpose के लिए तैयार किया गया है। हमारी website किसी भी सरकारी विभाग, छत्तीसगढ़ कर्मचारी चयन मंडल (CGSSB) या छत्तीसगढ़ शासन से संबद्ध, अधिकृत या संचालित website नहीं है।
             <br/><br/>
             हमने उपलब्ध आधिकारिक सरकारी दस्तावेजों के आधार पर जानकारी को सरल और student-friendly भाषा में प्रस्तुत करने का प्रयास किया है। किसी भर्ती के लिए अंतिम eligibility, vacancy, age limit, syllabus, परीक्षा तिथि, reservation, अनुभव, skill test या अन्य शर्तों के लिए संबंधित official recruitment notification को ही अंतिम और मान्य स्रोत माना जाना चाहिए।

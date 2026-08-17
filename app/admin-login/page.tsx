@@ -41,7 +41,7 @@ export default function AdminLogin() {
         <h1 style={{ textAlign: 'center', marginBottom: '24px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>Admin Login</h1>
         
         {error && (
-          <div style={{ backgroundColor: '#fee2e2', color: '#b91c1c', padding: '12px', borderRadius: '4px', marginBottom: '20px', fontSize: '0.9rem' }}>
+          <div style={{ background: 'var(--card-bg)', color: '#ef4444', padding: '12px', borderRadius: '4px', marginBottom: '20px', fontSize: '0.9rem' }}>
             {error}
           </div>
         )}

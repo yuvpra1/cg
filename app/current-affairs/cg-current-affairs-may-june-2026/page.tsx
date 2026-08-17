@@ -66,7 +66,7 @@ export default function CurrentAffairsMayJune2026() {
           <Link href="/jobs/cgssb-nssk26-recruitment-2026" style={{ color: 'var(--color-primary)' }}>CGPSC, CG Vyapam/CGSSB</Link>, पुलिस भर्ती, शिक्षक भर्ती और अन्य राज्य स्तरीय प्रतियोगी परीक्षाओं की तैयारी करने वाले अभ्यर्थियों के लिए मई-जून 2026 के प्रमुख करेंट अफेयर्स यहां एक जगह दिए गए हैं।
         </p>
 
-        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)', margin: '20px 0' }}>
           <strong>नोट:</strong> नीचे केवल मई-जून 2026 की घटनाओं को प्राथमिकता दी गई है। बाद में सामने आई जुलाई 2026 की घटनाओं को इस सूची से अलग रखा गया है।
         </div>
 

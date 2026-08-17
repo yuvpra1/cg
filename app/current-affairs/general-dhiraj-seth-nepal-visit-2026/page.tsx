@@ -104,7 +104,7 @@ export default function GeneralDhirajSethNepalVisit() {
             <li>Shivapuri में Army Command and Staff Course के student officers के साथ interaction</li>
             <li>Pokhara में Ex-Servicemen Rally में शामिल होना</li>
           </ul>
-          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #fbbf24', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>नोट:</strong> इन कार्यक्रमों की अंतिम स्थिति या समय में बदलाव हो सकता है, इसलिए students को latest official update देखना चाहिए।
           </div>
 
@@ -210,7 +210,7 @@ export default function GeneralDhirajSethNepalVisit() {
         />
 
         {/* Disclaimer Section */}
-        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
+        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid var(--border-color)', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>महत्वपूर्ण सूचना / Disclaimer</h4>
           <p style={{ margin: 0 }}>
             अस्वीकरण: इस लेख में दी गई जानकारी विद्यार्थियों की प्रतियोगी परीक्षा की तैयारी और सामान्य जानकारी के उद्देश्य से प्रकाशित की गई है। Defence और international relations से जुड़ी घटनाओं में कार्यक्रम, पद, तारीख या अन्य विवरण समय के साथ अपडेट हो सकते हैं। इसलिए परीक्षा में उपयोग करने से पहले महत्वपूर्ण जानकारी को संबंधित सरकारी विभाग, Ministry of Defence, Ministry of External Affairs अथवा अन्य official source से एक बार verify जरूर करें। <br/><br/>

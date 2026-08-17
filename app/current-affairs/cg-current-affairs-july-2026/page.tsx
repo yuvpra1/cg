@@ -21,7 +21,7 @@ export default function CGCurrentAffairsJuly2026() {
         {/* Header */}
         <header style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '20px', marginBottom: '30px' }}>
           <span style={{ 
-            backgroundColor: '#e0e7ff', color: 'var(--color-primary)', 
+            background: 'var(--card-bg)', color: 'var(--color-primary)', 
             padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold'
           }}>
             CG Current Affairs

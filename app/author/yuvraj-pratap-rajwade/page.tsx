@@ -41,7 +41,7 @@ export default function AuthorProfile() {
         <h2 style={{ fontSize: '1.5rem', marginBottom: '15px', color: 'var(--color-primary)' }}>Information Verification</h2>
         <p>Government recruitment information publish करते समय हम संबंधित official government notification, examination instructions और government websites को प्राथमिक source मानते हैं।</p>
         <p>किसी article में eligibility, vacancy, application date, examination date या अन्य महत्वपूर्ण information दी जाती है तो हमारा प्रयास रहता है कि उसे original official source से verify किया जाए।</p>
-        <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#ef4444', marginTop: '20px', marginBottom: '30px' }}>
+        <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: 'var(--border-color)', marginTop: '20px', marginBottom: '30px' }}>
           मैं किसी government department या recruitment board का employee, spokesperson या official representative नहीं हूँ। CGSSB.com.in एक independent informational website है।
         </div>
 
@@ -59,8 +59,8 @@ export default function AuthorProfile() {
         <p>हम correction request को available official source से verify करने के बाद आवश्यक बदलाव करते हैं।</p>
         <p style={{ marginBottom: '30px' }}><strong>Correction Email:</strong> <a href="mailto:contact@cgssb.com.in" style={{ color: 'var(--color-primary)' }}>contact@cgssb.com.in</a></p>
 
-        <h2 style={{ fontSize: '1.6rem', marginBottom: '15px', color: '#b91c1c' }}>⚠️ Important Notice</h2>
-        <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#ef4444' }}>
+        <h2 style={{ fontSize: '1.6rem', marginBottom: '15px', color: '#ef4444' }}>⚠️ Important Notice</h2>
+        <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: 'var(--border-color)' }}>
           <p style={{ marginBottom: '10px' }}>मैं CGSSB, CG Vyapam, CGPSC या छत्तीसगढ़ सरकार का official representative नहीं हूँ।</p>
           <p style={{ margin: 0 }}>CGSSB.com.in एक independent website है। Government recruitment से संबंधित अंतिम और authoritative information के लिए संबंधित official notification और government website को ही प्राथमिकता दी जानी चाहिए।</p>
         </div>

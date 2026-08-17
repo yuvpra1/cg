@@ -20,9 +20,9 @@ export default function FDA_Recruitment() {
       <article className="premium-card" style={{ padding: '0', overflow: 'hidden' }}>
         
         {/* Clean Header Section */}
-        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', backgroundColor: '#ffffff', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
+        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', background: 'var(--card-bg)', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
           <span style={{ 
-            backgroundColor: '#eff6ff', color: 'var(--color-primary)', border: '1px solid #bfdbfe',
+            background: 'var(--card-bg)', color: 'var(--color-primary)', border: '1px solid var(--border-color)',
             padding: '6px 16px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '15px'
           }}>
             खाद्य एवं औषधि प्रशासन, छत्तीसगढ़
@@ -149,7 +149,7 @@ export default function FDA_Recruitment() {
             इस भर्ती के लिए केवल <strong>छत्तीसगढ़ के स्थानीय निवासी</strong> उम्मीदवारों से आवेदन आमंत्रित किए गए हैं। दूसरे राज्यों के candidates को notification में दी गई eligibility conditions को ध्यान से देखना चाहिए।
           </div>
 
-          <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd', marginTop: '20px' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg)', borderColor: 'var(--border-color)', marginTop: '20px' }}>
             <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 शैक्षणिक योग्यता के नए नियम (2026 अपडेट)</strong>
             क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी पदों के लिए न्यूनतम शैक्षणिक योग्यताओं (Group 1 से Group 7) में बड़े बदलाव किए हैं? 
             <br/><br/>
@@ -234,8 +234,8 @@ export default function FDA_Recruitment() {
             </a>
           </div>
 
-          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#ef4444' }}>
-            <strong style={{ color: '#b91c1c' }}>जरूरी सूचना:</strong> 
+          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: 'var(--border-color)' }}>
+            <strong style={{ color: '#ef4444' }}>जरूरी सूचना:</strong> 
             यह article खाद्य एवं औषधि प्रशासन, छत्तीसगढ़ के विस्तृत विज्ञापनों और CGSSB के FWLN26 परीक्षा निर्देशों के आधार पर तैयार किया गया है। परीक्षा की तारीख 20 सितंबर 2026 "संभावित तिथि" है। कृपया नवीनतम अपडेट के लिए आधिकारिक वेबसाइट विजिट करें।
           </div>
 

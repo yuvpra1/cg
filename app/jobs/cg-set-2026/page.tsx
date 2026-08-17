@@ -19,9 +19,9 @@ export default function CGSET2026Page() {
       <article className="premium-card" style={{ padding: '0', overflow: 'hidden' }}>
         
         {/* Clean Header Section */}
-        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', backgroundColor: '#ffffff', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
+        <header style={{ padding: '40px', borderBottom: '1px solid var(--border-color)', background: 'var(--card-bg)', borderTopLeftRadius: '16px', borderTopRightRadius: '16px' }}>
           <span style={{ 
-            backgroundColor: '#eff6ff', color: 'var(--color-primary)', border: '1px solid #bfdbfe',
+            background: 'var(--card-bg)', color: 'var(--color-primary)', border: '1px solid var(--border-color)',
             padding: '6px 16px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '15px'
           }}>
             उच्च शिक्षा विभाग, छत्तीसगढ़
@@ -82,7 +82,7 @@ export default function CGSET2026Page() {
                 <tr><td>Paper-I</td><td>100 Marks</td></tr>
                 <tr><td>Paper-II</td><td>200 Marks</td></tr>
                 <tr><td>कुल अंक</td><td>300 Marks</td></tr>
-                <tr><td>परीक्षा तिथि</td><td style={{ color: '#d97706', fontWeight: 'bold' }}>4 अक्टूबर 2026</td></tr>
+                <tr><td>परीक्षा तिथि</td><td style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>4 अक्टूबर 2026</td></tr>
                 <tr><td>Paper-I समय</td><td>सुबह 10:00 से 11:15 बजे</td></tr>
                 <tr><td>Paper-II समय</td><td>दोपहर 2:00 से 4:15 बजे</td></tr>
                 <tr><td>Exam Centres</td><td>10 जिला मुख्यालय</td></tr>
@@ -94,7 +94,7 @@ export default function CGSET2026Page() {
             Official detailed notification में यह भी स्पष्ट किया गया है कि SET परीक्षा में आयु सीमा की कोई बाध्यता नहीं है।
           </p>
 
-          <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd', marginTop: '20px', marginBottom: '40px' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg)', borderColor: 'var(--border-color)', marginTop: '20px', marginBottom: '40px' }}>
             <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 अन्य पदों की शैक्षणिक योग्यता (2026 अपडेट)</strong>
             क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी के अन्य पदों (Group 1 से Group 7) के लिए भी न्यूनतम शैक्षणिक योग्यताओं में बड़े बदलाव किए हैं? 
             <br/><br/>
@@ -119,7 +119,7 @@ export default function CGSET2026Page() {
                 <tr><td>Online Application शुरू</td><td>23 जुलाई 2026</td></tr>
                 <tr><td>Online Application की अंतिम तिथि</td><td>17 अगस्त 2026, शाम 5:00 बजे तक</td></tr>
                 <tr><td>आवेदन में Correction</td><td>18 अगस्त से 20 अगस्त 2026, शाम 5:00 बजे तक</td></tr>
-                <tr><td>Exam की संभावित तारीख</td><td style={{ color: '#d97706', fontWeight: 'bold' }}>4 अक्टूबर 2026</td></tr>
+                <tr><td>Exam की संभावित तारीख</td><td style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>4 अक्टूबर 2026</td></tr>
                 <tr><td>Admit Card जारी होने की संभावित तारीख</td><td>28 सितंबर 2026</td></tr>
                 <tr><td>Paper-I</td><td>सुबह 10:00 – 11:15 बजे</td></tr>
                 <tr><td>Paper-II</td><td>दोपहर 2:00 – 4:15 बजे</td></tr>
@@ -157,7 +157,7 @@ export default function CGSET2026Page() {
 
           <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--text-main)', fontWeight: '600' }}>क्या Final Year / Post Graduation Appearing Candidates CG SET दे सकते हैं?</h3>
           <p className="content-paragraph">
-            <span style={{ color: '#16a34a', fontWeight: 'bold', fontSize: '1.2rem' }}>हाँ।</span><br/>
+            <span style={{ color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.2rem' }}>हाँ।</span><br/>
             जो candidates Post Graduation या equivalent degree की examination में appearing हैं, वे भी SET examination में शामिल हो सकते हैं।
           </p>
           <p className="content-paragraph">
@@ -223,8 +223,8 @@ export default function CGSET2026Page() {
           <p className="content-paragraph">CG SET में दो Papers होंगे।</p>
           
           <div className="responsive-grid" style={{ marginBottom: '30px' }}>
-            <div style={{ background: '#ffffff', padding: '20px', borderRadius: '12px', border: '1px solid var(--color-primary)', boxShadow: '0 4px 6px rgba(37, 99, 235, 0.1)' }}>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--color-primary)', textAlign: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>Paper-I</h3>
+            <div style={{ background: 'var(--card-bg)', padding: '20px', borderRadius: '12px', border: '1px solid var(--color-primary)', boxShadow: '0 4px 6px rgba(37, 99, 235, 0.1)' }}>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--color-primary)', textAlign: 'center', border: '1px solid var(--border-color)', paddingBottom: '10px' }}>Paper-I</h3>
               <p className="content-paragraph" style={{ textAlign: 'center' }}>सभी candidates के लिए compulsory</p>
               <ul className="premium-list" style={{ margin: 0 }}>
                 <li>Questions: <strong>50</strong></li>
@@ -234,8 +234,8 @@ export default function CGSET2026Page() {
               </ul>
             </div>
             
-            <div style={{ background: '#ffffff', padding: '20px', borderRadius: '12px', border: '1px solid #8b5cf6', boxShadow: '0 4px 6px rgba(139, 92, 246, 0.1)' }}>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: '#8b5cf6', textAlign: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>Paper-II</h3>
+            <div style={{ background: 'var(--card-bg)', padding: '20px', borderRadius: '12px', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(139, 92, 246, 0.1)' }}>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '10px', color: 'var(--color-primary)', textAlign: 'center', border: '1px solid var(--border-color)', paddingBottom: '10px' }}>Paper-II</h3>
               <p className="content-paragraph" style={{ textAlign: 'center' }}>चुने गए subject पर आधारित</p>
               <ul className="premium-list" style={{ margin: 0 }}>
                 <li>Questions: <strong>100</strong></li>
@@ -335,7 +335,7 @@ export default function CGSET2026Page() {
           
           <p className="content-paragraph">इसके बाद निर्धारित reservation policy के अनुसार qualifying candidates की संख्या तय की जाएगी।</p>
           
-          <div style={{ background: '#eff6ff', padding: '20px', borderRadius: '12px', borderLeft: '4px solid var(--color-primary)', marginBottom: '30px' }}>
+          <div style={{ background: 'var(--card-bg)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid var(--color-primary)', marginBottom: '30px' }}>
             <h3 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--color-primary)', fontWeight: '700' }}>इसका मतलब क्या है?</h3>
             <p className="content-paragraph" style={{ margin: 0 }}>
               उदाहरण के लिए केवल 40% marks प्राप्त करने से General candidate automatically SET qualified नहीं हो जाता। Candidate को दोनों papers में appear करना होगा, required aggregate marks हासिल करने होंगे, और qualifying candidates के निर्धारित <strong>Top 6%</strong> criteria में आना होगा। इसलिए preparation का target केवल passing marks रखना सही strategy नहीं है।
@@ -467,7 +467,7 @@ export default function CGSET2026Page() {
             </div>
             
             <div style={{ background: 'var(--card-bg-hover)', padding: '25px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: '#8b5cf6' }}>Paper-II के लिए</h3>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--color-primary)' }}>Paper-II के लिए</h3>
               <p className="content-paragraph" style={{ fontSize: '1rem' }}>Paper-II में आपके selected subject के 100 questions और 200 marks हैं। इसलिए कुल score में Paper-II की भूमिका बहुत बड़ी है। आपको:</p>
               <ul className="premium-list" style={{ fontSize: '0.95rem', margin: 0 }}>
                 <li>अपने selected subject का official syllabus download करना चाहिए।</li>
@@ -482,31 +482,31 @@ export default function CGSET2026Page() {
           <h2 className="article-section-title">CG SET 2026 FAQs</h2>
           
           <div className="faq-section" style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '40px' }}>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: CG SET 2026 की परीक्षा कब होगी?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: CG SET 2026 की संभावित परीक्षा तिथि 4 अक्टूबर 2026 है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: CG SET में कितने papers होंगे?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: दो papers होंगे—Paper-I (100 Marks, 50 questions) और Paper-II (200 Marks, 100 questions)।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: क्या CG SET में negative marking है?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: नहीं। दोनों papers में negative marking नहीं है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: CG SET के लिए कितने प्रतिशत marks चाहिए?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: General category के लिए PG में 55% और Reserved categories के लिए 50% marks चाहिए।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: क्या CG SET के लिए age limit है?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: Detailed notification के अनुसार maximum age limit की कोई बाध्यता नहीं है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: CG SET में qualify करने के लिए कितने marks चाहिए?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: General के लिए aggregate 40% और Reserved categories के लिए 35% होना चाहिए। इसके साथ Top 6% qualifying criteria भी लागू है।</p>
             </div>
-            <div style={{ background: '#ffffff', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg)', padding: '15px 20px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>Q: CG SET application की last date क्या है?</h3>
               <p style={{ margin: '10px 0 0 0', color: 'var(--text-muted)' }}>A: Online application की अंतिम तिथि 17 अगस्त 2026 शाम 5:00 बजे तक है। (Correction: 18–20 अगस्त 2026)</p>
             </div>
