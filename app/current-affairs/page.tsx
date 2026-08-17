@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 export default function CurrentAffairsCategory() {
   const articles = [
     {
+      title: "General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक, महत्वपूर्ण तथ्य",
+      description: "General Dhiraj Seth Nepal Visit 2026 की पूरी जानकारी। जानिए नेपाल यात्रा, Honorary General Rank, भारत-नेपाल सैन्य संबंध और परीक्षा के लिए महत्वपूर्ण facts।",
+      url: "/current-affairs/general-dhiraj-seth-nepal-visit-2026",
+      date: "17 August 2026"
+    },
+    {
       title: "छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ",
       description: "CGPSC, CGSSB (Vyapam), और छत्तीसगढ़ की अन्य सभी प्रतियोगी परीक्षाओं के लिए जून और जुलाई 2026 के महत्वपूर्ण करेंट अफेयर्स का संकलन, साथ ही MCQ और Quick Revision।",
       url: "/current-affairs/chhattisgarh-current-affairs-june-july-2026",
