@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: 'Search for jobs, syllabus, and current affairs on CGSSB Portal.',
 };
 
+export const runtime = 'edge';
+
 // Define static pages to include in the search
 const STATIC_PAGES = [
   { title: "डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां", url: "/cg-gk/teejan-bai-biography-pandavani", type: "CG GK" },
@@ -32,7 +34,7 @@ export default async function SearchPage({
 
   if (query) {
     // Fetch DB Jobs
-    let dbJobs = [];
+    let dbJobs: any[] = [];
     try {
       dbJobs = await getAllJobs();
     } catch (e) {
@@ -40,7 +42,7 @@ export default async function SearchPage({
     }
 
     // Format DB Jobs
-    const formattedJobs = dbJobs.map(job => ({
+    const formattedJobs = dbJobs.map((job: any) => ({
       title: job.title,
       url: `/jobs/${job.slug}`,
       type: 'Job Notification'
