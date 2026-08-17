@@ -13,9 +13,8 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ", url: "/current-affairs/chhattisgarh-current-affairs-june-july-2026" },
     { title: "डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां", url: "/cg-gk/teejan-bai-biography-pandavani" },
-    { title: "छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026", url: "/current-affairs/cg-current-affairs-may-june-2026" },
-    { title: "छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026", url: "/current-affairs/cg-current-affairs-july-2026" },
     { title: "CGSSB Food & Drug Administration Recruitment 2026: Lab Assistant & Sampling Assistant", url: "/jobs/cgssb-food-drug-administration-recruitment-2026" },
     { title: "CG SET 2026: Exam Date, Eligibility, Application Form, Syllabus", url: "/jobs/cg-set-2026" },
     { title: "CGSSB TEACHER RECRUITMENT 2026", url: "/jobs/cgssb-teacher-recruitment-2026" },
@@ -57,8 +56,7 @@ export default async function Home() {
       <div className="marquee-container" style={{ margin: '0 auto 50px', borderRadius: '4px', maxWidth: '800px' }}>
         <div className="marquee-content">
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/cg-gk/teejan-bai-biography-pandavani" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां</a></span>
-          <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/cg-current-affairs-july-2026" style={{ color: 'inherit', textDecoration: 'none' }}>LATEST - छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026</a></span>
-          <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/cg-current-affairs-may-june-2026" style={{ color: 'inherit', textDecoration: 'none' }}>UPDATE - छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026</a></span>
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/chhattisgarh-current-affairs-june-july-2026" style={{ color: 'inherit', textDecoration: 'none' }}>LATEST - छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ</a></span>
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cgssb-food-drug-administration-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>JOB - CGSSB Food & Drug Administration Recruitment 2026</a></span>
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cg-set-2026" style={{ color: 'inherit', textDecoration: 'none' }}>EXAM - CG SET 2026: Date, Eligibility, Application Form, Syllabus</a></span>
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/jobs/cgssb-teacher-recruitment-2026" style={{ color: 'inherit', textDecoration: 'none' }}>RECRUITMENT - CGSSB TEACHER RECRUITMENT 2026</a></span>
