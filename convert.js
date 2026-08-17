@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function convert() {
   const images = [
-    { in: 'छत्तीसगढ़ का प्रागैतिहासिक काल पाषाण काल, प्रमुख स्थल और शैलचित्र.png', out: 'public/images/chhattisgarh-prehistoric-period.webp' }
+    { in: 'छत्तीसगढ़ का प्राचीन इतिहास.png', out: 'public/images/chhattisgarh-ancient-history.webp' }
   ];
 
   if (!fs.existsSync('public/images')) {
