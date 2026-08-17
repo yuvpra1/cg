@@ -95,7 +95,7 @@ export default function CGSET2026Page() {
           </p>
 
           <div className="premium-alert" style={{ background: 'var(--card-bg)', borderColor: 'var(--border-color)', marginTop: '20px', marginBottom: '40px' }}>
-            <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 अन्य पदों की शैक्षणिक योग्यता (2026 अपडेट)</strong>
+            <strong style={{ color: 'var(--color-primary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 अन्य पदों की शैक्षणिक योग्यता (2026 अपडेट)</strong>
             क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी के अन्य पदों (Group 1 से Group 7) के लिए भी न्यूनतम शैक्षणिक योग्यताओं में बड़े बदलाव किए हैं? 
             <br/><br/>
             <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: 'var(--color-primary)', fontWeight: 'bold', textDecoration: 'underline' }}>

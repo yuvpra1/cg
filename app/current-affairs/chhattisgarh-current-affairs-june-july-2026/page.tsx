@@ -51,7 +51,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
             इस लेख में <strong>जून-जुलाई 2026</strong> के महत्वपूर्ण छत्तीसगढ़ करेंट अफेयर्स को आसान भाषा में समझाया गया है। अंत में <strong>MCQ और Quick Revision</strong> भी दिया गया है, ताकि विद्यार्थी पढ़ने के तुरंत बाद अपना revision कर सकें।
           </p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             जून-जुलाई 2026 के महत्वपूर्ण छत्तीसगढ़ करेंट अफेयर्स
           </h2>
 
@@ -105,7 +105,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
             </ul>
           </div>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             पुरस्कार और सम्मान
           </h2>
 
@@ -132,7 +132,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           </ul>
           <p>का उल्लेख किया गया है। यह section खासकर उन विद्यार्थियों के लिए उपयोगी है जो छत्तीसगढ़ विधानसभा और राज्य स्तरीय current affairs की तैयारी कर रहे हैं।</p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             खेल जगत के महत्वपूर्ण करेंट अफेयर्स
           </h2>
 
@@ -165,7 +165,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <p>महक नरवासे को भारतीय महिला Under-19 क्रिकेट टीम से जुड़े current affair के रूप में शामिल किया गया है।</p>
           <p>उन्हें Under-19 महिला टीम की उप-कप्तान के रूप में बताया गया है और उनका संबंध राजनांदगांव से है। वे right-arm off-spin bowling के साथ all-rounder के रूप में भी जानी जाती हैं।</p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             छत्तीसगढ़ के महत्वपूर्ण स्थान और घटनाएं
           </h2>
 
@@ -250,7 +250,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           </div>
 
           {/* MCQ Section */}
-          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)', paddingBottom: '10px', borderBottom: '2px solid var(--border-color)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)', paddingBottom: '10px', borderBottom: '2px solid var(--border-color)' }}>
             छत्तीसगढ़ करेंट अफेयर्स 2026 MCQ
           </h2>
           <p>अब ऊपर दी गई जानकारी को बिना देखे हल करने की कोशिश करें।</p>
@@ -365,7 +365,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
                 </ul>
                 <details style={{ background: 'var(--card-bg)', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
                   <summary style={{ color: 'var(--color-primary)', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
-                  <div style={{ marginTop: '10px', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                  <div style={{ marginTop: '10px', color: 'var(--color-primary)', fontWeight: 'bold' }}>
                     सही उत्तर: {mcq.ans}
                   </div>
                 </details>
@@ -374,7 +374,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           </div>
 
           {/* Quick Revision Table */}
-          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             Quick Revision: एक नजर में
           </h2>
           <div style={{ overflowX: 'auto' }}>
@@ -414,7 +414,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
             </table>
           </div>
 
-          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             Current Affairs याद करने का आसान तरीका
           </h2>
           <p>अगर आपको current affairs याद करने में परेशानी होती है तो पूरी खबर को याद करने की कोशिश न करें। हर खबर से केवल तीन चीजें निकालें:</p>
@@ -431,7 +431,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           </div>
           <p>इस तरह revision काफी तेज हो जाता है।</p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             निष्कर्ष
           </h2>
           <p>जून-जुलाई 2026 के ये करेंट अफेयर्स छत्तीसगढ़ की सरकारी योजनाओं, खेल, संस्कृति, प्रशासन, पर्यावरण और महत्वपूर्ण घटनाओं से जुड़े हैं। CGSSB, CGPSC और दूसरी प्रतियोगी परीक्षाओं की तैयारी कर रहे विद्यार्थियों के लिए इनमें से कई facts सीधे objective question के रूप में पूछे जा सकते हैं।</p>

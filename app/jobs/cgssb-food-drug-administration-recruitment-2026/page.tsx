@@ -150,7 +150,7 @@ export default function FDA_Recruitment() {
           </div>
 
           <div className="premium-alert" style={{ background: 'var(--card-bg)', borderColor: 'var(--border-color)', marginTop: '20px' }}>
-            <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 शैक्षणिक योग्यता के नए नियम (2026 अपडेट)</strong>
+            <strong style={{ color: 'var(--color-primary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 शैक्षणिक योग्यता के नए नियम (2026 अपडेट)</strong>
             क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी पदों के लिए न्यूनतम शैक्षणिक योग्यताओं (Group 1 से Group 7) में बड़े बदलाव किए हैं? 
             <br/><br/>
             <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: 'var(--color-primary)', fontWeight: 'bold', textDecoration: 'underline' }}>

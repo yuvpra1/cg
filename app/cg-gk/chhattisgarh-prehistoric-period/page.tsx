@@ -52,7 +52,7 @@ export default function CGAncientHistoryPage() {
             इस लेख में छत्तीसगढ़ के इतिहास को <strong>प्रागैतिहासिक काल, पाषाण काल, महापाषाण काल, आद्य-ऐतिहासिक/वैदिक काल, रामायण काल और महाभारत काल</strong> के संदर्भ में आसान भाषा में समझाया गया है।
           </p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             छत्तीसगढ़ के इतिहास का सामान्य विभाजन
           </h2>
           <p>छत्तीसगढ़ के इतिहास को अध्ययन की सुविधा के लिए मुख्य रूप से तीन बड़े भागों में समझा जा सकता है—</p>
@@ -65,7 +65,7 @@ export default function CGAncientHistoryPage() {
             प्रागैतिहासिक काल के अध्ययन में लिखित स्रोतों की तुलना में पुरातात्विक अवशेष अधिक महत्वपूर्ण होते हैं। इसी कारण छत्तीसगढ़ के शैलचित्र, गुफाएं, पत्थर के औजार और अन्य पुरातात्विक स्थल विशेष महत्व रखते हैं।
           </p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             1. छत्तीसगढ़ का प्रागैतिहासिक काल
           </h2>
           <p>
@@ -119,7 +119,7 @@ export default function CGAncientHistoryPage() {
             <li>शिकार से संबंधित चित्र भी महत्वपूर्ण हैं तथा यहां पाषाण उपकरणों के प्रमाण मिले हैं।</li>
           </ul>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             2. मध्य पाषाण काल
           </h2>
           <p>
@@ -150,7 +150,7 @@ export default function CGAncientHistoryPage() {
             कबरा पहाड़ रायगढ़ का एक महत्वपूर्ण प्रागैतिहासिक स्थल है। यहां लाल रंग के शैलचित्रों के प्रमाण मिलते हैं। शैलचित्रों में विभिन्न पशु आकृतियों तथा मानव समूहों का चित्रण मिलता है। यहां से पाषाणकालीन औजारों के प्रमाण भी जुड़े हैं।
           </p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             3. उत्तर पाषाण काल
           </h2>
           <p>
@@ -160,7 +160,7 @@ export default function CGAncientHistoryPage() {
             <li><strong>धनपुर (गौरेला-पेंड्रा-मरवाही):</strong> यहां मानव आकृतियों से संबंधित शैलचित्रों का उल्लेख मिलता है।</li>
           </ul>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             4. नव पाषाण काल
           </h2>
           <p>
@@ -170,14 +170,14 @@ export default function CGAncientHistoryPage() {
             <li><strong>चितवाडोंगरी (बालोद):</strong> यहां की गुफाओं में अनेक शैलचित्रों का प्रमाण मिला है।</li>
           </ul>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             5. छत्तीसगढ़ के अन्य प्रमुख प्रागैतिहासिक स्थल
           </h2>
           <p>
             छत्तीसगढ़ के अलग-अलग क्षेत्रों में कई अन्य शैलाश्रय और शैलचित्र स्थल भी मिलते हैं। इनमें प्रमुख नाम हैं: खैरपुर, सूतीपाट/भंवरखोल, करमागढ़, चारामा, बसनाझार, ओंगना, सिरौली-डोंगरी, छोटे पंडरमुड़ा, गाड़ागौरी, उड़कुड़ा और खैरखेड़ा। इनमें कई स्थलों से पशु, मानव, शिकार, कृषि तथा अन्य गतिविधियों से संबंधित शैलचित्रों का उल्लेख मिलता है।
           </p>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             6. महापाषाण काल (Megalithic Age)
           </h2>
           <p>
@@ -199,7 +199,7 @@ export default function CGAncientHistoryPage() {
             </tbody>
           </table>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             7. आद्य-ऐतिहासिक और वैदिक काल
           </h2>
           <p>
@@ -222,7 +222,7 @@ export default function CGAncientHistoryPage() {
             </ul>
           </div>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             8. रामायण काल और छत्तीसगढ़
           </h2>
           <p>
@@ -247,7 +247,7 @@ export default function CGAncientHistoryPage() {
             </tbody>
           </table>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             9. महाभारत काल और छत्तीसगढ़
           </h2>
           <p>
@@ -272,7 +272,7 @@ export default function CGAncientHistoryPage() {
           </table>
 
           {/* MCQ Section */}
-          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)', paddingBottom: '10px', borderBottom: '2px solid var(--border-color)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)', paddingBottom: '10px', borderBottom: '2px solid var(--border-color)' }}>
             विद्यार्थियों के लिए महत्वपूर्ण MCQ
           </h2>
           
@@ -346,7 +346,7 @@ export default function CGAncientHistoryPage() {
                 </ul>
                 <details style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
                   <summary style={{ color: 'var(--color-primary)', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
-                  <div style={{ marginTop: '10px', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
+                  <div style={{ marginTop: '10px', color: 'var(--color-primary)', fontWeight: 'bold' }}>
                     सही उत्तर: {mcq.ans}
                   </div>
                 </details>
@@ -354,7 +354,7 @@ export default function CGAncientHistoryPage() {
             ))}
           </div>
 
-          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
+          <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             निष्कर्ष
           </h2>
           <p>

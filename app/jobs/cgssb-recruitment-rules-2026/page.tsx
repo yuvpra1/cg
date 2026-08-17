@@ -188,7 +188,7 @@ export default function RecruitmentRules() {
           </p>
           
           <div className="premium-alert" style={{ background: 'var(--card-bg)', borderColor: 'var(--border-color)' }}>
-            <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📌 सबसे जरूरी बात</strong> 
+            <strong style={{ color: 'var(--color-primary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📌 सबसे जरूरी बात</strong> 
             <strong>19 जून 2026 की मूल अधिसूचना को अकेले पढ़कर eligibility तय न करें।</strong> 27 जुलाई 2026 का संशोधन भी साथ में देखें, क्योंकि इसमें कुछ पदों की स्थिति और qualification में बदलाव किया गया है। यह नियम छात्रों को यह समझने में मदद करते हैं कि आने वाली अलग-अलग सरकारी भर्तियों में उनकी पढ़ाई के आधार पर कौन-से अवसर हो सकते हैं। लेकिन जब किसी particular post की vacancy जारी हो, तब <strong>उस भर्ती का official advertisement और संबंधित विभागीय भर्ती नियम ही अंतिम आधार</strong> होना चाहिए।
           </div>
 
