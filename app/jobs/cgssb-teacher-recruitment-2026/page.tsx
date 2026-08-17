@@ -71,7 +71,7 @@ export default function TeacherRecruitmentArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भर्ती का नाम</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Teacher Recruitment 2026</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>परीक्षा कोड</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>LST26</strong></td>
                 </tr>
@@ -79,7 +79,7 @@ export default function TeacherRecruitmentArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>संबंधित विभाग</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>लोक शिक्षण संचालनालय, छत्तीसगढ़</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भर्ती संस्था</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>छत्तीसगढ़ कर्मचारी चयन मंडल (CGSSB)</td>
                 </tr>
@@ -87,7 +87,7 @@ export default function TeacherRecruitmentArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल रिक्त पद</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>1,654</strong></td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>आवेदन शुरू</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>7 अगस्त 2026</strong></td>
                 </tr>
@@ -95,7 +95,7 @@ export default function TeacherRecruitmentArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>आवेदन की अंतिम तारीख</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>2 सितंबर 2026, शाम 5 बजे</strong></td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Correction Window</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>3 सितंबर से 10 सितंबर 2026</strong></td>
                 </tr>
@@ -103,7 +103,7 @@ export default function TeacherRecruitmentArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>परीक्षा की संभावित तारीख</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)', color: 'var(--color-primary)', fontWeight: 'bold' }}>25 अक्टूबर 2026</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>परीक्षा का समय</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>10:00 AM से 12:15 PM</strong></td>
                 </tr>
@@ -111,7 +111,7 @@ export default function TeacherRecruitmentArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Admit Card की संभावित तारीख</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>19 अक्टूबर 2026</strong></td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>परीक्षा केंद्र</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}><strong>16 जिला मुख्यालय</strong></td>
                 </tr>
@@ -139,12 +139,12 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>हिंदी</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>250</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>संस्कृत</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>300</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>संस्कृत</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>300</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>अंग्रेजी</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>504</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>गणित</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>250</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>गणित</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>250</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>सामाजिक विज्ञान</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>250</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कृषि</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>1,654</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कृषि</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
+                <tr style={{ fontWeight: 'bold', backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>1,654</td></tr>
               </tbody>
             </table>
           </div>
@@ -195,7 +195,7 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>General</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>₹350</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Other Backward Class</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>₹250</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Other Backward Class</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>₹250</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>SC / ST / Divyang</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>₹200</td></tr>
               </tbody>
             </table>
@@ -309,14 +309,14 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>हिंदी साहित्य का इतिहास</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>गद्य खंड</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>गद्य खंड</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>पद्य खंड</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>हिंदी भाषा का व्यावहारिक व्याकरण</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>हिंदी भाषा का व्यावहारिक व्याकरण</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>हिंदी भाषा शिक्षण</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>छत्तीसगढ़ी भाषा व साहित्य</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>छत्तीसगढ़ी भाषा व साहित्य</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बाल विकास एवं शिक्षा शास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
+                <tr style={{ fontWeight: 'bold', backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
               </tbody>
             </table>
           </div>
@@ -326,7 +326,7 @@ export default function TeacherRecruitmentArticlePage() {
           {/* English Syllabus */}
           <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: 'var(--text-main)' }}>2. CGSSB English Teacher Syllabus 2026</h3>
           <p style={{ marginBottom: '15px' }}>English syllabus भी <strong>100 marks</strong> का है।</p>
-          <div style={{ padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0', marginBottom: '30px' }}>
+          <div style={{ padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)', marginBottom: '30px' }}>
             <h4 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--color-primary)' }}>Part A – Subject Matter (50 marks)</h4>
             <p style={{ marginBottom: '10px' }}>इसमें Grammar, Vocabulary, Reading Comprehension और Pedagogy of Language Development शामिल हैं।</p>
             <p style={{ marginBottom: '10px' }}><strong>Grammar में:</strong> Determiners, Modals, Question Tags, Tenses, Clauses, Sentence Transformation, Direct and Indirect Speech, Conditional Sentences जैसे topics दिए गए हैं।</p>
@@ -352,14 +352,14 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>अंकगणित</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बीजगणित</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बीजगणित</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>त्रिकोणमिति</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>ज्यामिति</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>ज्यामिति</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>क्षेत्रमिति</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>5</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>सांख्यिकी</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>सांख्यिकी</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बाल विकास एवं शिक्षा शास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>95 +</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
+                <tr style={{ fontWeight: 'bold', backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>95 +</td></tr>
               </tbody>
             </table>
           </div>
@@ -384,12 +384,12 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>व्याकरण</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>20</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वाक्य रचना</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वाक्य रचना</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>काव्यांश</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>गद्यांश</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>गद्यांश</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बाल विकास एवं शिक्षा शास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
+                <tr style={{ fontWeight: 'bold', backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
               </tbody>
             </table>
           </div>
@@ -408,12 +408,12 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भूगोल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>इतिहास</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>इतिहास</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>नागरिक शास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>अर्थशास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>अर्थशास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>10</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बाल विकास एवं शिक्षा शास्त्र</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>15</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भाषा ज्ञान एवं सामान्य अध्ययन</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>35</td></tr>
+                <tr style={{ fontWeight: 'bold', backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कुल</td><td style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>100</td></tr>
               </tbody>
             </table>
           </div>
@@ -529,9 +529,9 @@ export default function TeacherRecruitmentArticlePage() {
               </thead>
               <tbody>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Application Start</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>7 अगस्त 2026</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Application Last Date</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>2 सितंबर 2026, शाम 5 बजे</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Application Last Date</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>2 सितंबर 2026, शाम 5 बजे</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Correction Window</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>3–10 सितंबर 2026</td></tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Admit Card</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>19 अक्टूबर 2026, संभावित</td></tr>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Admit Card</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>19 अक्टूबर 2026, संभावित</td></tr>
                 <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Written Exam</td><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>25 अक्टूबर 2026, संभावित</td></tr>
               </tbody>
             </table>
@@ -541,32 +541,32 @@ export default function TeacherRecruitmentArticlePage() {
             Frequently Asked Questions
           </h2>
           
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: CGSSB Teacher Recruitment 2026 में कितने पद हैं?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>कुल <strong>1,654 पद</strong> हैं।</p>
           </div>
 
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: किस subject में सबसे ज्यादा vacancies हैं?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>English में <strong>504 पद</strong> हैं।</p>
           </div>
 
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: Sanskrit में कितने पद हैं?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>Sanskrit में <strong>300 पद</strong> हैं।</p>
           </div>
 
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: Teacher Recruitment का exam कब है?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>LST26 की परीक्षा की संभावित तारीख <strong>25 अक्टूबर 2026</strong> है।</p>
           </div>
 
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: क्या exam में negative marking है?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>हाँ। गलत answer पर <strong>1/4 mark</strong> काटा जाएगा।</p>
           </div>
 
-          <div style={{ marginBottom: '30px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '30px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: कौन-कौन से subjects हैं?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>इस recruitment में Hindi, Sanskrit, English, Mathematics, Social Science और Agriculture subjects हैं। सभी के लिए अलग subject-specific syllabus है।</p>
           </div>

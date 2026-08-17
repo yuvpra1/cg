@@ -36,7 +36,7 @@ export default function AboutUsPage() {
           जहाँ संभव होता है, हम article में संबंधित <strong>official notification, official website या official application/result page</strong> का link भी देते हैं।
         </p>
         <p style={{ marginBottom: '15px' }}>हमारी सामान्य प्रक्रिया है:</p>
-        <p style={{ padding: '15px', backgroundColor: '#f8fafc', borderLeft: '4px solid var(--color-primary)', fontWeight: '600', marginBottom: '15px' }}>
+        <p style={{ padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderLeft: '4px solid var(--color-primary)', fontWeight: '600', marginBottom: '15px' }}>
           Official Source → Information Verify → आसान भाषा में लिखना → Publish → जरूरत पड़ने पर Update
         </p>
         <p style={{ marginBottom: '30px' }}>

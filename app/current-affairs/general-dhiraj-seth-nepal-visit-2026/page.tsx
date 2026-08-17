@@ -104,7 +104,7 @@ export default function GeneralDhirajSethNepalVisit() {
             <li>Shivapuri में Army Command and Staff Course के student officers के साथ interaction</li>
             <li>Pokhara में Ex-Servicemen Rally में शामिल होना</li>
           </ul>
-          <div style={{ background: '#fffbeb', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #fbbf24', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #fbbf24', margin: '15px 0' }}>
             <strong>नोट:</strong> इन कार्यक्रमों की अंतिम स्थिति या समय में बदलाव हो सकता है, इसलिए students को latest official update देखना चाहिए।
           </div>
 
@@ -114,27 +114,27 @@ export default function GeneralDhirajSethNepalVisit() {
           <p>प्रतियोगी परीक्षाओं की तैयारी करने वाले students के लिए इस घटना से कई सीधे questions बन सकते हैं:</p>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px' }}>
-            <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <strong>प्रश्न: भारत के वर्तमान Army Chief कौन हैं?</strong><br/>
               <span style={{ color: 'var(--color-primary)' }}>उत्तर: General Dhiraj Seth</span>
             </div>
-            <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <strong>प्रश्न: General Dhiraj Seth भारत के कौन-से Army Chief हैं?</strong><br/>
               <span style={{ color: 'var(--color-primary)' }}>उत्तर: 31वें Chief of the Army Staff</span>
             </div>
-            <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <strong>प्रश्न: उन्होंने Army Chief का पद कब संभाला?</strong><br/>
               <span style={{ color: 'var(--color-primary)' }}>उत्तर: 30 जून 2026</span>
             </div>
-            <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <strong>प्रश्न: General Dhiraj Seth किस military corps से संबंधित हैं?</strong><br/>
               <span style={{ color: 'var(--color-primary)' }}>उत्तर: Armoured Corps</span>
             </div>
-            <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <strong>प्रश्न: भारत-नेपाल के Army Chiefs को Honorary General rank देने की परंपरा कब से है?</strong><br/>
               <span style={{ color: 'var(--color-primary)' }}>उत्तर: 1950 से</span>
             </div>
-            <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <strong>प्रश्न: नेपाल में भारतीय Army Chief को Honorary General rank कहां प्रदान किया जाता है?</strong><br/>
               <span style={{ color: 'var(--color-primary)' }}>उत्तर: Kathmandu स्थित Sheetal Niwas में (यह Nepal के President का official residence है)।</span>
             </div>
@@ -152,7 +152,7 @@ export default function GeneralDhirajSethNepalVisit() {
                 </tr>
               </thead>
               <tbody>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>भारतीय सेना प्रमुख</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>General Dhiraj Seth</td>
                 </tr>
@@ -160,7 +160,7 @@ export default function GeneralDhirajSethNepalVisit() {
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>Army Chief का क्रम</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>31वें</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>कार्यभार संभाला</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>30 जून 2026</td>
                 </tr>
@@ -168,7 +168,7 @@ export default function GeneralDhirajSethNepalVisit() {
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>Military Corps</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>Armoured Corps</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>Nepal Visit</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>17–19 अगस्त 2026</td>
                 </tr>
@@ -176,7 +176,7 @@ export default function GeneralDhirajSethNepalVisit() {
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>मुख्य उद्देश्य</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>India-Nepal Defence Cooperation</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>Honorary Rank</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>General of the Nepali Army</td>
                 </tr>
@@ -184,7 +184,7 @@ export default function GeneralDhirajSethNepalVisit() {
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>परंपरा की शुरुआत</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>1950</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>पहले भारतीय Army Chief जिन्हें यह सम्मान मिला</td>
                   <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>General K. M. Cariappa</td>
                 </tr>
@@ -210,11 +210,11 @@ export default function GeneralDhirajSethNepalVisit() {
         />
 
         {/* Disclaimer Section */}
-        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#fef2f2', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#991b1b' }}>
+        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>महत्वपूर्ण सूचना / Disclaimer</h4>
           <p style={{ margin: 0 }}>
             अस्वीकरण: इस लेख में दी गई जानकारी विद्यार्थियों की प्रतियोगी परीक्षा की तैयारी और सामान्य जानकारी के उद्देश्य से प्रकाशित की गई है। Defence और international relations से जुड़ी घटनाओं में कार्यक्रम, पद, तारीख या अन्य विवरण समय के साथ अपडेट हो सकते हैं। इसलिए परीक्षा में उपयोग करने से पहले महत्वपूर्ण जानकारी को संबंधित सरकारी विभाग, Ministry of Defence, Ministry of External Affairs अथवा अन्य official source से एक बार verify जरूर करें। <br/><br/>
-            यदि इस लेख में कोई factual error या बाद में हुआ बदलाव दिखाई देता है, तो कृपया हमें <a href="mailto:contact@cgssb.com.in" style={{ color: '#991b1b', textDecoration: 'underline' }}>contact@cgssb.com.in</a> पर जानकारी दें। Official source उपलब्ध होने पर correction को जांच के बाद update किया जाएगा।
+            यदि इस लेख में कोई factual error या बाद में हुआ बदलाव दिखाई देता है, तो कृपया हमें <a href="mailto:contact@cgssb.com.in" style={{ color: '#ef4444', textDecoration: 'underline' }}>contact@cgssb.com.in</a> पर जानकारी दें। Official source उपलब्ध होने पर correction को जांच के बाद update किया जाएगा।
           </p>
         </div>
 

@@ -27,8 +27,8 @@ export default function TeejanBaiBiography() {
             Chhattisgarh Culture
           </span>
           <span style={{ 
-            background: '#e2e8f0', 
-            color: '#475569', 
+            background: 'var(--card-bg-hover)', 
+            color: 'var(--text-main)', 
             padding: '4px 12px', 
             borderRadius: '20px', 
             fontSize: '0.85rem',
@@ -88,7 +88,7 @@ export default function TeejanBaiBiography() {
         <p>
           उपलब्ध स्रोतों के अनुसार तीजन बाई का जन्म दुर्ग जिले के भिलाई के पास गनियारी गांव (या कुछ स्रोतों के अनुसार पाटन के अटारी गांव में जन्म और गनियारी में पालन-पोषण) में हुआ था। उनके पिता का नाम चुनुकलाल और माता का नाम सुखवती था।
         </p>
-        <div style={{ background: '#fffbeb', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
           <strong>महत्वपूर्ण तथ्य-जांच (Fact-Check) नोट:</strong> तीजन बाई की जन्मतिथि को लेकर उपलब्ध स्रोतों में अंतर मिलता है। Fukuoka Prize की official biography में <strong>8 अगस्त 1956</strong> दर्ज है, जबकि कुछ भारतीय शैक्षणिक/जीवनी स्रोत <strong>24 अप्रैल 1956</strong> बताते हैं।
         </div>
 
@@ -114,7 +114,7 @@ export default function TeejanBaiBiography() {
         <p>
           तीजन बाई ने पंडवानी का प्रारंभिक ज्ञान अपने <strong>नाना बृजलाल</strong> से प्राप्त किया था। बाद में उन्होंने <strong>उमेद सिंह देशमुख</strong> से प्रशिक्षण लिया।
         </p>
-        <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
           <strong>परीक्षा के लिए याद रखें:</strong>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '10px' }}>
             <li><strong>प्रारंभिक गुरु:</strong> नाना बृजलाल</li>
@@ -128,30 +128,30 @@ export default function TeejanBaiBiography() {
         <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '30px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
           <thead>
             <tr style={{ background: 'var(--color-primary)', color: 'white', textAlign: 'left' }}>
-              <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>वर्ष</th>
-              <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>सम्मान / पुरस्कार</th>
+              <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वर्ष</th>
+              <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>सम्मान / पुरस्कार</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>1988</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>Padma Shri</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>1988</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Padma Shri</td>
             </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>1995</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>Sangeet Natak Akademi Award</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>2003</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>Padma Bhushan</td>
-            </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>2018</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>Fukuoka Prize – Arts and Culture Prize</td>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>1995</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Sangeet Natak Akademi Award</td>
             </tr>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>2019</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>Padma Vibhushan</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>2003</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Padma Bhushan</td>
+            </tr>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>2018</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Fukuoka Prize – Arts and Culture Prize</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>2019</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Padma Vibhushan</td>
             </tr>
           </tbody>
         </table>

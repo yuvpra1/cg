@@ -58,7 +58,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>1. खेत बचाओ अभियान 2026</h3>
           <p>छत्तीसगढ़ में खेत बचाओ अभियान 2026 की शुरुआत 1 जून 2026 से की गई। इस अभियान में मृदा स्वास्थ्य को बनाए रखने और किसानों को संतुलित उर्वरक उपयोग के प्रति जागरूक करने पर जोर दिया गया।</p>
           <p>किसानों के लिए मिट्टी की गुणवत्ता बनाए रखना जरूरी है, क्योंकि लंबे समय तक असंतुलित उर्वरक इस्तेमाल करने से मिट्टी की उर्वरता प्रभावित हो सकती है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>याद रखने योग्य तथ्य:</strong>
             <ul style={{ margin: '5px 0 0 20px' }}>
               <li>अभियान — खेत बचाओ अभियान 2026</li>
@@ -71,7 +71,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <p>प्रधानमंत्री मातृ वंदना योजना से जुड़े विशेष अभियान में छत्तीसगढ़ के प्रदर्शन को महत्वपूर्ण उपलब्धि के रूप में बताया गया है।</p>
           <p>इस अभियान में छत्तीसगढ़ को देश में पहला स्थान मिलने की जानकारी दी गई है। वहीं जांजगीर-चांपा जिले को 96 प्रतिशत लक्ष्य पूर्ति के साथ प्रदेश में पहला स्थान मिलने का उल्लेख किया गया है।</p>
           <p>यह योजना मातृत्व के दौरान महिलाओं को आर्थिक सहायता उपलब्ध कराने से जुड़ी केंद्र सरकार की प्रमुख योजनाओं में शामिल है。</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             प्रधानमंत्री मातृ वंदना योजना &rarr; छत्तीसगढ़ &rarr; प्रथम स्थान &rarr; जांजगीर-चांपा
           </div>
@@ -79,7 +79,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>3. भारतनेट फेज-3</h3>
           <p>भारतनेट फेज-3 का उद्देश्य ग्रामीण क्षेत्रों में digital connectivity को मजबूत करना है।</p>
           <p>इसके माध्यम से ग्रामीण क्षेत्रों में बेहतर इंटरनेट कनेक्टिविटी उपलब्ध कराने और digital services की पहुंच बढ़ाने पर जोर दिया जा रहा है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>प्रतियोगी परीक्षाओं के लिए इसे इस तरह याद कर सकते हैं:</strong><br/>
             भारतनेट = ग्रामीण क्षेत्रों में डिजिटल कनेक्टिविटी
           </div>
@@ -87,7 +87,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>4. सहकारिता का पिंक मॉडल</h3>
           <p>महिलाओं को आत्मनिर्भर बनाने और उन्हें सहकारी गतिविधियों से जोड़ने के उद्देश्य से सहकारिता का पिंक मॉडल जशपुर जिले में शुरू किए जाने की जानकारी दी गई है।</p>
           <p>इस तरह की पहल से जुड़े प्रश्नों में अक्सर योजना या मॉडल के साथ जिले का नाम पूछा जाता है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>उत्तर याद रखें:</strong><br/>
             सहकारिता का पिंक मॉडल &rarr; जशपुर
           </div>
@@ -96,7 +96,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <p>छत्तीसगढ़ से जुड़ा एक महत्वपूर्ण कानूनी current affair छत्तीसगढ़ धर्म स्वतंत्र अधिनियम 2026 है।</p>
           <p>इससे संबंधित जानकारी के अनुसार नया कानून 10 जुलाई 2026 से प्रभावी हुआ और इसने पुराने छत्तीसगढ़ धर्म स्वतंत्र अधिनियम, 1968 का स्थान लिया।</p>
           <p>यह कानूनी विषय है, इसलिए परीक्षा में इससे जुड़े प्रावधान पढ़ते समय latest official Act/Gazette को प्राथमिकता देना चाहिए।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong>
             <ul style={{ margin: '5px 0 0 20px' }}>
               <li>नया अधिनियम &rarr; छत्तीसगढ़ धर्म स्वतंत्र अधिनियम 2026</li>
@@ -112,7 +112,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>6. 'रामनामी' और राष्ट्रीय फिल्म पुरस्कार</h3>
           <p>छत्तीसगढ़ की सांस्कृतिक पहचान से जुड़े रामनामी समुदाय पर आधारित रामनामी को 72वें राष्ट्रीय फिल्म पुरस्कार से संबंधित महत्वपूर्ण current affair के रूप में शामिल किया गया है।</p>
           <p>यह विषय छत्तीसगढ़ की लोक संस्कृति और राष्ट्रीय स्तर पर उसकी पहचान के लिहाज से महत्वपूर्ण है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             रामनामी &rarr; छत्तीसगढ़ की सांस्कृतिक परंपरा से संबंधित<br/>
             <small>किसी परीक्षा में पुरस्कार की category या official award title पूछा जाए तो latest official National Film Awards announcement से मिलान जरूर करें।</small>
@@ -139,7 +139,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>9. रौनक चौहान</h3>
           <p>छत्तीसगढ़ के रौनक चौहान का नाम badminton से जुड़े current affairs में महत्वपूर्ण है।</p>
           <p>उपलब्ध जानकारी के अनुसार उन्होंने US Open Super 300 Badminton Tournament में दुनिया के नंबर 6 खिलाड़ी को हराकर शानदार प्रदर्शन किया।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>याद रखें:</strong><br/>
             रौनक चौहान &rarr; Badminton &rarr; रायपुर
           </div>
@@ -147,7 +147,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>10. ज्ञानेश्वरी यादव</h3>
           <p>ज्ञानेश्वरी यादव छत्तीसगढ़ से जुड़ी प्रमुख weightlifting खिलाड़ी हैं।</p>
           <p>उनका संबंध राजनांदगांव से बताया जाता है और Commonwealth Games 2026 के लिए 53 किलोग्राम weight category का उल्लेख किया गया है। Senior Asian Weightlifting Championship में भी उनके प्रदर्शन का उल्लेख किया गया है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             ज्ञानेश्वरी यादव &rarr; Weightlifting &rarr; 53 kg &rarr; राजनांदगांव
           </div>
@@ -156,7 +156,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <p>छत्तीसगढ़ के sprinter अनिमेश कुजूर athletics से जुड़े महत्वपूर्ण नाम हैं।</p>
           <p>उनका नाम 100 metre sprint से संबंधित है और उपलब्ध जानकारी में उन्होंने विभिन्न international तथा national competitions में शानदार प्रदर्शन किया है।</p>
           <p>एक महत्वपूर्ण performance में 10.15 सेकंड में 100 metre पूरा करने का उल्लेख किया गया है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>याद रखें:</strong><br/>
             अनिमेश कुजूर &rarr; 100 मीटर &rarr; 10.15 सेकंड
           </div>
@@ -172,7 +172,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>13. छत्तीसगढ़ की पहली खुली जेल</h3>
           <p>छत्तीसगढ़ की पहली खुली जेल के रूप में बेमेतरा का नाम महत्वपूर्ण है।</p>
           <p>Open jail का उद्देश्य योग्य कैदियों को पुनर्वास और समाज की मुख्यधारा से जोड़ने की दिशा में अवसर देना है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             पहली खुली जेल &rarr; बेमेतरा
           </div>
@@ -180,7 +180,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>14. गरियाबंद में दुर्लभ Spider Species</h3>
           <p>गरियाबंद जिले के जंगलों में तीन दुर्लभ spider species मिलने की जानकारी महत्वपूर्ण environmental current affair है।</p>
           <p>वन और biodiversity से जुड़े प्रश्नों में location-based questions पूछे जा सकते हैं।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>उत्तर:</strong><br/>
             तीन दुर्लभ spider species &rarr; गरियाबंद
           </div>
@@ -188,7 +188,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>15. तखतपुर में प्राचीन अवशेष</h3>
           <p>बिलासपुर जिले के तखतपुर क्षेत्र में लगभग 1500 वर्ष पुराने सीढ़ीदार स्नानघर के अवशेष मिलने की जानकारी दी गई है।</p>
           <p>यह विषय छत्तीसगढ़ के इतिहास और पुरातत्व से संबंधित है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             1500 वर्ष पुराने सीढ़ीदार स्नानघर &rarr; तखतपुर &rarr; बिलासपुर
           </div>
@@ -196,7 +196,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>16. उदंती-सीतानदी में Honey Badger</h3>
           <p>छत्तीसगढ़ के wildlife current affairs में Honey Badger, जिसे छिंद भालू भी कहा जाता है, से जुड़ी जानकारी महत्वपूर्ण है।</p>
           <p>इसका संबंध उदंती-सीतानदी टाइगर रिजर्व से बताया गया है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>याद रखें:</strong><br/>
             Honey Badger / छिंद भालू &rarr; उदंती-सीतानदी टाइगर रिजर्व
           </div>
@@ -204,7 +204,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>17. रामगढ़ महोत्सव</h3>
           <p>रामगढ़ महोत्सव छत्तीसगढ़ की सांस्कृतिक और ऐतिहासिक विरासत से जुड़ा महत्वपूर्ण आयोजन है।</p>
           <p>रामगढ़ क्षेत्र सरगुजा में स्थित है और अपनी प्राचीन गुफाओं, साहित्यिक परंपरा तथा सांस्कृतिक विरासत के लिए जाना जाता है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             रामगढ़ महोत्सव &rarr; सरगुजा
           </div>
@@ -212,7 +212,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>18. भोरमदेव जंगल सफारी</h3>
           <p>भोरमदेव जंगल सफारी से जुड़ी जानकारी भी current affairs में शामिल है।</p>
           <p>भोरमदेव क्षेत्र कबीरधाम जिले में स्थित है और अपनी प्राकृतिक तथा ऐतिहासिक पहचान के लिए प्रसिद्ध है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             भोरमदेव जंगल सफारी &rarr; कबीरधाम
           </div>
@@ -220,7 +220,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>19. ज्ञान भारतम मिशन और दुर्लभ पांडुलिपियां</h3>
           <p>छत्तीसगढ़ में ज्ञान भारतम मिशन के अंतर्गत दुर्लभ पांडुलिपियों की पहचान से जुड़ी जानकारी भी महत्वपूर्ण है।</p>
           <p>उपलब्ध जानकारी में महासमुंद को सबसे अधिक दुर्लभ पांडुलिपियों की पहचान करने वाला जिला बताया गया है। महासमुंद में 3,498 दुर्लभ पांडुलिपियों की पहचान का उल्लेख है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             ज्ञान भारतम मिशन &rarr; महासमुंद &rarr; 3,498 पांडुलिपियां
           </div>
@@ -228,7 +228,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>20. छत्तीसगढ़ का पहला Sports Science Centre</h3>
           <p>छत्तीसगढ़ में पहला Sports Science Centre विकसित किए जाने की जानकारी बहतरई, बिलासपुर से जुड़ी है।</p>
           <p>Sports science centre का उद्देश्य खिलाड़ियों की fitness, performance और scientific training से जुड़ी सुविधाओं को मजबूत करना है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>याद रखें:</strong><br/>
             पहला Sports Science Centre &rarr; बहतरई, बिलासपुर
           </div>
@@ -236,7 +236,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>21. भूमि अधिग्रहण प्रक्रिया को डिजिटल बनाने वाला पहला जिला</h3>
           <p>छत्तीसगढ़ में भूमि अधिग्रहण की प्रक्रिया को पूरी तरह digital बनाने वाला पहला जिला रायगढ़ बताया गया है।</p>
           <p>यह governance और digital administration से जुड़ा महत्वपूर्ण current affair है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>Exam Point:</strong><br/>
             Digital Land Acquisition &rarr; रायगढ़
           </div>
@@ -244,7 +244,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           <h3 style={{ marginTop: '30px', color: 'var(--color-primary)' }}>22. देश का पहला Disaster Recovery Data Centre</h3>
           <p>नवा रायपुर में देश का पहला Disaster Recovery Data Centre स्थापित किए जाने की जानकारी दी गई है।</p>
           <p>यह digital infrastructure और data security से जुड़ा महत्वपूर्ण विषय है।</p>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>याद रखें:</strong><br/>
             Disaster Recovery Data Centre &rarr; नवा रायपुर
           </div>
@@ -358,14 +358,14 @@ export default function CGCurrentAffairsJuneJuly2026() {
                 ans: "A. प्रथम"
               }
             ].map((mcq, idx) => (
-              <div key={idx} style={{ padding: '15px', background: '#f8fafc', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{mcq.q}</p>
-                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
+              <div key={idx} style={{ padding: '15px', background: 'var(--card-bg-hover)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                <p style={{ fontWeight: 'bold', marginBottom: '10px', color: 'var(--text-main)' }}>{mcq.q}</p>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px', color: 'var(--text-main)' }}>
                   {mcq.opts.map((opt, i) => <li key={i} style={{ marginBottom: '5px' }}>{opt}</li>)}
                 </ul>
-                <details style={{ background: '#e0f2fe', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
-                  <summary style={{ color: '#0284c7', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
-                  <div style={{ marginTop: '10px', color: '#0369a1', fontWeight: 'bold' }}>
+                <details style={{ background: 'var(--card-bg)', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
+                  <summary style={{ color: 'var(--color-primary)', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
+                  <div style={{ marginTop: '10px', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
                     सही उत्तर: {mcq.ans}
                   </div>
                 </details>
@@ -405,7 +405,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
                   ["Digital Land Acquisition", "रायगढ़"],
                   ["Disaster Recovery Data Centre", "नवा रायपुर"]
                 ].map((row, idx) => (
-                  <tr key={idx} style={{ background: idx % 2 === 0 ? '#f8fafc' : 'white' }}>
+                  <tr key={idx} style={{ background: idx % 2 === 0 ? 'var(--card-bg-hover)' : 'white' }}>
                     <td style={{ padding: '12px', border: '1px solid #cbd5e1' }}>{row[0]}</td>
                     <td style={{ padding: '12px', border: '1px solid #cbd5e1', fontWeight: 'bold' }}>{row[1]}</td>
                   </tr>
@@ -423,7 +423,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
             <li><strong>योजना + तारीख + उद्देश्य</strong></li>
             <li><strong>स्थान + घटना + महत्वपूर्ण आंकड़ा</strong></li>
           </ul>
-          <div style={{ background: '#f1f5f9', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
             <strong>उदाहरण:</strong><br/>
             ज्ञानेश्वरी यादव &rarr; Weightlifting &rarr; 53 kg<br/>
             अनिमेश कुजूर &rarr; 100m &rarr; 10.15 sec<br/>
@@ -445,11 +445,11 @@ export default function CGCurrentAffairsJuneJuly2026() {
         />
 
         {/* Disclaimer Section */}
-        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#fef2f2', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#991b1b' }}>
+        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
           <h4 style={{ margin: '0 0 10px 0' }}>महत्वपूर्ण सूचना / Disclaimer</h4>
           <p style={{ margin: 0 }}>
             अस्वीकरण: इस लेख में दी गई जानकारी विद्यार्थियों की प्रतियोगी परीक्षा की तैयारी और सामान्य शैक्षणिक जानकारी के उद्देश्य से प्रकाशित की गई है। करेंट अफेयर्स से संबंधित जानकारी समय के साथ बदल सकती है तथा किसी तथ्य में अनजाने में त्रुटि रह जाने की संभावना से पूरी तरह इनकार नहीं किया जा सकता। इसलिए परीक्षा की तैयारी या किसी महत्वपूर्ण निर्णय के लिए संबंधित सरकारी विभाग, आधिकारिक अधिसूचना अथवा संबंधित official website से जानकारी एक बार अवश्य verify करें। छत्तीसगढ़ सरकार की official website पर विभिन्न विभागों की वेबसाइटों के links भी उपलब्ध हैं। <br/><br/>
-            यदि आपको इस article में कोई factual error, outdated information या correction दिखाई देती है, तो कृपया हमें <a href="mailto:contact@cgssb.com.in" style={{ color: '#991b1b', textDecoration: 'underline' }}>contact@cgssb.com.in</a> पर जानकारी दें। यदि correction के साथ official source उपलब्ध हो तो उसे भी भेजें। जानकारी की जांच के बाद आवश्यक होने पर article को update किया जाएगा।
+            यदि आपको इस article में कोई factual error, outdated information या correction दिखाई देती है, तो कृपया हमें <a href="mailto:contact@cgssb.com.in" style={{ color: '#ef4444', textDecoration: 'underline' }}>contact@cgssb.com.in</a> पर जानकारी दें। यदि correction के साथ official source उपलब्ध हो तो उसे भी भेजें। जानकारी की जांच के बाद आवश्यक होने पर article को update किया जाएगा।
           </p>
         </div>
 

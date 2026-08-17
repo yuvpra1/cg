@@ -95,10 +95,10 @@ export default function CGSET2026Page() {
           </p>
 
           <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd', marginTop: '20px', marginBottom: '40px' }}>
-            <strong style={{ color: '#0369a1', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 अन्य पदों की शैक्षणिक योग्यता (2026 अपडेट)</strong>
+            <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📖 अन्य पदों की शैक्षणिक योग्यता (2026 अपडेट)</strong>
             क्या आपको पता है कि छत्तीसगढ़ सरकार ने हाल ही में तृतीय एवं चतुर्थ श्रेणी के अन्य पदों (Group 1 से Group 7) के लिए भी न्यूनतम शैक्षणिक योग्यताओं में बड़े बदलाव किए हैं? 
             <br/><br/>
-            <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: '#0284c7', fontWeight: 'bold', textDecoration: 'underline' }}>
+            <a href="/jobs/cgssb-recruitment-rules-2026" style={{ color: 'var(--color-primary)', fontWeight: 'bold', textDecoration: 'underline' }}>
               CGSSB Recruitment Rules 2026: Group-1 से Group-7 तक की पूरी जानकारी यहाँ पढ़ें &rarr;
             </a>
           </div>
@@ -141,13 +141,13 @@ export default function CGSET2026Page() {
           </p>
           
           <div className="responsive-grid" style={{ marginBottom: '30px' }}>
-            <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '20px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--color-primary)' }}>General Category</h3>
               <p className="content-paragraph" style={{ margin: 0 }}>
                 Post Graduation या equivalent qualification में कम से कम <strong>55% marks</strong> होना आवश्यक है। सबसे महत्वपूर्ण बात यह है कि 55% से कम marks को rounding off करके 55% नहीं माना जाएगा।
               </p>
             </div>
-            <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '20px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--color-primary)' }}>Reserved Categories</h3>
               <p className="content-paragraph" style={{ margin: 0 }}>
                 SC, ST, OBC (Non-Creamy Layer), PwD और transgender candidates के लिए minimum <strong>50% marks</strong> निर्धारित हैं। यहां भी minimum 50% marks को rounding off नहीं किया जाएगा।
@@ -181,7 +181,7 @@ export default function CGSET2026Page() {
           </p>
           
           <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--text-main)', fontWeight: '600' }}>CG SET Paper-II Subjects List 2026</h3>
-          <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '30px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '30px', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '30px' }}>
             <ul className="premium-list" style={{ columns: 'auto 300px', columnGap: '40px', margin: 0 }}>
               <li><a href="/jobs/cg-set-hindi-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">Hindi – हिन्दी</a></li>
               <li><a href="/jobs/cg-set-english-syllabus" style={{ color: 'var(--color-primary)', fontWeight: '600', textDecoration: 'none' }} className="hover-primary">English – अंग्रेजी</a></li>
@@ -264,7 +264,7 @@ export default function CGSET2026Page() {
           <h2 className="article-section-title">Paper-I में क्या पूछा जाएगा?</h2>
           <p className="content-paragraph">Paper-I सभी candidates के लिए common रहेगा। यह paper candidate की:</p>
           
-          <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '30px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '30px', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '30px' }}>
             <ul className="premium-list" style={{ columns: 'auto 250px', columnGap: '40px', margin: 0 }}>
               <li>Teaching Aptitude</li>
               <li>Research Aptitude</li>
@@ -303,7 +303,7 @@ export default function CGSET2026Page() {
             इसलिए Paper-II की तैयारी करते समय candidate को केवल सामान्य विषय की तैयारी नहीं करनी चाहिए, बल्कि अपने चुने हुए subject के पूरे official syllabus को cover करना चाहिए।
           </p>
 
-          <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '40px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '30px', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '40px' }}>
             <h3 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--text-main)', fontWeight: '600' }}>CG SET Hindi Syllabus 2026</h3>
             <p className="content-paragraph">Hindi subject चुनने वाले candidates के लिए Paper-II Hindi syllabus official subject syllabus के अनुसार होगा। <a href="https://vyapamcg.cgstate.gov.in/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>Download PDF</a></p>
 
@@ -351,7 +351,7 @@ export default function CGSET2026Page() {
           <p className="content-paragraph">CG SET 2026 का application form online mode में भरना होगा। Application instructions के अनुसार candidate को पहले profile registration की प्रक्रिया पूरी करनी होती है। Profile में दर्ज basic information के आधार पर application form तैयार किया जाता है।</p>
           <p className="content-paragraph">Application में मुख्य रूप से:</p>
           
-          <div style={{ background: '#f8fafc', padding: '30px', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '30px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '30px', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '30px' }}>
             <ul className="premium-list" style={{ columns: 'auto 200px', columnGap: '40px', margin: 0 }}>
               <li>Mobile Number</li>
               <li>Password</li>
@@ -405,7 +405,7 @@ export default function CGSET2026Page() {
           <p className="content-paragraph">यह CG SET application process का सबसे महत्वपूर्ण step है। केवल examination fee का successful payment कर देना पर्याप्त नहीं है।</p>
           <p className="content-paragraph">Payment successful होने के बाद candidate को अपने application को <strong>SUBMIT</strong> करना अनिवार्य है। यदि candidate payment करने के बाद SUBMIT नहीं करता है, तो fee payment के बावजूद application valid नहीं माना जाएगा।</p>
           
-          <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '8px', border: '1px dashed #cbd5e1', textAlign: 'center', marginBottom: '30px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '20px', borderRadius: '8px', border: '1px dashed #cbd5e1', textAlign: 'center', marginBottom: '30px' }}>
             <p style={{ margin: 0, fontWeight: '700', color: 'var(--color-primary)' }}>
               Payment &rarr; Confirm Payment &rarr; Check Application &rarr; SUBMIT &rarr; Print
             </p>
@@ -452,7 +452,7 @@ export default function CGSET2026Page() {
           <p className="content-paragraph">अगर आप CG SET 2026 की तैयारी कर रहे हैं तो preparation को दो हिस्सों में divide करना सबसे practical रहेगा:</p>
           
           <div className="responsive-grid" style={{ marginBottom: '30px' }}>
-            <div style={{ background: '#f8fafc', padding: '25px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '25px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--color-primary)' }}>Paper-I के लिए</h3>
               <p className="content-paragraph" style={{ fontSize: '1rem' }}>सबसे पहले official Paper-I syllabus पूरा करें और Teaching & Research Aptitude सहित सभी units को cover करें। इसके बाद:</p>
               <ul className="premium-list" style={{ fontSize: '0.95rem', margin: 0 }}>
@@ -466,7 +466,7 @@ export default function CGSET2026Page() {
               </ul>
             </div>
             
-            <div style={{ background: '#f8fafc', padding: '25px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <div style={{ background: 'var(--card-bg-hover)', padding: '25px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: '#8b5cf6' }}>Paper-II के लिए</h3>
               <p className="content-paragraph" style={{ fontSize: '1rem' }}>Paper-II में आपके selected subject के 100 questions और 200 marks हैं। इसलिए कुल score में Paper-II की भूमिका बहुत बड़ी है। आपको:</p>
               <ul className="premium-list" style={{ fontSize: '0.95rem', margin: 0 }}>
@@ -520,7 +520,7 @@ export default function CGSET2026Page() {
           </ul>
 
           <div className="premium-alert">
-            <h3 style={{ marginTop: '0', color: '#991b1b', fontSize: '1.3rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h3 style={{ marginTop: '0', color: '#ef4444', fontSize: '1.3rem', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '1.5rem' }}>⚠️</span> महत्वपूर्ण Disclaimer
             </h3>
             <p style={{ margin: '0 0 10px 0', fontSize: '1rem', lineHeight: '1.6' }}>

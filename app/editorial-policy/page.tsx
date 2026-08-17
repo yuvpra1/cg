@@ -23,7 +23,7 @@ export default function EditorialPolicy() {
 
           <h2 style={{ fontSize: '1.5rem', marginTop: '30px', marginBottom: '15px', color: 'var(--color-primary)' }}>हम Article कैसे तैयार करते हैं?</h2>
           <p>हमारा सामान्य editorial process है:</p>
-          <p style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Official Source → Information Review → सरल भाषा में Explanation → Source Link → Publish → Update</p>
+          <p style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>Official Source → Information Review → सरल भाषा में Explanation → Source Link → Publish → Update</p>
           <p>किसी notification को केवल copy करके publish करने के बजाय हमारा प्रयास रहता है कि उसकी महत्वपूर्ण जानकारी को students के लिए आसान भाषा में समझाया जाए。</p>
           <p>उदाहरण के लिए किसी recruitment article में हम eligibility, vacancy, important dates, syllabus, exam pattern, application process और selection process को अलग-अलग sections में समझा सकते हैं।</p>
 

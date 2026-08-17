@@ -55,7 +55,7 @@ export default function RecruitmentRules() {
             19 जून 2026 को जारी अधिसूचना में अलग-अलग पदों को उनकी शैक्षणिक योग्यता के आधार पर कई समूहों में रखा गया है। बाद में <strong>27 जुलाई 2026 को इसी अधिसूचना में कुछ महत्वपूर्ण संशोधन भी किए गए।</strong>
           </p>
 
-          <div className="premium-alert" style={{ background: '#fffbeb', borderColor: '#fcd34d' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#fcd34d' }}>
             <strong style={{ color: '#b45309', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>⚠️ ध्यान दें:</strong> 
             यह अधिसूचना अपने आप में किसी एक भर्ती की vacancy notification नहीं है। यह अलग-अलग सरकारी पदों के लिए निर्धारित <strong>न्यूनतम शैक्षणिक योग्यता और भर्ती परीक्षा की व्यवस्था</strong> को समझने वाला नियम है।
           </div>
@@ -188,7 +188,7 @@ export default function RecruitmentRules() {
           </p>
           
           <div className="premium-alert" style={{ background: '#f0f9ff', borderColor: '#bae6fd' }}>
-            <strong style={{ color: '#0369a1', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📌 सबसे जरूरी बात</strong> 
+            <strong style={{ color: 'var(--color-secondary)', fontSize: '1.1rem', display: 'block', marginBottom: '5px' }}>📌 सबसे जरूरी बात</strong> 
             <strong>19 जून 2026 की मूल अधिसूचना को अकेले पढ़कर eligibility तय न करें।</strong> 27 जुलाई 2026 का संशोधन भी साथ में देखें, क्योंकि इसमें कुछ पदों की स्थिति और qualification में बदलाव किया गया है। यह नियम छात्रों को यह समझने में मदद करते हैं कि आने वाली अलग-अलग सरकारी भर्तियों में उनकी पढ़ाई के आधार पर कौन-से अवसर हो सकते हैं। लेकिन जब किसी particular post की vacancy जारी हो, तब <strong>उस भर्ती का official advertisement और संबंधित विभागीय भर्ती नियम ही अंतिम आधार</strong> होना चाहिए।
           </div>
 
@@ -225,15 +225,15 @@ export default function RecruitmentRules() {
           </p>
           <div style={{ marginBottom: '30px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
             <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600209_001.pdf" target="_blank" rel="noopener noreferrer" 
-               style={{ background: '#f8fafc', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
+               style={{ background: 'var(--card-bg-hover)', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
               <span style={{ fontSize: '1.2rem' }}>📜</span> अधिसूचना 19.06.2026 - तृतीय एवं चतुर्थ श्रेणी पदों की न्यूनतम शैक्षणिक योग्यता निर्धारण
             </a>
             <a href="https://gad.cg.gov.in/statecirculars/Criculars/Scan-file-2000-2002/year2026/202600291_001.pdf" target="_blank" rel="noopener noreferrer" 
-               style={{ background: '#f8fafc', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
+               style={{ background: 'var(--card-bg-hover)', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
               <span style={{ fontSize: '1.2rem' }}>📜</span> अधिसूचना 27.07.2026 - 19.06.2026 अधिसूचना में संशोधन विषयक
             </a>
             <a href="https://vyapamcg.cgstate.gov.in/uploads/pdfs/146e4756-b636-4568-8aee-3d3dd6107c28.pdf" target="_blank" rel="noopener noreferrer" 
-               style={{ background: '#f8fafc', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
+               style={{ background: 'var(--card-bg-hover)', color: 'var(--color-primary)', padding: '15px 20px', borderRadius: '8px', fontWeight: '500', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
               <span style={{ fontSize: '1.2rem' }}>📜</span> अधिसूचना 25.02.2026 - बेंचमार्क दिव्यांगजनों हेतु पदों का चिन्हांकन
             </a>
             <a href="https://gad.cg.gov.in/Rules_and_Circular.aspx?utm_source=cgssb.com.in" target="_blank" rel="noopener noreferrer" 
@@ -243,7 +243,7 @@ export default function RecruitmentRules() {
           </div>
 
           <h2 className="article-section-title" style={{ fontSize: '1.6rem' }}>⚠️ Disclaimer</h2>
-          <div className="premium-alert" style={{ background: '#fef2f2', borderColor: '#fca5a5' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderColor: '#ef4444' }}>
             यह article केवल शैक्षणिक एवं informational purpose के लिए तैयार किया गया है। हमारी website किसी भी सरकारी विभाग, छत्तीसगढ़ कर्मचारी चयन मंडल (CGSSB) या छत्तीसगढ़ शासन से संबद्ध, अधिकृत या संचालित website नहीं है।
             <br/><br/>
             हमने उपलब्ध आधिकारिक सरकारी दस्तावेजों के आधार पर जानकारी को सरल और student-friendly भाषा में प्रस्तुत करने का प्रयास किया है। किसी भर्ती के लिए अंतिम eligibility, vacancy, age limit, syllabus, परीक्षा तिथि, reservation, अनुभव, skill test या अन्य शर्तों के लिए संबंधित official recruitment notification को ही अंतिम और मान्य स्रोत माना जाना चाहिए।

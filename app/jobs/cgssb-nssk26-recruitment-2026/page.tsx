@@ -89,7 +89,7 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Online Application शुरू</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>11 अगस्त 2026</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Online Application की Last Date</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>7 सितंबर 2026, शाम 5:00 बजे तक</td>
                 </tr>
@@ -97,7 +97,7 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Written Exam</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>22 नवंबर 2026</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>परीक्षा का समय</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>सुबह 10:00 बजे से 12:15 बजे तक</td>
                 </tr>
@@ -105,7 +105,7 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Admit Card जारी होने की तिथि</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>16 नवंबर 2026</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Exam Centre</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>रायपुर</td>
                 </tr>
@@ -149,7 +149,7 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>21</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>2</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वाहन चालक</td>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
@@ -163,7 +163,7 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>86</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>फायर मैन</td>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
@@ -177,7 +177,7 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>32</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>—</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>6</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>मैकेनिक</td>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>4</td>
@@ -191,14 +191,14 @@ export default function NSSK26ArticlePage() {
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>19</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>प्रशिक्षित नगर सैनिक से पदोन्नति</td>
                 </tr>
-                <tr style={{ backgroundColor: '#f8fafc' }}>
+                <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>8</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>वायरलेस ऑपरेटर (संविदा)</td>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)', fontSize: '0.95rem' }}>एकमुश्त मासिक संविदा वेतन</td>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>04</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>प्रशिक्षित वायरलेस ऑपरेटर नगर सैनिक से पदोन्नति</td>
                 </tr>
-                <tr style={{ fontWeight: 'bold', backgroundColor: '#e2e8f0' }}>
+                <tr style={{ fontWeight: 'bold', backgroundColor: 'var(--card-bg-hover)' }}>
                   <td colSpan={3} style={{ padding: '12px', textAlign: 'right', border: '1px solid var(--border-color)' }}>कुल</td>
                   <td style={{ padding: '12px', textAlign: 'center', border: '1px solid var(--border-color)' }}>295</td>
                   <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}></td>
@@ -208,7 +208,7 @@ export default function NSSK26ArticlePage() {
           </div>
 
 
-          <p style={{ marginBottom: '30px', padding: '15px', backgroundColor: '#f8fafc', borderLeft: '4px solid var(--color-primary)', borderRadius: '4px' }}>
+          <p style={{ marginBottom: '30px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderLeft: '4px solid var(--color-primary)', borderRadius: '4px' }}>
             इस भर्ती में कुल <strong>295 पद</strong> दर्शाए गए हैं। इनमें फायरमैन के 117 पद और वाहन चालक कम ऑपरेटर के 86 पद सबसे अधिक हैं। इसके अलावा स्टोर कीपर, वाचरूम ऑपरेटर, वाहन चालक, स्टेशन ऑफिसर, मैकेनिक और वायरलेस ऑपरेटर के पद भी शामिल हैं।
           </p>
 
@@ -313,7 +313,7 @@ export default function NSSK26ArticlePage() {
                 <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>General</td>
                 <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>₹350</td>
               </tr>
-              <tr style={{ backgroundColor: '#f8fafc' }}>
+              <tr style={{ backgroundColor: 'var(--card-bg-hover)' }}>
                 <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>Other Backward Class</td>
                 <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>₹250</td>
               </tr>
@@ -371,17 +371,17 @@ export default function NSSK26ArticlePage() {
             Frequently Asked Questions (FAQs)
           </h2>
           
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: NSSK26 क्या है?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>NSSK26 नगर सेना, अग्निशमन एवं आपातकालीन सेवाएँ तथा SDRF के अंतर्गत Station Officer, Fireman, Store Keeper सहित 8 अलग-अलग पदों की लिखित भर्ती परीक्षा का code है।</p>
           </div>
 
-          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '15px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: NSSK26 परीक्षा कब होगी?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>Written examination 22 नवंबर 2026 को आयोजित की जाएगी।</p>
           </div>
 
-          <div style={{ marginBottom: '30px', padding: '15px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '30px', padding: '15px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ marginTop: '0', marginBottom: '8px', fontSize: '1.1rem', color: 'var(--text-main)' }}>Q: क्या payment करने के बाद application automatically submit हो जाता है?</h3>
             <p style={{ margin: '0', fontSize: '1rem' }}>नहीं। Payment successful होने के बाद SUBMIT button दबाना जरूरी है।</p>
           </div>

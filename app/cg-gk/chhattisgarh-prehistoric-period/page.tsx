@@ -24,7 +24,7 @@ export default function ChhattisgarhPrehistoricPeriod() {
           <span style={{ background: 'var(--color-primary)', color: 'white', padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold' }}>
             CG GK
           </span>
-          <span style={{ background: '#e2e8f0', color: '#475569', padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold' }}>
+          <span style={{ background: 'var(--card-bg-hover)', color: 'var(--text-main)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 'bold' }}>
             History
           </span>
         </div>
@@ -35,7 +35,7 @@ export default function ChhattisgarhPrehistoricPeriod() {
         
         <AuthorByline date={currentDate} />
 
-        <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }}>
+        <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.3)' }}>
           <Image 
             src="/images/chhattisgarh-prehistoric-period.webp" 
             alt="छत्तीसगढ़ का प्रागैतिहासिक काल पाषाण काल, प्रमुख स्थल और शैलचित्र" 
@@ -97,9 +97,9 @@ export default function ChhattisgarhPrehistoricPeriod() {
             छत्तीसगढ़ में पुरापाषाण काल के कई महत्वपूर्ण प्रमाण <strong>रायगढ़</strong> क्षेत्र से प्राप्त हुए हैं।
           </p>
           
-          <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
-            <strong>पुरापाषाण काल के प्रमुख स्थल (रायगढ़ क्षेत्र)</strong>
-            <ul style={{ margin: '5px 0 0 20px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', margin: '15px 0' }}>
+            <strong style={{ color: 'var(--text-main)' }}>पुरापाषाण काल के प्रमुख स्थल (रायगढ़ क्षेत्र)</strong>
+            <ul style={{ margin: '5px 0 0 20px', color: 'var(--text-main)' }}>
               <li>सिंहनपुर</li>
               <li>छापामारा</li>
               <li>भंवरटोला</li>
@@ -108,11 +108,11 @@ export default function ChhattisgarhPrehistoricPeriod() {
             </ul>
           </div>
 
-          <h4 style={{ marginTop: '20px', color: '#334155' }}>सिंहनपुर की गुफा</h4>
+          <h4 style={{ marginTop: '20px', color: 'var(--text-main)' }}>सिंहनपुर की गुफा</h4>
           <p>सिंहनपुर की गुफा छत्तीसगढ़ के प्रागैतिहासिक इतिहास में महत्वपूर्ण स्थान रखती है।</p>
-          <div style={{ background: '#eef2ff', padding: '15px', borderRadius: '8px', border: '1px solid #c7d2fe', margin: '15px 0' }}>
-            <strong>परीक्षा के लिए महत्वपूर्ण तथ्य:</strong>
-            <ul style={{ margin: '5px 0 0 20px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)', margin: '15px 0' }}>
+            <strong style={{ color: 'var(--text-main)' }}>परीक्षा के लिए महत्वपूर्ण तथ्य:</strong>
+            <ul style={{ margin: '5px 0 0 20px', color: 'var(--text-main)' }}>
               <li><strong>उपनाम:</strong> छत्तीसगढ़ का भीमबेटका</li>
               <li><strong>जिला:</strong> रायगढ़</li>
               <li><strong>स्थिति:</strong> चंवरडाल पहाड़ी के गिरिपाद क्षेत्र में</li>
@@ -131,20 +131,20 @@ export default function ChhattisgarhPrehistoricPeriod() {
           <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '20px', marginTop: '15px' }}>
             <thead>
               <tr style={{ background: 'var(--color-primary)', color: 'white', textAlign: 'left' }}>
-                <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>मध्य पाषाण कालीन स्थल</th>
-                <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>जिला</th>
+                <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>मध्य पाषाण कालीन स्थल</th>
+                <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>जिला</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>कबरा पहाड़</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>रायगढ़</td></tr>
-              <tr style={{ background: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>कालीनपुर, खजामघाट, गढ़चंदेला</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>बस्तर</td></tr>
-              <tr><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>धातलीहोंग, मातोबाड़ा, राजपुर, गढ़ धोघरा</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>बस्तर</td></tr>
-              <tr style={{ background: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>जयमरगा</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>जशपुर</td></tr>
-              <tr><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>केराबड़ा</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>रायगढ़</td></tr>
+              <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कबरा पहाड़</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>रायगढ़</td></tr>
+              <tr style={{ background: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>कालीनपुर, खजामघाट, गढ़चंदेला</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>बस्तर</td></tr>
+              <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>धातलीहोंग, मातोबाड़ा, राजपुर, गढ़ धोघरा</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>बस्तर</td></tr>
+              <tr style={{ background: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>जयमरगा</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>जशपुर</td></tr>
+              <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>केराबड़ा</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>रायगढ़</td></tr>
             </tbody>
           </table>
 
-          <h4 style={{ marginTop: '20px', color: '#334155' }}>कबरा पहाड़</h4>
+          <h4 style={{ marginTop: '20px', color: 'var(--text-main)' }}>कबरा पहाड़</h4>
           <p>
             <strong>जिला:</strong> रायगढ़ | <strong>स्थिति:</strong> गजमार पहाड़ी क्षेत्र | <strong>शोधकर्ता:</strong> अमरनाथ दत्त<br/>
             कबरा पहाड़ की गुफा में शैलचित्रों के प्रमाण मिलते हैं। इनमें लाल रंग के चित्रों के साथ मानव, पशु (घोड़ा, हाथी, सांभर) और अन्य आकृतियों का उल्लेख मिलता है। यहां से पाषाण युग के छोटे और सूक्ष्म औजारों के प्रमाण भी मिले हैं।
@@ -166,20 +166,20 @@ export default function ChhattisgarhPrehistoricPeriod() {
           <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '20px', marginTop: '15px' }}>
             <thead>
               <tr style={{ background: 'var(--color-primary)', color: 'white', textAlign: 'left' }}>
-                <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>नव पाषाण कालीन स्थल</th>
-                <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>जिला</th>
+                <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>नव पाषाण कालीन स्थल</th>
+                <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>जिला</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>चितवाडोंगरी, अर्जुनी</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>बालोद</td></tr>
-              <tr style={{ background: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>बोंगानिला</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>राजनांदगांव</td></tr>
-              <tr><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>टेरम, करसामगढ़, बसनाझार</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>रायगढ़</td></tr>
-              <tr style={{ background: '#f8fafc' }}><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>ओंगना, भैसगढ़ी, लिखमाड़ा</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>रायगढ़</td></tr>
-              <tr><td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>बेनीपाट, बेतरला</td><td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>रायगढ़</td></tr>
+              <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>चितवाडोंगरी, अर्जुनी</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>बालोद</td></tr>
+              <tr style={{ background: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बोंगानिला</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>राजनांदगांव</td></tr>
+              <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>टेरम, करसामगढ़, बसनाझार</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>रायगढ़</td></tr>
+              <tr style={{ background: 'var(--card-bg-hover)' }}><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>ओंगना, भैसगढ़ी, लिखमाड़ा</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>रायगढ़</td></tr>
+              <tr><td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बेनीपाट, बेतरला</td><td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>रायगढ़</td></tr>
             </tbody>
           </table>
 
-          <h4 style={{ marginTop: '20px', color: '#334155' }}>चितवाडोंगरी</h4>
+          <h4 style={{ marginTop: '20px', color: 'var(--text-main)' }}>चितवाडोंगरी</h4>
           <p>
             <strong>स्थान:</strong> सहगांव क्षेत्र, डौंडीलोहारा | <strong>जिला:</strong> बालोद<br/>
             चितवाडोंगरी से शैलचित्र प्राप्त होने की जानकारी दी गई है। यहां की गुफाओं से अनेक शैलचित्रों के प्रमाण मिले हैं। इन चित्रों से प्राचीन मानव के कृषि कार्य, नाव के उपयोग और व्यापारिक गतिविधियों की ओर संकेत मिलता है।
@@ -188,8 +188,8 @@ export default function ChhattisgarhPrehistoricPeriod() {
           <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-secondary)' }}>
             परीक्षा के लिए महत्वपूर्ण One-Liners
           </h2>
-          <div style={{ background: '#fffbeb', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
-            <ul style={{ margin: '5px 0 0 20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid var(--color-secondary)', margin: '20px 0' }}>
+            <ul style={{ margin: '5px 0 0 20px', display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--text-main)' }}>
               <li><strong>सिंहनपुर की गुफा</strong> — रायगढ़ (छत्तीसगढ़ का भीमबेटका)</li>
               <li><strong>कबरा पहाड़</strong> — रायगढ़</li>
               <li><strong>चितवाडोंगरी, अर्जुनी</strong> — बालोद</li>
@@ -284,14 +284,14 @@ export default function ChhattisgarhPrehistoricPeriod() {
                 ans: "A. पूर्व पाषाण, मध्य पाषाण, उत्तर पाषाण और नव पाषाण"
               }
             ].map((mcq, idx) => (
-              <div key={idx} style={{ padding: '15px', background: '#f8fafc', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>{mcq.q}</p>
-                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
+              <div key={idx} style={{ padding: '15px', background: 'var(--card-bg-hover)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                <p style={{ fontWeight: 'bold', marginBottom: '10px', color: 'var(--text-main)' }}>{mcq.q}</p>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px', color: 'var(--text-main)' }}>
                   {mcq.opts.map((opt, i) => <li key={i} style={{ marginBottom: '5px' }}>{opt}</li>)}
                 </ul>
-                <details style={{ background: '#e0f2fe', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
-                  <summary style={{ color: '#0284c7', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
-                  <div style={{ marginTop: '10px', color: '#0369a1', fontWeight: 'bold' }}>
+                <details style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
+                  <summary style={{ color: 'var(--color-primary)', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
+                  <div style={{ marginTop: '10px', color: 'var(--color-secondary)', fontWeight: 'bold' }}>
                     सही उत्तर: {mcq.ans}
                   </div>
                 </details>
@@ -316,11 +316,11 @@ export default function ChhattisgarhPrehistoricPeriod() {
         />
 
         {/* Disclaimer Section */}
-        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#fef2f2', border: '1px solid #fca5a5', borderRadius: '8px', fontSize: '0.9rem', color: '#991b1b' }}>
-          <h4 style={{ margin: '0 0 10px 0' }}>महत्वपूर्ण सूचना / Disclaimer</h4>
-          <p style={{ margin: 0 }}>
+        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: 'var(--card-bg-hover)', border: '1px solid #ef4444', borderRadius: '8px', fontSize: '0.9rem', color: '#ef4444' }}>
+          <h4 style={{ margin: '0 0 10px 0', color: '#ef4444' }}>महत्वपूर्ण सूचना / Disclaimer</h4>
+          <p style={{ margin: 0, color: 'var(--text-main)' }}>
             अस्वीकरण: इस लेख में दी गई जानकारी विद्यार्थियों की प्रतियोगी परीक्षा की तैयारी और सामान्य शैक्षणिक जानकारी के उद्देश्य से प्रकाशित की गई है। प्रागैतिहासिक स्थलों, पुरातात्विक प्रमाणों, उनके काल-निर्धारण तथा स्थानों से संबंधित जानकारी में शोध या आधिकारिक अभिलेखों के आधार पर समय-समय पर संशोधन संभव है। इसलिए परीक्षा की तैयारी के दौरान महत्वपूर्ण तथ्यों को संबंधित सरकारी विभाग, पुरातत्व विभाग, आधिकारिक अधिसूचना या विश्वसनीय आधिकारिक स्रोत से एक बार अवश्य सत्यापित करें। <br/><br/>
-            इस लेख में अनजाने में कोई तथ्यात्मक त्रुटि रह गई हो या किसी जानकारी में बदलाव हुआ हो, तो कृपया हमें <a href="mailto:contact@cgssb.com.in" style={{ color: '#991b1b', textDecoration: 'underline' }}>contact@cgssb.com.in</a> पर सूचित करें। उपलब्ध आधिकारिक प्रमाण की जांच के बाद आवश्यक होने पर लेख को अपडेट किया जाएगा।
+            इस लेख में अनजाने में कोई तथ्यात्मक त्रुटि रह गई हो या किसी जानकारी में बदलाव हुआ हो, तो कृपया हमें <a href="mailto:contact@cgssb.com.in" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>contact@cgssb.com.in</a> पर सूचित करें। उपलब्ध आधिकारिक प्रमाण की जांच के बाद आवश्यक होने पर लेख को अपडेट किया जाएगा।
           </p>
         </div>
 

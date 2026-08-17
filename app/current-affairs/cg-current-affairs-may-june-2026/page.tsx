@@ -27,8 +27,8 @@ export default function CurrentAffairsMayJune2026() {
             Current Affairs
           </span>
           <span style={{ 
-            background: '#e2e8f0', 
-            color: '#475569', 
+            background: 'var(--card-bg-hover)', 
+            color: 'var(--text-main)', 
             padding: '4px 12px', 
             borderRadius: '20px', 
             fontSize: '0.85rem',
@@ -66,11 +66,11 @@ export default function CurrentAffairsMayJune2026() {
           <Link href="/jobs/cgssb-nssk26-recruitment-2026" style={{ color: 'var(--color-primary)' }}>CGPSC, CG Vyapam/CGSSB</Link>, पुलिस भर्ती, शिक्षक भर्ती और अन्य राज्य स्तरीय प्रतियोगी परीक्षाओं की तैयारी करने वाले अभ्यर्थियों के लिए मई-जून 2026 के प्रमुख करेंट अफेयर्स यहां एक जगह दिए गए हैं।
         </p>
 
-        <div style={{ background: '#fffbeb', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #f59e0b', margin: '20px 0' }}>
           <strong>नोट:</strong> नीचे केवल मई-जून 2026 की घटनाओं को प्राथमिकता दी गई है। बाद में सामने आई जुलाई 2026 की घटनाओं को इस सूची से अलग रखा गया है।
         </div>
 
-        <hr style={{ margin: '40px 0', borderColor: '#e2e8f0' }} />
+        <hr style={{ margin: '40px 0', borderColor: 'var(--card-bg-hover)' }} />
 
         <h2 style={{ color: 'var(--color-primary)', fontSize: '1.8rem', marginTop: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px' }}>
           1. महासमुंद में 1.22 कैरेट के पांच रफ हीरे मिले
@@ -81,7 +81,7 @@ export default function CurrentAffairsMayJune2026() {
         <p>
           यह खोज इसलिए महत्वपूर्ण है क्योंकि इससे छत्तीसगढ़ में हीरा संसाधनों की संभावनाओं को लेकर नई रुचि पैदा हुई है। इसके बाद NMDC-CMDC Limited ने बलौदा-बेलमुंडी ब्लॉक में exploration के अगले चरण को आगे बढ़ाने की मंजूरी भी दी।
         </p>
-        <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
           <strong>परीक्षा के लिए याद रखें:</strong>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '10px' }}>
             <li><strong>जिला:</strong> महासमुंद</li>
@@ -130,7 +130,7 @@ export default function CurrentAffairsMayJune2026() {
         <p>
           रामगढ़ क्षेत्र अपनी ऐतिहासिक, सांस्कृतिक और साहित्यिक विरासत के लिए जाना जाता है। आयोजन में लोक संस्कृति, साहित्य, इतिहास, पुरातत्व और पर्यटन से जुड़े कार्यक्रम शामिल किए गए। रामगढ़ से संबंधित सीता बेंगरा, जोगीमारा और लक्ष्मण बेंगरा जैसी ऐतिहासिक गुफाएं भी महत्वपूर्ण हैं।
         </p>
-        <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+        <div style={{ background: 'var(--card-bg-hover)', padding: '15px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
           <strong>परीक्षा में पूछा जा सकता है:</strong>
           <ul style={{ marginTop: '10px' }}>
             <li><strong>रामगढ़ महोत्सव का आयोजन कब होता है?</strong> → आषाढ़ माह के प्रथम दिवस के अवसर पर।</li>
@@ -175,38 +175,38 @@ export default function CurrentAffairsMayJune2026() {
         <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '30px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
           <thead>
             <tr style={{ background: 'var(--color-primary)', color: 'white', textAlign: 'left' }}>
-              <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>संकेतक</th>
-              <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>छत्तीसगढ़ के आंकड़े</th>
+              <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>संकेतक</th>
+              <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>छत्तीसगढ़ के आंकड़े</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>5 वर्ष से कम आबादी</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>7.6%</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>5 वर्ष से कम आबादी</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>7.6%</td>
             </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>15 वर्ष से कम आबादी</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>24.7%</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>60 वर्ष या अधिक</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>11.4%</td>
-            </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>बिजली वाले घरों में रहने वाली आबादी</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>98.9%</td>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>15 वर्ष से कम आबादी</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>24.7%</td>
             </tr>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>बेहतर पेयजल स्रोत वाले घरों में आबादी</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>94.5%</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>60 वर्ष या अधिक</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>11.4%</td>
             </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>महिलाओं के अपने बैंक/बचत खाते</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>93.4%</td>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बिजली वाले घरों में रहने वाली आबादी</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>98.9%</td>
             </tr>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>महिलाओं द्वारा स्वयं उपयोग किया जाने वाला मोबाइल</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>47.8%</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>बेहतर पेयजल स्रोत वाले घरों में आबादी</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>94.5%</td>
+            </tr>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>महिलाओं के अपने बैंक/बचत खाते</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>93.4%</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>महिलाओं द्वारा स्वयं उपयोग किया जाने वाला मोबाइल</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>47.8%</td>
             </tr>
           </tbody>
         </table>
@@ -217,39 +217,39 @@ export default function CurrentAffairsMayJune2026() {
 
         <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '30px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
           <thead>
-            <tr style={{ background: '#0f172a', color: 'white', textAlign: 'left' }}>
-              <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>घटना</th>
-              <th style={{ padding: '12px', border: '1px solid #e2e8f0' }}>महत्वपूर्ण तथ्य</th>
+            <tr style={{ background: 'var(--color-primary)', color: 'white', textAlign: 'left' }}>
+              <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>घटना</th>
+              <th style={{ padding: '12px', border: '1px solid var(--border-color)' }}>महत्वपूर्ण तथ्य</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>हीरा खोज</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>बलौदा-बेलमुंडी, महासमुंद</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>हीरा खोज</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>बलौदा-बेलमुंडी, महासमुंद</td>
             </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>प्राप्त हीरे</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>5 रफ हीरे, कुल 1.22 कैरेट (2 जेम क्वालिटी)</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>रामगढ़ महोत्सव</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>29–30 जून 2026 (सरगुजा)</td>
-            </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>भोरमदेव जंगल सफारी</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>3 मई 2026</td>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>प्राप्त हीरे</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>5 रफ हीरे, कुल 1.22 कैरेट (2 जेम क्वालिटी)</td>
             </tr>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>CM Helpline</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>1076 (शुरुआत: 9 जून 2026)</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>रामगढ़ महोत्सव</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>29–30 जून 2026 (सरगुजा)</td>
             </tr>
-            <tr style={{ background: '#f8fafc' }}>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>CBG Policy 2026</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>23 जून 2026</td>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>भोरमदेव जंगल सफारी</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>3 मई 2026</td>
             </tr>
             <tr>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0' }}>NFHS-6 जारी</td>
-              <td style={{ padding: '12px', border: '1px solid #e2e8f0', fontWeight: 'bold' }}>29 मई 2026 (डेटा: 2023–24)</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>CM Helpline</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>1076 (शुरुआत: 9 जून 2026)</td>
+            </tr>
+            <tr style={{ background: 'var(--card-bg-hover)' }}>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>CBG Policy 2026</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>23 जून 2026</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)' }}>NFHS-6 जारी</td>
+              <td style={{ padding: '12px', border: '1px solid var(--border-color)', fontWeight: 'bold' }}>29 मई 2026 (डेटा: 2023–24)</td>
             </tr>
           </tbody>
         </table>

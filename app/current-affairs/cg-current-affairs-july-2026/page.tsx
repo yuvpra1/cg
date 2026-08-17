@@ -137,7 +137,7 @@ export default function CGCurrentAffairsJuly2026() {
           
           <h3 style={{ fontSize: '1.3rem', marginBottom: '10px' }}>राजीम सीताबाड़ी (पुरातात्विक स्थल)</h3>
           <p>गरियाबंद जिले के राजीम स्थित <strong>सीताबाड़ी</strong> में 2800 साल पुरानी सभ्यता के प्रमाण मिले हैं। यहाँ पहली शताब्दी ईसा पूर्व से लेकर 14वीं शताब्दी ईस्वी तक मानव बसाहट और मौर्य-सातवाहन काल के उन्नत सभ्यता के साक्ष्य प्राप्त हुए हैं।</p>
-          <div className="premium-alert" style={{ background: '#f8fafc', borderLeft: '4px solid var(--color-primary)', padding: '15px', marginTop: '10px' }}>
+          <div className="premium-alert" style={{ background: 'var(--card-bg-hover)', borderLeft: '4px solid var(--color-primary)', padding: '15px', marginTop: '10px' }}>
             <strong>Note:</strong> राजीम को हाल ही में नगर पंचायत से अपग्रेड करके <strong>नगर पालिका</strong> का दर्जा दे दिया गया है।
           </div>
 

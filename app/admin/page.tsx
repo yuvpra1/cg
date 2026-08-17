@@ -60,7 +60,7 @@ export default function AdminPanel() {
           marginBottom: '20px', 
           borderRadius: '4px',
           backgroundColor: status.type === 'success' ? '#dcfce7' : '#fee2e2',
-          color: status.type === 'success' ? '#166534' : '#991b1b',
+          color: status.type === 'success' ? '#166534' : '#ef4444',
           border: `1px solid ${status.type === 'success' ? '#bbf7d0' : '#fecaca'}`
         }}>
           {status.message}

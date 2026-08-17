@@ -40,7 +40,7 @@ export default function ContactUsPage() {
           अगर आपको लगता है कि हमारी website पर किसी content, image या अन्य material से संबंधित copyright concern है, तो कृपया हमें details के साथ contact करें।
         </p>
         
-        <div style={{ padding: '25px', backgroundColor: '#f8fafc', borderRadius: '8px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+        <div style={{ padding: '25px', backgroundColor: 'var(--card-bg-hover)', borderRadius: '8px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
           <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>Contact Email</h3>
           <p style={{ marginBottom: '0', fontSize: '1.2rem' }}>
             <a href="mailto:contact@cgssb.com.in" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>contact@cgssb.com.in</a>
