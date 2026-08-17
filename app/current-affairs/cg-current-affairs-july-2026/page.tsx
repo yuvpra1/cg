@@ -45,6 +45,9 @@ export default function CGCurrentAffairsJuly2026() {
             style={{ width: '100%', height: 'auto' }}
             priority
           />
+          <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+            This image is AI generated
+          </div>
         </div>
 
         <div className="job-content" style={{ lineHeight: '1.8', fontSize: '1.05rem', color: 'var(--text-main)' }}>

@@ -36,13 +36,16 @@ export default function CGSET2026Page() {
           <AuthorByline date="16 August 2026" />
 
           {/* Feature Image */}
-          <div style={{ marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+          <div style={{ position: 'relative', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
             <img 
               src="/images/cg-set-2026.webp" 
               alt="CG SET 2026 Notification - Online Application, Syllabus, Exam Pattern and Eligibility" 
               title="Chhattisgarh State Eligibility Test (CG SET) 2026 Complete Details"
               style={{ width: '100%', height: 'auto', maxHeight: '450px', objectFit: 'cover', display: 'block' }}
             />
+            <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+              This image is AI generated
+            </div>
           </div>
 
           <p className="content-paragraph">

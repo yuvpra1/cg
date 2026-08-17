@@ -31,7 +31,7 @@ export default function NSSK26ArticlePage() {
         </header>
 
         {/* SEO Optimized Featured Image */}
-        <div style={{ marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+        <div style={{ position: 'relative', marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           <Image 
             src="/cgssb-nssk26-recruitment-2026.webp" 
             alt="CGSSB NSSK26 Recruitment 2026 Notification and Exam Date"
@@ -41,6 +41,9 @@ export default function NSSK26ArticlePage() {
             style={{ width: '100%', height: 'auto', display: 'block' }}
             priority
           />
+          <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+            This image is AI generated
+          </div>
         </div>
 
         {/* Article Content styled exactly like HomeSeoContent */}

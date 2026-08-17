@@ -28,7 +28,7 @@ export default function TeacherRecruitmentArticlePage() {
           </h1>
         </header>
 
-        <div style={{ marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+        <div style={{ position: 'relative', marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           <Image 
             src="/cgssb-teacher-recruitment-2026.webp" 
             alt="CGSSB Teacher Recruitment 2026: 1654 Posts for Hindi, English, Maths, Sanskrit, Social Science, and Agriculture"
@@ -38,6 +38,9 @@ export default function TeacherRecruitmentArticlePage() {
             style={{ width: '100%', height: 'auto', display: 'block' }}
             priority
           />
+          <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+            This image is AI generated
+          </div>
         </div>
 
         <section className="seo-content-section" style={{ lineHeight: '1.8', color: 'var(--text-main)', fontSize: '1.05rem', marginTop: '30px' }}>

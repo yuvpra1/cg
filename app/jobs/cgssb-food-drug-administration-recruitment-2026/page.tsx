@@ -36,11 +36,16 @@ export default function FDA_Recruitment() {
           
           <AuthorByline date="16 August 2026" />
 
-          <img 
-            src="/images/cgssb-food-drug-administration.webp" 
-            alt="CGSSB Food & Drug Administration Recruitment 2026" 
-            style={{ width: '100%', height: 'auto', borderRadius: '12px', marginBottom: '30px', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }} 
-          />
+          <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '30px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+            <img 
+              src="/images/cgssb-food-drug-administration.webp" 
+              alt="CGSSB Food & Drug Administration Recruitment 2026" 
+              style={{ width: '100%', height: 'auto', display: 'block' }} 
+            />
+            <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
+              This image is AI generated
+            </div>
+          </div>
           <p className="content-paragraph">
             <strong>CGSSB Food & Drug Administration Recruitment 2026</strong> के तहत छत्तीसगढ़ के खाद्य एवं औषधि प्रशासन विभाग में <strong>Lab Assistant</strong> और <strong>Sampling Assistant</strong> के पदों पर भर्ती की जा रही है। इस भर्ती में कुल 36 पद शामिल हैं।
           </p>
