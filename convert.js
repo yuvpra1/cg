@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function convert() {
   const images = [
-    { in: 'general-dhiraj-seth-nepal-visit-2026.png', out: 'public/images/general-dhiraj-seth-nepal-visit-2026.webp' }
+    { in: 'छत्तीसगढ़ का प्रागैतिहासिक काल पाषाण काल, प्रमुख स्थल और शैलचित्र.png', out: 'public/images/chhattisgarh-prehistoric-period.webp' }
   ];
 
   if (!fs.existsSync('public/images')) {

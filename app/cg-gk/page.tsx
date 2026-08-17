@@ -10,6 +10,11 @@ export const metadata: Metadata = {
 export default function CGGKCategory() {
   const articles = [
     {
+      title: "छत्तीसगढ़ का प्रागैतिहासिक काल: पाषाण काल, प्रमुख स्थल और शैलचित्र",
+      description: "छत्तीसगढ़ का इतिहास और प्रागैतिहासिक काल पढ़ें। जानिए पूर्व पाषाण काल, मध्य पाषाण काल, उत्तर पाषाण काल और नव पाषाण काल के प्रमुख स्थल, शैलचित्र, और महत्वपूर्ण MCQ।",
+      url: "/cg-gk/chhattisgarh-prehistoric-period"
+    },
+    {
       title: "डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां",
       description: "डॉ. तीजन बाई का जीवन परिचय पढ़ें। जानिए पंडवानी क्या है, कापालिक शैली, गुरु, Padma Shri, Padma Bhushan, Fukuoka Prize, Padma Vibhushan और उनके निधन से जुड़ी महत्वपूर्ण जानकारी।",
       url: "/cg-gk/teejan-bai-biography-pandavani",

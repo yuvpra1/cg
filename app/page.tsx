@@ -13,6 +13,7 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "छत्तीसगढ़ का प्रागैतिहासिक काल: पाषाण काल, प्रमुख स्थल और शैलचित्र", url: "/cg-gk/chhattisgarh-prehistoric-period" },
     { title: "General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक, महत्वपूर्ण तथ्य", url: "/current-affairs/general-dhiraj-seth-nepal-visit-2026" },
     { title: "छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ", url: "/current-affairs/chhattisgarh-current-affairs-june-july-2026" },
     { title: "छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026", url: "/current-affairs/cg-current-affairs-july-2026" },
@@ -58,6 +59,7 @@ export default async function Home() {
       {/* News Flash Marquee */}
       <div className="marquee-container" style={{ margin: '0 auto 50px', borderRadius: '4px', maxWidth: '800px' }}>
         <div className="marquee-content">
+          <span style={{ paddingRight: '40px' }}>🔥 <a href="/cg-gk/chhattisgarh-prehistoric-period" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - छत्तीसगढ़ का प्रागैतिहासिक काल: पाषाण काल, प्रमुख स्थल और शैलचित्र</a></span>
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/general-dhiraj-seth-nepal-visit-2026" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक</a></span>
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/cg-gk/teejan-bai-biography-pandavani" style={{ color: 'inherit', textDecoration: 'none' }}>NEW - डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां</a></span>
           <span style={{ paddingRight: '40px' }}>🔥 <a href="/current-affairs/chhattisgarh-current-affairs-june-july-2026" style={{ color: 'inherit', textDecoration: 'none' }}>LATEST - छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ</a></span>
