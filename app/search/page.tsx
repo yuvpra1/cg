@@ -14,6 +14,8 @@ export const runtime = 'edge';
 const STATIC_PAGES = [
   { title: "डॉ. तीजन बाई जीवन परिचय: पंडवानी, पुरस्कार, उपलब्धियां", url: "/cg-gk/teejan-bai-biography-pandavani", type: "CG GK" },
   { title: "छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ", url: "/current-affairs/chhattisgarh-current-affairs-june-july-2026", type: "Current Affairs" },
+  { title: "छत्तीसगढ़ करेंट अफेयर्स - जुलाई 2026", url: "/current-affairs/cg-current-affairs-july-2026", type: "Current Affairs" },
+  { title: "छत्तीसगढ़ करेंट अफेयर्स - मई व जून 2026", url: "/current-affairs/cg-current-affairs-may-june-2026", type: "Current Affairs" },
   { title: "Age Calculator (आयु कैलकुलेटर)", url: "/tools/age-calculator", type: "Tool" },
   { title: "Percentage Calculator (प्रतिशत कैलकुलेटर)", url: "/tools/percentage-calculator", type: "Tool" },
   { title: "Photo Resizer & Signature Cropper", url: "/tools/photo-resizer", type: "Tool" },
