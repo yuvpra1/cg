@@ -348,9 +348,12 @@ export default function CGCurrentAffairsJuneJuly2026() {
                 <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
                   {mcq.opts.map((opt, i) => <li key={i} style={{ marginBottom: '5px' }}>{opt}</li>)}
                 </ul>
-                <div style={{ background: '#e0f2fe', padding: '10px', borderRadius: '6px', color: '#0284c7', fontWeight: '600' }}>
-                  सही उत्तर: {mcq.ans}
-                </div>
+                <details style={{ background: '#e0f2fe', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
+                  <summary style={{ color: '#0284c7', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
+                  <div style={{ marginTop: '10px', color: '#0369a1', fontWeight: 'bold' }}>
+                    सही उत्तर: {mcq.ans}
+                  </div>
+                </details>
               </div>
             ))}
           </div>
