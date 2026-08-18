@@ -2,7 +2,6 @@ import { MetadataRoute } from 'next';
 import { getAllJobs } from '@/lib/db';
 import { cgSetSubjects } from '@/lib/cgSetSubjects';
 
-export const runtime = 'edge';
 export const dynamic = 'force-dynamic'; // Ensures it fetches latest jobs from DB
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
