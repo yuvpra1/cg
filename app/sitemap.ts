@@ -25,6 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/cg-gk',
     '/tools',
     '/search',
+    '/cg-gk/buddhist-period-chhattisgarh',
     '/cg-gk/chhattisgarh-prehistoric-period',
     '/cg-gk/teejan-bai-biography-pandavani',
     '/current-affairs/general-dhiraj-seth-nepal-visit-2026',

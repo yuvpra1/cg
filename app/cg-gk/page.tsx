@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 export default function CGGKCategory() {
   const articles = [
     {
+      title: "छत्तीसगढ़ का बौद्धकालीन इतिहास: सिरपुर, मैनपाट, भोंगापाल और महाजनपद काल",
+      description: "छत्तीसगढ़ के बौद्धकालीन इतिहास, सिरपुर, मैनपाट, भोंगापाल, तुरतुरिया, मल्हार और महाजनपद काल की पूरी जानकारी आसान भाषा में पढ़ें।",
+      url: "/cg-gk/buddhist-period-chhattisgarh",
+      date: "18 August 2026"
+    },
+    {
       title: "छत्तीसगढ़ का प्राचीन इतिहास: प्रागैतिहासिक काल से महाभारत काल तक",
       description: "प्रागैतिहासिक काल, पाषाण काल, महापाषाण काल, वैदिक काल, रामायण काल और महाभारत काल के प्रमुख स्थल तथा ऐतिहासिक तथ्य। सिंघनपुर, कबरा पहाड़, चितवाडोंगरी।",
       url: "/cg-gk/chhattisgarh-prehistoric-period"
