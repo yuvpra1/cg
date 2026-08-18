@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -35,11 +36,15 @@ export default function Navbar() {
       }}>
         {/* Logo */}
         <Link href="/" style={{ 
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
           fontSize: '1.5rem', 
           fontWeight: '700', 
           color: 'var(--color-primary)',
           letterSpacing: '-0.5px'
         }}>
+          <Image src="/logo.jpg" alt="CGSSB Logo" width={36} height={36} style={{ borderRadius: '6px' }} />
           CGSSB
         </Link>
 
