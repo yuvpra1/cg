@@ -17,12 +17,7 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { password, ...jobData } = body;
-
-    if (password !== 'admin123') {
-      return NextResponse.json({ success: false, error: 'Unauthorized Access! Wrong Password.' }, { status: 401 });
-    }
+    const jobData = await request.json();
 
     await insertJob(jobData);
     

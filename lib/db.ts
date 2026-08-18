@@ -70,17 +70,19 @@ export async function getJobBySlug(slug: string) {
 
 export async function insertJob(jobData: any) {
   const env = getEnv();
-  const { title, meta_title, meta_description, slug, department, total_posts, last_date, content } = jobData;
+  const { title, meta_title, meta_description, slug, department, total_posts, last_date, content, image_url, image_alt } = jobData;
+  
   if (env && env.DB) {
     const db = env.DB;
+    // Note: User must run: ALTER TABLE jobs ADD COLUMN image_url TEXT; ALTER TABLE jobs ADD COLUMN image_alt TEXT;
     await db.prepare(
-      `INSERT INTO jobs (title, meta_title, meta_description, slug, department, total_posts, last_date, content) 
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
-    ).bind(title, meta_title || '', meta_description || '', slug, department, total_posts, last_date, content).run();
+      `INSERT INTO jobs (title, meta_title, meta_description, slug, department, total_posts, last_date, content, image_url, image_alt) 
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    ).bind(title, meta_title || '', meta_description || '', slug, department, total_posts, last_date, content, image_url || null, image_alt || null).run();
   } else {
     localJobs.unshift({
       id: Date.now(),
-      slug, title, meta_title: meta_title || '', meta_description: meta_description || '', department, total_posts: Number(total_posts), last_date, content
+      slug, title, meta_title: meta_title || '', meta_description: meta_description || '', department, total_posts: Number(total_posts), last_date, content, image_url: image_url || null, image_alt: image_alt || null
     } as any);
   }
 }

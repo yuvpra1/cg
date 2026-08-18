@@ -1,5 +1,6 @@
 export const runtime = 'edge';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { getJobBySlug } from '@/lib/db';
 import { getCGSetSubjectBySlug } from '@/lib/cgSetSubjects';
 import CGSetSyllabusTemplate from '@/components/CGSetSyllabusTemplate';
@@ -85,7 +86,19 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
         </header>
 
         {/* Dynamic Content Rendering */}
-        <div style={{ paddingTop: '20px' }}>
+        {job.image_url && (
+          <div style={{ marginBottom: '30px', borderRadius: '8px', overflow: 'hidden' }}>
+            <Image 
+              src={job.image_url} 
+              alt={job.image_alt || job.title} 
+              width={800} 
+              height={450} 
+              layout="responsive"
+              style={{ objectFit: 'cover' }} 
+            />
+          </div>
+        )}
+        <div style={{ paddingTop: '10px' }}>
           <AuthorByline date="16 August 2026" />
         </div>
         <div 
