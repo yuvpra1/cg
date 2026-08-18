@@ -49,11 +49,16 @@ function getEnv() {
 export async function getAllJobs() {
   const env = getEnv();
   if (env && env.DB) {
-    const db = env.DB;
-    const { results } = await db.prepare(
-      'SELECT id, slug, title, meta_title, meta_description, department, total_posts, last_date FROM jobs ORDER BY id DESC LIMIT 20'
-    ).all();
-    return results;
+    try {
+      const db = env.DB;
+      const { results } = await db.prepare(
+        'SELECT id, slug, title, meta_title, meta_description, department, total_posts, last_date FROM jobs ORDER BY id DESC LIMIT 20'
+      ).all();
+      return results;
+    } catch (err) {
+      console.error("D1 getAllJobs Error:", err);
+      return localJobs;
+    }
   }
   return localJobs;
 }
@@ -61,11 +66,13 @@ export async function getAllJobs() {
 export async function getJobBySlug(slug: string) {
   const env = getEnv();
   if (env && env.DB) {
-    const db = env.DB;
-    const job = await db.prepare(
-      'SELECT * FROM jobs WHERE slug = ?'
-    ).bind(slug).first();
-    return job || null;
+    try {
+      const db = env.DB;
+      const job = await db.prepare('SELECT * FROM jobs WHERE slug = ?').bind(slug).first();
+      if (job) return job;
+    } catch (err) {
+      console.error("D1 getJobBySlug Error:", err);
+    }
   }
   return localJobs.find((j: any) => j.slug === slug) || null;
 }
