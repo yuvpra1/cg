@@ -7,8 +7,8 @@ export async function POST(request: NextRequest) {
 
     // Use environment variables or fallback hardcoded for local dev
     // In Cloudflare, set ADMIN_USERNAME and ADMIN_PASSWORD in variables
-    const validUsername = process.env.ADMIN_USERNAME || 'admin';
-    const validPassword = process.env.ADMIN_PASSWORD || 'admin123';
+    const validUsername = process.env.ADMIN_USERNAME || 'cgssbypr';
+    const validPassword = process.env.ADMIN_PASSWORD || '@2BmL9*7';
 
     if (username === validUsername && password === validPassword) {
       const response = NextResponse.json({ success: true });
