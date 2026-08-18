@@ -33,9 +33,9 @@ export default function AuthorProfile() {
         
         {/* Social Profiles */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '15px' }}>
-          <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>LinkedIn</a>
+          <a href="https://www.linkedin.com/in/yuvraj-pratap-rajwade-47b21019b" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>LinkedIn</a>
           <span style={{ color: 'var(--text-muted)' }}>·</span>
-          <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>X (Twitter)</a>
+          <a href="https://x.com/dm_yuvraj" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>X (Twitter)</a>
         </div>
       </div>
 
