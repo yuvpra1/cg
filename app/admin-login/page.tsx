@@ -23,8 +23,8 @@ export default function AdminLogin() {
       });
 
       if (res.ok) {
-        router.push('/admin');
-        router.refresh();
+        // Force a hard navigation so the browser sends the new cookie to the middleware
+        window.location.href = '/admin';
       } else {
         const data = await res.json();
         setError(data.error || 'Login failed');
