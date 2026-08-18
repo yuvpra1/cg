@@ -4,7 +4,7 @@ import { getRequestContext } from '@cloudflare/next-on-pages';
 
 function getR2() {
   try {
-    return getRequestContext().env.R2 as any;
+    return (getRequestContext().env as any).R2;
   } catch (e) {
     return null;
   }

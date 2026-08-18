@@ -51,9 +51,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (jobs && Array.isArray(jobs)) {
       jobs.forEach((job: any) => {
         if (job && job.slug) {
+          const parsedDate = new Date(job.last_date || Date.now());
           sitemapEntries.push({
             url: `${baseUrl}/jobs/${job.slug}`,
-            lastModified: new Date(job.last_date || Date.now()),
+            lastModified: isNaN(parsedDate.getTime()) ? new Date() : parsedDate,
             changeFrequency: 'weekly',
             priority: 0.9,
           });
