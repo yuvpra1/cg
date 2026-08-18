@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://cgssb.com.in'),
   title: "CGSSB - Chhattisgarh Staff Selection Board Notification & Jobs",
   description: "Your complete portal for CGSSB, CGPSC, Vyapam, Govt Jobs, Syllabus, Results, and Current Affairs in Chhattisgarh.",
+  icons: {
+    icon: '/icon.jpg',
+  },
 };
 
 export default function RootLayout({
