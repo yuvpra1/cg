@@ -1,10 +1,10 @@
 export const runtime = 'edge';
 import { NextRequest, NextResponse } from 'next/server';
-import { getRequestContext } from '@cloudflare/next-on-pages';
 
 function getR2() {
   try {
-    return (getRequestContext().env as any).R2;
+    const ctx = (globalThis as any)[Symbol.for('__cloudflare_request_context__')];
+    return ctx?.env?.R2;
   } catch (e) {
     return null;
   }

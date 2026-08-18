@@ -1,5 +1,3 @@
-import { getRequestContext } from '@cloudflare/next-on-pages';
-
 export const localJobs = [
   {
     id: 6,
@@ -38,7 +36,11 @@ export const localJobs = [
 
 function getEnv() {
   try {
-    return getRequestContext().env as any;
+    // In next-on-pages, bindings are also mapped to process.env
+    // or we can use the global symbol as a fallback
+    const ctx = (globalThis as any)[Symbol.for('__cloudflare_request_context__')];
+    if (ctx && ctx.env) return ctx.env as any;
+    return process.env as any;
   } catch (e) {
     return null;
   }
