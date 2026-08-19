@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 export default function CurrentAffairsCategory() {
   const articles = [
     {
+      title: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020): पूरी जानकारी, 5+3+3+4 संरचना, महत्वपूर्ण तथ्य",
+      description: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020) भारत की शिक्षा व्यवस्था में एक महत्वपूर्ण बदलाव। NEP 2020 की पूरी जानकारी, 5+3+3+4 संरचना और CGTET/CTET/शिक्षक भर्ती के लिए परीक्षा उपयोगी बिंदु।",
+      url: "/current-affairs/nep-2020-education-policy-in-hindi",
+      date: "19 August 2026"
+    },
+    {
       title: "General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक, महत्वपूर्ण तथ्य",
       description: "General Dhiraj Seth Nepal Visit 2026 की पूरी जानकारी। जानिए नेपाल यात्रा, Honorary General Rank, भारत-नेपाल सैन्य संबंध और परीक्षा के लिए महत्वपूर्ण facts।",
       url: "/current-affairs/general-dhiraj-seth-nepal-visit-2026",

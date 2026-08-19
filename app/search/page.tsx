@@ -13,6 +13,11 @@ export const dynamic = 'force-dynamic';
 // Define static pages to include in the search
 const STATIC_PAGES = [
   { 
+    title: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020): पूरी जानकारी, 5+3+3+4 संरचना, महत्वपूर्ण तथ्य", 
+    url: "/current-affairs/nep-2020-education-policy-in-hindi", 
+    type: "Current Affairs" 
+  },
+  { 
     title: "छत्तीसगढ़ का प्राचीन इतिहास: प्रागैतिहासिक काल से महाभारत काल तक", 
     url: "/cg-gk/chhattisgarh-prehistoric-period", 
     type: "CG GK" 
