@@ -12,10 +12,13 @@ export default function TypingTestPage() {
       {/* Tool Header */}
       <section style={{ textAlign: 'center', marginBottom: '40px' }}>
         <h1 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>
-          Govt Exam Typing Speed Test
+          CG Govt Exam Typing Practice
         </h1>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: '800px', margin: '0 auto' }}>
-          Master your typing skills for Assistant Grade-3, Steno, and Data Entry Operator exams. This tool accurately measures your Words Per Minute (WPM), Accuracy, and Key Depressions Per Hour (KPH).
+        <p style={{ fontSize: '1.2rem', color: 'var(--color-primary)', fontWeight: '600', maxWidth: '800px', margin: '0 auto' }}>
+          Practice. Improve. Get Exam Ready.
+        </p>
+        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: '800px', margin: '10px auto 0' }}>
+          Master your typing skills for Assistant Grade-3, Steno, and Data Entry Operator exams. This platform accurately measures your WPM, Accuracy, and KPH with advanced mistake analysis.
         </p>
       </section>
 
