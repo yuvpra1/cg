@@ -99,8 +99,7 @@ export default function MCQSection({ mcqs, title = "महत्वपूर्�
                   borderLeft: '4px solid #22c55e',
                   color: '#166534', 
                   fontWeight: 'bold',
-                  borderRadius: '0 6px 6px 0',
-                  animation: 'fadeIn 0.3s ease-in-out'
+                  borderRadius: '0 6px 6px 0'
                 }}>
                   सही उत्तर: {mcq.ans}
                 </div>
@@ -109,12 +108,6 @@ export default function MCQSection({ mcqs, title = "महत्वपूर्�
           </div>
         ))}
       </div>
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(-5px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}} />
     </div>
   );
 }
