@@ -26,26 +26,14 @@ export default function PercentageCalculatorPage() {
 
       {/* SEO Content / Instructions */}
       <section style={{ marginTop: '60px', maxWidth: '800px', margin: '60px auto 0' }}>
-        <h2 style={{ fontSize: '1.8rem', color: 'var(--color-primary)', marginBottom: '15px' }}>सरकारी फॉर्म भरते समय Percentage Calculator क्यों जरूरी है?</h2>
+        <h2>How to calculate marks percentage?</h2>
         <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '20px' }}>
-          CG Vyapam, CGPSC, SSC, और Railway जैसे सभी सरकारी नौकरी के ऑनलाइन फॉर्म में एजुकेशनल क्वालिफिकेशन डिटेल्स (Educational Details) भरते समय 10वीं, 12वीं और ग्रेजुएशन के अंकों का सटीक प्रतिशत (Marks Percentage) दर्ज करना अनिवार्य होता है। अगर आप अपने <strong>Obtained Marks</strong> और <strong>Total Marks</strong> से प्रतिशत निकालने में गलती करते हैं, तो डॉक्युमेंट वेरिफिकेशन (Document Verification) के समय परेशानी हो सकती है। हमारा यह टूल आपको बिना किसी त्रुटि के दशमलव के दो अंकों (2 decimal places) तक सटीक प्रतिशत निकाल कर देता है।
+          To calculate your percentage, divide your obtained marks by the total maximum marks and multiply the result by 100. Our tool does this automatically and provides the result rounded to two decimal places, exactly as required by government forms.
         </p>
-
-        <h3 style={{ fontSize: '1.5rem', color: 'var(--text-main)', marginTop: '30px', marginBottom: '15px' }}>प्रतिशत (Percentage) की गणना कैसे करें?</h3>
-        <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '20px' }}>
-          साधारण रूप से प्रतिशत निकालने का फॉर्मूला (Formula) है: <br/>
-          <strong>(प्राप्त अंक ÷ कुल अंक) × 100</strong> <br/>
-          लेकिन आपको मैन्युअली कैलकुलेट करने की ज़रूरत नहीं है। इस टूल का उपयोग करके आप एक सेकंड में रिजल्ट प्राप्त कर सकते हैं:
-        </p>
-        <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', marginBottom: '30px', lineHeight: '1.8' }}>
-          <li><strong>Obtained Marks (प्राप्त अंक):</strong> वह अंक जो आपको परीक्षा में प्राप्त हुए हैं (जैसे 450)।</li>
-          <li><strong>Total Marks (कुल अंक):</strong> परीक्षा के अधिकतम अंक (जैसे 500 या 600)।</li>
-          <li>दोनों बॉक्स में सही अंक दर्ज करें और <code>Calculate Percentage</code> पर क्लिक करें।</li>
+        <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', lineHeight: '1.8' }}>
+          <li><strong>Obtained Marks:</strong> The total marks you scored in the exam.</li>
+          <li><strong>Total Marks:</strong> The maximum possible marks for the exam (e.g., 500 or 600).</li>
         </ul>
-
-        <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '8px', borderLeft: '4px solid var(--color-primary)', marginTop: '30px' }}>
-          <strong>CG Vyapam Tip:</strong> ऑनलाइन एप्लीकेशन फॉर्म में सामान्यतः दशमलव के बाद 2 अंकों (जैसे 75.33%) तक की जानकारी दर्ज करनी होती है। यह टूल आपको उसी फॉर्मेट में सही उत्तर प्रदान करता है।
-        </div>
       </section>
 
     </div>
