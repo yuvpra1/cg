@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
 };
 
+import Breadcrumbs from "@/components/Breadcrumbs";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +31,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main style={{ minHeight: 'calc(100vh - 70px - 150px)' }}>
+          <Breadcrumbs />
           {children}
         </main>
         <Footer />
