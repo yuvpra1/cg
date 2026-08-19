@@ -35,10 +35,16 @@ export async function GET() {
 
   try {
     const jobs = await getAllJobsForSitemap();
+    
+    const excludedSlugs = [
+      "cg-sample-assistant-2025",
+      "vyapam-patwari-2026",
+      "cg-police-constable-2026"
+    ];
 
     if (Array.isArray(jobs)) {
       for (const job of jobs) {
-        if (job?.slug) {
+        if (job?.slug && !excludedSlugs.includes(job.slug)) {
           urls.push(`${baseUrl}/jobs/${job.slug}`);
         }
       }
