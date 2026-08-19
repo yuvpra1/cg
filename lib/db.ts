@@ -58,6 +58,17 @@ export async function getAllJobs() {
   return localJobs;
 }
 
+export async function getAllJobsForSitemap() {
+  const env = getEnv();
+  if (env && env.DB) {
+    const { results } = await env.DB.prepare(
+      'SELECT id, slug FROM jobs ORDER BY id DESC'
+    ).all();
+    return results;
+  }
+  return localJobs;
+}
+
 export async function getJobBySlug(slug: string) {
   const env = getEnv();
   if (env && env.DB) {
