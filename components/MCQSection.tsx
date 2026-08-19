@@ -109,12 +109,6 @@ export default function MCQSection({ mcqs, title = "महत्वपूर्�
           </div>
         ))}
       </div>
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(-5px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}} />
     </div>
   );
 }
