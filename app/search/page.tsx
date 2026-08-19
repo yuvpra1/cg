@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description: 'Search for jobs, syllabus, and current affairs on CGSSB Portal.',
 };
 
-export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 // Define static pages to include in the search
