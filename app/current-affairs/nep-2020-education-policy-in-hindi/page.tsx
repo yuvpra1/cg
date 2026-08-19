@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleFooter from "@/components/ArticleFooter";
 import AuthorByline from "@/components/AuthorByline";
+import MCQSection from "@/components/MCQSection";
 
 export const metadata: Metadata = {
   title: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020): पूरी जानकारी, 5+3+3+4 संरचना",
@@ -29,7 +30,7 @@ export default function NEP2020Page() {
 
         <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.3)' }}>
           <Image 
-            src="/images/nep_2020_education_policy.jpg" 
+            src="/images/nep-2020-education-policy-india.webp" 
             alt="राष्ट्रीय शिक्षा नीति 2020 (NEP 2020)" 
             width={900} 
             height={500} 
@@ -37,7 +38,7 @@ export default function NEP2020Page() {
             priority
           />
           <div style={{ position: 'absolute', bottom: '10px', right: '10px', background: 'rgba(0,0,0,0.65)', color: 'white', padding: '5px 10px', borderRadius: '4px', fontSize: '0.8rem', zIndex: 10 }}>
-            This image is AI generated
+            NEP 2020
           </div>
         </div>
 
@@ -246,6 +247,63 @@ export default function NEP2020Page() {
           <p>
             CG शिक्षक भर्ती 2026 और TET परीक्षाओं की तैयारी करने वाले अभ्यर्थियों के लिए NEP 2020 के facts, dates, age groups, acronyms और 5+3+3+4 structure को विशेष रूप से तैयार करना अत्यंत उपयोगी रहेगा।
           </p>
+
+          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)', paddingBottom: '10px', borderBottom: '2px solid var(--border-color)' }}>
+            NEP 2020 MCQ Practice Set
+          </h2>
+          <MCQSection mcqs={[
+            {
+              q: "Q1. NEP 2020 को केंद्रीय मंत्रिमंडल ने कब मंजूरी दी थी?",
+              opts: ["A) 15 अगस्त 2020", "B) 29 जुलाई 2020", "C) 26 जनवरी 2020", "D) 5 सितंबर 2020"],
+              ans: "B) 29 जुलाई 2020"
+            },
+            {
+              q: "Q2. NEP 2020 भारत की कौन-सी राष्ट्रीय शिक्षा नीति है?",
+              opts: ["A) पहली", "B) दूसरी", "C) तीसरी", "D) चौथी"],
+              ans: "C) तीसरी"
+            },
+            {
+              q: "Q3. NEP 2020 की नई स्कूली शिक्षा संरचना क्या है?",
+              opts: ["A) 10+2", "B) 5+4+3", "C) 5+3+3+4", "D) 4+4+4+4"],
+              ans: "C) 5+3+3+4"
+            },
+            {
+              q: "Q4. NEP 2020 की 5+3+3+4 संरचना किस आयु वर्ग को cover करती है?",
+              opts: ["A) 5–18 वर्ष", "B) 6–18 वर्ष", "C) 3–18 वर्ष", "D) 3–15 वर्ष"],
+              ans: "C) 3–18 वर्ष"
+            },
+            {
+              q: "Q5. NEP 2020 के अनुसार Coding किस कक्षा से शुरू करने का प्रस्ताव है?",
+              opts: ["A) कक्षा 3", "B) कक्षा 5", "C) कक्षा 6", "D) कक्षा 9"],
+              ans: "C) कक्षा 6"
+            },
+            {
+              q: "Q6. FLN का पूरा नाम क्या है?",
+              opts: ["A) Fundamental Learning Network", "B) Foundational Literacy and Numeracy", "C) Formal Literacy and Numeracy", "D) Foundation Learning and Network"],
+              ans: "B) Foundational Literacy and Numeracy"
+            },
+            {
+              q: "Q7. NEP 2020 के अनुसार FLN का लक्ष्य किस वर्ष तक रखा गया था?",
+              opts: ["A) 2023", "B) 2025", "C) 2030", "D) 2035"],
+              ans: "B) 2025"
+            },
+            {
+              q: "Q8. PARAKH के माध्यम से किन कक्षाओं के विद्यार्थियों का standard assessment किया जाना है?",
+              opts: ["A) कक्षा 1, 2 और 3", "B) कक्षा 3, 5 और 8", "C) कक्षा 5, 8 और 10", "D) कक्षा 8, 10 और 12"],
+              ans: "B) कक्षा 3, 5 और 8"
+            },
+            {
+              q: "Q9. NEP 2020 में शिक्षकों के लिए प्रति वर्ष कितने घंटे के CPD का प्रावधान दिया गया है?",
+              opts: ["A) 25 घंटे", "B) 30 घंटे", "C) 40 घंटे", "D) 50 घंटे"],
+              ans: "D) 50 घंटे"
+            },
+            {
+              q: "Q10. NEP 2020 के अनुसार शिक्षा पर GDP का कितना प्रतिशत खर्च करने का लक्ष्य रखा गया है?",
+              opts: ["A) 4%", "B) 5%", "C) 6%", "D) 8%"],
+              ans: "C) 6%"
+            }
+          ]} title="महत्वपूर्ण बहुविकल्पीय प्रश्न (MCQs)" />
+
         </div>
 
         <ArticleFooter 
