@@ -34,15 +34,15 @@ export const localJobs = [
   }
 ];
 
+import { getCloudflareContext } from "@opennextjs/cloudflare";
+
 function getEnv() {
   try {
-    // In next-on-pages, bindings are also mapped to process.env
-    // or we can use the global symbol as a fallback
-    const ctx = (globalThis as any)[Symbol.for('__cloudflare_request_context__')];
+    const ctx = getCloudflareContext();
     if (ctx && ctx.env) return ctx.env as any;
     return process.env as any;
   } catch (e) {
-    return null;
+    return process.env as any;
   }
 }
 
