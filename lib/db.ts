@@ -64,7 +64,7 @@ export async function getAllJobsForSitemap() {
     const db = env.DB;
     // Don't use try-catch here so errors bubble up if something is wrong.
     const { results } = await db.prepare(
-      'SELECT slug, last_date FROM jobs ORDER BY id DESC'
+      'SELECT slug FROM jobs ORDER BY id DESC'
     ).all();
     return results;
   }
