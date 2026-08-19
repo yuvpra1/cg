@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import AuthorByline from '@/components/AuthorByline';
+import MCQSection from '@/components/MCQSection';
 import ArticleFooter from '@/components/ArticleFooter';
 
 export const metadata: Metadata = {
@@ -255,8 +256,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
           </h2>
           <p>अब ऊपर दी गई जानकारी को बिना देखे हल करने की कोशिश करें।</p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '20px' }}>
-            {[
+          <MCQSection mcqs={[
               {
                 q: "प्रश्न 1. खेत बचाओ अभियान 2026 की शुरुआत कब हुई?",
                 opts: ["A. 1 मई 2026", "B. 1 जून 2026", "C. 15 जून 2026", "D. 1 जुलाई 2026"],
@@ -357,21 +357,7 @@ export default function CGCurrentAffairsJuneJuly2026() {
                 opts: ["A. प्रथम", "B. द्वितीय", "C. तृतीय", "D. चतुर्थ"],
                 ans: "A. प्रथम"
               }
-            ].map((mcq, idx) => (
-              <div key={idx} style={{ padding: '15px', background: 'var(--card-bg-hover)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <p style={{ fontWeight: 'bold', marginBottom: '10px', color: 'var(--text-main)' }}>{mcq.q}</p>
-                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px', color: 'var(--text-main)' }}>
-                  {mcq.opts.map((opt, i) => <li key={i} style={{ marginBottom: '5px' }}>{opt}</li>)}
-                </ul>
-                <details style={{ background: 'var(--card-bg)', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
-                  <summary style={{ color: 'var(--color-primary)', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
-                  <div style={{ marginTop: '10px', color: 'var(--color-primary)', fontWeight: 'bold' }}>
-                    सही उत्तर: {mcq.ans}
-                  </div>
-                </details>
-              </div>
-            ))}
-          </div>
+            ]} title="छत्तीसगढ़ करेंट अफेयर्स 2026 MCQ" />
 
           {/* Quick Revision Table */}
           <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>

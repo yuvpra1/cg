@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import ArticleFooter from "@/components/ArticleFooter";
 import AuthorByline from "@/components/AuthorByline";
+import MCQSection from "@/components/MCQSection";
 
 export const metadata: Metadata = {
   title: "छत्तीसगढ़ का प्राचीन इतिहास: प्रागैतिहासिक काल से महाभारत काल तक",
@@ -272,12 +273,7 @@ export default function CGAncientHistoryPage() {
           </table>
 
           {/* MCQ Section */}
-          <h2 className="article-section-title" style={{ marginTop: '50px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)', paddingBottom: '10px', borderBottom: '2px solid var(--border-color)' }}>
-            विद्यार्थियों के लिए महत्वपूर्ण MCQ
-          </h2>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '20px' }}>
-            {[
+          <MCQSection mcqs={[
               {
                 q: "1. सिंघनपुर किस जिले में स्थित है?",
                 opts: ["A. बालोद", "B. रायगढ़", "C. कांकेर", "D. महासमुंद"],
@@ -338,21 +334,7 @@ export default function CGAncientHistoryPage() {
                 opts: ["A. मणिपुर/रत्नावलीपुरी", "B. चित्रांगदपुर", "C. खल्लवाटिका", "D. दंडकारण्य"],
                 ans: "A. मणिपुर/रत्नावलीपुरी"
               }
-            ].map((mcq, idx) => (
-              <div key={idx} style={{ padding: '15px', background: 'var(--card-bg-hover)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <p style={{ fontWeight: 'bold', marginBottom: '10px', color: 'var(--text-main)' }}>{mcq.q}</p>
-                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px', color: 'var(--text-main)' }}>
-                  {mcq.opts.map((opt, i) => <li key={i} style={{ marginBottom: '5px' }}>{opt}</li>)}
-                </ul>
-                <details style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', padding: '10px', borderRadius: '6px', cursor: 'pointer' }}>
-                  <summary style={{ color: 'var(--color-primary)', fontWeight: '600', outline: 'none' }}>उत्तर देखें</summary>
-                  <div style={{ marginTop: '10px', color: 'var(--color-primary)', fontWeight: 'bold' }}>
-                    सही उत्तर: {mcq.ans}
-                  </div>
-                </details>
-              </div>
-            ))}
-          </div>
+            ]} title="विद्यार्थियों के लिए महत्वपूर्ण MCQ" />
 
           <h2 className="article-section-title" style={{ marginTop: '40px', marginBottom: '20px', fontSize: '1.8rem', color: 'var(--color-primary)' }}>
             निष्कर्ष
