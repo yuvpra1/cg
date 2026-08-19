@@ -7,13 +7,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://cgssb.com.in";
   
   const routes: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/`, lastModified: new Date() },
-    { url: `${baseUrl}/jobs`, lastModified: new Date() },
-    { url: `${baseUrl}/current-affairs`, lastModified: new Date() },
-    { url: `${baseUrl}/cg-gk`, lastModified: new Date() },
-    { url: `${baseUrl}/tools`, lastModified: new Date() },
-    { url: `${baseUrl}/about-us`, lastModified: new Date() },
-    { url: `${baseUrl}/author/yuvraj-pratap-rajwade`, lastModified: new Date() },
+    { url: `${baseUrl}/` },
+    { url: `${baseUrl}/jobs` },
+    { url: `${baseUrl}/current-affairs` },
+    { url: `${baseUrl}/cg-gk` },
+    { url: `${baseUrl}/tools` },
+    { url: `${baseUrl}/about-us` },
+    { url: `${baseUrl}/author/yuvraj-pratap-rajwade` },
   ];
 
   // 1. Static CG GK Articles
@@ -23,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "teejan-bai-biography-pandavani"
   ];
   for (const slug of cgGkPages) {
-    routes.push({ url: `${baseUrl}/cg-gk/${slug}`, lastModified: new Date() });
+    routes.push({ url: `${baseUrl}/cg-gk/${slug}` });
   }
 
   // 2. Static Current Affairs Articles
@@ -34,7 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "general-dhiraj-seth-nepal-visit-2026"
   ];
   for (const slug of currentAffairsPages) {
-    routes.push({ url: `${baseUrl}/current-affairs/${slug}`, lastModified: new Date() });
+    routes.push({ url: `${baseUrl}/current-affairs/${slug}` });
   }
 
   // 3. Dynamic Jobs from D1
@@ -43,12 +43,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const job of jobs) {
       if (!job?.slug) continue;
       
-      const parsedDate = new Date(job.last_date || Date.now());
-      const lastMod = isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
-      
       routes.push({
-        url: `${baseUrl}/jobs/${job.slug}`,
-        lastModified: lastMod
+        url: `${baseUrl}/jobs/${job.slug}`
       });
     }
   } catch (error) {
