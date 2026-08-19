@@ -31,6 +31,22 @@ export async function GET() {
     `${baseUrl}/current-affairs/cg-current-affairs-may-june-2026`,
     `${baseUrl}/current-affairs/chhattisgarh-current-affairs-june-july-2026`,
     `${baseUrl}/current-affairs/general-dhiraj-seth-nepal-visit-2026`,
+    `${baseUrl}/current-affairs/nep-2020-education-policy-in-hindi`,
+
+    // Tools
+    `${baseUrl}/tools/age-calculator`,
+    `${baseUrl}/tools/image-to-pdf`,
+    `${baseUrl}/tools/percentage-calculator`,
+    `${baseUrl}/tools/photo-resizer`,
+    `${baseUrl}/tools/typing-test`,
+
+    // Policies & Static
+    `${baseUrl}/contact-us`,
+    `${baseUrl}/correction-policy`,
+    `${baseUrl}/disclaimer`,
+    `${baseUrl}/editorial-policy`,
+    `${baseUrl}/privacy-policy`,
+    `${baseUrl}/terms`,
   ];
 
   try {
