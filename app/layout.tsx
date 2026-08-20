@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -27,18 +27,6 @@ export default function RootLayout({
   return (
     <html lang="hi">
       <body>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-TG7H8ER4HK"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-TG7H8ER4HK');
-          `}
-        </Script>
         <Navbar />
         <main style={{ minHeight: 'calc(100vh - 70px - 150px)' }}>
           <Breadcrumbs />
@@ -46,6 +34,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-TG7H8ER4HK" />
     </html>
   );
 }
