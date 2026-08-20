@@ -38,7 +38,7 @@ export default function CGSET2026Page() {
           {/* Feature Image */}
           <div style={{ position: 'relative', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
             <img 
-              src={`${process.env.NEXT_PUBLIC_R2_URL}/images/cg-set-2026.webp`} 
+              src="/images/cg-set-2026.webp" 
               alt="CG SET 2026 Notification - Online Application, Syllabus, Exam Pattern and Eligibility" 
               title="Chhattisgarh State Eligibility Test (CG SET) 2026 Complete Details"
               style={{ width: '100%', height: 'auto', maxHeight: '450px', objectFit: 'cover', display: 'block' }}

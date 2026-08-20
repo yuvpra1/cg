@@ -38,7 +38,7 @@ export default function FDA_Recruitment() {
 
           <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '30px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
             <img 
-              src={`${process.env.NEXT_PUBLIC_R2_URL}/images/cgssb-food-drug-administration.webp`} 
+              src="/images/cgssb-food-drug-administration.webp" 
               alt="CGSSB Food & Drug Administration Recruitment 2026" 
               style={{ width: '100%', height: 'auto', display: 'block' }} 
             />

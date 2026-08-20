@@ -33,7 +33,7 @@ export default function NSSK26ArticlePage() {
         {/* SEO Optimized Featured Image */}
         <div style={{ position: 'relative', marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           <Image 
-            src={`${process.env.NEXT_PUBLIC_R2_URL}/cgssb-nssk26-recruitment-2026.webp`} 
+            src="/cgssb-nssk26-recruitment-2026.webp" 
             alt="CGSSB NSSK26 Recruitment 2026 Notification and Exam Date"
             title="CGSSB NSSK26 Recruitment 2026"
             width={900}

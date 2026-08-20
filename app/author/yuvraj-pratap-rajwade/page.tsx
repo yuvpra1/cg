@@ -21,7 +21,7 @@ export default function AuthorProfile() {
           boxShadow: '0 4px 10px rgba(0,0,0,0.1)' 
         }}>
           <Image 
-            src={`${process.env.NEXT_PUBLIC_R2_URL}/yuvraj.webp`} 
+            src="/yuvraj.webp" 
             alt="Yuvraj Pratap Rajwade" 
             width={120} 
             height={120} 

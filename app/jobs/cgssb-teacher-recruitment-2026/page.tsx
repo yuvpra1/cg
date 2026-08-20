@@ -30,7 +30,7 @@ export default function TeacherRecruitmentArticlePage() {
 
         <div style={{ position: 'relative', marginBottom: '30px', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
           <Image 
-            src={`${process.env.NEXT_PUBLIC_R2_URL}/cgssb-teacher-recruitment-2026.webp`} 
+            src="/cgssb-teacher-recruitment-2026.webp" 
             alt="CGSSB Teacher Recruitment 2026: 1654 Posts for Hindi, English, Maths, Sanskrit, Social Science, and Agriculture"
             title="CGSSB Teacher Recruitment 2026 Notification and Subject Wise Vacancy"
             width={900}
