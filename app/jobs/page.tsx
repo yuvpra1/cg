@@ -34,10 +34,13 @@ export default async function JobsList() {
     }
   ];
 
-  // Filter out from dbJobs in case they exist there to prevent duplicates
+  // Filter out from dbJobs in case they exist there to prevent duplicates, and hide old jobs
   const filteredDbJobs = dbJobs.filter((job: any) => 
     job.slug !== 'cgssb-food-drug-administration-recruitment-2026' && 
-    job.slug !== 'cgssb-recruitment-rules-2026'
+    job.slug !== 'cgssb-recruitment-rules-2026' &&
+    job.slug !== 'cg-sample-assistant-2025' &&
+    job.slug !== 'vyapam-patwari-2026' &&
+    job.slug !== 'cg-police-constable-2026'
   );
 
   const jobs = [...premiumJobs, ...filteredDbJobs];
