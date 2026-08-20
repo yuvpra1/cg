@@ -156,7 +156,7 @@ p {
     bottom: 0;
     background-color: var(--bg-body);
     padding: 20px;
-    z-index: 99;
+    z-index: 999;
     border-top: 1px solid var(--border-color);
   }
 
