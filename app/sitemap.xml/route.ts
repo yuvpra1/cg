@@ -20,6 +20,10 @@ export async function GET() {
     `${baseUrl}/tools`,
     `${baseUrl}/about-us`,
     `${baseUrl}/author/yuvraj-pratap-rajwade`,
+    
+    // Syllabus
+    `${baseUrl}/syllabus`,
+    `${baseUrl}/syllabus/cg-teacher-agriculture-syllabus-2026`,
 
     // CG GK
     `${baseUrl}/cg-gk/buddhist-period-chhattisgarh`,
