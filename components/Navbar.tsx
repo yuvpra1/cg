@@ -26,7 +26,7 @@ export default function Navbar() {
       borderBottom: '1px solid var(--border-color)',
       position: 'sticky',
       top: 0,
-      zIndex: 1000
+      zIndex: 100
     }}>
       <div className="container" style={{ 
         display: 'flex', 
@@ -59,7 +59,6 @@ export default function Navbar() {
 
         {/* Mobile Hamburger Button */}
         <button 
-          type="button"
           className="mobile-only"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
@@ -72,10 +71,7 @@ export default function Navbar() {
             gap: '5px',
             width: '30px',
             height: '30px',
-            cursor: 'pointer',
-            position: 'relative',
-            zIndex: 1001,
-            pointerEvents: 'auto'
+            cursor: 'pointer'
           }}
         >
           {/* Hamburger Bars */}
