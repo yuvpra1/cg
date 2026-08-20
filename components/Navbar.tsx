@@ -44,7 +44,7 @@ export default function Navbar() {
           color: 'var(--color-primary)',
           letterSpacing: '-0.5px'
         }}>
-          <Image src={process.env.NEXT_PUBLIC_R2_URL ? `${process.env.NEXT_PUBLIC_R2_URL}/logo.jpg` : "/logo.jpg"} alt="CGSSB Logo" width={36} height={36} style={{ borderRadius: '6px' }} />
+          <Image src="/logo.jpg" alt="CGSSB Logo" width={36} height={36} style={{ borderRadius: '6px' }} />
           CGSSB
         </Link>
 

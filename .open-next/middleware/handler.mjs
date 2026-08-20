@@ -733,8 +733,8 @@ var require_edge_runtime_webpack = __commonJS({
             return;
           }
           for (var a = 1 / 0, l = 0; l < e2.length; l++) {
-            for (var [o, n, i] = e2[l], u = true, f = 0; f < o.length; f++) a >= i && Object.keys(t.O).every((e3) => t.O[e3](o[f])) ? o.splice(f--, 1) : (u = false, i < a && (a = i));
-            if (u) {
+            for (var [o, n, i] = e2[l], f = true, u = 0; u < o.length; u++) a >= i && Object.keys(t.O).every((e3) => t.O[e3](o[u])) ? o.splice(u--, 1) : (f = false, i < a && (a = i));
+            if (f) {
               e2.splice(l--, 1);
               var s = n();
               void 0 !== s && (r2 = s);
@@ -742,12 +742,9 @@ var require_edge_runtime_webpack = __commonJS({
           }
           return r2;
         };
-      })(), t.n = (e2) => {
-        var r2 = e2 && e2.__esModule ? () => e2.default : () => e2;
-        return t.d(r2, { a: r2 }), r2;
-      }, t.d = (e2, r2) => {
+      })(), t.d = (e2, r2) => {
         for (var o in r2) t.o(r2, o) && !t.o(e2, o) && Object.defineProperty(e2, o, { enumerable: true, get: r2[o] });
-      }, t.e = () => Promise.resolve(), t.g = function() {
+      }, t.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
           return this || Function("return this")();
@@ -760,12 +757,12 @@ var require_edge_runtime_webpack = __commonJS({
         var e2 = { 993: 0 };
         t.O.j = (r3) => 0 === e2[r3];
         var r2 = (r3, o2) => {
-          var n, i, [l, a, u] = o2, f = 0;
+          var n, i, [l, a, f] = o2, u = 0;
           if (l.some((r4) => 0 !== e2[r4])) {
             for (n in a) t.o(a, n) && (t.m[n] = a[n]);
-            if (u) var s = u(t);
+            if (f) var s = f(t);
           }
-          for (r3 && r3(o2); f < l.length; f++) i = l[f], t.o(e2, i) && e2[i] && e2[i][0](), e2[i] = 0;
+          for (r3 && r3(o2); u < l.length; u++) i = l[u], t.o(e2, i) && e2[i] && e2[i][0](), e2[i] = 0;
           return t.O(s);
         }, o = self.webpackChunk_N_E = self.webpackChunk_N_E || [];
         o.forEach(r2.bind(null, 0)), o.push = r2.bind(null, o.push.bind(o));
@@ -796,16 +793,16 @@ var init_node_buffer = __esm({
 var require_middleware = __commonJS({
   ".next/server/middleware.js"() {
     "use strict";
-    (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([[826], { 2067: (e) => {
+    (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([[826], { 67: (e) => {
       "use strict";
       e.exports = (init_node_async_hooks(), __toCommonJS(node_async_hooks_exports));
-    }, 6195: (e) => {
+    }, 195: (e) => {
       "use strict";
       e.exports = (init_node_buffer(), __toCommonJS(node_buffer_exports));
-    }, 2196: (e, t, r) => {
+    }, 900: (e, t, r) => {
       "use strict";
       let n;
-      r.r(t), r.d(t, { default: () => eq });
+      r.r(t), r.d(t, { default: () => eF });
       var i, a, o, s, l, u, d, c, p, g, h, f, b = {};
       async function m() {
         let e2 = "_ENTRIES" in globalThis && _ENTRIES.middleware_instrumentation && (await _ENTRIES.middleware_instrumentation).register;
@@ -815,7 +812,7 @@ var require_middleware = __commonJS({
           throw e3.message = `An error occurred while loading instrumentation hook: ${e3.message}`, e3;
         }
       }
-      r.r(b), r.d(b, { config: () => eD, middleware: () => ej });
+      r.r(b), r.d(b, { config: () => eq, middleware: () => eB });
       let v = null;
       function w() {
         return v || (v = m()), v;
@@ -1109,7 +1106,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           return new q(String(this), this[B].options);
         }
       }
-      var $ = r(5945);
+      var $ = r(945);
       let G = Symbol("internal request");
       class H extends Request {
         constructor(e2, t2 = {}) {
@@ -1304,36 +1301,57 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           return this.entries();
         }
       }
-      var ei = r(5558);
-      class ea extends Error {
+      let ei = Error("Invariant: AsyncLocalStorage accessed in runtime where it is not available");
+      class ea {
+        disable() {
+          throw ei;
+        }
+        getStore() {
+        }
+        run() {
+          throw ei;
+        }
+        exit() {
+          throw ei;
+        }
+        enterWith() {
+          throw ei;
+        }
+      }
+      let eo = globalThis.AsyncLocalStorage;
+      function es() {
+        return eo ? new eo() : new ea();
+      }
+      let el = es();
+      class eu extends Error {
         constructor() {
           super("Cookies can only be modified in a Server Action or Route Handler. Read more: https://nextjs.org/docs/app/api-reference/functions/cookies#cookiessetname-value-options");
         }
         static callable() {
-          throw new ea();
+          throw new eu();
         }
       }
-      class eo {
+      class ed {
         static seal(e2) {
           return new Proxy(e2, { get(e3, t2, r2) {
             switch (t2) {
               case "clear":
               case "delete":
               case "set":
-                return ea.callable;
+                return eu.callable;
               default:
                 return F.get(e3, t2, r2);
             }
           } });
         }
       }
-      let es = Symbol.for("next.mutated.cookies");
-      class el {
+      let ec = Symbol.for("next.mutated.cookies");
+      class ep {
         static wrap(e2, t2) {
           let r2 = new $.ResponseCookies(new Headers());
           for (let t3 of e2.getAll()) r2.set(t3);
           let n2 = [], i2 = /* @__PURE__ */ new Set(), a2 = () => {
-            let e3 = ei.A.getStore();
+            let e3 = el.getStore();
             if (e3 && (e3.pathWasRevalidated = true), n2 = r2.getAll().filter((e4) => i2.has(e4.name)), t2) {
               let e4 = [];
               for (let t3 of n2) {
@@ -1345,7 +1363,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           };
           return new Proxy(r2, { get(e3, t3, r3) {
             switch (t3) {
-              case es:
+              case ec:
                 return n2;
               case "delete":
                 return function(...t4) {
@@ -1386,58 +1404,58 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
       }(d || (d = {})), (c || (c = {})).executeRoute = "Router.executeRoute", (p || (p = {})).runHandler = "Node.runHandler", (g || (g = {})).runHandler = "AppRouteRouteHandlers.runHandler", function(e2) {
         e2.generateMetadata = "ResolveMetadata.generateMetadata", e2.generateViewport = "ResolveMetadata.generateViewport";
       }(h || (h = {})), (f || (f = {})).execute = "Middleware.execute";
-      let eu = ["Middleware.execute", "BaseServer.handleRequest", "Render.getServerSideProps", "Render.getStaticProps", "AppRender.fetch", "AppRender.getBodyResult", "Render.renderDocument", "Node.runHandler", "AppRouteRouteHandlers.runHandler", "ResolveMetadata.generateMetadata", "ResolveMetadata.generateViewport", "NextNodeServer.createComponentTree", "NextNodeServer.findPageComponents", "NextNodeServer.getLayoutOrPageModule", "NextNodeServer.startResponse", "NextNodeServer.clientComponentLoading"], ed = ["NextNodeServer.findPageComponents", "NextNodeServer.createComponentTree", "NextNodeServer.clientComponentLoading"], { context: ec, propagation: ep, trace: eg, SpanStatusCode: eh, SpanKind: ef, ROOT_CONTEXT: eb } = n = r(8439), em = (e2) => null !== e2 && "object" == typeof e2 && "function" == typeof e2.then, ev = (e2, t2) => {
-        (null == t2 ? void 0 : t2.bubble) === true ? e2.setAttribute("next.bubble", true) : (t2 && e2.recordException(t2), e2.setStatus({ code: eh.ERROR, message: null == t2 ? void 0 : t2.message })), e2.end();
-      }, ew = /* @__PURE__ */ new Map(), e_ = n.createContextKey("next.rootSpanId"), ey = 0, ex = () => ey++;
-      class eS {
+      let eg = ["Middleware.execute", "BaseServer.handleRequest", "Render.getServerSideProps", "Render.getStaticProps", "AppRender.fetch", "AppRender.getBodyResult", "Render.renderDocument", "Node.runHandler", "AppRouteRouteHandlers.runHandler", "ResolveMetadata.generateMetadata", "ResolveMetadata.generateViewport", "NextNodeServer.createComponentTree", "NextNodeServer.findPageComponents", "NextNodeServer.getLayoutOrPageModule", "NextNodeServer.startResponse", "NextNodeServer.clientComponentLoading"], eh = ["NextNodeServer.findPageComponents", "NextNodeServer.createComponentTree", "NextNodeServer.clientComponentLoading"], { context: ef, propagation: eb, trace: em, SpanStatusCode: ev, SpanKind: ew, ROOT_CONTEXT: e_ } = n = r(439), ey = (e2) => null !== e2 && "object" == typeof e2 && "function" == typeof e2.then, ex = (e2, t2) => {
+        (null == t2 ? void 0 : t2.bubble) === true ? e2.setAttribute("next.bubble", true) : (t2 && e2.recordException(t2), e2.setStatus({ code: ev.ERROR, message: null == t2 ? void 0 : t2.message })), e2.end();
+      }, eS = /* @__PURE__ */ new Map(), eP = n.createContextKey("next.rootSpanId"), eO = 0, eN = () => eO++;
+      class eR {
         getTracerInstance() {
-          return eg.getTracer("next.js", "0.0.1");
+          return em.getTracer("next.js", "0.0.1");
         }
         getContext() {
-          return ec;
+          return ef;
         }
         getActiveScopeSpan() {
-          return eg.getSpan(null == ec ? void 0 : ec.active());
+          return em.getSpan(null == ef ? void 0 : ef.active());
         }
         withPropagatedContext(e2, t2, r2) {
-          let n2 = ec.active();
-          if (eg.getSpanContext(n2)) return t2();
-          let i2 = ep.extract(n2, e2, r2);
-          return ec.with(i2, t2);
+          let n2 = ef.active();
+          if (em.getSpanContext(n2)) return t2();
+          let i2 = eb.extract(n2, e2, r2);
+          return ef.with(i2, t2);
         }
         trace(...e2) {
           var t2;
           let [r2, n2, i2] = e2, { fn: a2, options: o2 } = "function" == typeof n2 ? { fn: n2, options: {} } : { fn: i2, options: { ...n2 } }, s2 = o2.spanName ?? r2;
-          if (!eu.includes(r2) && "1" !== process.env.NEXT_OTEL_VERBOSE || o2.hideSpan) return a2();
+          if (!eg.includes(r2) && "1" !== process.env.NEXT_OTEL_VERBOSE || o2.hideSpan) return a2();
           let l2 = this.getSpanContext((null == o2 ? void 0 : o2.parentSpan) ?? this.getActiveScopeSpan()), u2 = false;
-          l2 ? (null == (t2 = eg.getSpanContext(l2)) ? void 0 : t2.isRemote) && (u2 = true) : (l2 = (null == ec ? void 0 : ec.active()) ?? eb, u2 = true);
-          let d2 = ex();
-          return o2.attributes = { "next.span_name": s2, "next.span_type": r2, ...o2.attributes }, ec.with(l2.setValue(e_, d2), () => this.getTracerInstance().startActiveSpan(s2, o2, (e3) => {
+          l2 ? (null == (t2 = em.getSpanContext(l2)) ? void 0 : t2.isRemote) && (u2 = true) : (l2 = (null == ef ? void 0 : ef.active()) ?? e_, u2 = true);
+          let d2 = eN();
+          return o2.attributes = { "next.span_name": s2, "next.span_type": r2, ...o2.attributes }, ef.with(l2.setValue(eP, d2), () => this.getTracerInstance().startActiveSpan(s2, o2, (e3) => {
             let t3 = "performance" in globalThis ? globalThis.performance.now() : void 0, n3 = () => {
-              ew.delete(d2), t3 && process.env.NEXT_OTEL_PERFORMANCE_PREFIX && ed.includes(r2 || "") && performance.measure(`${process.env.NEXT_OTEL_PERFORMANCE_PREFIX}:next-${(r2.split(".").pop() || "").replace(/[A-Z]/g, (e4) => "-" + e4.toLowerCase())}`, { start: t3, end: performance.now() });
+              eS.delete(d2), t3 && process.env.NEXT_OTEL_PERFORMANCE_PREFIX && eh.includes(r2 || "") && performance.measure(`${process.env.NEXT_OTEL_PERFORMANCE_PREFIX}:next-${(r2.split(".").pop() || "").replace(/[A-Z]/g, (e4) => "-" + e4.toLowerCase())}`, { start: t3, end: performance.now() });
             };
-            u2 && ew.set(d2, new Map(Object.entries(o2.attributes ?? {})));
+            u2 && eS.set(d2, new Map(Object.entries(o2.attributes ?? {})));
             try {
-              if (a2.length > 1) return a2(e3, (t5) => ev(e3, t5));
+              if (a2.length > 1) return a2(e3, (t5) => ex(e3, t5));
               let t4 = a2(e3);
-              if (em(t4)) return t4.then((t5) => (e3.end(), t5)).catch((t5) => {
-                throw ev(e3, t5), t5;
+              if (ey(t4)) return t4.then((t5) => (e3.end(), t5)).catch((t5) => {
+                throw ex(e3, t5), t5;
               }).finally(n3);
               return e3.end(), n3(), t4;
             } catch (t4) {
-              throw ev(e3, t4), n3(), t4;
+              throw ex(e3, t4), n3(), t4;
             }
           }));
         }
         wrap(...e2) {
           let t2 = this, [r2, n2, i2] = 3 === e2.length ? e2 : [e2[0], {}, e2[1]];
-          return eu.includes(r2) || "1" === process.env.NEXT_OTEL_VERBOSE ? function() {
+          return eg.includes(r2) || "1" === process.env.NEXT_OTEL_VERBOSE ? function() {
             let e3 = n2;
             "function" == typeof e3 && "function" == typeof i2 && (e3 = e3.apply(this, arguments));
             let a2 = arguments.length - 1, o2 = arguments[a2];
             if ("function" != typeof o2) return t2.trace(r2, e3, () => i2.apply(this, arguments));
             {
-              let n3 = t2.getContext().bind(ec.active(), o2);
+              let n3 = t2.getContext().bind(ef.active(), o2);
               return t2.trace(r2, e3, (e4, t3) => (arguments[a2] = function(e5) {
                 return null == t3 || t3(e5), n3.apply(this, arguments);
               }, i2.apply(this, arguments)));
@@ -1449,43 +1467,43 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           return this.getTracerInstance().startSpan(t2, r2, n2);
         }
         getSpanContext(e2) {
-          return e2 ? eg.setSpan(ec.active(), e2) : void 0;
+          return e2 ? em.setSpan(ef.active(), e2) : void 0;
         }
         getRootSpanAttributes() {
-          let e2 = ec.active().getValue(e_);
-          return ew.get(e2);
+          let e2 = ef.active().getValue(eP);
+          return eS.get(e2);
         }
       }
-      let eP = (() => {
-        let e2 = new eS();
+      let eT = (() => {
+        let e2 = new eR();
         return () => e2;
-      })(), eO = "__prerender_bypass";
-      Symbol("__next_preview_data"), Symbol(eO);
-      class eN {
+      })(), eC = "__prerender_bypass";
+      Symbol("__next_preview_data"), Symbol(eC);
+      class eE {
         constructor(e2, t2, r2, n2) {
           var i2;
           let a2 = e2 && function(e3, t3) {
             let r3 = en.from(e3.headers);
             return { isOnDemandRevalidate: r3.get("x-prerender-revalidate") === t3.previewModeId, revalidateOnlyGenerated: r3.has("x-prerender-revalidate-if-generated") };
-          }(t2, e2).isOnDemandRevalidate, o2 = null == (i2 = r2.get(eO)) ? void 0 : i2.value;
+          }(t2, e2).isOnDemandRevalidate, o2 = null == (i2 = r2.get(eC)) ? void 0 : i2.value;
           this.isEnabled = !!(!a2 && o2 && e2 && o2 === e2.previewModeId), this._previewModeId = null == e2 ? void 0 : e2.previewModeId, this._mutableCookies = n2;
         }
         enable() {
           if (!this._previewModeId) throw Error("Invariant: previewProps missing previewModeId this should never happen");
-          this._mutableCookies.set({ name: eO, value: this._previewModeId, httpOnly: true, sameSite: "none", secure: true, path: "/" });
+          this._mutableCookies.set({ name: eC, value: this._previewModeId, httpOnly: true, sameSite: "none", secure: true, path: "/" });
         }
         disable() {
-          this._mutableCookies.set({ name: eO, value: "", httpOnly: true, sameSite: "none", secure: true, path: "/", expires: /* @__PURE__ */ new Date(0) });
+          this._mutableCookies.set({ name: eC, value: "", httpOnly: true, sameSite: "none", secure: true, path: "/", expires: /* @__PURE__ */ new Date(0) });
         }
       }
-      function eR(e2, t2) {
+      function eM(e2, t2) {
         if ("x-middleware-set-cookie" in e2.headers && "string" == typeof e2.headers["x-middleware-set-cookie"]) {
           let r2 = e2.headers["x-middleware-set-cookie"], n2 = new Headers();
           for (let e3 of P(r2)) n2.append("set-cookie", e3);
           for (let e3 of new $.ResponseCookies(n2).getAll()) t2.set(e3);
         }
       }
-      let eT = { wrap(e2, { req: t2, res: r2, renderOpts: n2 }, i2) {
+      let eI = { wrap(e2, { req: t2, res: r2, renderOpts: n2 }, i2) {
         let a2;
         function o2(e3) {
           r2 && r2.setHeader("Set-Cookie", e3);
@@ -1500,28 +1518,27 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
         }, get cookies() {
           if (!s2.cookies) {
             let e3 = new $.RequestCookies(en.from(t2.headers));
-            eR(t2, e3), s2.cookies = eo.seal(e3);
+            eM(t2, e3), s2.cookies = ed.seal(e3);
           }
           return s2.cookies;
         }, get mutableCookies() {
           if (!s2.mutableCookies) {
             let e3 = function(e4, t3) {
               let r3 = new $.RequestCookies(en.from(e4));
-              return el.wrap(r3, t3);
+              return ep.wrap(r3, t3);
             }(t2.headers, (null == n2 ? void 0 : n2.onUpdateCookies) || (r2 ? o2 : void 0));
-            eR(t2, e3), s2.mutableCookies = e3;
+            eM(t2, e3), s2.mutableCookies = e3;
           }
           return s2.mutableCookies;
         }, get draftMode() {
-          return s2.draftMode || (s2.draftMode = new eN(a2, t2, this.cookies, this.mutableCookies)), s2.draftMode;
+          return s2.draftMode || (s2.draftMode = new eE(a2, t2, this.cookies, this.mutableCookies)), s2.draftMode;
         }, reactLoadableManifest: (null == n2 ? void 0 : n2.reactLoadableManifest) || {}, assetPrefix: (null == n2 ? void 0 : n2.assetPrefix) || "" };
         return e2.run(l2, i2, l2);
-      } };
-      var eC = r(5303);
-      function eE() {
+      } }, eA = es();
+      function eL() {
         return { previewModeId: process.env.__NEXT_PREVIEW_MODE_ID, previewModeSigningKey: process.env.__NEXT_PREVIEW_MODE_SIGNING_KEY || "", previewModeEncryptionKey: process.env.__NEXT_PREVIEW_MODE_ENCRYPTION_KEY || "" };
       }
-      class eM extends H {
+      class ek extends H {
         constructor(e2) {
           super(e2.input, e2.init), this.sourcePage = e2.page;
         }
@@ -1535,13 +1552,13 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           throw new y({ page: this.sourcePage });
         }
       }
-      let eI = { keys: (e2) => Array.from(e2.keys()), get: (e2, t2) => e2.get(t2) ?? void 0 }, eA = (e2, t2) => eP().withPropagatedContext(e2.headers, t2, eI), eL = false;
-      async function ek(e2) {
+      let ej = { keys: (e2) => Array.from(e2.keys()), get: (e2, t2) => e2.get(t2) ?? void 0 }, eD = (e2, t2) => eT().withPropagatedContext(e2.headers, t2, ej), eV = false;
+      async function eU(e2) {
         let t2, n2;
         !function() {
-          if (!eL && (eL = true, "true" === process.env.NEXT_PRIVATE_TEST_PROXY)) {
-            let { interceptTestApis: e3, wrapRequestHandler: t3 } = r(4177);
-            e3(), eA = t3(eA);
+          if (!eV && (eV = true, "true" === process.env.NEXT_PRIVATE_TEST_PROXY)) {
+            let { interceptTestApis: e3, wrapRequestHandler: t3 } = r(177);
+            e3(), eD = t3(eD);
           }
         }(), await w();
         let i2 = void 0 !== self.__BUILD_MANIFEST;
@@ -1568,17 +1585,17 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           let t3 = e3.toString().toLowerCase();
           l2.get(t3) && (u2.set(t3, l2.get(t3)), l2.delete(t3));
         }
-        let d2 = new eM({ page: e2.page, input: function(e3, t3) {
+        let d2 = new ek({ page: e2.page, input: function(e3, t3) {
           let r2 = "string" == typeof e3, n3 = r2 ? new URL(e3) : e3;
           for (let e4 of J) n3.searchParams.delete(e4);
           if (t3) for (let e4 of Q) n3.searchParams.delete(e4);
           return r2 ? n3.toString() : n3;
         }(a2, true).toString(), init: { body: e2.request.body, geo: e2.request.geo, headers: l2, ip: e2.request.ip, method: e2.request.method, nextConfig: e2.request.nextConfig, signal: e2.request.signal } });
-        s2 && Object.defineProperty(d2, "__isData", { enumerable: false, value: true }), !globalThis.__incrementalCache && e2.IncrementalCache && (globalThis.__incrementalCache = new e2.IncrementalCache({ appDir: true, fetchCache: true, minimalMode: true, fetchCacheKeyPrefix: "", dev: false, requestHeaders: e2.request.headers, requestProtocol: "https", getPrerenderManifest: () => ({ version: -1, routes: {}, dynamicRoutes: {}, notFoundRoutes: [], preview: eE() }) }));
+        s2 && Object.defineProperty(d2, "__isData", { enumerable: false, value: true }), !globalThis.__incrementalCache && e2.IncrementalCache && (globalThis.__incrementalCache = new e2.IncrementalCache({ appDir: true, fetchCache: true, minimalMode: true, fetchCacheKeyPrefix: "", dev: false, requestHeaders: e2.request.headers, requestProtocol: "https", getPrerenderManifest: () => ({ version: -1, routes: {}, dynamicRoutes: {}, notFoundRoutes: [], preview: eL() }) }));
         let c2 = new M({ request: d2, page: e2.page });
-        if ((t2 = await eA(d2, () => "/middleware" === e2.page || "/src/middleware" === e2.page ? eP().trace(f.execute, { spanName: `middleware ${d2.method} ${d2.nextUrl.pathname}`, attributes: { "http.target": d2.nextUrl.pathname, "http.method": d2.method } }, () => eT.wrap(eC.F, { req: d2, renderOpts: { onUpdateCookies: (e3) => {
+        if ((t2 = await eD(d2, () => "/middleware" === e2.page || "/src/middleware" === e2.page ? eT().trace(f.execute, { spanName: `middleware ${d2.method} ${d2.nextUrl.pathname}`, attributes: { "http.target": d2.nextUrl.pathname, "http.method": d2.method } }, () => eI.wrap(eA, { req: d2, renderOpts: { onUpdateCookies: (e3) => {
           n2 = e3;
-        }, previewProps: eE() } }, () => e2.handler(d2, c2))) : e2.handler(d2, c2))) && !(t2 instanceof Response)) throw TypeError("Expected an instance of Response to be returned");
+        }, previewProps: eL() } }, () => e2.handler(d2, c2))) : e2.handler(d2, c2))) && !(t2 instanceof Response)) throw TypeError("Expected an instance of Response to be returned");
         t2 && n2 && t2.headers.set("set-cookie", n2);
         let p2 = null == t2 ? void 0 : t2.headers.get("x-middleware-rewrite");
         if (t2 && p2 && !i2) {
@@ -1599,17 +1616,17 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
         }
         return { response: h2, waitUntil: Promise.all(c2[C]), fetchMetrics: d2.fetchMetrics };
       }
-      function ej(e2) {
+      function eB(e2) {
         let t2 = e2.cookies.get("admin_session"), { pathname: r2 } = e2.nextUrl, n2 = r2.startsWith("/admin") && "/admin-login" !== r2, i2 = (r2.startsWith("/api/jobs") || r2.startsWith("/api/upload")) && "POST" === e2.method;
         return (n2 || i2) && (!t2 || "authenticated_cgssb_admin" !== t2.value) ? i2 ? X.json({ error: "Unauthorized" }, { status: 401 }) : X.redirect(new URL("/admin-login", e2.url)) : X.next();
       }
       r(340), "undefined" == typeof URLPattern || URLPattern;
-      let eD = { matcher: ["/admin/:path*", "/api/jobs/:path*", "/api/upload/:path*"] }, eV = { ...b }, eU = eV.middleware || eV.default, eB = "/middleware";
-      if ("function" != typeof eU) throw Error(`The Middleware "${eB}" must export a \`middleware\` or a \`default\` function`);
-      function eq(e2) {
-        return ek({ ...e2, page: eB, handler: eU });
+      let eq = { matcher: ["/admin/:path*", "/api/jobs/:path*", "/api/upload/:path*"] }, e$ = { ...b }, eG = e$.middleware || e$.default, eH = "/middleware";
+      if ("function" != typeof eG) throw Error(`The Middleware "${eH}" must export a \`middleware\` or a \`default\` function`);
+      function eF(e2) {
+        return eU({ ...e2, page: eH, handler: eG });
       }
-    }, 5945: (e) => {
+    }, 945: (e) => {
       "use strict";
       var t = Object.defineProperty, r = Object.getOwnPropertyDescriptor, n = Object.getOwnPropertyNames, i = Object.prototype.hasOwnProperty, a = {};
       function o(e2) {
@@ -1754,7 +1771,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           return [...this._parsed.values()].map(o).join("; ");
         }
       };
-    }, 8439: (e, t, r) => {
+    }, 439: (e, t, r) => {
       (() => {
         "use strict";
         var t2 = { 491: (e2, t3, r2) => {
@@ -2563,7 +2580,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           } }), a.default = { context: v.context, diag: w.diag, metrics: _.metrics, propagation: y.propagation, trace: x.trace };
         })(), e.exports = a;
       })();
-    }, 1133: (e) => {
+    }, 133: (e) => {
       (() => {
         "use strict";
         "undefined" != typeof __nccwpck_require__ && (__nccwpck_require__.ab = "//");
@@ -2715,7 +2732,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
         var s = o(226);
         e.exports = s;
       })();
-    }, 8488: (e, t, r) => {
+    }, 488: (e, t, r) => {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: true }), function(e2, t2) {
         for (var r2 in t2) Object.defineProperty(e2, r2, { enumerable: true, get: t2[r2] });
@@ -2724,7 +2741,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
       }, withRequest: function() {
         return a;
       } });
-      let n = new (r(2067)).AsyncLocalStorage();
+      let n = new (r(67)).AsyncLocalStorage();
       function i(e2, t2) {
         let r2 = t2.header(e2, "next-test-proxy-port");
         if (r2) return { url: t2.url(e2), proxyPort: Number(r2), testData: t2.header(e2, "next-test-data") || "" };
@@ -2738,7 +2755,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
       }
     }, 375: (e, t, r) => {
       "use strict";
-      var n = r(6195).Buffer;
+      var n = r(195).Buffer;
       Object.defineProperty(t, "__esModule", { value: true }), function(e2, t2) {
         for (var r2 in t2) Object.defineProperty(e2, r2, { enumerable: true, get: t2[r2] });
       }(t, { handleFetch: function() {
@@ -2748,7 +2765,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
       }, reader: function() {
         return a;
       } });
-      let i = r(8488), a = { url: (e2) => e2.url, header: (e2, t2) => e2.headers.get(t2) };
+      let i = r(488), a = { url: (e2) => e2.url, header: (e2, t2) => e2.headers.get(t2) };
       async function o(e2, t2) {
         let { url: r2, method: i2, headers: a2, body: o2, cache: s2, credentials: l2, integrity: u, mode: d, redirect: c, referrer: p, referrerPolicy: g } = t2;
         return { testData: e2, api: "fetch", request: { url: r2, method: i2, headers: [...Array.from(a2), ["next-test-stack", function() {
@@ -2786,7 +2803,7 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
           r.g.fetch = e2;
         };
       }
-    }, 4177: (e, t, r) => {
+    }, 177: (e, t, r) => {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: true }), function(e2, t2) {
         for (var r2 in t2) Object.defineProperty(e2, r2, { enumerable: true, get: t2[r2] });
@@ -2795,47 +2812,15 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
       }, wrapRequestHandler: function() {
         return o;
       } });
-      let n = r(8488), i = r(375);
+      let n = r(488), i = r(375);
       function a() {
         return (0, i.interceptFetch)(r.g.fetch);
       }
       function o(e2) {
         return (t2, r2) => (0, n.withRequest)(t2, i.reader, () => e2(t2, r2));
       }
-    }, 5228: (e, t, r) => {
-      "use strict";
-      r.d(t, { P: () => o });
-      let n = Error("Invariant: AsyncLocalStorage accessed in runtime where it is not available");
-      class i {
-        disable() {
-          throw n;
-        }
-        getStore() {
-        }
-        run() {
-          throw n;
-        }
-        exit() {
-          throw n;
-        }
-        enterWith() {
-          throw n;
-        }
-      }
-      let a = globalThis.AsyncLocalStorage;
-      function o() {
-        return a ? new a() : new i();
-      }
-    }, 5303: (e, t, r) => {
-      "use strict";
-      r.d(t, { F: () => n });
-      let n = (0, r(5228).P)();
-    }, 5558: (e, t, r) => {
-      "use strict";
-      r.d(t, { A: () => n });
-      let n = (0, r(5228).P)();
     } }, (e) => {
-      var t = e(e.s = 2196);
+      var t = e(e.s = 900);
       (_ENTRIES = "undefined" == typeof _ENTRIES ? {} : _ENTRIES).middleware_middleware = t;
     }]);
   }
@@ -3054,14 +3039,14 @@ var NEXT_DIR = path.join(__dirname, ".next");
 var OPEN_NEXT_DIR = path.join(__dirname, ".open-next");
 debug({ NEXT_DIR, OPEN_NEXT_DIR });
 var NextConfig = { "env": {}, "webpack": null, "eslint": { "ignoreDuringBuilds": false }, "typescript": { "ignoreBuildErrors": false, "tsconfigPath": "tsconfig.json" }, "distDir": ".next", "cleanDistDir": true, "assetPrefix": "", "cacheMaxMemorySize": 52428800, "configOrigin": "next.config.mjs", "useFileSystemPublicRoutes": true, "generateEtags": true, "pageExtensions": ["tsx", "ts", "jsx", "js"], "poweredByHeader": true, "compress": true, "analyticsId": "", "images": { "deviceSizes": [640, 750, 828, 1080, 1200, 1920, 2048, 3840], "imageSizes": [16, 32, 48, 64, 96, 128, 256, 384], "path": "/_next/image", "loader": "default", "loaderFile": "", "domains": [], "disableStaticImages": false, "minimumCacheTTL": 60, "formats": ["image/webp"], "dangerouslyAllowSVG": false, "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;", "contentDispositionType": "inline", "remotePatterns": [{ "protocol": "https", "hostname": "*.r2.cloudflarestorage.com" }, { "protocol": "https", "hostname": "*.r2.dev" }], "unoptimized": false }, "devIndicators": { "buildActivity": true, "buildActivityPosition": "bottom-right" }, "onDemandEntries": { "maxInactiveAge": 6e4, "pagesBufferLength": 5 }, "amp": { "canonicalBase": "" }, "basePath": "", "sassOptions": {}, "trailingSlash": false, "i18n": null, "productionBrowserSourceMaps": false, "optimizeFonts": true, "excludeDefaultMomentLocales": true, "serverRuntimeConfig": {}, "publicRuntimeConfig": {}, "reactProductionProfiling": false, "reactStrictMode": null, "httpAgentOptions": { "keepAlive": true }, "outputFileTracing": true, "staticPageGenerationTimeout": 60, "swcMinify": true, "output": "standalone", "modularizeImports": { "@mui/icons-material": { "transform": "@mui/icons-material/{{member}}" }, "lodash": { "transform": "lodash/{{member}}" } }, "experimental": { "multiZoneDraftMode": false, "prerenderEarlyExit": false, "serverMinification": true, "serverSourceMaps": false, "linkNoTouchStart": false, "caseSensitiveRoutes": false, "clientRouterFilter": true, "clientRouterFilterRedirects": false, "fetchCacheKeyPrefix": "", "middlewarePrefetch": "flexible", "optimisticClientCache": true, "manualClientBasePath": false, "cpus": 3, "memoryBasedWorkersCount": false, "isrFlushToDisk": true, "workerThreads": false, "optimizeCss": false, "nextScriptWorkers": false, "scrollRestoration": false, "externalDir": false, "disableOptimizedLoading": false, "gzipSize": true, "craCompat": false, "esmExternals": true, "fullySpecified": false, "outputFileTracingRoot": "F:\\cgssb", "swcTraceProfiling": false, "forceSwcTransforms": false, "largePageDataBytes": 128e3, "adjustFontFallbacks": false, "adjustFontFallbacksWithSizeAdjust": false, "typedRoutes": false, "instrumentationHook": false, "bundlePagesExternals": false, "parallelServerCompiles": false, "parallelServerBuildTraces": false, "ppr": false, "missingSuspenseWithCSRBailout": true, "optimizeServerReact": true, "useEarlyImport": false, "staleTimes": { "dynamic": 30, "static": 300 }, "optimizePackageImports": ["lucide-react", "date-fns", "lodash-es", "ramda", "antd", "react-bootstrap", "ahooks", "@ant-design/icons", "@headlessui/react", "@headlessui-float/react", "@heroicons/react/20/solid", "@heroicons/react/24/solid", "@heroicons/react/24/outline", "@visx/visx", "@tremor/react", "rxjs", "@mui/material", "@mui/icons-material", "recharts", "react-use", "@material-ui/core", "@material-ui/icons", "@tabler/icons-react", "mui-core", "react-icons/ai", "react-icons/bi", "react-icons/bs", "react-icons/cg", "react-icons/ci", "react-icons/di", "react-icons/fa", "react-icons/fa6", "react-icons/fc", "react-icons/fi", "react-icons/gi", "react-icons/go", "react-icons/gr", "react-icons/hi", "react-icons/hi2", "react-icons/im", "react-icons/io", "react-icons/io5", "react-icons/lia", "react-icons/lib", "react-icons/lu", "react-icons/md", "react-icons/pi", "react-icons/ri", "react-icons/rx", "react-icons/si", "react-icons/sl", "react-icons/tb", "react-icons/tfi", "react-icons/ti", "react-icons/vsc", "react-icons/wi"], "trustHostHeader": false, "isExperimentalCompile": false }, "configFileName": "next.config.mjs" };
-var BuildId = "Hj5k3pMXkzb4BfWjdty-X";
-var RoutesManifest = { "basePath": "", "rewrites": { "beforeFiles": [], "afterFiles": [], "fallback": [] }, "redirects": [{ "source": "/:path+/", "destination": "/:path+", "internal": true, "statusCode": 308, "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$" }], "routes": { "static": [{ "page": "/", "regex": "^/(?:/)?$", "routeKeys": {}, "namedRegex": "^/(?:/)?$" }, { "page": "/_not-found", "regex": "^/_not\\-found(?:/)?$", "routeKeys": {}, "namedRegex": "^/_not\\-found(?:/)?$" }, { "page": "/about-us", "regex": "^/about\\-us(?:/)?$", "routeKeys": {}, "namedRegex": "^/about\\-us(?:/)?$" }, { "page": "/admin", "regex": "^/admin(?:/)?$", "routeKeys": {}, "namedRegex": "^/admin(?:/)?$" }, { "page": "/admin-login", "regex": "^/admin\\-login(?:/)?$", "routeKeys": {}, "namedRegex": "^/admin\\-login(?:/)?$" }, { "page": "/author", "regex": "^/author(?:/)?$", "routeKeys": {}, "namedRegex": "^/author(?:/)?$" }, { "page": "/author/yuvraj-pratap-rajwade", "regex": "^/author/yuvraj\\-pratap\\-rajwade(?:/)?$", "routeKeys": {}, "namedRegex": "^/author/yuvraj\\-pratap\\-rajwade(?:/)?$" }, { "page": "/cg-gk", "regex": "^/cg\\-gk(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk(?:/)?$" }, { "page": "/cg-gk/buddhist-period-chhattisgarh", "regex": "^/cg\\-gk/buddhist\\-period\\-chhattisgarh(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk/buddhist\\-period\\-chhattisgarh(?:/)?$" }, { "page": "/cg-gk/chhattisgarh-prehistoric-period", "regex": "^/cg\\-gk/chhattisgarh\\-prehistoric\\-period(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk/chhattisgarh\\-prehistoric\\-period(?:/)?$" }, { "page": "/cg-gk/teejan-bai-biography-pandavani", "regex": "^/cg\\-gk/teejan\\-bai\\-biography\\-pandavani(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk/teejan\\-bai\\-biography\\-pandavani(?:/)?$" }, { "page": "/contact-us", "regex": "^/contact\\-us(?:/)?$", "routeKeys": {}, "namedRegex": "^/contact\\-us(?:/)?$" }, { "page": "/correction-policy", "regex": "^/correction\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/correction\\-policy(?:/)?$" }, { "page": "/current-affairs", "regex": "^/current\\-affairs(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs(?:/)?$" }, { "page": "/current-affairs/cg-current-affairs-july-2026", "regex": "^/current\\-affairs/cg\\-current\\-affairs\\-july\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/cg\\-current\\-affairs\\-july\\-2026(?:/)?$" }, { "page": "/current-affairs/cg-current-affairs-may-june-2026", "regex": "^/current\\-affairs/cg\\-current\\-affairs\\-may\\-june\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/cg\\-current\\-affairs\\-may\\-june\\-2026(?:/)?$" }, { "page": "/current-affairs/chhattisgarh-current-affairs-june-july-2026", "regex": "^/current\\-affairs/chhattisgarh\\-current\\-affairs\\-june\\-july\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/chhattisgarh\\-current\\-affairs\\-june\\-july\\-2026(?:/)?$" }, { "page": "/current-affairs/general-dhiraj-seth-nepal-visit-2026", "regex": "^/current\\-affairs/general\\-dhiraj\\-seth\\-nepal\\-visit\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/general\\-dhiraj\\-seth\\-nepal\\-visit\\-2026(?:/)?$" }, { "page": "/disclaimer", "regex": "^/disclaimer(?:/)?$", "routeKeys": {}, "namedRegex": "^/disclaimer(?:/)?$" }, { "page": "/editorial-policy", "regex": "^/editorial\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/editorial\\-policy(?:/)?$" }, { "page": "/jobs", "regex": "^/jobs(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs(?:/)?$" }, { "page": "/jobs/cg-set-2026", "regex": "^/jobs/cg\\-set\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cg\\-set\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-food-drug-administration-recruitment-2026", "regex": "^/jobs/cgssb\\-food\\-drug\\-administration\\-recruitment\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-food\\-drug\\-administration\\-recruitment\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-nssk26-recruitment-2026", "regex": "^/jobs/cgssb\\-nssk26\\-recruitment\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-nssk26\\-recruitment\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-recruitment-rules-2026", "regex": "^/jobs/cgssb\\-recruitment\\-rules\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-recruitment\\-rules\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-teacher-recruitment-2026", "regex": "^/jobs/cgssb\\-teacher\\-recruitment\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-teacher\\-recruitment\\-2026(?:/)?$" }, { "page": "/previous-paper", "regex": "^/previous\\-paper(?:/)?$", "routeKeys": {}, "namedRegex": "^/previous\\-paper(?:/)?$" }, { "page": "/privacy-policy", "regex": "^/privacy\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/privacy\\-policy(?:/)?$" }, { "page": "/robots.txt", "regex": "^/robots\\.txt(?:/)?$", "routeKeys": {}, "namedRegex": "^/robots\\.txt(?:/)?$" }, { "page": "/search", "regex": "^/search(?:/)?$", "routeKeys": {}, "namedRegex": "^/search(?:/)?$" }, { "page": "/sitemap.xml", "regex": "^/sitemap\\.xml(?:/)?$", "routeKeys": {}, "namedRegex": "^/sitemap\\.xml(?:/)?$" }, { "page": "/terms", "regex": "^/terms(?:/)?$", "routeKeys": {}, "namedRegex": "^/terms(?:/)?$" }, { "page": "/tools", "regex": "^/tools(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools(?:/)?$" }, { "page": "/tools/age-calculator", "regex": "^/tools/age\\-calculator(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/age\\-calculator(?:/)?$" }, { "page": "/tools/image-to-pdf", "regex": "^/tools/image\\-to\\-pdf(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/image\\-to\\-pdf(?:/)?$" }, { "page": "/tools/percentage-calculator", "regex": "^/tools/percentage\\-calculator(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/percentage\\-calculator(?:/)?$" }, { "page": "/tools/photo-resizer", "regex": "^/tools/photo\\-resizer(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/photo\\-resizer(?:/)?$" }, { "page": "/tools/typing-test", "regex": "^/tools/typing\\-test(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/typing\\-test(?:/)?$" }], "dynamic": [{ "page": "/api/jobs/[slug]", "regex": "^/api/jobs/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/api/jobs/(?<nxtPslug>[^/]+?)(?:/)?$" }, { "page": "/jobs/[slug]", "regex": "^/jobs/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/jobs/(?<nxtPslug>[^/]+?)(?:/)?$" }], "data": { "static": [], "dynamic": [] } }, "locales": [] };
+var BuildId = "a7k7QwI22yY4nYRydaxEX";
+var RoutesManifest = { "basePath": "", "rewrites": { "beforeFiles": [], "afterFiles": [], "fallback": [] }, "redirects": [{ "source": "/:path+/", "destination": "/:path+", "internal": true, "statusCode": 308, "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$" }], "routes": { "static": [{ "page": "/", "regex": "^/(?:/)?$", "routeKeys": {}, "namedRegex": "^/(?:/)?$" }, { "page": "/_not-found", "regex": "^/_not\\-found(?:/)?$", "routeKeys": {}, "namedRegex": "^/_not\\-found(?:/)?$" }, { "page": "/about-us", "regex": "^/about\\-us(?:/)?$", "routeKeys": {}, "namedRegex": "^/about\\-us(?:/)?$" }, { "page": "/admin", "regex": "^/admin(?:/)?$", "routeKeys": {}, "namedRegex": "^/admin(?:/)?$" }, { "page": "/admin-login", "regex": "^/admin\\-login(?:/)?$", "routeKeys": {}, "namedRegex": "^/admin\\-login(?:/)?$" }, { "page": "/author", "regex": "^/author(?:/)?$", "routeKeys": {}, "namedRegex": "^/author(?:/)?$" }, { "page": "/author/yuvraj-pratap-rajwade", "regex": "^/author/yuvraj\\-pratap\\-rajwade(?:/)?$", "routeKeys": {}, "namedRegex": "^/author/yuvraj\\-pratap\\-rajwade(?:/)?$" }, { "page": "/cg-gk", "regex": "^/cg\\-gk(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk(?:/)?$" }, { "page": "/cg-gk/buddhist-period-chhattisgarh", "regex": "^/cg\\-gk/buddhist\\-period\\-chhattisgarh(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk/buddhist\\-period\\-chhattisgarh(?:/)?$" }, { "page": "/cg-gk/chhattisgarh-prehistoric-period", "regex": "^/cg\\-gk/chhattisgarh\\-prehistoric\\-period(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk/chhattisgarh\\-prehistoric\\-period(?:/)?$" }, { "page": "/cg-gk/teejan-bai-biography-pandavani", "regex": "^/cg\\-gk/teejan\\-bai\\-biography\\-pandavani(?:/)?$", "routeKeys": {}, "namedRegex": "^/cg\\-gk/teejan\\-bai\\-biography\\-pandavani(?:/)?$" }, { "page": "/contact-us", "regex": "^/contact\\-us(?:/)?$", "routeKeys": {}, "namedRegex": "^/contact\\-us(?:/)?$" }, { "page": "/correction-policy", "regex": "^/correction\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/correction\\-policy(?:/)?$" }, { "page": "/current-affairs", "regex": "^/current\\-affairs(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs(?:/)?$" }, { "page": "/current-affairs/cg-current-affairs-july-2026", "regex": "^/current\\-affairs/cg\\-current\\-affairs\\-july\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/cg\\-current\\-affairs\\-july\\-2026(?:/)?$" }, { "page": "/current-affairs/cg-current-affairs-may-june-2026", "regex": "^/current\\-affairs/cg\\-current\\-affairs\\-may\\-june\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/cg\\-current\\-affairs\\-may\\-june\\-2026(?:/)?$" }, { "page": "/current-affairs/chhattisgarh-current-affairs-june-july-2026", "regex": "^/current\\-affairs/chhattisgarh\\-current\\-affairs\\-june\\-july\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/chhattisgarh\\-current\\-affairs\\-june\\-july\\-2026(?:/)?$" }, { "page": "/current-affairs/general-dhiraj-seth-nepal-visit-2026", "regex": "^/current\\-affairs/general\\-dhiraj\\-seth\\-nepal\\-visit\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/general\\-dhiraj\\-seth\\-nepal\\-visit\\-2026(?:/)?$" }, { "page": "/current-affairs/nep-2020-education-policy-in-hindi", "regex": "^/current\\-affairs/nep\\-2020\\-education\\-policy\\-in\\-hindi(?:/)?$", "routeKeys": {}, "namedRegex": "^/current\\-affairs/nep\\-2020\\-education\\-policy\\-in\\-hindi(?:/)?$" }, { "page": "/disclaimer", "regex": "^/disclaimer(?:/)?$", "routeKeys": {}, "namedRegex": "^/disclaimer(?:/)?$" }, { "page": "/editorial-policy", "regex": "^/editorial\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/editorial\\-policy(?:/)?$" }, { "page": "/icon.jpg", "regex": "^/icon\\.jpg(?:/)?$", "routeKeys": {}, "namedRegex": "^/icon\\.jpg(?:/)?$" }, { "page": "/jobs", "regex": "^/jobs(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs(?:/)?$" }, { "page": "/jobs/cg-set-2026", "regex": "^/jobs/cg\\-set\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cg\\-set\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-food-drug-administration-recruitment-2026", "regex": "^/jobs/cgssb\\-food\\-drug\\-administration\\-recruitment\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-food\\-drug\\-administration\\-recruitment\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-nssk26-recruitment-2026", "regex": "^/jobs/cgssb\\-nssk26\\-recruitment\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-nssk26\\-recruitment\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-recruitment-rules-2026", "regex": "^/jobs/cgssb\\-recruitment\\-rules\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-recruitment\\-rules\\-2026(?:/)?$" }, { "page": "/jobs/cgssb-teacher-recruitment-2026", "regex": "^/jobs/cgssb\\-teacher\\-recruitment\\-2026(?:/)?$", "routeKeys": {}, "namedRegex": "^/jobs/cgssb\\-teacher\\-recruitment\\-2026(?:/)?$" }, { "page": "/previous-paper", "regex": "^/previous\\-paper(?:/)?$", "routeKeys": {}, "namedRegex": "^/previous\\-paper(?:/)?$" }, { "page": "/privacy-policy", "regex": "^/privacy\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/privacy\\-policy(?:/)?$" }, { "page": "/robots.txt", "regex": "^/robots\\.txt(?:/)?$", "routeKeys": {}, "namedRegex": "^/robots\\.txt(?:/)?$" }, { "page": "/search", "regex": "^/search(?:/)?$", "routeKeys": {}, "namedRegex": "^/search(?:/)?$" }, { "page": "/sitemap.xml", "regex": "^/sitemap\\.xml(?:/)?$", "routeKeys": {}, "namedRegex": "^/sitemap\\.xml(?:/)?$" }, { "page": "/terms", "regex": "^/terms(?:/)?$", "routeKeys": {}, "namedRegex": "^/terms(?:/)?$" }, { "page": "/tools", "regex": "^/tools(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools(?:/)?$" }, { "page": "/tools/age-calculator", "regex": "^/tools/age\\-calculator(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/age\\-calculator(?:/)?$" }, { "page": "/tools/image-to-pdf", "regex": "^/tools/image\\-to\\-pdf(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/image\\-to\\-pdf(?:/)?$" }, { "page": "/tools/percentage-calculator", "regex": "^/tools/percentage\\-calculator(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/percentage\\-calculator(?:/)?$" }, { "page": "/tools/photo-resizer", "regex": "^/tools/photo\\-resizer(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/photo\\-resizer(?:/)?$" }, { "page": "/tools/typing-test", "regex": "^/tools/typing\\-test(?:/)?$", "routeKeys": {}, "namedRegex": "^/tools/typing\\-test(?:/)?$" }], "dynamic": [{ "page": "/api/jobs/[slug]", "regex": "^/api/jobs/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/api/jobs/(?<nxtPslug>[^/]+?)(?:/)?$" }, { "page": "/jobs/[slug]", "regex": "^/jobs/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/jobs/(?<nxtPslug>[^/]+?)(?:/)?$" }], "data": { "static": [], "dynamic": [] } }, "locales": [] };
 var ConfigHeaders = [];
-var PrerenderManifest = { "version": 4, "routes": { "/sitemap.xml": { "initialHeaders": { "cache-control": "public, s-maxage=3600, stale-while-revalidate=86400", "content-type": "application/xml; charset=utf-8", "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml" }, "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/sitemap.xml", "dataRoute": null }, "/robots.txt": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "text/plain", "x-next-cache-tags": "_N_T_/layout,_N_T_/robots.txt/layout,_N_T_/robots.txt/route,_N_T_/robots.txt" }, "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/robots.txt", "dataRoute": null }, "/admin": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/admin", "dataRoute": "/admin.rsc" }, "/admin-login": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/admin-login", "dataRoute": "/admin-login.rsc" }, "/jobs": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs", "dataRoute": "/jobs.rsc" }, "/": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/", "dataRoute": "/index.rsc" }, "/tools/age-calculator": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/age-calculator", "dataRoute": "/tools/age-calculator.rsc" }, "/tools": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools", "dataRoute": "/tools.rsc" }, "/tools/percentage-calculator": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/percentage-calculator", "dataRoute": "/tools/percentage-calculator.rsc" }, "/tools/photo-resizer": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/photo-resizer", "dataRoute": "/tools/photo-resizer.rsc" }, "/tools/typing-test": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/typing-test", "dataRoute": "/tools/typing-test.rsc" }, "/about-us": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/about-us", "dataRoute": "/about-us.rsc" }, "/author": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/author", "dataRoute": "/author.rsc" }, "/author/yuvraj-pratap-rajwade": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/author/yuvraj-pratap-rajwade", "dataRoute": "/author/yuvraj-pratap-rajwade.rsc" }, "/cg-gk/buddhist-period-chhattisgarh": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk/buddhist-period-chhattisgarh", "dataRoute": "/cg-gk/buddhist-period-chhattisgarh.rsc" }, "/cg-gk": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk", "dataRoute": "/cg-gk.rsc" }, "/contact-us": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/contact-us", "dataRoute": "/contact-us.rsc" }, "/cg-gk/chhattisgarh-prehistoric-period": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk/chhattisgarh-prehistoric-period", "dataRoute": "/cg-gk/chhattisgarh-prehistoric-period.rsc" }, "/correction-policy": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/correction-policy", "dataRoute": "/correction-policy.rsc" }, "/cg-gk/teejan-bai-biography-pandavani": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk/teejan-bai-biography-pandavani", "dataRoute": "/cg-gk/teejan-bai-biography-pandavani.rsc" }, "/current-affairs/cg-current-affairs-july-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/cg-current-affairs-july-2026", "dataRoute": "/current-affairs/cg-current-affairs-july-2026.rsc" }, "/current-affairs/cg-current-affairs-may-june-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/cg-current-affairs-may-june-2026", "dataRoute": "/current-affairs/cg-current-affairs-may-june-2026.rsc" }, "/current-affairs": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs", "dataRoute": "/current-affairs.rsc" }, "/disclaimer": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/disclaimer", "dataRoute": "/disclaimer.rsc" }, "/editorial-policy": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/editorial-policy", "dataRoute": "/editorial-policy.rsc" }, "/current-affairs/general-dhiraj-seth-nepal-visit-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/general-dhiraj-seth-nepal-visit-2026", "dataRoute": "/current-affairs/general-dhiraj-seth-nepal-visit-2026.rsc" }, "/tools/image-to-pdf": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/image-to-pdf", "dataRoute": "/tools/image-to-pdf.rsc" }, "/current-affairs/chhattisgarh-current-affairs-june-july-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/chhattisgarh-current-affairs-june-july-2026", "dataRoute": "/current-affairs/chhattisgarh-current-affairs-june-july-2026.rsc" }, "/jobs/cgssb-recruitment-rules-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-recruitment-rules-2026", "dataRoute": "/jobs/cgssb-recruitment-rules-2026.rsc" }, "/jobs/cgssb-nssk26-recruitment-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-nssk26-recruitment-2026", "dataRoute": "/jobs/cgssb-nssk26-recruitment-2026.rsc" }, "/jobs/cg-set-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cg-set-2026", "dataRoute": "/jobs/cg-set-2026.rsc" }, "/privacy-policy": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/privacy-policy", "dataRoute": "/privacy-policy.rsc" }, "/previous-paper": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/previous-paper", "dataRoute": "/previous-paper.rsc" }, "/terms": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/terms", "dataRoute": "/terms.rsc" }, "/jobs/cgssb-teacher-recruitment-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-teacher-recruitment-2026", "dataRoute": "/jobs/cgssb-teacher-recruitment-2026.rsc" }, "/jobs/cgssb-food-drug-administration-recruitment-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-food-drug-administration-recruitment-2026", "dataRoute": "/jobs/cgssb-food-drug-administration-recruitment-2026.rsc" } }, "dynamicRoutes": {}, "notFoundRoutes": [], "preview": { "previewModeId": "583a8d031517e2e8a5260b8e2165cf12", "previewModeSigningKey": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97", "previewModeEncryptionKey": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852" } };
-var MiddlewareManifest = { "version": 3, "middleware": { "/": { "files": ["server/edge-runtime-webpack.js", "server/middleware.js"], "name": "middleware", "page": "/", "matchers": [{ "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$", "originalSource": "/admin/:path*" }, { "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/jobs(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$", "originalSource": "/api/jobs/:path*" }, { "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/upload(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$", "originalSource": "/api/upload/:path*" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "Hj5k3pMXkzb4BfWjdty-X", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eJIONjEF26zTv1Zb3K61jcwzx81KTcQrLv4WJMd+t2o=", "__NEXT_PREVIEW_MODE_ID": "583a8d031517e2e8a5260b8e2165cf12", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97" } } }, "functions": { "/api/auth/login/route": { "files": ["server/middleware-build-manifest.js", "server/middleware-react-loadable-manifest.js", "server/next-font-manifest.js", "server/interception-route-rewrite-manifest.js", "server/edge-runtime-webpack.js", "server/edge-chunks/90.js", "server/edge-chunks/809.js", "server/app/api/auth/login/route.js"], "name": "app/api/auth/login/route", "page": "/api/auth/login/route", "matchers": [{ "regexp": "^/api/auth/login$", "originalSource": "/api/auth/login" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "Hj5k3pMXkzb4BfWjdty-X", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eJIONjEF26zTv1Zb3K61jcwzx81KTcQrLv4WJMd+t2o=", "__NEXT_PREVIEW_MODE_ID": "583a8d031517e2e8a5260b8e2165cf12", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97" } }, "/api/jobs/[slug]/route": { "files": ["server/middleware-build-manifest.js", "server/middleware-react-loadable-manifest.js", "server/next-font-manifest.js", "server/interception-route-rewrite-manifest.js", "server/edge-runtime-webpack.js", "server/edge-chunks/90.js", "server/edge-chunks/809.js", "server/app/api/jobs/[slug]/route.js"], "name": "app/api/jobs/[slug]/route", "page": "/api/jobs/[slug]/route", "matchers": [{ "regexp": "^/api/jobs/(?<slug>[^/]+?)$", "originalSource": "/api/jobs/[slug]" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "Hj5k3pMXkzb4BfWjdty-X", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eJIONjEF26zTv1Zb3K61jcwzx81KTcQrLv4WJMd+t2o=", "__NEXT_PREVIEW_MODE_ID": "583a8d031517e2e8a5260b8e2165cf12", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97" } }, "/api/upload/route": { "files": ["server/middleware-build-manifest.js", "server/middleware-react-loadable-manifest.js", "server/next-font-manifest.js", "server/interception-route-rewrite-manifest.js", "server/edge-runtime-webpack.js", "server/edge-chunks/90.js", "server/edge-chunks/809.js", "server/app/api/upload/route.js"], "name": "app/api/upload/route", "page": "/api/upload/route", "matchers": [{ "regexp": "^/api/upload$", "originalSource": "/api/upload" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "Hj5k3pMXkzb4BfWjdty-X", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eJIONjEF26zTv1Zb3K61jcwzx81KTcQrLv4WJMd+t2o=", "__NEXT_PREVIEW_MODE_ID": "583a8d031517e2e8a5260b8e2165cf12", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97" } }, "/jobs/[slug]/page": { "files": ["server/server-reference-manifest.js", "server/app/jobs/[slug]/page_client-reference-manifest.js", "server/middleware-build-manifest.js", "server/middleware-react-loadable-manifest.js", "server/next-font-manifest.js", "server/interception-route-rewrite-manifest.js", "server/edge-runtime-webpack.js", "server/edge-chunks/90.js", "server/edge-chunks/743.js", "server/edge-chunks/432.js", "server/app/jobs/[slug]/page.js"], "name": "app/jobs/[slug]/page", "page": "/jobs/[slug]/page", "matchers": [{ "regexp": "^/jobs/(?<slug>[^/]+?)$", "originalSource": "/jobs/[slug]" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "Hj5k3pMXkzb4BfWjdty-X", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eJIONjEF26zTv1Zb3K61jcwzx81KTcQrLv4WJMd+t2o=", "__NEXT_PREVIEW_MODE_ID": "583a8d031517e2e8a5260b8e2165cf12", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97" } }, "/search/page": { "files": ["server/server-reference-manifest.js", "server/app/search/page_client-reference-manifest.js", "server/middleware-build-manifest.js", "server/middleware-react-loadable-manifest.js", "server/next-font-manifest.js", "server/interception-route-rewrite-manifest.js", "server/edge-runtime-webpack.js", "server/edge-chunks/90.js", "server/edge-chunks/743.js", "server/edge-chunks/432.js", "server/app/search/page.js"], "name": "app/search/page", "page": "/search/page", "matchers": [{ "regexp": "^/search$", "originalSource": "/search" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "Hj5k3pMXkzb4BfWjdty-X", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eJIONjEF26zTv1Zb3K61jcwzx81KTcQrLv4WJMd+t2o=", "__NEXT_PREVIEW_MODE_ID": "583a8d031517e2e8a5260b8e2165cf12", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e405bac3c6db3ce4ed5148fd4da7a50c62b28f4656487737923d53379d5ac852", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fffee14ada9b2a37b5e10bec157e8ec86946d75e30917cef6144de947cbbc97" } } }, "sortedMiddleware": ["/"] };
-var AppPathRoutesManifest = { "/_not-found/page": "/_not-found", "/admin/page": "/admin", "/api/jobs/route": "/api/jobs", "/admin-login/page": "/admin-login", "/jobs/page": "/jobs", "/robots.txt/route": "/robots.txt", "/sitemap.xml/route": "/sitemap.xml", "/page": "/", "/(tools)/tools/image-to-pdf/page": "/tools/image-to-pdf", "/(tools)/tools/percentage-calculator/page": "/tools/percentage-calculator", "/(tools)/tools/photo-resizer/page": "/tools/photo-resizer", "/(tools)/tools/age-calculator/page": "/tools/age-calculator", "/author/page": "/author", "/about-us/page": "/about-us", "/(tools)/tools/typing-test/page": "/tools/typing-test", "/contact-us/page": "/contact-us", "/correction-policy/page": "/correction-policy", "/author/yuvraj-pratap-rajwade/page": "/author/yuvraj-pratap-rajwade", "/cg-gk/buddhist-period-chhattisgarh/page": "/cg-gk/buddhist-period-chhattisgarh", "/cg-gk/page": "/cg-gk", "/current-affairs/cg-current-affairs-july-2026/page": "/current-affairs/cg-current-affairs-july-2026", "/cg-gk/teejan-bai-biography-pandavani/page": "/cg-gk/teejan-bai-biography-pandavani", "/cg-gk/chhattisgarh-prehistoric-period/page": "/cg-gk/chhattisgarh-prehistoric-period", "/current-affairs/chhattisgarh-current-affairs-june-july-2026/page": "/current-affairs/chhattisgarh-current-affairs-june-july-2026", "/disclaimer/page": "/disclaimer", "/jobs/cgssb-food-drug-administration-recruitment-2026/page": "/jobs/cgssb-food-drug-administration-recruitment-2026", "/(tools)/tools/page": "/tools", "/current-affairs/cg-current-affairs-may-june-2026/page": "/current-affairs/cg-current-affairs-may-june-2026", "/jobs/cgssb-recruitment-rules-2026/page": "/jobs/cgssb-recruitment-rules-2026", "/current-affairs/general-dhiraj-seth-nepal-visit-2026/page": "/current-affairs/general-dhiraj-seth-nepal-visit-2026", "/current-affairs/page": "/current-affairs", "/jobs/cg-set-2026/page": "/jobs/cg-set-2026", "/editorial-policy/page": "/editorial-policy", "/privacy-policy/page": "/privacy-policy", "/previous-paper/page": "/previous-paper", "/terms/page": "/terms", "/jobs/cgssb-nssk26-recruitment-2026/page": "/jobs/cgssb-nssk26-recruitment-2026", "/jobs/cgssb-teacher-recruitment-2026/page": "/jobs/cgssb-teacher-recruitment-2026", "/api/auth/login/route": "/api/auth/login", "/api/jobs/[slug]/route": "/api/jobs/[slug]", "/api/upload/route": "/api/upload", "/jobs/[slug]/page": "/jobs/[slug]", "/search/page": "/search" };
-var FunctionsConfigManifest = { "version": 1, "functions": { "/api/auth/login": {}, "/api/jobs/[slug]": {}, "/api/upload": {}, "/tools/age-calculator": {}, "/tools/image-to-pdf": {}, "/tools/percentage-calculator": {}, "/tools": {}, "/tools/photo-resizer": {}, "/tools/typing-test": {}, "/about-us": {}, "/author": {}, "/author/yuvraj-pratap-rajwade": {}, "/cg-gk/buddhist-period-chhattisgarh": {}, "/cg-gk": {}, "/cg-gk/chhattisgarh-prehistoric-period": {}, "/contact-us": {}, "/cg-gk/teejan-bai-biography-pandavani": {}, "/correction-policy": {}, "/current-affairs/cg-current-affairs-july-2026": {}, "/current-affairs/cg-current-affairs-may-june-2026": {}, "/current-affairs": {}, "/disclaimer": {}, "/current-affairs/general-dhiraj-seth-nepal-visit-2026": {}, "/editorial-policy": {}, "/jobs/[slug]": {}, "/current-affairs/chhattisgarh-current-affairs-june-july-2026": {}, "/jobs/cgssb-recruitment-rules-2026": {}, "/jobs/cgssb-nssk26-recruitment-2026": {}, "/jobs/cg-set-2026": {}, "/privacy-policy": {}, "/search": {}, "/previous-paper": {}, "/terms": {}, "/jobs/cgssb-teacher-recruitment-2026": {}, "/jobs/cgssb-food-drug-administration-recruitment-2026": {} } };
-var PagesManifest = { "/_app": "pages/_app.js", "/_error": "pages/_error.js", "/_document": "pages/_document.js", "/404": "pages/404.html" };
+var PrerenderManifest = { "version": 4, "routes": { "/robots.txt": { "initialHeaders": { "cache-control": "public, max-age=0, must-revalidate", "content-type": "text/plain", "x-next-cache-tags": "_N_T_/layout,_N_T_/robots.txt/layout,_N_T_/robots.txt/route,_N_T_/robots.txt" }, "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/robots.txt", "dataRoute": null }, "/sitemap.xml": { "initialHeaders": { "cache-control": "public, s-maxage=3600, stale-while-revalidate=86400", "content-type": "application/xml; charset=utf-8", "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap.xml/layout,_N_T_/sitemap.xml/route,_N_T_/sitemap.xml" }, "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/sitemap.xml", "dataRoute": null }, "/icon.jpg": { "initialHeaders": { "cache-control": "public, immutable, no-transform, max-age=31536000", "content-type": "image/jpeg", "x-next-cache-tags": "_N_T_/layout,_N_T_/icon.jpg/layout,_N_T_/icon.jpg/route,_N_T_/icon.jpg" }, "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/icon.jpg", "dataRoute": null }, "/admin-login": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/admin-login", "dataRoute": "/admin-login.rsc" }, "/admin": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/admin", "dataRoute": "/admin.rsc" }, "/jobs": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs", "dataRoute": "/jobs.rsc" }, "/": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/", "dataRoute": "/index.rsc" }, "/tools/percentage-calculator": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/percentage-calculator", "dataRoute": "/tools/percentage-calculator.rsc" }, "/tools/age-calculator": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/age-calculator", "dataRoute": "/tools/age-calculator.rsc" }, "/tools": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools", "dataRoute": "/tools.rsc" }, "/about-us": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/about-us", "dataRoute": "/about-us.rsc" }, "/author": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/author", "dataRoute": "/author.rsc" }, "/author/yuvraj-pratap-rajwade": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/author/yuvraj-pratap-rajwade", "dataRoute": "/author/yuvraj-pratap-rajwade.rsc" }, "/cg-gk/buddhist-period-chhattisgarh": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk/buddhist-period-chhattisgarh", "dataRoute": "/cg-gk/buddhist-period-chhattisgarh.rsc" }, "/cg-gk": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk", "dataRoute": "/cg-gk.rsc" }, "/tools/typing-test": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/typing-test", "dataRoute": "/tools/typing-test.rsc" }, "/cg-gk/teejan-bai-biography-pandavani": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk/teejan-bai-biography-pandavani", "dataRoute": "/cg-gk/teejan-bai-biography-pandavani.rsc" }, "/contact-us": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/contact-us", "dataRoute": "/contact-us.rsc" }, "/correction-policy": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/correction-policy", "dataRoute": "/correction-policy.rsc" }, "/current-affairs/cg-current-affairs-july-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/cg-current-affairs-july-2026", "dataRoute": "/current-affairs/cg-current-affairs-july-2026.rsc" }, "/current-affairs/cg-current-affairs-may-june-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/cg-current-affairs-may-june-2026", "dataRoute": "/current-affairs/cg-current-affairs-may-june-2026.rsc" }, "/cg-gk/chhattisgarh-prehistoric-period": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/cg-gk/chhattisgarh-prehistoric-period", "dataRoute": "/cg-gk/chhattisgarh-prehistoric-period.rsc" }, "/current-affairs/general-dhiraj-seth-nepal-visit-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/general-dhiraj-seth-nepal-visit-2026", "dataRoute": "/current-affairs/general-dhiraj-seth-nepal-visit-2026.rsc" }, "/current-affairs": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs", "dataRoute": "/current-affairs.rsc" }, "/current-affairs/chhattisgarh-current-affairs-june-july-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/chhattisgarh-current-affairs-june-july-2026", "dataRoute": "/current-affairs/chhattisgarh-current-affairs-june-july-2026.rsc" }, "/editorial-policy": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/editorial-policy", "dataRoute": "/editorial-policy.rsc" }, "/tools/image-to-pdf": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/image-to-pdf", "dataRoute": "/tools/image-to-pdf.rsc" }, "/current-affairs/nep-2020-education-policy-in-hindi": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/current-affairs/nep-2020-education-policy-in-hindi", "dataRoute": "/current-affairs/nep-2020-education-policy-in-hindi.rsc" }, "/jobs/cgssb-recruitment-rules-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-recruitment-rules-2026", "dataRoute": "/jobs/cgssb-recruitment-rules-2026.rsc" }, "/jobs/cgssb-food-drug-administration-recruitment-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-food-drug-administration-recruitment-2026", "dataRoute": "/jobs/cgssb-food-drug-administration-recruitment-2026.rsc" }, "/tools/photo-resizer": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/tools/photo-resizer", "dataRoute": "/tools/photo-resizer.rsc" }, "/jobs/cg-set-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cg-set-2026", "dataRoute": "/jobs/cg-set-2026.rsc" }, "/previous-paper": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/previous-paper", "dataRoute": "/previous-paper.rsc" }, "/privacy-policy": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/privacy-policy", "dataRoute": "/privacy-policy.rsc" }, "/terms": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/terms", "dataRoute": "/terms.rsc" }, "/jobs/cgssb-nssk26-recruitment-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-nssk26-recruitment-2026", "dataRoute": "/jobs/cgssb-nssk26-recruitment-2026.rsc" }, "/jobs/cgssb-teacher-recruitment-2026": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/jobs/cgssb-teacher-recruitment-2026", "dataRoute": "/jobs/cgssb-teacher-recruitment-2026.rsc" }, "/disclaimer": { "experimentalBypassFor": [{ "type": "header", "key": "Next-Action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/disclaimer", "dataRoute": "/disclaimer.rsc" } }, "dynamicRoutes": {}, "notFoundRoutes": [], "preview": { "previewModeId": "b1ef7f0e14409d45bcc88d83f9ba4da6", "previewModeSigningKey": "7fb6ad97fc2230926d02291125364dcc822963990bf3c3c3393b39b8a015ae17", "previewModeEncryptionKey": "66e2aeed4d1672ce783c00be2400095bac6b8c2622c26ef95f7fe975790c2732" } };
+var MiddlewareManifest = { "version": 3, "middleware": { "/": { "files": ["server/edge-runtime-webpack.js", "server/middleware.js"], "name": "middleware", "page": "/", "matchers": [{ "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$", "originalSource": "/admin/:path*" }, { "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/jobs(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$", "originalSource": "/api/jobs/:path*" }, { "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/upload(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$", "originalSource": "/api/upload/:path*" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "a7k7QwI22yY4nYRydaxEX", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "dLZG3/Q4fLxB2h5aIvdLdiWuClxvlnzjjOnNkcPp8jM=", "__NEXT_PREVIEW_MODE_ID": "b1ef7f0e14409d45bcc88d83f9ba4da6", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "66e2aeed4d1672ce783c00be2400095bac6b8c2622c26ef95f7fe975790c2732", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7fb6ad97fc2230926d02291125364dcc822963990bf3c3c3393b39b8a015ae17" } } }, "functions": {}, "sortedMiddleware": ["/"] };
+var AppPathRoutesManifest = { "/_not-found/page": "/_not-found", "/admin-login/page": "/admin-login", "/admin/page": "/admin", "/api/jobs/[slug]/route": "/api/jobs/[slug]", "/api/upload/route": "/api/upload", "/api/jobs/route": "/api/jobs", "/api/auth/login/route": "/api/auth/login", "/icon.jpg/route": "/icon.jpg", "/jobs/[slug]/page": "/jobs/[slug]", "/page": "/", "/robots.txt/route": "/robots.txt", "/jobs/page": "/jobs", "/sitemap.xml/route": "/sitemap.xml", "/(tools)/tools/age-calculator/page": "/tools/age-calculator", "/(tools)/tools/percentage-calculator/page": "/tools/percentage-calculator", "/(tools)/tools/page": "/tools", "/(tools)/tools/typing-test/page": "/tools/typing-test", "/(tools)/tools/image-to-pdf/page": "/tools/image-to-pdf", "/about-us/page": "/about-us", "/(tools)/tools/photo-resizer/page": "/tools/photo-resizer", "/author/page": "/author", "/cg-gk/page": "/cg-gk", "/author/yuvraj-pratap-rajwade/page": "/author/yuvraj-pratap-rajwade", "/contact-us/page": "/contact-us", "/correction-policy/page": "/correction-policy", "/cg-gk/teejan-bai-biography-pandavani/page": "/cg-gk/teejan-bai-biography-pandavani", "/cg-gk/buddhist-period-chhattisgarh/page": "/cg-gk/buddhist-period-chhattisgarh", "/current-affairs/cg-current-affairs-may-june-2026/page": "/current-affairs/cg-current-affairs-may-june-2026", "/current-affairs/cg-current-affairs-july-2026/page": "/current-affairs/cg-current-affairs-july-2026", "/current-affairs/page": "/current-affairs", "/current-affairs/general-dhiraj-seth-nepal-visit-2026/page": "/current-affairs/general-dhiraj-seth-nepal-visit-2026", "/disclaimer/page": "/disclaimer", "/current-affairs/chhattisgarh-current-affairs-june-july-2026/page": "/current-affairs/chhattisgarh-current-affairs-june-july-2026", "/current-affairs/nep-2020-education-policy-in-hindi/page": "/current-affairs/nep-2020-education-policy-in-hindi", "/jobs/cgssb-food-drug-administration-recruitment-2026/page": "/jobs/cgssb-food-drug-administration-recruitment-2026", "/editorial-policy/page": "/editorial-policy", "/jobs/cgssb-recruitment-rules-2026/page": "/jobs/cgssb-recruitment-rules-2026", "/jobs/cg-set-2026/page": "/jobs/cg-set-2026", "/privacy-policy/page": "/privacy-policy", "/previous-paper/page": "/previous-paper", "/jobs/cgssb-nssk26-recruitment-2026/page": "/jobs/cgssb-nssk26-recruitment-2026", "/search/page": "/search", "/terms/page": "/terms", "/cg-gk/chhattisgarh-prehistoric-period/page": "/cg-gk/chhattisgarh-prehistoric-period", "/jobs/cgssb-teacher-recruitment-2026/page": "/jobs/cgssb-teacher-recruitment-2026" };
+var FunctionsConfigManifest = { "version": 1, "functions": { "/tools/percentage-calculator": {}, "/tools/age-calculator": {}, "/tools": {}, "/about-us": {}, "/author": {}, "/author/yuvraj-pratap-rajwade": {}, "/cg-gk/buddhist-period-chhattisgarh": {}, "/tools/image-to-pdf": {}, "/cg-gk": {}, "/tools/typing-test": {}, "/cg-gk/teejan-bai-biography-pandavani": {}, "/contact-us": {}, "/correction-policy": {}, "/current-affairs/cg-current-affairs-july-2026": {}, "/current-affairs/cg-current-affairs-may-june-2026": {}, "/cg-gk/chhattisgarh-prehistoric-period": {}, "/current-affairs/general-dhiraj-seth-nepal-visit-2026": {}, "/current-affairs": {}, "/current-affairs/chhattisgarh-current-affairs-june-july-2026": {}, "/disclaimer": {}, "/editorial-policy": {}, "/current-affairs/nep-2020-education-policy-in-hindi": {}, "/jobs/cgssb-food-drug-administration-recruitment-2026": {}, "/jobs/cgssb-recruitment-rules-2026": {}, "/tools/photo-resizer": {}, "/jobs/cg-set-2026": {}, "/previous-paper": {}, "/privacy-policy": {}, "/search": {}, "/terms": {}, "/jobs/cgssb-nssk26-recruitment-2026": {}, "/jobs/cgssb-teacher-recruitment-2026": {} } };
+var PagesManifest = { "/_error": "pages/_error.js", "/_app": "pages/_app.js", "/_document": "pages/_document.js", "/404": "pages/404.html" };
 process.env.NEXT_BUILD_ID = BuildId;
 process.env.OPEN_NEXT_BUILD_ID = NextConfig.deploymentId ?? BuildId;
 process.env.NEXT_PREVIEW_MODE_ID = PrerenderManifest?.preview?.previewModeId;
