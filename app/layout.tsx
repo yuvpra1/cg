@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Navbar from "@/components/Navbar";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -17,8 +18,6 @@ export const metadata: Metadata = {
   description: "Your complete portal for CGSSB, CGPSC, Vyapam, Govt Jobs, Syllabus, Results, and Current Affairs in Chhattisgarh.",
 };
 
-import Breadcrumbs from "@/components/Breadcrumbs";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,8 +32,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <GoogleAnalytics gaId="G-TG7H8ER4HK" />
       </body>
-      <GoogleAnalytics gaId="G-TG7H8ER4HK" />
     </html>
   );
 }
