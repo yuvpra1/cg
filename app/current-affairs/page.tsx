@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 export default function CurrentAffairsCategory() {
   const articles = [
     {
+      title: "19 August 2026 Current Affairs: महत्वपूर्ण घटनाएं, MCQ और Online Quiz",
+      description: "19 August 2026 Current Affairs in Hindi. जाम्बिया के राष्ट्रपति, ऋषभ पंत का रिकॉर्ड, National Sports Awards 2025, SEMICON India 2026 और महत्वपूर्ण MCQs।",
+      url: "/current-affairs/19-august-2026-current-affairs",
+      date: "19 August 2026"
+    },
+    {
       title: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020): पूरी जानकारी, 5+3+3+4 संरचना, महत्वपूर्ण तथ्य",
       description: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020) भारत की शिक्षा व्यवस्था में एक महत्वपूर्ण बदलाव। NEP 2020 की पूरी जानकारी, 5+3+3+4 संरचना और CGTET/CTET/शिक्षक भर्ती के लिए परीक्षा उपयोगी बिंदु।",
       url: "/current-affairs/nep-2020-education-policy-in-hindi",
