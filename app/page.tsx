@@ -13,6 +13,8 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "19 August 2026 Current Affairs: महत्वपूर्ण घटनाएं, MCQ और Online Quiz", url: "/current-affairs/19-august-2026-current-affairs" },
+    { title: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020): पूरी जानकारी, 5+3+3+4 संरचना, महत्वपूर्ण तथ्य", url: "/current-affairs/nep-2020-education-policy-in-hindi" },
     { title: "छत्तीसगढ़ का प्राचीन इतिहास: प्रागैतिहासिक काल से महाभारत काल तक", url: "/cg-gk/chhattisgarh-prehistoric-period" },
     { title: "General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक, महत्वपूर्ण तथ्य", url: "/current-affairs/general-dhiraj-seth-nepal-visit-2026" },
     { title: "छत्तीसगढ़ करेंट अफेयर्स 2026: जून-जुलाई के महत्वपूर्ण प्रश्न और MCQ", url: "/current-affairs/chhattisgarh-current-affairs-june-july-2026" },
