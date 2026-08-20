@@ -30,7 +30,7 @@ export default function NEP2020Page() {
 
         <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.3)' }}>
           <Image 
-            src="/images/nep-2020-education-policy-india.webp" 
+            src={`${process.env.NEXT_PUBLIC_R2_URL}/images/nep-2020-education-policy-india.webp`} 
             alt="राष्ट्रीय शिक्षा नीति 2020 (NEP 2020)" 
             width={900} 
             height={500} 

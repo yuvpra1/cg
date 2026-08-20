@@ -108,7 +108,7 @@ export default function BuddhistPeriodPage() {
 
         <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.3)' }}>
           <Image 
-            src="/images/buddhist-period-chhattisgarh.webp" 
+            src={`${process.env.NEXT_PUBLIC_R2_URL}/images/buddhist-period-chhattisgarh.webp`} 
             alt="छत्तीसगढ़ का बौद्धकालीन इतिहास: सिरपुर, मैनपाट" 
             width={900} 
             height={500} 

@@ -28,7 +28,7 @@ export default function GeneralDhirajSethNepalVisit() {
 
         <div style={{ position: 'relative', margin: '30px 0', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
           <Image 
-            src="/images/general-dhiraj-seth-nepal-visit-2026.webp" 
+            src={`${process.env.NEXT_PUBLIC_R2_URL}/images/general-dhiraj-seth-nepal-visit-2026.webp`} 
             alt="General Dhiraj Seth Nepal Visit 2026: नेपाली सेना का मानद जनरल रैंक"
             width={800} 
             height={450} 

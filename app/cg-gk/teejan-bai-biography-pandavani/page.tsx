@@ -45,7 +45,7 @@ export default function TeejanBaiBiography() {
 
       <div style={{ position: 'relative', width: '100%', height: 'auto', marginBottom: '40px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }}>
         <Image 
-          src="/images/teejan-bai-biography-pandavani.webp" 
+          src={`${process.env.NEXT_PUBLIC_R2_URL}/images/teejan-bai-biography-pandavani.webp`} 
           alt="डॉ. तीजन बाई: पंडवानी की विश्व प्रसिद्ध कलाकार, जीवन परिचय और उपलब्धियां" 
           width={900} 
           height={500} 
