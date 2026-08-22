@@ -13,6 +13,11 @@ import HomeSeoContent from "@/components/HomeSeoContent";
 
 export default async function Home() {
   const latestPostsList = [
+    { title: "भारतीय स्वतंत्रता का इतिहास (1857–1947): प्रमुख घटनाएं, आंदोलन और MCQs", url: "/cg-gk/indian-history-1857-1947" },
+    { title: "शिक्षक हिंदी सिलेबस 2026: पूरा पाठ्यक्रम, परीक्षा पैटर्न, विषयवार Topics और तैयारी की रणनीति", url: "/syllabus/cg-teacher-hindi-syllabus-2026" },
+    { title: "शिक्षक संस्कृत सिलेबस 2026: पूरा पाठ्यक्रम, परीक्षा पैटर्न, विषयवार Topics और तैयारी की रणनीति", url: "/syllabus/cg-teacher-sanskrit-syllabus-2026" },
+    { title: "शिक्षक सामाजिक विज्ञान सिलेबस 2026: पूरा पाठ्यक्रम, परीक्षा पैटर्न, विषयवार Topics और तैयारी की रणनीति", url: "/syllabus/cg-teacher-social-science-syllabus-2026" },
+    { title: "शिक्षक भर्ती कृषि सिलेबस 2026: पूरा पाठ्यक्रम, परीक्षा पैटर्न, विषयवार Topics और तैयारी की रणनीति", url: "/syllabus/cg-teacher-agriculture-syllabus-2026" },
     { title: "19 August 2026 Current Affairs: महत्वपूर्ण घटनाएं, MCQ और Online Quiz", url: "/current-affairs/19-august-2026-current-affairs" },
     { title: "राष्ट्रीय शिक्षा नीति 2020 (NEP 2020): पूरी जानकारी, 5+3+3+4 संरचना, महत्वपूर्ण तथ्य", url: "/current-affairs/nep-2020-education-policy-in-hindi" },
     { title: "छत्तीसगढ़ का प्राचीन इतिहास: प्रागैतिहासिक काल से महाभारत काल तक", url: "/cg-gk/chhattisgarh-prehistoric-period" },

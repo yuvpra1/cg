@@ -254,6 +254,18 @@ export default function CGTeacherAgricultureSyllabus2026() {
           <p>सबसे प्रभावी strategy यही रहेगी कि syllabus को छोटे हिस्सों में बांटकर <strong>Concept → Short Notes → MCQ Practice → Mock Test → Mistake Revision</strong> के क्रम में तैयारी की जाए।</p>
           
           {/* Disclaimer section requested by user */}
+          <div style={{ marginTop: '40px', padding: '20px', borderRadius: '8px', background: 'var(--card-bg-hover)' }}>
+            <h3 style={{ fontSize: '1.4rem', color: 'var(--color-primary)', marginBottom: '15px', marginTop: 0 }}>
+              अन्य विषयों के सिलेबस (Related Syllabus)
+            </h3>
+            <ul style={{ margin: '0 0 0 20px', padding: 0, lineHeight: '1.8' }}>
+              <li><a href="/syllabus/cg-teacher-hindi-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक हिंदी सिलेबस 2026</a></li>
+              <li><a href="/syllabus/cg-teacher-sanskrit-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक संस्कृत सिलेबस 2026</a></li>
+              <li><a href="/syllabus/cg-teacher-social-science-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक सामाजिक विज्ञान सिलेबस 2026</a></li>
+              <li><a href="/syllabus/cg-teacher-agriculture-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक कृषि सिलेबस 2026</a></li>
+            </ul>
+          </div>
+          
           <div style={{ background: '#fffbeb', padding: '15px', borderRadius: '8px', border: '1px solid #fde68a', color: '#92400e', marginTop: '40px', fontSize: '0.9rem' }}>
             <strong>अस्वीकरण (Disclaimer):</strong> यह आर्टिकल उम्मीदवारों की सुविधा और जानकारी के लिए तैयार किया गया है। हमने इस सिलेबस और रणनीति को सटीकता के साथ प्रस्तुत करने का पूरा प्रयास किया है। हालांकि, यदि इसमें कोई त्रुटि, टाइपिंग मिस्टेक या कोई महत्वपूर्ण बिंदु छूट गया हो, तो इसके लिए यह वेबसाइट ज़िम्मेदार नहीं होगी। उम्मीदवारों को सलाह दी जाती है कि वे अंतिम सिलेबस और परीक्षा पैटर्न के लिए हमेशा संबंधित भर्ती बोर्ड (CGSSB/CG Vyapam) द्वारा जारी किए गए <strong>आधिकारिक विज्ञापन और सिलेबस (Official Notification)</strong> का ही संदर्भ लें।
           </div>

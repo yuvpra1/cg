@@ -29,6 +29,8 @@ export async function GET() {
     `${baseUrl}/syllabus/cg-teacher-hindi-syllabus-2026`,
 
     // CG GK
+    `${baseUrl}/cg-gk`,
+    `${baseUrl}/cg-gk/indian-history-1857-1947`,
     `${baseUrl}/cg-gk/buddhist-period-chhattisgarh`,
     `${baseUrl}/cg-gk/chhattisgarh-prehistoric-period`,
     `${baseUrl}/cg-gk/teejan-bai-biography-pandavani`,

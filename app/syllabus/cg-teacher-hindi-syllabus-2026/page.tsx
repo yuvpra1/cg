@@ -209,6 +209,18 @@ export default function CGTeacherHindiSyllabus2026() {
           <p><strong>शिक्षक हिंदी सिलेबस 2026</strong> में हिंदी साहित्य और भाषा से जुड़े topics के साथ शिक्षक बनने के लिए आवश्यक <strong>बाल विकास एवं शिक्षा शास्त्र</strong> तथा सामान्य प्रतियोगी परीक्षा वाले sections को भी शामिल किया गया है।</p>
           <p>हिंदी विषय में <strong>व्यावहारिक व्याकरण 15 अंक</strong>, हिंदी साहित्य का इतिहास 10 अंक और हिंदी भाषा शिक्षण 10 अंक के साथ गद्य, पद्य और छत्तीसगढ़ी भाषा-साहित्य के लिए भी अंक निर्धारित हैं। वहीं <strong>भाषा ज्ञान एवं सामान्य अध्ययन के 35 अंक</strong> पूरे paper में सबसे बड़ा section है।</p>
           
+          <div style={{ marginTop: '40px', padding: '20px', borderRadius: '8px', background: 'var(--card-bg-hover)' }}>
+            <h3 style={{ fontSize: '1.4rem', color: 'var(--color-primary)', marginBottom: '15px', marginTop: 0 }}>
+              अन्य विषयों के सिलेबस (Related Syllabus)
+            </h3>
+            <ul style={{ margin: '0 0 0 20px', padding: 0, lineHeight: '1.8' }}>
+              <li><a href="/syllabus/cg-teacher-hindi-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक हिंदी सिलेबस 2026</a></li>
+              <li><a href="/syllabus/cg-teacher-sanskrit-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक संस्कृत सिलेबस 2026</a></li>
+              <li><a href="/syllabus/cg-teacher-social-science-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक सामाजिक विज्ञान सिलेबस 2026</a></li>
+              <li><a href="/syllabus/cg-teacher-agriculture-syllabus-2026" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>शिक्षक कृषि सिलेबस 2026</a></li>
+            </ul>
+          </div>
+          
           <div style={{ background: '#fffbeb', padding: '15px', borderRadius: '8px', border: '1px solid #fde68a', color: '#92400e', marginTop: '40px', fontSize: '0.9rem' }}>
             <strong>अस्वीकरण (Disclaimer):</strong> यह आर्टिकल उम्मीदवारों की सुविधा और जानकारी के लिए तैयार किया गया है। हमने इस सिलेबस और रणनीति को सटीकता के साथ प्रस्तुत करने का पूरा प्रयास किया है। हालांकि, यदि इसमें कोई त्रुटि, टाइपिंग मिस्टेक या कोई महत्वपूर्ण बिंदु छूट गया हो, तो इसके लिए यह वेबसाइट ज़िम्मेदार नहीं होगी। उम्मीदवारों को सलाह दी जाती है कि वे अंतिम सिलेबस और परीक्षा पैटर्न के लिए हमेशा संबंधित भर्ती बोर्ड (CGSSB/CG Vyapam) द्वारा जारी किए गए <strong>आधिकारिक विज्ञापन और सिलेबस (Official Notification)</strong> का ही संदर्भ लें।
           </div>
