@@ -24,6 +24,7 @@ export async function GET() {
     // Syllabus
     `${baseUrl}/syllabus`,
     `${baseUrl}/syllabus/cg-teacher-agriculture-syllabus-2026`,
+    `${baseUrl}/syllabus/cg-teacher-social-science-syllabus-2026`,
 
     // CG GK
     `${baseUrl}/cg-gk/buddhist-period-chhattisgarh`,

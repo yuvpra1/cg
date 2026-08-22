@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 export default function SyllabusCategory() {
   const articles = [
     {
+      title: "शिक्षक सामाजिक विज्ञान सिलेबस 2026: पूरा पाठ्यक्रम, परीक्षा पैटर्न, विषयवार Topics और तैयारी की रणनीति",
+      description: "शिक्षक सामाजिक विज्ञान सिलेबस 2026 की पूरी जानकारी: भूगोल, इतिहास, नागरिक शास्त्र, अर्थशास्त्र, बाल विकास और GK के सभी महत्वपूर्ण topics और रणनीति।",
+      url: "/syllabus/cg-teacher-social-science-syllabus-2026",
+      date: "22 August 2026"
+    },
+    {
       title: "शिक्षक भर्ती कृषि सिलेबस 2026: पूरा पाठ्यक्रम, परीक्षा पैटर्न, विषयवार Topics और तैयारी की रणनीति",
       description: "शिक्षक भर्ती कृषि सिलेबस 2026 की पूरी जानकारी: Agriculture, बाल विकास, हिंदी, English, Computer और GK के सभी महत्वपूर्ण topics और तैयारी की रणनीति।",
       url: "/syllabus/cg-teacher-agriculture-syllabus-2026",
